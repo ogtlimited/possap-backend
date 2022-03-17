@@ -35,3 +35,10 @@ export class CreateUserDto {
   @IsString()
   public address: string;
 }
+export class LoginUserDto {
+  @IsEmail()
+  public email: string;
+
+  @IsString()
+  public password: string;
+}
