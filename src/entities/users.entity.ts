@@ -10,7 +10,7 @@ export enum IDENTIFICATIONType {
   NIN = 'National Identification Number',
   DRIVERLICENSE = 'Driver"s License',
   INTPASSPORT = 'INTERNATIONAL PASSPORT',
-  BVN = 'Bank Verfication Number',
+  BVN = 'Bank Verification Number',
 }
 @Entity()
 export class UserEntity extends BaseEntity implements User {
