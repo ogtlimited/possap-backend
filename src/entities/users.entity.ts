@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { IsNotEmpty } from 'class-validator';
 import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, Unique, CreateDateColumn, UpdateDateColumn } from 'typeorm';
 import { User } from '@interfaces/users.interface';
@@ -8,7 +9,7 @@ export enum UserType {
 }
 export enum IDENTIFICATIONType {
   NIN = 'National Identification Number',
-  DRIVERLICENSE = 'Driver"s License',
+  DRIVERLICENSE = 'Driver\"s License',
   INTPASSPORT = 'INTERNATIONAL PASSPORT',
   BVN = 'Bank Verification Number',
 }
