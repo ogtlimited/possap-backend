@@ -15,6 +15,7 @@ import { dbConnection } from '@databases';
 import { Routes } from '@interfaces/routes.interface';
 import errorMiddleware from '@middlewares/error.middleware';
 import { logger, stream } from '@utils/logger';
+import CommandService from './services/helper-services/command.service';
 
 class App {
   public app: express.Application;
@@ -47,7 +48,15 @@ class App {
   }
 
   private connectToDatabase() {
-    createConnection(dbConnection);
+    createConnection(dbConnection).then(e => {
+      this.seedDatabase();
+      console.log('COONECTED TO DB');
+    });
+  }
+
+  private seedDatabase() {
+    const command = new CommandService();
+    command.createBulk();
   }
 
   private initializeMiddlewares() {
@@ -63,7 +72,6 @@ class App {
 
   private initializeRoutes(routes: Routes[]) {
     routes.forEach(route => {
-      console.log(route);
       this.app.use('/api/v1', route.router);
     });
   }

@@ -1,19 +1,19 @@
 {
   "name": "possap-backend",
   "version": "0.0.0",
-  "description": "TypeScript + TypeORM + PostgreSQL + Express API Server",
-  "author": "",
+  "description": "Possap",
+  "author": "Outsource Global",
   "license": "ISC",
   "scripts": {
     "start": "npm run build && cross-env NODE_ENV=production node dist/server.js",
     "dev": "cross-env NODE_ENV=development nodemon",
     "build": "tsc && tsc-alias",
     "build:swc": "swc src -d dist --source-maps --copy-files",
-    "test": "jest --forceExit --detectOpenHandles",
     "lint": "eslint --ignore-path .gitignore --ext .ts src/",
     "lint:fix": "npm run lint -- --fix",
     "deploy:prod": "npm run build && pm2 start ecosystem.config.js --only prod",
-    "deploy:dev": "pm2 start ecosystem.config.js --only dev"
+    "deploy:dev": "pm2 start ecosystem.config.js --only dev",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
@@ -41,6 +41,7 @@
     "swagger-jsdoc": "^6.0.0",
     "swagger-ui-express": "^4.1.6",
     "typeorm": "^0.2.34",
+    "typeorm-seeding": "^1.6.1",
     "winston": "^3.3.3",
     "winston-daily-rotate-file": "^4.5.5"
   },
@@ -70,7 +71,7 @@
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "husky": "^7.0.4",
+    "husky": "^7.0.0",
     "jest": "^27.0.6",
     "lint-staged": "^11.0.0",
     "node-config": "^0.0.2",
