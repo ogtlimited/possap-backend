@@ -28,7 +28,7 @@ class OfficerService extends Repository<OfficerEntity> {
     const findOfficer: IOfficers = await OfficerEntity.findOne({ where: { email: OfficerData.email } });
     if (findOfficer) throw new HttpException(409, `You're email ${OfficerData.email} already exists`);
 
-    const createOfficerData: IOfficers = await OfficerEntity.create(OfficerData).save();
+    const createOfficerData: IOfficers = await OfficerEntity.create({ ...OfficerData }).save();
 
     return createOfficerData;
   }
