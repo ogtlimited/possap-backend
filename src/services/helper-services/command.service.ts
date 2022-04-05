@@ -25,7 +25,7 @@ class CommandService extends Repository<CommandEntity> {
   }
 
   public async createCommand(commandData: any): Promise<any> {
-    const createCommandData: any = await CommandEntity.create(commandData);
+    const createCommandData: any = await CommandEntity.create(commandData).save();
 
     return createCommandData;
   }
