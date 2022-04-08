@@ -14,7 +14,7 @@ export interface IOfficers {
   extractApprovalLevel: IExtractApprovalLevel;
   characterCertApprovalLevel: ICharacterCertApprovalLevel;
   eGSApprovalLevel: IEGSApprovalLevel;
-  service: string[];
+  service: any[];
 }
 
 export interface IExtractApprovalLevel {

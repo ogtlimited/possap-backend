@@ -2,7 +2,7 @@
     "env": "production",
     "dbConfig": {
         "host": "localhost",
-        "user": "root",
+        "user": "postgres",
         "password": "password",
         "database": "possap"
     },
