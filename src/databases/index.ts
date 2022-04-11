@@ -12,7 +12,7 @@ export const dbConnection: ConnectionOptions = {
   password: password,
   database: database,
   synchronize: true,
-  logging: false,
+  logging: ['error'],
   entities: [join(__dirname, '../**/*.entity{.ts,.js}')],
   migrations: [join(__dirname, '../**/*.migration{.ts,.js}')],
   subscribers: [join(__dirname, '../**/*.subscriber{.ts,.js}')],

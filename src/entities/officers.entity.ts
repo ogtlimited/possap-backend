@@ -1,11 +1,13 @@
+import { sharedProps } from './helper/sharedProps.helper';
 /* eslint-disable prettier/prettier */
 import { IsNotEmpty } from 'class-validator';
-import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, ManyToOne, OneToMany } from 'typeorm';
 import { ICharacterCertApprovalLevel, IEGSApprovalLevel, IExtractApprovalLevel, IOfficers } from './../interfaces/officer.interface';
+import { CommandAccessEntity } from './commandAccess.entity';
 
 export type ServiceType = 'POLICE EXTRACT' | 'ESCORT AND GUARD SERVICES' | 'POLICE CHARACTER CERTIFICATE';
 @Entity()
-export class OfficerEntity extends BaseEntity implements IOfficers {
+export class OfficerEntity extends sharedProps implements IOfficers {
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -38,7 +40,7 @@ export class OfficerEntity extends BaseEntity implements IOfficers {
 
   @Column()
   @IsNotEmpty()
-  officerDeptartment: string;
+  officerDepartment: string;
 
   @Column()
   @IsNotEmpty()
@@ -78,4 +80,7 @@ export class OfficerEntity extends BaseEntity implements IOfficers {
 
   @Column('simple-json', {nullable: true})
   eGSApprovalLevel: IEGSApprovalLevel;
+
+  @OneToMany(() => CommandAccessEntity, (command) => command.officer, {onDelete: 'CASCADE', onUpdate: 'CASCADE', eager: true, cascade: true})
+  commandAccess: CommandAccessEntity[]
 }

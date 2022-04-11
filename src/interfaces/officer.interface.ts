@@ -6,7 +6,7 @@ export interface IOfficers {
   email: string;
   phoneNumber: string;
   officerFormation: string;
-  officerDeptartment: string;
+  officerDepartment: string;
   officerSection: string;
   officerSubSection: string;
   role: string;
@@ -15,6 +15,7 @@ export interface IOfficers {
   characterCertApprovalLevel: ICharacterCertApprovalLevel;
   eGSApprovalLevel: IEGSApprovalLevel;
   service: any[];
+  commandAccess: any[];
 }
 
 export interface IExtractApprovalLevel {

@@ -24,7 +24,7 @@ export class CreateOfficerDto {
   public officerFormation: string;
 
   @IsString()
-  public officerDeptartment: string;
+  public officerDepartment: string;
 
   @IsString()
   public officerSection: string;
@@ -40,6 +40,9 @@ export class CreateOfficerDto {
 
   @IsArray()
   public service: [];
+
+  @IsArray()
+  public commandAccess: [];
 
   @IsObject()
   @IsOptional()
