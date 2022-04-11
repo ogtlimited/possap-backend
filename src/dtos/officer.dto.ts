@@ -1,5 +1,5 @@
 import { IExtractApprovalLevel, ICharacterCertApprovalLevel, IEGSApprovalLevel } from '@/interfaces/officer.interface';
-import { IsObject, IsOptional, IsString, IsBoolean } from 'class-validator';
+import { IsObject, IsOptional, IsString, IsBoolean, IsArray } from 'class-validator';
 
 export class CreateOfficerDto {
   @IsString()
@@ -38,8 +38,8 @@ export class CreateOfficerDto {
   @IsString()
   public accessType: string;
 
-  @IsString()
-  public service: string;
+  @IsArray()
+  public service: [];
 
   @IsObject()
   @IsOptional()

@@ -22,13 +22,13 @@ class OfficerService extends Repository<OfficerEntity> {
     return findOfficer;
   }
 
-  public async createOfficer(OfficerData: CreateOfficerDto): Promise<IOfficers> {
+  public async createOfficer(OfficerData: IOfficers): Promise<any> {
     if (isEmpty(OfficerData)) throw new HttpException(400, "You're not OfficerData");
 
     const findOfficer: IOfficers = await OfficerEntity.findOne({ where: { email: OfficerData.email } });
-    if (findOfficer) throw new HttpException(409, `You're email ${OfficerData.email} already exists`);
+    if (findOfficer) throw new HttpException(409, `This email ${OfficerData.email} already exists`);
 
-    const createOfficerData: IOfficers = await OfficerEntity.create(OfficerData).save();
+    const createOfficerData: IOfficers = await OfficerEntity.create(OfficerData);
 
     return createOfficerData;
   }

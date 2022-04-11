@@ -60,7 +60,7 @@ export class OfficerEntity extends BaseEntity implements IOfficers {
     type: 'simple-array'
   })
   @IsNotEmpty()
-  service: string[];
+  service: any[];
 
   @Column()
   @CreateDateColumn()
