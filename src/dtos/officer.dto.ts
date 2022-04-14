@@ -18,6 +18,9 @@ export class CreateOfficerDto {
   public email: string;
 
   @IsString()
+  public password: string;
+
+  @IsString()
   public phoneNumber: string;
 
   @IsString()

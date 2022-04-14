@@ -1,5 +1,6 @@
 import { EntityRepository, getRepository, Repository } from 'typeorm';
 import { CreateOfficerDto } from '@dtos/officer.dto';
+import { hash } from 'bcrypt';
 import { OfficerEntity } from '@entities/officers.entity';
 import { HttpException } from '@exceptions/HttpException';
 import { IOfficers } from '@interfaces/officer.interface';
@@ -26,11 +27,9 @@ class OfficerService extends Repository<OfficerEntity> {
 
     const findOfficer: IOfficers = await OfficerEntity.findOne({ where: { email: OfficerData.email } });
     if (findOfficer) throw new HttpException(409, `This email ${OfficerData.email} already exists`);
-    const { commandAccess, ...obj } = OfficerData;
-    const createOfficerData: IOfficers = await OfficerEntity.create(OfficerData).save();
-    // commandAcess.forEach((cmd: ICommandAccess) => {
-    //   this.CommandAccessRepository.create({ ...cmd, officer: createOfficerData });
-    // });
+    const hashedPassword = await hash(OfficerData.password, 10);
+
+    const createOfficerData: IOfficers = await OfficerEntity.create({ ...OfficerData, password: hashedPassword }).save();
 
     return createOfficerData;
   }

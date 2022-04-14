@@ -56,6 +56,10 @@ export class OfficerEntity extends sharedProps implements IOfficers {
 
   @Column()
   @IsNotEmpty()
+  password: string;
+
+  @Column()
+  @IsNotEmpty()
   accessType: string;
 
   @Column({

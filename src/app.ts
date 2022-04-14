@@ -16,7 +16,7 @@ import { Routes } from '@interfaces/routes.interface';
 import errorMiddleware from '@middlewares/error.middleware';
 import { logger, stream } from '@utils/logger';
 import CommandService from './services/helper-services/command.service';
-
+const { createHash } = require('crypto');
 class App {
   public app: express.Application;
   public port: string | number;
@@ -26,7 +26,9 @@ class App {
     this.app = express();
     this.port = process.env.PORT || 3000;
     this.env = process.env.NODE_ENV || 'development';
-
+    const hash = createHash('sha256').update('POSSAP3U4.4)9434=)@9345K9hjer34&5%34::').digest('hex');
+    const signature = Buffer.from(hash).toString('base64');
+    console.log(signature);
     this.env !== 'test' && this.connectToDatabase();
     this.initializeMiddlewares();
     this.initializeRoutes(routes);

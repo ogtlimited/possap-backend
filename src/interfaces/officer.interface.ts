@@ -5,6 +5,7 @@ export interface IOfficers {
   userName: string;
   email: string;
   phoneNumber: string;
+  password: string;
   officerFormation: string;
   officerDepartment: string;
   officerSection: string;
