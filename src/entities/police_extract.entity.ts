@@ -49,6 +49,14 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
   @IsNotEmpty()
   police_division_lga: string;
 
+  @Column({type: "enum", enum: ["pending", "in progress", "approved"], default: "pending"})
+  @IsNotEmpty()
+  status: string;
+
+  @Column({default: 1})
+  @IsNotEmpty()
+  approval_level: number;
+
   @Column()
   @IsNotEmpty()
   police_division_area: string;

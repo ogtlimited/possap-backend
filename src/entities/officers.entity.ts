@@ -1,4 +1,4 @@
-/* eslint-disable prettier/prettier */
+0/* eslint-disable prettier/prettier */
 import { IsNotEmpty } from 'class-validator';
 import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm';
 import { ICharacterCertApprovalLevel, IEGSApprovalLevel, IExtractApprovalLevel, IOfficers } from './../interfaces/officer.interface';
