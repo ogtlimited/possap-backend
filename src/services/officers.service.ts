@@ -1,6 +1,6 @@
-import { hash } from 'bcrypt';
-import { EntityRepository, Repository } from 'typeorm';
+import { EntityRepository, getRepository, Repository } from 'typeorm';
 import { CreateOfficerDto } from '@dtos/officer.dto';
+import { hash } from 'bcrypt';
 import { OfficerEntity } from '@entities/officers.entity';
 import { HttpException } from '@exceptions/HttpException';
 import { IOfficers } from '@interfaces/officer.interface';
@@ -9,7 +9,7 @@ import { isEmpty } from '@utils/util';
 @EntityRepository()
 class OfficerService extends Repository<OfficerEntity> {
   public async findAllOfficer(): Promise<IOfficers[]> {
-    const Officers: IOfficers[] = await OfficerEntity.find();
+    const Officers: IOfficers[] = await getRepository(OfficerEntity).find();
     return Officers;
   }
 
@@ -22,13 +22,14 @@ class OfficerService extends Repository<OfficerEntity> {
     return findOfficer;
   }
 
-  public async createOfficer(OfficerData: IOfficers): Promise<any> {
+  public async createOfficer(OfficerData: CreateOfficerDto): Promise<any> {
     if (isEmpty(OfficerData)) throw new HttpException(400, "You're not OfficerData");
 
     const findOfficer: IOfficers = await OfficerEntity.findOne({ where: { email: OfficerData.email } });
     if (findOfficer) throw new HttpException(409, `This email ${OfficerData.email} already exists`);
+    const hashedPassword = await hash(OfficerData.password, 10);
 
-    const createOfficerData: IOfficers = await OfficerEntity.create(OfficerData);
+    const createOfficerData: IOfficers = await OfficerEntity.create({ ...OfficerData, password: hashedPassword }).save();
 
     return createOfficerData;
   }

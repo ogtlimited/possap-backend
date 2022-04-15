@@ -18,13 +18,16 @@ export class CreateOfficerDto {
   public email: string;
 
   @IsString()
+  public password: string;
+
+  @IsString()
   public phoneNumber: string;
 
   @IsString()
   public officerFormation: string;
 
   @IsString()
-  public officerDeptartment: string;
+  public officerDepartment: string;
 
   @IsString()
   public officerSection: string;
@@ -40,6 +43,9 @@ export class CreateOfficerDto {
 
   @IsArray()
   public service: [];
+
+  @IsArray()
+  public commandAccess: [];
 
   @IsObject()
   @IsOptional()
