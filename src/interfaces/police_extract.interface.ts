@@ -5,7 +5,7 @@ import {IOfficers} from "@interfaces/officer.interface";
 
 export interface IPoliceExtract {
   id?: number;
-  userId?: string;
+  userId?: number;
   userType?: string;
   category?: string;
   sub_category?:string;
@@ -17,13 +17,14 @@ export interface IPoliceExtract {
   police_division_area?:string;
   approval_level?: number;
   status?: string;
+  rejection_reason?:string;
 }
 
 export interface IPoliceExtractService {
 
   createExtract(user: User, payload: PoliceExtractDto): Promise<IPoliceExtract>;
   getApplicantsExtracts(user: User): Promise<IPoliceExtract[]>;
-  getExtract(id:number): Promise<IPoliceExtract[]>;
+  getExtract(id:number): Promise<IPoliceExtract>;
   approveExtract(id: number, officer:IOfficers): Promise<{message: "extracted approved"}>;
   getOfficerExtracts(officer: IOfficers): Promise<IPoliceExtract[]>;
   rejectExtract(id: number, officer:IOfficers): Promise<{message: "extracted rejected"}>;

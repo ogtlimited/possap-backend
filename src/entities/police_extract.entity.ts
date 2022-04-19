@@ -1,27 +1,43 @@
 import { IsNotEmpty } from 'class-validator';
-import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, Unique, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+import {
+  BaseEntity,
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  Unique,
+  CreateDateColumn,
+  UpdateDateColumn,
+  ManyToOne, JoinColumn
+} from 'typeorm';
 import { User } from '@interfaces/users.interface';
 import {IPoliceExtract} from "@interfaces/police_extract.interface";
+import {OfficerEntity} from "@entities/officers.entity";
+import {UserEntity} from "@entities/users.entity";
 export enum UserType {
   INDIVIDUAL = 'Individual',
   CorporateNGOs = 'Corporate/NGOs',
   MDAs = 'MDAs',
 }
 
+export enum PaymentStatus {
+  pending = 'pending',
+  paid = 'paid'
+}
+
 @Entity()
+@Unique(["verification_id"])
 export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
 
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column()
-  @IsNotEmpty()
-  // @Unique(['email'])
-  userId: string;
 
   @Column()
   @IsNotEmpty()
   category: string;
+
+  @Column({default: "nil"})
+  rejection_reason: string;
 
 
   @Column()
@@ -66,6 +82,20 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
     enum: UserType,
   })
   @IsNotEmpty()
-  userType: string;
+  user_type: string;
+
+  @Column({
+    type: 'enum',
+    enum: PaymentStatus,
+    default: "pending"
+  },)
+  @IsNotEmpty()
+  payment_status: string;
+
+  @Column()
+  verification_id: string;
+
+  @ManyToOne(() => UserEntity, (user) => user.policeExtracts)
+  user: UserEntity;
 
 }

@@ -8,7 +8,7 @@
     "start": "npm run build && cross-env NODE_ENV=production node dist/server.js",
     "dev": "cross-env NODE_ENV=development nodemon",
     "build": "tsc && tsc-alias",
-    "test" : "",
+    "test": "",
     "build:swc": "swc src -d dist --source-maps --copy-files",
     "lint": "eslint --ignore-path .gitignore --ext .ts src/",
     "lint:fix": "npm run lint -- --fix",
@@ -43,6 +43,7 @@
     "swagger-ui-express": "^4.1.6",
     "typeorm": "^0.2.34",
     "typeorm-seeding": "^1.6.1",
+    "uuid": "^8.3.2",
     "winston": "^3.3.3",
     "winston-daily-rotate-file": "^4.5.5"
   },

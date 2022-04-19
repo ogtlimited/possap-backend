@@ -7,9 +7,10 @@ import {IOfficers} from "@interfaces/officer.interface";
 import {HttpException} from "@exceptions/HttpException";
 
 @Entity()
-class PoliceExtractService implements IPoliceExtractService{
+export class PoliceExtractService implements IPoliceExtractService{
 
-  async createExtract(user: User, payload: PoliceExtractDto): Promise<IPoliceExtract> {
+  async createExtract(user: User, payload: IPoliceExtract): Promise<IPoliceExtract> {
+    payload.userId = user.id
     const createPoliceExtract: IPoliceExtract = await PoliceExtractEntity.create(payload).save();
     console.log(createPoliceExtract);
     return createPoliceExtract;
@@ -25,8 +26,8 @@ class PoliceExtractService implements IPoliceExtractService{
     return await PoliceExtractEntity.find({where: {approval_level: approvalLevel, police_division_area: officer.officerSection, status: "pending"}})
   }
 
-  async getExtract(id: number): Promise<IPoliceExtract[]> {
-    return await PoliceExtractEntity.find({where: {id}})
+  async getExtract(id: number): Promise<IPoliceExtract> {
+    return await PoliceExtractEntity.findOne({where: {id}})
   }
 
   // middleware should check if officer is allowed to approve.
