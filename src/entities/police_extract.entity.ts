@@ -8,7 +8,6 @@ import {
   ManyToOne,
 } from 'typeorm';
 import {IPoliceExtract} from "@interfaces/police_extract.interface";
-import {UserEntity} from "@entities/users.entity";
 export enum UserType {
   INDIVIDUAL = 'Individual',
   CorporateNGOs = 'Corporate/NGOs',
@@ -17,13 +16,12 @@ export enum UserType {
 
 export enum PaymentStatus {
   pending = 'pending',
-  paid = 'paid'
+  paid = 'paid',
 }
 
 @Entity()
 // @Unique(["verification_id"])
 export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
-
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -58,11 +56,11 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
   @IsNotEmpty()
   police_division_lga: string;
 
-  @Column({type: "enum", enum: ["pending", "in progress", "approved"], default: "pending"})
+  @Column({ type: 'enum', enum: ['pending', 'in progress', 'approved'], default: 'pending' })
   @IsNotEmpty()
   status: string;
 
-  @Column({default: 1})
+  @Column({ default: 1 })
   @IsNotEmpty()
   approval_level: number;
 
@@ -80,8 +78,8 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
   @Column({
     type: 'enum',
     enum: PaymentStatus,
-    default: "pending"
-  },)
+    default: 'pending',
+  })
   @IsNotEmpty()
   payment_status: string;
 

@@ -17,6 +17,8 @@ import errorMiddleware from '@middlewares/error.middleware';
 import { logger, stream } from '@utils/logger';
 import CommandService from './services/helper-services/command.service';
 const { createHash } = require('crypto');
+import axios from 'axios';
+
 class App {
   public app: express.Application;
   public port: string | number;
@@ -34,6 +36,10 @@ class App {
     this.initializeRoutes(routes);
     this.initializeSwagger();
     this.initializeErrorHandling();
+    // axios
+    //   .get('http://52.15.120.183/verify.php?pickNIN=30919176644&key=ZebraW3ta$')
+    //   .then(res => console.log(res.data))
+    //   .catch(error => console.log(error));
   }
 
   public listen() {
