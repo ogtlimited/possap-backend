@@ -1,7 +1,18 @@
 /* eslint-disable prettier/prettier */
 import { IsNotEmpty } from 'class-validator';
-import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, Unique, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+import {
+  BaseEntity,
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  Unique,
+  CreateDateColumn,
+  UpdateDateColumn,
+  OneToMany
+} from 'typeorm';
 import { User } from '@interfaces/users.interface';
+import {CommandAccessEntity} from "@entities/commandAccess.entity";
+import {PoliceExtractEntity} from "@entities/police_extract.entity";
 export enum UserType {
   INDIVIDUAL = 'Individual',
   CorporateNGOs = 'Corporate/NGOs',
@@ -81,4 +92,7 @@ export class UserEntity extends BaseEntity implements User {
   @Column()
   @UpdateDateColumn()
   updatedAt: Date;
+
+  @OneToMany(() => PoliceExtractEntity, policeExtract => policeExtract.user, {onUpdate: 'CASCADE', eager: true, cascade: true})
+  policeExtracts: PoliceExtractEntity[]
 }
