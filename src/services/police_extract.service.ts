@@ -9,8 +9,10 @@ import {HttpException} from "@exceptions/HttpException";
 @Entity()
 export class PoliceExtractService implements IPoliceExtractService{
 
-  async createExtract(user: User, payload: IPoliceExtract): Promise<IPoliceExtract> {
-    payload.userId = user.id
+  async createExtract(user: any, payload: IPoliceExtract): Promise<IPoliceExtract> {
+    const {id} = user
+    payload.userId = id
+    console.log(payload)
     const createPoliceExtract: IPoliceExtract = await PoliceExtractEntity.create(payload).save();
     console.log(createPoliceExtract);
     return createPoliceExtract;

@@ -5,13 +5,9 @@ import {
   PrimaryGeneratedColumn,
   Column,
   Unique,
-  CreateDateColumn,
-  UpdateDateColumn,
-  ManyToOne, JoinColumn
+  ManyToOne,
 } from 'typeorm';
-import { User } from '@interfaces/users.interface';
 import {IPoliceExtract} from "@interfaces/police_extract.interface";
-import {OfficerEntity} from "@entities/officers.entity";
 import {UserEntity} from "@entities/users.entity";
 export enum UserType {
   INDIVIDUAL = 'Individual',
@@ -25,20 +21,18 @@ export enum PaymentStatus {
 }
 
 @Entity()
-@Unique(["verification_id"])
+// @Unique(["verification_id"])
 export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
 
   @PrimaryGeneratedColumn()
   id: number;
 
-
   @Column()
   @IsNotEmpty()
   category: string;
 
-  @Column({default: "nil"})
-  rejection_reason: string;
-
+  @Column()
+  affidavit_date_of_issuance: Date
 
   @Column()
   @IsNotEmpty()
@@ -47,7 +41,6 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
   @Column()
   @IsNotEmpty()
   sub_category: string;
-
 
   @Column()
   @IsNotEmpty()
@@ -92,10 +85,10 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
   @IsNotEmpty()
   payment_status: string;
 
-  @Column()
+  @Column({default: "nil"})
   verification_id: string;
 
-  @ManyToOne(() => UserEntity, (user) => user.policeExtracts)
-  user: UserEntity;
+  @Column()
+  userId: number;
 
 }

@@ -93,6 +93,4 @@ export class UserEntity extends BaseEntity implements User {
   @UpdateDateColumn()
   updatedAt: Date;
 
-  @OneToMany(() => PoliceExtractEntity, policeExtract => policeExtract.user, {onUpdate: 'CASCADE', eager: true, cascade: true})
-  policeExtracts: PoliceExtractEntity[]
 }
