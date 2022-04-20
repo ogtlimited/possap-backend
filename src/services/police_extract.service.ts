@@ -16,7 +16,6 @@ export class PoliceExtractService implements IPoliceExtractService{
     const createPoliceExtract: IPoliceExtract = await PoliceExtractEntity.create(payload).save();
     console.log(createPoliceExtract);
     return createPoliceExtract;
-
   }
 
   async getApplicantsExtracts(user: User): Promise<IPoliceExtract[]> {
