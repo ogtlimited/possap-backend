@@ -1,5 +1,4 @@
 import { User } from '@interfaces/users.interface';
-import { CreateUserDto } from '@dtos/users.dto';
 import { PoliceExtractDto } from '@dtos/police_extract.dto';
 import { IOfficers } from '@interfaces/officer.interface';
 

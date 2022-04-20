@@ -1,8 +1,6 @@
 import { IsNotEmpty } from 'class-validator';
-import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, Unique, CreateDateColumn, UpdateDateColumn, ManyToOne, JoinColumn } from 'typeorm';
-import { User } from '@interfaces/users.interface';
+import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, Unique, ManyToOne } from 'typeorm';
 import { IPoliceExtract } from '@interfaces/police_extract.interface';
-import { OfficerEntity } from '@entities/officers.entity';
 import { UserEntity } from '@entities/users.entity';
 export enum UserType {
   INDIVIDUAL = 'Individual',

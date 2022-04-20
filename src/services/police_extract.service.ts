@@ -1,5 +1,4 @@
 import { IPoliceExtract, IPoliceExtractService } from '@interfaces/police_extract.interface';
-import { PoliceExtractDto } from '@dtos/police_extract.dto';
 import { User } from '@interfaces/users.interface';
 import { PoliceExtractEntity } from '@entities/police_extract.entity';
 import { Entity } from 'typeorm';
