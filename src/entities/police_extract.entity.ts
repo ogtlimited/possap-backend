@@ -1,18 +1,9 @@
 import { IsNotEmpty } from 'class-validator';
-import {
-  BaseEntity,
-  Entity,
-  PrimaryGeneratedColumn,
-  Column,
-  Unique,
-  CreateDateColumn,
-  UpdateDateColumn,
-  ManyToOne, JoinColumn
-} from 'typeorm';
+import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, Unique, CreateDateColumn, UpdateDateColumn, ManyToOne, JoinColumn } from 'typeorm';
 import { User } from '@interfaces/users.interface';
-import {IPoliceExtract} from "@interfaces/police_extract.interface";
-import {OfficerEntity} from "@entities/officers.entity";
-import {UserEntity} from "@entities/users.entity";
+import { IPoliceExtract } from '@interfaces/police_extract.interface';
+import { OfficerEntity } from '@entities/officers.entity';
+import { UserEntity } from '@entities/users.entity';
 export enum UserType {
   INDIVIDUAL = 'Individual',
   CorporateNGOs = 'Corporate/NGOs',
@@ -21,24 +12,21 @@ export enum UserType {
 
 export enum PaymentStatus {
   pending = 'pending',
-  paid = 'paid'
+  paid = 'paid',
 }
 
 @Entity()
-@Unique(["verification_id"])
+@Unique(['verification_id'])
 export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
-
   @PrimaryGeneratedColumn()
   id: number;
-
 
   @Column()
   @IsNotEmpty()
   category: string;
 
-  @Column({default: "nil"})
+  @Column({ default: 'nil' })
   rejection_reason: string;
-
 
   @Column()
   @IsNotEmpty()
@@ -47,7 +35,6 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
   @Column()
   @IsNotEmpty()
   sub_category: string;
-
 
   @Column()
   @IsNotEmpty()
@@ -65,11 +52,11 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
   @IsNotEmpty()
   police_division_lga: string;
 
-  @Column({type: "enum", enum: ["pending", "in progress", "approved"], default: "pending"})
+  @Column({ type: 'enum', enum: ['pending', 'in progress', 'approved'], default: 'pending' })
   @IsNotEmpty()
   status: string;
 
-  @Column({default: 1})
+  @Column({ default: 1 })
   @IsNotEmpty()
   approval_level: number;
 
@@ -87,15 +74,14 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
   @Column({
     type: 'enum',
     enum: PaymentStatus,
-    default: "pending"
-  },)
+    default: 'pending',
+  })
   @IsNotEmpty()
   payment_status: string;
 
   @Column()
   verification_id: string;
 
-  @ManyToOne(() => UserEntity, (user) => user.policeExtracts)
+  @ManyToOne(() => UserEntity, user => user.policeExtracts)
   user: UserEntity;
-
 }
