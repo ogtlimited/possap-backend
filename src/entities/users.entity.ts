@@ -74,11 +74,7 @@ export class UserEntity extends BaseEntity implements User {
   @IsNotEmpty()
   userType: string;
 
-  @Column({
-    type: 'enum',
-    enum: UserType,
-    default: UserType.INDIVIDUAL,
-  })
+  @Column()
   identificationDoc?: string;
 
   @Column()
