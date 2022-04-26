@@ -1,7 +1,13 @@
 import { IsNotEmpty } from 'class-validator';
-import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, Unique, ManyToOne } from 'typeorm';
-import { IPoliceExtract } from '@interfaces/police_extract.interface';
-import { UserEntity } from '@entities/users.entity';
+import {
+  BaseEntity,
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  Unique,
+  ManyToOne,
+} from 'typeorm';
+import {IPoliceExtract} from "@interfaces/police_extract.interface";
 export enum UserType {
   INDIVIDUAL = 'Individual',
   CorporateNGOs = 'Corporate/NGOs',
@@ -14,7 +20,7 @@ export enum PaymentStatus {
 }
 
 @Entity()
-@Unique(['verification_id'])
+// @Unique(["verification_id"])
 export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
   @PrimaryGeneratedColumn()
   id: number;
@@ -23,8 +29,8 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
   @IsNotEmpty()
   category: string;
 
-  @Column({ default: 'nil' })
-  rejection_reason: string;
+  @Column()
+  affidavit_date_of_issuance: Date
 
   @Column()
   @IsNotEmpty()
@@ -77,9 +83,10 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
   @IsNotEmpty()
   payment_status: string;
 
-  @Column()
+  @Column({default: "nil"})
   verification_id: string;
 
-  @ManyToOne(() => UserEntity, user => user.policeExtracts)
-  user: UserEntity;
+  @Column()
+  userId: number;
+
 }
