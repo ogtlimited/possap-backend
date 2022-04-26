@@ -15,6 +15,9 @@ import { dbConnection } from '@databases';
 import { Routes } from '@interfaces/routes.interface';
 import errorMiddleware from '@middlewares/error.middleware';
 import { logger, stream } from '@utils/logger';
+import CommandService from './services/helper-services/command.service';
+const { createHash } = require('crypto');
+import axios from 'axios';
 
 class App {
   public app: express.Application;
@@ -25,12 +28,18 @@ class App {
     this.app = express();
     this.port = process.env.PORT || 3000;
     this.env = process.env.NODE_ENV || 'development';
-
+    const hash = createHash('sha256').update('POSSAP3U4.4)9434=)@9345K9hjer34&5%34::').digest('hex');
+    const signature = Buffer.from(hash).toString('base64');
+    console.log(signature);
     this.env !== 'test' && this.connectToDatabase();
     this.initializeMiddlewares();
     this.initializeRoutes(routes);
     this.initializeSwagger();
     this.initializeErrorHandling();
+    // axios
+    //   .get('http://52.15.120.183/verify.php?pickNIN=30919176644&key=ZebraW3ta$')
+    //   .then(res => console.log(res.data))
+    //   .catch(error => console.log(error));
   }
 
   public listen() {
@@ -47,7 +56,15 @@ class App {
   }
 
   private connectToDatabase() {
-    createConnection(dbConnection);
+    createConnection(dbConnection).then(e => {
+      this.seedDatabase();
+      console.log('COONECTED TO DB');
+    });
+  }
+
+  private seedDatabase() {
+    const command = new CommandService();
+    command.createBulk();
   }
 
   private initializeMiddlewares() {
@@ -63,7 +80,6 @@ class App {
 
   private initializeRoutes(routes: Routes[]) {
     routes.forEach(route => {
-      console.log(route);
       this.app.use('/api/v1', route.router);
     });
   }
