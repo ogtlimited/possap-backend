@@ -100,7 +100,10 @@ class EscortAndGuardServiceController {
       acceptedTacticalUnit.map(e => {
         tacticalSquad[e] = a[e]
       })
-      res.status(200).json({ data: tacticalSquad, message: 'police data' });
+      const filterTacticalSquad = tacticalSquad["DOPS FHQ ABUJA"][0].sub.filter(squad => {
+        return ["CTU", "SPU", "PMF", "EOD"].includes(squad["Name"])
+      })
+      res.status(200).json({ data: filterTacticalSquad, message: 'police data' });
     } catch (error) {
       next(error);
     }
