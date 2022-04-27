@@ -24,16 +24,16 @@ class PoliceExtractRoute implements Routes {
     this.router.get(`${this.path}/officers-extracts`, [officerMiddleware],  this.officersController.getOfficerExtracts);
 
     //get extract
-    this.router.post(`${this.path}/:id`, [], this.officersController.getExtractById);
+    this.router.get(`${this.path}/:id`, [], this.officersController.getExtractById);
 
     //create extract
-    this.router.post(`${this.path}/:id`, [validationMiddleware(PoliceExtractDto, 'body'), authMiddleware], this.officersController.createExtract);
+    this.router.post(`${this.path}`, [validationMiddleware(PoliceExtractDto, 'body'), authMiddleware], this.officersController.createExtract);
 
     //approve
     this.router.patch(`${this.path}/approve/:id`,[validationMiddleware(UpdatePoliceExtractDto, 'body'), officerMiddleware],  this.officersController.approveExtract);
 
     //reject
-    this.router.delete(`${this.path}/reject/:id`,[validationMiddleware(UpdatePoliceExtractDto, 'body'), officerMiddleware],  this.officersController.rejectExtract);
+    this.router.patch(`${this.path}/reject/:id`,[validationMiddleware(UpdatePoliceExtractDto, 'body'), officerMiddleware],  this.officersController.rejectExtract);
 
   }
 }
