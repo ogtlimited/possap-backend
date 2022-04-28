@@ -9,19 +9,19 @@ export class PoliceExtractDto implements IPoliceExtract{
   category: string;
 
   @IsString()
-  userType: string;
+  user_type: string;
 
   @IsString()
   court_affidavit: string;
+
+  @IsString()
+  affidavit_date_of_issuance: string;
 
   @IsString()
   incident_reported: boolean;
 
   @IsString()
   police_division_area: string;
-
-  @IsString()
-  rejection_reason: string;
 
   @IsString()
   police_division_lga: string;
