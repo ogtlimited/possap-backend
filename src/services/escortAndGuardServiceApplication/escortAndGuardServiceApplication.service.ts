@@ -23,16 +23,16 @@ class EscortAndGuardServiceApplicationService extends Repository<EscortAndGuardS
   }
 
   public async createEAG(payload: CreateEscortAndGuardServiceDto): Promise<EscortAndGuardServiceApplication> {
-    if (isEmpty(payload)) throw new HttpException(400, "Payload required");
+    if (isEmpty(payload)) throw new HttpException(400, 'Payload required');
     const createEAG: EscortAndGuardServiceApplication = await EscortAndGuardServiceApplicationEntity.create(payload);
     return createEAG;
   }
 
   public async deleteUser(eagId: number): Promise<EscortAndGuardServiceApplication> {
-    if (isEmpty(eagId)) throw new HttpException(400, "PD required");
+    if (isEmpty(eagId)) throw new HttpException(400, 'PD required');
 
     const findEAG: EscortAndGuardServiceApplication = await EscortAndGuardServiceApplicationEntity.findOne({ where: { id: eagId } });
-    if (!findEAG) throw new HttpException(404, "No record found");
+    if (!findEAG) throw new HttpException(404, 'No record found');
 
     await EscortAndGuardServiceApplicationEntity.delete({ id: eagId });
     return findEAG;
