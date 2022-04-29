@@ -1,0 +1,3888 @@
+{
+  "Error": false,
+  "ErrorCode": null,
+  "ResponseObject": {
+      "ReportRecords": [
+          {
+              "Name": "Gwagwalada",
+              "Code": "1",
+              "StateCode": "19"
+          },
+          {
+              "Name": "Kuje",
+              "Code": "2",
+              "StateCode": "19"
+          },
+          {
+              "Name": "Abaji",
+              "Code": "3",
+              "StateCode": "19"
+          },
+          {
+              "Name": "ABUJA Municipal Area Council",
+              "Code": "4",
+              "StateCode": "19"
+          },
+          {
+              "Name": "Bwari",
+              "Code": "5",
+              "StateCode": "19"
+          },
+          {
+              "Name": "Kwali",
+              "Code": "6",
+              "StateCode": "19"
+          },
+          {
+              "Name": "Aba North",
+              "Code": "7",
+              "StateCode": "32"
+          },
+          {
+              "Name": "Aba South",
+              "Code": "8",
+              "StateCode": "32"
+          },
+          {
+              "Name": "Arochukwu",
+              "Code": "9",
+              "StateCode": "32"
+          },
+          {
+              "Name": "Bende",
+              "Code": "10",
+              "StateCode": "32"
+          },
+          {
+              "Name": "Ikwuano",
+              "Code": "11",
+              "StateCode": "32"
+          },
+          {
+              "Name": "Isiala-Ngwa North",
+              "Code": "12",
+              "StateCode": "32"
+          },
+          {
+              "Name": "Isiala-Ngwa South",
+              "Code": "13",
+              "StateCode": "32"
+          },
+          {
+              "Name": "Isuikwato",
+              "Code": "14",
+              "StateCode": "32"
+          },
+          {
+              "Name": "Obi Ngwa",
+              "Code": "15",
+              "StateCode": "32"
+          },
+          {
+              "Name": "Ohafia",
+              "Code": "16",
+              "StateCode": "32"
+          },
+          {
+              "Name": "Osisioma NGWA",
+              "Code": "17",
+              "StateCode": "32"
+          },
+          {
+              "Name": "Ugwunagbo",
+              "Code": "19",
+              "StateCode": "32"
+          },
+          {
+              "Name": "Ukwa East",
+              "Code": "20",
+              "StateCode": "32"
+          },
+          {
+              "Name": "Ukwa West",
+              "Code": "21",
+              "StateCode": "32"
+          },
+          {
+              "Name": "Umuahia North",
+              "Code": "22",
+              "StateCode": "32"
+          },
+          {
+              "Name": "Umuahia South",
+              "Code": "23",
+              "StateCode": "32"
+          },
+          {
+              "Name": "Umu-NNeochi",
+              "Code": "24",
+              "StateCode": "32"
+          },
+          {
+              "Name": "Demsa",
+              "Code": "25",
+              "StateCode": "33"
+          },
+          {
+              "Name": "Fufore",
+              "Code": "26",
+              "StateCode": "33"
+          },
+          {
+              "Name": "Ganye",
+              "Code": "27",
+              "StateCode": "33"
+          },
+          {
+              "Name": "GIreI",
+              "Code": "28",
+              "StateCode": "33"
+          },
+          {
+              "Name": "Gombi",
+              "Code": "29",
+              "StateCode": "33"
+          },
+          {
+              "Name": "Guyuk",
+              "Code": "30",
+              "StateCode": "33"
+          },
+          {
+              "Name": "Hong",
+              "Code": "31",
+              "StateCode": "33"
+          },
+          {
+              "Name": "Jada",
+              "Code": "32",
+              "StateCode": "33"
+          },
+          {
+              "Name": "Lamurde",
+              "Code": "33",
+              "StateCode": "33"
+          },
+          {
+              "Name": "Madagali",
+              "Code": "34",
+              "StateCode": "33"
+          },
+          {
+              "Name": "Maiha",
+              "Code": "35",
+              "StateCode": "33"
+          },
+          {
+              "Name": "Mayo Belwa",
+              "Code": "36",
+              "StateCode": "33"
+          },
+          {
+              "Name": "Michika",
+              "Code": "37",
+              "StateCode": "33"
+          },
+          {
+              "Name": "Mubi North",
+              "Code": "38",
+              "StateCode": "33"
+          },
+          {
+              "Name": "Mubi South",
+              "Code": "39",
+              "StateCode": "33"
+          },
+          {
+              "Name": "Numan",
+              "Code": "40",
+              "StateCode": "33"
+          },
+          {
+              "Name": "Shelleng",
+              "Code": "41",
+              "StateCode": "33"
+          },
+          {
+              "Name": "Song",
+              "Code": "42",
+              "StateCode": "33"
+          },
+          {
+              "Name": "Toungo",
+              "Code": "43",
+              "StateCode": "33"
+          },
+          {
+              "Name": "Yola North",
+              "Code": "44",
+              "StateCode": "33"
+          },
+          {
+              "Name": "Yola South",
+              "Code": "45",
+              "StateCode": "33"
+          },
+          {
+              "Name": "Abak",
+              "Code": "46",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Eastern Obolo",
+              "Code": "47",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Eket",
+              "Code": "48",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Esit Eket",
+              "Code": "49",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Essien Udim",
+              "Code": "50",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Etim Ekpo",
+              "Code": "51",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Etinan",
+              "Code": "52",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Ibeno",
+              "Code": "53",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Ibesikpo Asutan",
+              "Code": "54",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Ibiono-Ibom",
+              "Code": "55",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Ika",
+              "Code": "56",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Ikono",
+              "Code": "57",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Ikot Abasi",
+              "Code": "58",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Ikot Ekpene",
+              "Code": "59",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Ini",
+              "Code": "60",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Itu",
+              "Code": "61",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Mbo",
+              "Code": "62",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Mkpat-Enin",
+              "Code": "63",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Nsit-Atai",
+              "Code": "64",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Nsit-Ibom",
+              "Code": "65",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Nsit-Ubium",
+              "Code": "66",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Obot Akara",
+              "Code": "67",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Okobo",
+              "Code": "68",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Onna",
+              "Code": "69",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Oron",
+              "Code": "70",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Oruk Anam",
+              "Code": "71",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Udung Uko",
+              "Code": "72",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Ukanafun",
+              "Code": "73",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Uruan",
+              "Code": "74",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Urue-Offong/Oruko",
+              "Code": "75",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Uyo",
+              "Code": "76",
+              "StateCode": "2"
+          },
+          {
+              "Name": "Aguata",
+              "Code": "77",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Anambra East",
+              "Code": "78",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Anambra West",
+              "Code": "79",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Anaocha",
+              "Code": "80",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Awka North",
+              "Code": "81",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Awka South",
+              "Code": "82",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Ayamelum",
+              "Code": "83",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Dunukofia",
+              "Code": "84",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Ekwusigo",
+              "Code": "85",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Idemili North",
+              "Code": "86",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Idemili south",
+              "Code": "87",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Ihiala",
+              "Code": "88",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Njikoka",
+              "Code": "89",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Nnewi North",
+              "Code": "90",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Nnewi South",
+              "Code": "91",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Ogbaru",
+              "Code": "92",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Onitsha North",
+              "Code": "93",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Onitsha South",
+              "Code": "94",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Orumba North",
+              "Code": "95",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Orumba South",
+              "Code": "96",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Oyi",
+              "Code": "97",
+              "StateCode": "1"
+          },
+          {
+              "Name": "Alkaleri",
+              "Code": "98",
+              "StateCode": "11"
+          },
+          {
+              "Name": "Bauchi",
+              "Code": "99",
+              "StateCode": "11"
+          },
+          {
+              "Name": "Bogoro",
+              "Code": "100",
+              "StateCode": "11"
+          },
+          {
+              "Name": "DambaM",
+              "Code": "101",
+              "StateCode": "11"
+          },
+          {
+              "Name": "Darazo",
+              "Code": "102",
+              "StateCode": "11"
+          },
+          {
+              "Name": "Dass",
+              "Code": "103",
+              "StateCode": "11"
+          },
+          {
+              "Name": "Ganjuwa",
+              "Code": "104",
+              "StateCode": "11"
+          },
+          {
+              "Name": "Giade",
+              "Code": "105",
+              "StateCode": "11"
+          },
+          {
+              "Name": "Itas/Gadau",
+              "Code": "106",
+              "StateCode": "11"
+          },
+          {
+              "Name": "Jama'are",
+              "Code": "107",
+              "StateCode": "11"
+          },
+          {
+              "Name": "Katagum",
+              "Code": "108",
+              "StateCode": "11"
+          },
+          {
+              "Name": "Kirfi",
+              "Code": "109",
+              "StateCode": "11"
+          },
+          {
+              "Name": "Misau",
+              "Code": "110",
+              "StateCode": "11"
+          },
+          {
+              "Name": "Ningi",
+              "Code": "111",
+              "StateCode": "11"
+          },
+          {
+              "Name": "Shira",
+              "Code": "112",
+              "StateCode": "11"
+          },
+          {
+              "Name": "Tafawa Balewa",
+              "Code": "113",
+              "StateCode": "11"
+          },
+          {
+              "Name": "Toro",
+              "Code": "114",
+              "StateCode": "11"
+          },
+          {
+              "Name": "Warji",
+              "Code": "115",
+              "StateCode": "11"
+          },
+          {
+              "Name": "Zaki",
+              "Code": "116",
+              "StateCode": "11"
+          },
+          {
+              "Name": "Brass",
+              "Code": "117",
+              "StateCode": "12"
+          },
+          {
+              "Name": "Ekeremor",
+              "Code": "118",
+              "StateCode": "12"
+          },
+          {
+              "Name": "Kolokuma/Opokuma",
+              "Code": "119",
+              "StateCode": "12"
+          },
+          {
+              "Name": "Nembe",
+              "Code": "120",
+              "StateCode": "12"
+          },
+          {
+              "Name": "Ogbia",
+              "Code": "121",
+              "StateCode": "12"
+          },
+          {
+              "Name": "Sagbama",
+              "Code": "122",
+              "StateCode": "12"
+          },
+          {
+              "Name": "Southern Ijaw",
+              "Code": "123",
+              "StateCode": "12"
+          },
+          {
+              "Name": "YenAgoa",
+              "Code": "124",
+              "StateCode": "12"
+          },
+          {
+              "Name": "Ado",
+              "Code": "125",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Agatu",
+              "Code": "126",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Apa",
+              "Code": "127",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Buruku",
+              "Code": "128",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Gboko",
+              "Code": "129",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Guma",
+              "Code": "130",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Gwer East",
+              "Code": "131",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Gwer West",
+              "Code": "132",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Katsina-Ala",
+              "Code": "133",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Konshisha",
+              "Code": "134",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Kwande",
+              "Code": "135",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Logo",
+              "Code": "136",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Makurdi",
+              "Code": "137",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Obi",
+              "Code": "138",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Ogbadibo",
+              "Code": "139",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Oju",
+              "Code": "140",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Okpokwu",
+              "Code": "141",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Ohimini",
+              "Code": "142",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Otukpo",
+              "Code": "143",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Tarka",
+              "Code": "144",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Ukum",
+              "Code": "145",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Ushongo",
+              "Code": "146",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Vandeikya",
+              "Code": "147",
+              "StateCode": "34"
+          },
+          {
+              "Name": "Abadam",
+              "Code": "148",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Askira/Uba",
+              "Code": "149",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Bama",
+              "Code": "150",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Bayo",
+              "Code": "151",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Biu",
+              "Code": "152",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Chibok",
+              "Code": "153",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Damboa",
+              "Code": "154",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Dikwa",
+              "Code": "155",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Gubio",
+              "Code": "156",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Guzamala",
+              "Code": "157",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Gwoza",
+              "Code": "158",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Hawul",
+              "Code": "159",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Jere",
+              "Code": "160",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Kaga",
+              "Code": "161",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Kala/Balge",
+              "Code": "162",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Konduga",
+              "Code": "163",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Kukawa",
+              "Code": "164",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Kwaya Kusar",
+              "Code": "165",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Mafa",
+              "Code": "166",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Magumeri",
+              "Code": "167",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Maiduguri",
+              "Code": "168",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Marte",
+              "Code": "169",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Mobbar",
+              "Code": "170",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Monguno",
+              "Code": "171",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Ngala",
+              "Code": "172",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Nganzai",
+              "Code": "173",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Shani",
+              "Code": "174",
+              "StateCode": "35"
+          },
+          {
+              "Name": "Akpabuyo",
+              "Code": "175",
+              "StateCode": "3"
+          },
+          {
+              "Name": "Odukpani",
+              "Code": "176",
+              "StateCode": "3"
+          },
+          {
+              "Name": "Akamkpa",
+              "Code": "177",
+              "StateCode": "3"
+          },
+          {
+              "Name": "Biase",
+              "Code": "178",
+              "StateCode": "3"
+          },
+          {
+              "Name": "Abi",
+              "Code": "179",
+              "StateCode": "3"
+          },
+          {
+              "Name": "Ikom",
+              "Code": "180",
+              "StateCode": "3"
+          },
+          {
+              "Name": "YakuRR",
+              "Code": "181",
+              "StateCode": "3"
+          },
+          {
+              "Name": "Obubra",
+              "Code": "182",
+              "StateCode": "3"
+          },
+          {
+              "Name": "Boki",
+              "Code": "183",
+              "StateCode": "3"
+          },
+          {
+              "Name": "Ogoja",
+              "Code": "184",
+              "StateCode": "3"
+          },
+          {
+              "Name": "Yala",
+              "Code": "185",
+              "StateCode": "3"
+          },
+          {
+              "Name": "Obanliku",
+              "Code": "186",
+              "StateCode": "3"
+          },
+          {
+              "Name": "Obudu",
+              "Code": "187",
+              "StateCode": "3"
+          },
+          {
+              "Name": "Calabar South",
+              "Code": "188",
+              "StateCode": "3"
+          },
+          {
+              "Name": "Etung",
+              "Code": "189",
+              "StateCode": "3"
+          },
+          {
+              "Name": "BekwaRra",
+              "Code": "190",
+              "StateCode": "3"
+          },
+          {
+              "Name": "Bakassi",
+              "Code": "191",
+              "StateCode": "3"
+          },
+          {
+              "Name": "Calabar Municipal",
+              "Code": "192",
+              "StateCode": "3"
+          },
+          {
+              "Name": "Oshimili South",
+              "Code": "193",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Aniocha North",
+              "Code": "194",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Aniocha South",
+              "Code": "195",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Ika South",
+              "Code": "196",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Ika North East",
+              "Code": "197",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Ndokwa West",
+              "Code": "198",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Ndokwa East",
+              "Code": "199",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Isoko south",
+              "Code": "200",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Isoko North",
+              "Code": "201",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Bomadi",
+              "Code": "202",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Burutu",
+              "Code": "203",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Ughelli South",
+              "Code": "204",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Ughelli North",
+              "Code": "205",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Ethiope West",
+              "Code": "206",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Ethiope East",
+              "Code": "207",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Sapele",
+              "Code": "208",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Okpe",
+              "Code": "209",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Warri North",
+              "Code": "210",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Warri South",
+              "Code": "211",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Uvwie",
+              "Code": "212",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Udu",
+              "Code": "213",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Warri South West",
+              "Code": "214",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Ukwuani",
+              "Code": "215",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Oshimili North",
+              "Code": "216",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Patani",
+              "Code": "217",
+              "StateCode": "4"
+          },
+          {
+              "Name": "Afikpo South",
+              "Code": "218",
+              "StateCode": "37"
+          },
+          {
+              "Name": "Afikpo North",
+              "Code": "219",
+              "StateCode": "37"
+          },
+          {
+              "Name": "Onicha",
+              "Code": "220",
+              "StateCode": "37"
+          },
+          {
+              "Name": "Ohaozara",
+              "Code": "221",
+              "StateCode": "37"
+          },
+          {
+              "Name": "Abakaliki",
+              "Code": "222",
+              "StateCode": "37"
+          },
+          {
+              "Name": "Ishielu",
+              "Code": "223",
+              "StateCode": "37"
+          },
+          {
+              "Name": "Ikwo",
+              "Code": "224",
+              "StateCode": "37"
+          },
+          {
+              "Name": "Ezza North",
+              "Code": "225",
+              "StateCode": "37"
+          },
+          {
+              "Name": "Ezza South",
+              "Code": "226",
+              "StateCode": "37"
+          },
+          {
+              "Name": "Ohaukwu",
+              "Code": "227",
+              "StateCode": "37"
+          },
+          {
+              "Name": "Ebonyi",
+              "Code": "228",
+              "StateCode": "37"
+          },
+          {
+              "Name": "Ivo",
+              "Code": "229",
+              "StateCode": "37"
+          },
+          {
+              "Name": "Esan North East",
+              "Code": "230",
+              "StateCode": "5"
+          },
+          {
+              "Name": "Esan Central",
+              "Code": "231",
+              "StateCode": "5"
+          },
+          {
+              "Name": "Esan West",
+              "Code": "232",
+              "StateCode": "5"
+          },
+          {
+              "Name": "Egor",
+              "Code": "233",
+              "StateCode": "5"
+          },
+          {
+              "Name": "Ikpoba Okha",
+              "Code": "234",
+              "StateCode": "5"
+          },
+          {
+              "Name": "Etsako Central",
+              "Code": "236",
+              "StateCode": "5"
+          },
+          {
+              "Name": "Igueben",
+              "Code": "237",
+              "StateCode": "5"
+          },
+          {
+              "Name": "Oredo",
+              "Code": "238",
+              "StateCode": "5"
+          },
+          {
+              "Name": "Ovia South-West",
+              "Code": "239",
+              "StateCode": "5"
+          },
+          {
+              "Name": "Ovia North-East",
+              "Code": "240",
+              "StateCode": "5"
+          },
+          {
+              "Name": "Orhionmwon",
+              "Code": "241",
+              "StateCode": "5"
+          },
+          {
+              "Name": "Uhunmwonde",
+              "Code": "242",
+              "StateCode": "5"
+          },
+          {
+              "Name": "Etsako East",
+              "Code": "243",
+              "StateCode": "5"
+          },
+          {
+              "Name": "Esan South East",
+              "Code": "244",
+              "StateCode": "5"
+          },
+          {
+              "Name": "Ado Ekiti",
+              "Code": "245",
+              "StateCode": "30"
+          },
+          {
+              "Name": "Ekiti East",
+              "Code": "246",
+              "StateCode": "30"
+          },
+          {
+              "Name": "Ekiti West",
+              "Code": "247",
+              "StateCode": "30"
+          },
+          {
+              "Name": "Emure",
+              "Code": "248",
+              "StateCode": "30"
+          },
+          {
+              "Name": "Ekiti South-West",
+              "Code": "249",
+              "StateCode": "30"
+          },
+          {
+              "Name": "Ikere",
+              "Code": "250",
+              "StateCode": "30"
+          },
+          {
+              "Name": "Irepodun/Ifelodun",
+              "Code": "251",
+              "StateCode": "30"
+          },
+          {
+              "Name": "Ijero",
+              "Code": "252",
+              "StateCode": "30"
+          },
+          {
+              "Name": "Ido Osi",
+              "Code": "253",
+              "StateCode": "30"
+          },
+          {
+              "Name": "Oye",
+              "Code": "254",
+              "StateCode": "30"
+          },
+          {
+              "Name": "Ikole",
+              "Code": "255",
+              "StateCode": "30"
+          },
+          {
+              "Name": "Moba",
+              "Code": "256",
+              "StateCode": "30"
+          },
+          {
+              "Name": "Gbonyin",
+              "Code": "257",
+              "StateCode": "30"
+          },
+          {
+              "Name": "Efon",
+              "Code": "258",
+              "StateCode": "30"
+          },
+          {
+              "Name": "Ise/Orun",
+              "Code": "259",
+              "StateCode": "30"
+          },
+          {
+              "Name": "Ilejemeje",
+              "Code": "260",
+              "StateCode": "30"
+          },
+          {
+              "Name": "Enugu South",
+              "Code": "261",
+              "StateCode": "8"
+          },
+          {
+              "Name": "Igbo Eze South",
+              "Code": "262",
+              "StateCode": "8"
+          },
+          {
+              "Name": "Enugu North",
+              "Code": "263",
+              "StateCode": "8"
+          },
+          {
+              "Name": "Nkanu West",
+              "Code": "264",
+              "StateCode": "8"
+          },
+          {
+              "Name": "AWgu",
+              "Code": "265",
+              "StateCode": "8"
+          },
+          {
+              "Name": "Oji River",
+              "Code": "266",
+              "StateCode": "8"
+          },
+          {
+              "Name": "Ezeagu",
+              "Code": "267",
+              "StateCode": "8"
+          },
+          {
+              "Name": "Igbo Eze North",
+              "Code": "268",
+              "StateCode": "8"
+          },
+          {
+              "Name": "Isi Uzo",
+              "Code": "269",
+              "StateCode": "8"
+          },
+          {
+              "Name": "Nsukka",
+              "Code": "270",
+              "StateCode": "8"
+          },
+          {
+              "Name": "Igbo-ETiti",
+              "Code": "271",
+              "StateCode": "8"
+          },
+          {
+              "Name": "Uzo-Uwani",
+              "Code": "272",
+              "StateCode": "8"
+          },
+          {
+              "Name": "Enugu East",
+              "Code": "273",
+              "StateCode": "8"
+          },
+          {
+              "Name": "Aninri",
+              "Code": "274",
+              "StateCode": "8"
+          },
+          {
+              "Name": "Nkanu East",
+              "Code": "275",
+              "StateCode": "8"
+          },
+          {
+              "Name": "Udenu",
+              "Code": "276",
+              "StateCode": "8"
+          },
+          {
+              "Name": "Akko",
+              "Code": "277",
+              "StateCode": "24"
+          },
+          {
+              "Name": "Balanga",
+              "Code": "278",
+              "StateCode": "24"
+          },
+          {
+              "Name": "Billiri",
+              "Code": "279",
+              "StateCode": "24"
+          },
+          {
+              "Name": "Dukku",
+              "Code": "280",
+              "StateCode": "24"
+          },
+          {
+              "Name": "Kaltungo",
+              "Code": "281",
+              "StateCode": "24"
+          },
+          {
+              "Name": "Kwami",
+              "Code": "282",
+              "StateCode": "24"
+          },
+          {
+              "Name": "Shongom",
+              "Code": "283",
+              "StateCode": "24"
+          },
+          {
+              "Name": "Funakaye",
+              "Code": "284",
+              "StateCode": "24"
+          },
+          {
+              "Name": "Gombe",
+              "Code": "285",
+              "StateCode": "24"
+          },
+          {
+              "Name": "Nafada",
+              "Code": "286",
+              "StateCode": "24"
+          },
+          {
+              "Name": "Yamaltu/Deba",
+              "Code": "287",
+              "StateCode": "24"
+          },
+          {
+              "Name": "Aboh Mbaise",
+              "Code": "288",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Ahiazu Mbaise",
+              "Code": "289",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Ehime Mbano",
+              "Code": "290",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Ezinihitte",
+              "Code": "291",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Ideato North",
+              "Code": "292",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Ideato South",
+              "Code": "293",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Ihitte/Uboma",
+              "Code": "294",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Ikeduru",
+              "Code": "295",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Isiala Mbano",
+              "Code": "296",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Isu",
+              "Code": "297",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Mbaitoli",
+              "Code": "298",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Onuimo",
+              "Code": "299",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Ngor Okpala",
+              "Code": "300",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Njaba",
+              "Code": "301",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Nwangele",
+              "Code": "302",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Nkwerre",
+              "Code": "303",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Obowo",
+              "Code": "304",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Oguta",
+              "Code": "305",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Ohaji/Egbema",
+              "Code": "306",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Okigwe",
+              "Code": "307",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Orlu",
+              "Code": "308",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Orsu",
+              "Code": "309",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Oru East",
+              "Code": "310",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Oru West",
+              "Code": "311",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Owerri Municipal",
+              "Code": "312",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Owerri North",
+              "Code": "313",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Owerri West",
+              "Code": "314",
+              "StateCode": "18"
+          },
+          {
+              "Name": "Auyo",
+              "Code": "315",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Babura",
+              "Code": "316",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Birni Kudu",
+              "Code": "317",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Biriniwa",
+              "Code": "318",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Buji",
+              "Code": "319",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Dutse",
+              "Code": "320",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Gagarawa",
+              "Code": "321",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Garki",
+              "Code": "322",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Gumel",
+              "Code": "323",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Guri",
+              "Code": "324",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Gwaram",
+              "Code": "325",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Gwiwa",
+              "Code": "326",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Hadejia",
+              "Code": "327",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Jahun",
+              "Code": "328",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Kafin Hausa",
+              "Code": "329",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Kaugama",
+              "Code": "330",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Kiri Kasamma",
+              "Code": "331",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Kiyawa",
+              "Code": "332",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Maigatari",
+              "Code": "333",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Malam Madori",
+              "Code": "334",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Miga",
+              "Code": "335",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Ringim",
+              "Code": "336",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Roni",
+              "Code": "337",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Sule Tankarkar",
+              "Code": "338",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Taura",
+              "Code": "339",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Yankwashi",
+              "Code": "340",
+              "StateCode": "13"
+          },
+          {
+              "Name": "BirniN Gwari",
+              "Code": "341",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Chikun",
+              "Code": "342",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Giwa",
+              "Code": "343",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Igabi",
+              "Code": "344",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Ikara",
+              "Code": "345",
+              "StateCode": "22"
+          },
+          {
+              "Name": "jaba",
+              "Code": "346",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Jema'a",
+              "Code": "347",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Kachia",
+              "Code": "348",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Kaduna North",
+              "Code": "349",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Kaduna South",
+              "Code": "350",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Kagarko",
+              "Code": "351",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Kajuru",
+              "Code": "352",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Kaura",
+              "Code": "353",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Kauru",
+              "Code": "354",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Kubau",
+              "Code": "355",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Kudan",
+              "Code": "356",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Lere",
+              "Code": "357",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Makarfi",
+              "Code": "358",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Sabon Gari",
+              "Code": "359",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Sanga",
+              "Code": "360",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Soba",
+              "Code": "361",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Zango Kataf",
+              "Code": "362",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Zaria",
+              "Code": "363",
+              "StateCode": "22"
+          },
+          {
+              "Name": "Ajingi",
+              "Code": "364",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Albasu",
+              "Code": "365",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Bagwai",
+              "Code": "366",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Bebeji",
+              "Code": "367",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Bichi",
+              "Code": "368",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Bunkure",
+              "Code": "369",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Dala",
+              "Code": "370",
+              "StateCode": "7"
+          },
+          {
+              "Name": "DaNbatta",
+              "Code": "371",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Dawakin Kudu",
+              "Code": "372",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Dawakin Tofa",
+              "Code": "373",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Doguwa",
+              "Code": "374",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Fagge",
+              "Code": "375",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Gabasawa",
+              "Code": "376",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Garko",
+              "Code": "377",
+              "StateCode": "7"
+          },
+          {
+              "Name": "GaruN Mallam",
+              "Code": "378",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Gaya",
+              "Code": "380",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Gezawa",
+              "Code": "381",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Gwale",
+              "Code": "382",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Gwarzo",
+              "Code": "383",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Kabo",
+              "Code": "384",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Kano Municipal",
+              "Code": "385",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Karaye",
+              "Code": "386",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Kibiya",
+              "Code": "387",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Kiru",
+              "Code": "388",
+              "StateCode": "7"
+          },
+          {
+              "Name": "kumbotso",
+              "Code": "389",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Kunchi",
+              "Code": "390",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Kura",
+              "Code": "391",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Madobi",
+              "Code": "392",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Makoda",
+              "Code": "393",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Minjibir",
+              "Code": "394",
+              "StateCode": "7"
+          },
+          {
+              "Name": "NasSarawa",
+              "Code": "395",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Rano",
+              "Code": "396",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Rimin Gado",
+              "Code": "397",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Rogo",
+              "Code": "398",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Shanono",
+              "Code": "399",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Sumaila",
+              "Code": "400",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Takai",
+              "Code": "401",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Tarauni",
+              "Code": "402",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Tofa",
+              "Code": "403",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Tsanyawa",
+              "Code": "404",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Tudun Wada",
+              "Code": "405",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Ungogo",
+              "Code": "406",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Warawa",
+              "Code": "407",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Wudil",
+              "Code": "408",
+              "StateCode": "7"
+          },
+          {
+              "Name": "Bakori",
+              "Code": "409",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Batagarawa",
+              "Code": "410",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Batsari",
+              "Code": "411",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Baure",
+              "Code": "412",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Bindawa",
+              "Code": "413",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Charanchi",
+              "Code": "414",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Dandume",
+              "Code": "415",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Danja",
+              "Code": "416",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Dan Musa",
+              "Code": "417",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Daura",
+              "Code": "418",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Dutsi",
+              "Code": "419",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Dutsin-Ma",
+              "Code": "420",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Faskari",
+              "Code": "421",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Funtua",
+              "Code": "422",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Ingawa",
+              "Code": "423",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Jibia",
+              "Code": "424",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Kafur",
+              "Code": "425",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Kaita",
+              "Code": "426",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Kankara",
+              "Code": "427",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Kankia",
+              "Code": "428",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Katsina",
+              "Code": "429",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Kurfi",
+              "Code": "430",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Kusada",
+              "Code": "431",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Mai'Adua",
+              "Code": "432",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Malumfashi",
+              "Code": "433",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Mani",
+              "Code": "434",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Mashi",
+              "Code": "435",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Matazu",
+              "Code": "436",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Musawa",
+              "Code": "437",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Rimi",
+              "Code": "438",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Sabuwa",
+              "Code": "439",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Safana",
+              "Code": "440",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Sandamu",
+              "Code": "441",
+              "StateCode": "9"
+          },
+          {
+              "Name": "Zango",
+              "Code": "442",
+              "StateCode": "9"
+          },
+          {
+              "Name": "AlIero",
+              "Code": "443",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Arewa Dandi",
+              "Code": "444",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Argungu",
+              "Code": "445",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Augie",
+              "Code": "446",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Bagudo",
+              "Code": "447",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Birnin Kebbi",
+              "Code": "448",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Bunza",
+              "Code": "449",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Dandi",
+              "Code": "450",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Fakai",
+              "Code": "451",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Gwandu",
+              "Code": "452",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Jega",
+              "Code": "453",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Kalgo",
+              "Code": "454",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Koko/Besse",
+              "Code": "455",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Maiyama",
+              "Code": "456",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Ngaski",
+              "Code": "457",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Sakaba",
+              "Code": "458",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Shanga",
+              "Code": "459",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Suru",
+              "Code": "460",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Wasagu/Danko",
+              "Code": "461",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Yauri",
+              "Code": "462",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Zuru",
+              "Code": "463",
+              "StateCode": "25"
+          },
+          {
+              "Name": "Adavi",
+              "Code": "464",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Ajaokuta",
+              "Code": "465",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Ankpa",
+              "Code": "466",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Bassa",
+              "Code": "467",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Dekina",
+              "Code": "468",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Ibaji",
+              "Code": "469",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Idah",
+              "Code": "470",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Igalamela Odolu",
+              "Code": "471",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Ijumu",
+              "Code": "472",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Kabba/Bunu",
+              "Code": "473",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Koton Karfe",
+              "Code": "474",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Lokoja",
+              "Code": "475",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Mopa Muro",
+              "Code": "476",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Ofu",
+              "Code": "477",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Ogori-Magongo",
+              "Code": "478",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Okehi",
+              "Code": "479",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Okene",
+              "Code": "480",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Olamaboro",
+              "Code": "481",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Omala",
+              "Code": "482",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Yagba East",
+              "Code": "483",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Yagba West",
+              "Code": "484",
+              "StateCode": "15"
+          },
+          {
+              "Name": "Asa",
+              "Code": "485",
+              "StateCode": "26"
+          },
+          {
+              "Name": "Baruten",
+              "Code": "486",
+              "StateCode": "26"
+          },
+          {
+              "Name": "Edu",
+              "Code": "487",
+              "StateCode": "26"
+          },
+          {
+              "Name": "Ekiti",
+              "Code": "488",
+              "StateCode": "26"
+          },
+          {
+              "Name": "Ifelodun",
+              "Code": "489",
+              "StateCode": "26"
+          },
+          {
+              "Name": "Ilorin East",
+              "Code": "490",
+              "StateCode": "26"
+          },
+          {
+              "Name": "Ilorin West",
+              "Code": "491",
+              "StateCode": "26"
+          },
+          {
+              "Name": "Irepodun",
+              "Code": "492",
+              "StateCode": "26"
+          },
+          {
+              "Name": "Isin",
+              "Code": "493",
+              "StateCode": "26"
+          },
+          {
+              "Name": "Kaiama",
+              "Code": "494",
+              "StateCode": "26"
+          },
+          {
+              "Name": "Moro",
+              "Code": "495",
+              "StateCode": "26"
+          },
+          {
+              "Name": "Offa",
+              "Code": "496",
+              "StateCode": "26"
+          },
+          {
+              "Name": "Oke Ero",
+              "Code": "497",
+              "StateCode": "26"
+          },
+          {
+              "Name": "Oyun",
+              "Code": "498",
+              "StateCode": "26"
+          },
+          {
+              "Name": "Pategi",
+              "Code": "499",
+              "StateCode": "26"
+          },
+          {
+              "Name": "Agege",
+              "Code": "500",
+              "StateCode": "27"
+          },
+          {
+              "Name": "Ajeromi-Ifelodun",
+              "Code": "501",
+              "StateCode": "27"
+          },
+          {
+              "Name": "Alimosho",
+              "Code": "502",
+              "StateCode": "27"
+          },
+          {
+              "Name": "Amuwo-Odofin",
+              "Code": "503",
+              "StateCode": "27"
+          },
+          {
+              "Name": "Apapa",
+              "Code": "504",
+              "StateCode": "27"
+          },
+          {
+              "Name": "Badagry",
+              "Code": "505",
+              "StateCode": "27"
+          },
+          {
+              "Name": "Epe",
+              "Code": "506",
+              "StateCode": "27"
+          },
+          {
+              "Name": "Eti Osa",
+              "Code": "507",
+              "StateCode": "27"
+          },
+          {
+              "Name": "Ibeju-Lekki",
+              "Code": "508",
+              "StateCode": "27"
+          },
+          {
+              "Name": "Ifako-Ijaiye",
+              "Code": "509",
+              "StateCode": "27"
+          },
+          {
+              "Name": "Ikeja",
+              "Code": "510",
+              "StateCode": "27"
+          },
+          {
+              "Name": "Ikorodu",
+              "Code": "511",
+              "StateCode": "27"
+          },
+          {
+              "Name": "Kosofe",
+              "Code": "512",
+              "StateCode": "27"
+          },
+          {
+              "Name": "Lagos Island",
+              "Code": "513",
+              "StateCode": "27"
+          },
+          {
+              "Name": "Lagos Mainland",
+              "Code": "514",
+              "StateCode": "27"
+          },
+          {
+              "Name": "Mushin",
+              "Code": "515",
+              "StateCode": "27"
+          },
+          {
+              "Name": "Ojo",
+              "Code": "516",
+              "StateCode": "27"
+          },
+          {
+              "Name": "Oshodi-Isolo",
+              "Code": "517",
+              "StateCode": "27"
+          },
+          {
+              "Name": "Shomolu",
+              "Code": "518",
+              "StateCode": "27"
+          },
+          {
+              "Name": "Surulere",
+              "Code": "519",
+              "StateCode": "27"
+          },
+          {
+              "Name": "Akwanga",
+              "Code": "520",
+              "StateCode": "28"
+          },
+          {
+              "Name": "Awe",
+              "Code": "521",
+              "StateCode": "28"
+          },
+          {
+              "Name": "Doma",
+              "Code": "522",
+              "StateCode": "28"
+          },
+          {
+              "Name": "Karu",
+              "Code": "523",
+              "StateCode": "28"
+          },
+          {
+              "Name": "Keana",
+              "Code": "524",
+              "StateCode": "28"
+          },
+          {
+              "Name": "Keffi",
+              "Code": "525",
+              "StateCode": "28"
+          },
+          {
+              "Name": "Kokona",
+              "Code": "526",
+              "StateCode": "28"
+          },
+          {
+              "Name": "Lafia",
+              "Code": "527",
+              "StateCode": "28"
+          },
+          {
+              "Name": "Nasarawa",
+              "Code": "528",
+              "StateCode": "28"
+          },
+          {
+              "Name": "Nasarawa EgGon",
+              "Code": "529",
+              "StateCode": "28"
+          },
+          {
+              "Name": "Obi",
+              "Code": "530",
+              "StateCode": "28"
+          },
+          {
+              "Name": "Toto",
+              "Code": "531",
+              "StateCode": "28"
+          },
+          {
+              "Name": "Wamba",
+              "Code": "532",
+              "StateCode": "28"
+          },
+          {
+              "Name": "Agaie",
+              "Code": "533",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Agwara",
+              "Code": "534",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Bida",
+              "Code": "535",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Borgu",
+              "Code": "536",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Bosso",
+              "Code": "537",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Chanchaga",
+              "Code": "538",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Edati",
+              "Code": "539",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Gbako",
+              "Code": "540",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Gurara",
+              "Code": "541",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Katcha",
+              "Code": "542",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Kontagora",
+              "Code": "543",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Lapai",
+              "Code": "544",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Lavun",
+              "Code": "545",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Magama",
+              "Code": "546",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Mariga",
+              "Code": "547",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Mashegu",
+              "Code": "548",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Mokwa",
+              "Code": "549",
+              "StateCode": "16"
+          },
+          {
+              "Name": "MUNya",
+              "Code": "550",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Paikoro",
+              "Code": "551",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Rafi",
+              "Code": "552",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Rijau",
+              "Code": "553",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Shiroro",
+              "Code": "554",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Suleja",
+              "Code": "555",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Tafa",
+              "Code": "556",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Wushishi",
+              "Code": "557",
+              "StateCode": "16"
+          },
+          {
+              "Name": "Abeokuta North",
+              "Code": "558",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Abeokuta South",
+              "Code": "559",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Ado-Odo/Ota",
+              "Code": "560",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Egbado North",
+              "Code": "561",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Egbado South",
+              "Code": "562",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Ewekoro",
+              "Code": "563",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Ifo",
+              "Code": "564",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Ijebu East",
+              "Code": "565",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Ijebu North",
+              "Code": "566",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Ijebu North East",
+              "Code": "567",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Ijebu Ode",
+              "Code": "568",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Ikenne",
+              "Code": "569",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Imeko Afon",
+              "Code": "570",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Ipokia",
+              "Code": "571",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Obafemi Owode",
+              "Code": "572",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Ogun Waterside",
+              "Code": "573",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Odeda",
+              "Code": "574",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Odogbolu",
+              "Code": "575",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Remo North",
+              "Code": "576",
+              "StateCode": "36"
+          },
+          {
+              "Name": "SagamU",
+              "Code": "577",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Akoko North-East",
+              "Code": "578",
+              "StateCode": "20"
+          },
+          {
+              "Name": "Akoko North-West",
+              "Code": "579",
+              "StateCode": "20"
+          },
+          {
+              "Name": "Akoko South-East",
+              "Code": "580",
+              "StateCode": "20"
+          },
+          {
+              "Name": "Akoko South-West",
+              "Code": "581",
+              "StateCode": "20"
+          },
+          {
+              "Name": "Akure North",
+              "Code": "582",
+              "StateCode": "20"
+          },
+          {
+              "Name": "Akure South",
+              "Code": "583",
+              "StateCode": "20"
+          },
+          {
+              "Name": "Ese Odo",
+              "Code": "584",
+              "StateCode": "20"
+          },
+          {
+              "Name": "Idanre",
+              "Code": "585",
+              "StateCode": "20"
+          },
+          {
+              "Name": "Ifedore",
+              "Code": "586",
+              "StateCode": "20"
+          },
+          {
+              "Name": "Ilaje",
+              "Code": "587",
+              "StateCode": "20"
+          },
+          {
+              "Name": "Ile Oluji/Okeigbo",
+              "Code": "588",
+              "StateCode": "20"
+          },
+          {
+              "Name": "Irele",
+              "Code": "590",
+              "StateCode": "20"
+          },
+          {
+              "Name": "Odigbo",
+              "Code": "591",
+              "StateCode": "20"
+          },
+          {
+              "Name": "Okitipupa",
+              "Code": "592",
+              "StateCode": "20"
+          },
+          {
+              "Name": "Ondo East",
+              "Code": "593",
+              "StateCode": "20"
+          },
+          {
+              "Name": "Ondo West",
+              "Code": "594",
+              "StateCode": "20"
+          },
+          {
+              "Name": "Ose",
+              "Code": "595",
+              "StateCode": "20"
+          },
+          {
+              "Name": "Owo",
+              "Code": "596",
+              "StateCode": "20"
+          },
+          {
+              "Name": "ayedaade",
+              "Code": "597",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Ayedire",
+              "Code": "598",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Atakunmosa East",
+              "Code": "599",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Atakunmosa West",
+              "Code": "600",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Boluwaduro",
+              "Code": "601",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Boripe",
+              "Code": "602",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Ede North",
+              "Code": "603",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Ede South",
+              "Code": "604",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Egbedore",
+              "Code": "605",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Ejigbo",
+              "Code": "606",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Ife Central",
+              "Code": "607",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Ife East",
+              "Code": "608",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Ife North",
+              "Code": "609",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Ife South",
+              "Code": "610",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Ifedayo",
+              "Code": "611",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Ifelodun",
+              "Code": "612",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Ila",
+              "Code": "613",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Ilesa East",
+              "Code": "614",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Ilesa West",
+              "Code": "615",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Irepodun",
+              "Code": "616",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Irewole",
+              "Code": "617",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Isokan",
+              "Code": "618",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Iwo",
+              "Code": "619",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Obokun",
+              "Code": "620",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Odo Otin",
+              "Code": "621",
+              "StateCode": "21"
+          },
+          {
+              "Name": "OlaOluwa",
+              "Code": "622",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Olorunda",
+              "Code": "623",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Oriade",
+              "Code": "624",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Orolu",
+              "Code": "625",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Osogbo",
+              "Code": "626",
+              "StateCode": "21"
+          },
+          {
+              "Name": "Afijio",
+              "Code": "627",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Akinyele",
+              "Code": "628",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Atiba",
+              "Code": "629",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Atisbo",
+              "Code": "630",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Egbeda",
+              "Code": "631",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Ibadan North-East",
+              "Code": "632",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Ibadan North",
+              "Code": "633",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Ibadan North-West",
+              "Code": "634",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Ibadan South-East",
+              "Code": "635",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Ibadan South-West",
+              "Code": "636",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Ibarapa Central",
+              "Code": "637",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Ibarapa East",
+              "Code": "638",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Ibarapa North",
+              "Code": "639",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Ido",
+              "Code": "640",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Irepo",
+              "Code": "641",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Iseyin",
+              "Code": "642",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Itesiwaju",
+              "Code": "643",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Iwajowa",
+              "Code": "644",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Kajola",
+              "Code": "645",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Lagelu",
+              "Code": "646",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Ogbmosho South",
+              "Code": "647",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Ogo Oluwa",
+              "Code": "648",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Olorunsogo",
+              "Code": "649",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Oluyole",
+              "Code": "650",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Ona Ara",
+              "Code": "651",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Orelope",
+              "Code": "652",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Ori Ire",
+              "Code": "653",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Oyo East",
+              "Code": "654",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Oyo",
+              "Code": "655",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Saki East",
+              "Code": "656",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Saki West",
+              "Code": "657",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Surulere",
+              "Code": "658",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Barkin Ladi",
+              "Code": "659",
+              "StateCode": "14"
+          },
+          {
+              "Name": "Bassa",
+              "Code": "660",
+              "StateCode": "14"
+          },
+          {
+              "Name": "Bokkos",
+              "Code": "661",
+              "StateCode": "14"
+          },
+          {
+              "Name": "Jos East",
+              "Code": "662",
+              "StateCode": "14"
+          },
+          {
+              "Name": "Jos North",
+              "Code": "663",
+              "StateCode": "14"
+          },
+          {
+              "Name": "Jos South",
+              "Code": "664",
+              "StateCode": "14"
+          },
+          {
+              "Name": "Kanam",
+              "Code": "665",
+              "StateCode": "14"
+          },
+          {
+              "Name": "Kanke",
+              "Code": "666",
+              "StateCode": "14"
+          },
+          {
+              "Name": "Langtang North",
+              "Code": "667",
+              "StateCode": "14"
+          },
+          {
+              "Name": "Langtang South",
+              "Code": "668",
+              "StateCode": "14"
+          },
+          {
+              "Name": "Mangu",
+              "Code": "669",
+              "StateCode": "14"
+          },
+          {
+              "Name": "Mikang",
+              "Code": "670",
+              "StateCode": "14"
+          },
+          {
+              "Name": "Pankshin",
+              "Code": "671",
+              "StateCode": "14"
+          },
+          {
+              "Name": "Qua'an Pan",
+              "Code": "672",
+              "StateCode": "14"
+          },
+          {
+              "Name": "Riyom",
+              "Code": "673",
+              "StateCode": "14"
+          },
+          {
+              "Name": "Shendam",
+              "Code": "674",
+              "StateCode": "14"
+          },
+          {
+              "Name": "Wase",
+              "Code": "675",
+              "StateCode": "14"
+          },
+          {
+              "Name": "Abua/Odual",
+              "Code": "676",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Ahoada East",
+              "Code": "677",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Ahoada West",
+              "Code": "678",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Akuku-Toru",
+              "Code": "679",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Andoni",
+              "Code": "680",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Asari-Toru",
+              "Code": "681",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Bonny",
+              "Code": "682",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Degema",
+              "Code": "683",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Emohua",
+              "Code": "684",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Eleme",
+              "Code": "685",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Etche",
+              "Code": "686",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Gokana",
+              "Code": "687",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Ikwerre",
+              "Code": "688",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Khana",
+              "Code": "689",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Obio/Akpor",
+              "Code": "690",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Ogba/Egbema/Ndoni",
+              "Code": "691",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Ogu/Bolo",
+              "Code": "692",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Okrika",
+              "Code": "693",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Omuma",
+              "Code": "694",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Opobo/Nkoro",
+              "Code": "695",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Oyigbo",
+              "Code": "696",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Port Harcourt",
+              "Code": "697",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Tai",
+              "Code": "698",
+              "StateCode": "29"
+          },
+          {
+              "Name": "Binji",
+              "Code": "699",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Bodinga",
+              "Code": "700",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Dange Shuni",
+              "Code": "701",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Gada",
+              "Code": "702",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Goronyo",
+              "Code": "703",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Gudu",
+              "Code": "704",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Gwadabawa",
+              "Code": "705",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Illela",
+              "Code": "706",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Isa",
+              "Code": "707",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Kware",
+              "Code": "708",
+              "StateCode": "10"
+          },
+          {
+              "Name": "kebbe",
+              "Code": "709",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Rabah",
+              "Code": "710",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Sabon birni",
+              "Code": "711",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Shagari",
+              "Code": "712",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Silame",
+              "Code": "713",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Sokoto North",
+              "Code": "714",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Sokoto South",
+              "Code": "715",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Tambuwal",
+              "Code": "716",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Tangaza",
+              "Code": "717",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Tureta",
+              "Code": "718",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Wamako",
+              "Code": "719",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Wurno",
+              "Code": "720",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Yabo",
+              "Code": "721",
+              "StateCode": "10"
+          },
+          {
+              "Name": "Ardo Kola",
+              "Code": "722",
+              "StateCode": "23"
+          },
+          {
+              "Name": "Bali",
+              "Code": "723",
+              "StateCode": "23"
+          },
+          {
+              "Name": "Donga",
+              "Code": "724",
+              "StateCode": "23"
+          },
+          {
+              "Name": "Gashaka",
+              "Code": "725",
+              "StateCode": "23"
+          },
+          {
+              "Name": "Gassol",
+              "Code": "726",
+              "StateCode": "23"
+          },
+          {
+              "Name": "Ibi",
+              "Code": "727",
+              "StateCode": "23"
+          },
+          {
+              "Name": "Jalingo",
+              "Code": "728",
+              "StateCode": "23"
+          },
+          {
+              "Name": "Karim Lamido",
+              "Code": "729",
+              "StateCode": "23"
+          },
+          {
+              "Name": "KuRmi",
+              "Code": "730",
+              "StateCode": "23"
+          },
+          {
+              "Name": "Lau",
+              "Code": "731",
+              "StateCode": "23"
+          },
+          {
+              "Name": "Sardauna",
+              "Code": "732",
+              "StateCode": "23"
+          },
+          {
+              "Name": "Takum",
+              "Code": "733",
+              "StateCode": "23"
+          },
+          {
+              "Name": "Ussa",
+              "Code": "734",
+              "StateCode": "23"
+          },
+          {
+              "Name": "Wukari",
+              "Code": "735",
+              "StateCode": "23"
+          },
+          {
+              "Name": "Yorro",
+              "Code": "736",
+              "StateCode": "23"
+          },
+          {
+              "Name": "Zing",
+              "Code": "737",
+              "StateCode": "23"
+          },
+          {
+              "Name": "Bade",
+              "Code": "738",
+              "StateCode": "31"
+          },
+          {
+              "Name": "Bursari",
+              "Code": "739",
+              "StateCode": "31"
+          },
+          {
+              "Name": "Damaturu",
+              "Code": "740",
+              "StateCode": "31"
+          },
+          {
+              "Name": "Fika",
+              "Code": "741",
+              "StateCode": "31"
+          },
+          {
+              "Name": "Fune",
+              "Code": "742",
+              "StateCode": "31"
+          },
+          {
+              "Name": "Geidam",
+              "Code": "743",
+              "StateCode": "31"
+          },
+          {
+              "Name": "Gujba",
+              "Code": "744",
+              "StateCode": "31"
+          },
+          {
+              "Name": "Gulani",
+              "Code": "745",
+              "StateCode": "31"
+          },
+          {
+              "Name": "Jakusko",
+              "Code": "746",
+              "StateCode": "31"
+          },
+          {
+              "Name": "Karasuwa",
+              "Code": "747",
+              "StateCode": "31"
+          },
+          {
+              "Name": "Machina",
+              "Code": "749",
+              "StateCode": "31"
+          },
+          {
+              "Name": "Nangere",
+              "Code": "750",
+              "StateCode": "31"
+          },
+          {
+              "Name": "Nguru",
+              "Code": "751",
+              "StateCode": "31"
+          },
+          {
+              "Name": "Tarmuwa",
+              "Code": "752",
+              "StateCode": "31"
+          },
+          {
+              "Name": "Yunusari",
+              "Code": "753",
+              "StateCode": "31"
+          },
+          {
+              "Name": "Yusufari",
+              "Code": "754",
+              "StateCode": "31"
+          },
+          {
+              "Name": "Anka",
+              "Code": "755",
+              "StateCode": "6"
+          },
+          {
+              "Name": "Bakura",
+              "Code": "756",
+              "StateCode": "6"
+          },
+          {
+              "Name": "Birnin Magaji/Kiyaw",
+              "Code": "757",
+              "StateCode": "6"
+          },
+          {
+              "Name": "Bukkuyum",
+              "Code": "758",
+              "StateCode": "6"
+          },
+          {
+              "Name": "Bungudu",
+              "Code": "759",
+              "StateCode": "6"
+          },
+          {
+              "Name": "Gummi",
+              "Code": "760",
+              "StateCode": "6"
+          },
+          {
+              "Name": "Gusau",
+              "Code": "761",
+              "StateCode": "6"
+          },
+          {
+              "Name": "Kaura Namoda",
+              "Code": "762",
+              "StateCode": "6"
+          },
+          {
+              "Name": "Maradun",
+              "Code": "764",
+              "StateCode": "6"
+          },
+          {
+              "Name": "Maru",
+              "Code": "765",
+              "StateCode": "6"
+          },
+          {
+              "Name": "Shinkafi",
+              "Code": "766",
+              "StateCode": "6"
+          },
+          {
+              "Name": "Talata Mafara",
+              "Code": "767",
+              "StateCode": "6"
+          },
+          {
+              "Name": "Chafe",
+              "Code": "768",
+              "StateCode": "6"
+          },
+          {
+              "Name": "Zurmi",
+              "Code": "769",
+              "StateCode": "6"
+          },
+          {
+              "Name": "Gamawa",
+              "Code": "770",
+              "StateCode": "11"
+          },
+          {
+              "Name": "Izzi",
+              "Code": "771",
+              "StateCode": "37"
+          },
+          {
+              "Name": "Akoko-Edo",
+              "Code": "772",
+              "StateCode": "5"
+          },
+          {
+              "Name": "Etsako West",
+              "Code": "773",
+              "StateCode": "5"
+          },
+          {
+              "Name": "Owan East",
+              "Code": "774",
+              "StateCode": "5"
+          },
+          {
+              "Name": "Owan West",
+              "Code": "775",
+              "StateCode": "5"
+          },
+          {
+              "Name": "Udi",
+              "Code": "776",
+              "StateCode": "8"
+          },
+          {
+              "Name": "Kazaure",
+              "Code": "777",
+              "StateCode": "13"
+          },
+          {
+              "Name": "Yewa North",
+              "Code": "778",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Yewa South",
+              "Code": "779",
+              "StateCode": "36"
+          },
+          {
+              "Name": "Ogbomosho North",
+              "Code": "780",
+              "StateCode": "17"
+          },
+          {
+              "Name": "Potiskum",
+              "Code": "781",
+              "StateCode": "31"
+          },
+          {
+              "Name": "ILORIN SOUTH",
+              "Code": "782",
+              "StateCode": "26"
+          }
+      ]
+  }
+}

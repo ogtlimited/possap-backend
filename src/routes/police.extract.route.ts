@@ -2,10 +2,10 @@ import { Router } from 'express';
 import { CreateUserDto } from '@dtos/users.dto';
 import { Routes } from '@interfaces/routes.interface';
 import validationMiddleware from '@middlewares/validation.middleware';
-import PoliceExtractController from "@controllers/police-extract.controller";
-import officerMiddleware from "@middlewares/officer.middleware";
-import {PoliceExtractDto, UpdatePoliceExtractDto} from "@dtos/police_extract.dto";
-import authMiddleware from "@middlewares/auth.middleware";
+import PoliceExtractController from '@controllers/police-extract.controller';
+import officerMiddleware from '@middlewares/officer.middleware';
+import { PoliceExtractDto, UpdatePoliceExtractDto } from '@dtos/police_extract.dto';
+import authMiddleware from '@middlewares/auth.middleware';
 
 class PoliceExtractRoute implements Routes {
   public path = '/police-extracts';
@@ -21,7 +21,7 @@ class PoliceExtractRoute implements Routes {
     this.router.get(`${this.path}`, [authMiddleware], this.officersController.getUserPoliceExtracts);
 
     //get officer extracts
-    this.router.get(`${this.path}/officers-extracts`, [officerMiddleware],  this.officersController.getOfficerExtracts);
+    this.router.get(`${this.path}/officers-extracts`, [officerMiddleware], this.officersController.getOfficerExtracts);
 
     //get extract
     this.router.get(`${this.path}/:id`, [], this.officersController.getExtractById);
@@ -30,11 +30,18 @@ class PoliceExtractRoute implements Routes {
     this.router.post(`${this.path}`, [validationMiddleware(PoliceExtractDto, 'body'), authMiddleware], this.officersController.createExtract);
 
     //approve
-    this.router.patch(`${this.path}/approve/:id`,[validationMiddleware(UpdatePoliceExtractDto, 'body'), officerMiddleware],  this.officersController.approveExtract);
+    this.router.patch(
+      `${this.path}/approve/:id`,
+      [validationMiddleware(UpdatePoliceExtractDto, 'body'), officerMiddleware],
+      this.officersController.approveExtract,
+    );
 
     //reject
-    this.router.patch(`${this.path}/reject/:id`,[validationMiddleware(UpdatePoliceExtractDto, 'body'), officerMiddleware],  this.officersController.rejectExtract);
-
+    this.router.patch(
+      `${this.path}/reject/:id`,
+      [validationMiddleware(UpdatePoliceExtractDto, 'body'), officerMiddleware],
+      this.officersController.rejectExtract,
+    );
   }
 }
 
