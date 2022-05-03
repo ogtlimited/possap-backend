@@ -1,4 +1,4 @@
-import {IsEmail, IsNumber, IsOptional, IsString} from 'class-validator';
+import {IsOptional, IsString} from 'class-validator';
 import {IPoliceExtract} from "@interfaces/police_extract.interface";
 
 export class PoliceExtractDto implements IPoliceExtract{
