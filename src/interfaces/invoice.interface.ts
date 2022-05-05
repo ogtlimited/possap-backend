@@ -3,5 +3,5 @@ export interface IInvoice {
   amount: number;
   service_id: string;
   id?: string;
-  userId?: number
+  userId?: number;
 }

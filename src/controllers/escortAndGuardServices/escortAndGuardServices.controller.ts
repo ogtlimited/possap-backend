@@ -11,7 +11,7 @@ class EscortAndGuardServiceController {
 
   public getEAG = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const findAllEAGData: EscortAndGuardServiceApplication[] = await this.EscortAndGuardService.findAllEAG();
+      const findAllEAGData: EscortAndGuardServiceApplication[] = await this.EscortAndGuardService.findAllEAG(req.params.eagUnit, (<any>req).user);
 
       res.status(200).json({ data: findAllEAGData, message: 'findAll' });
     } catch (error) {
@@ -58,6 +58,7 @@ class EscortAndGuardServiceController {
       .then(function (response) {
         const writeStream = fs.createWriteStream('./eag.json');
         response.data.pipe(writeStream);
+        console.log(response);
         res.status(200).json({ data: response.data, message: 'data' });
       })
       .catch(function (error) {
@@ -78,14 +79,19 @@ class EscortAndGuardServiceController {
 
   public getPoliceData = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
+      console.log(req.query);
       const obj = JSON.parse(fs.readFileSync('./eag.json', 'utf8'));
-      const d = this.filterPoliceData(obj.ResponseObject.ReportRecords, 'STATE COMMAND');
-      let a = this.groupBy(d[0].sub, 'StateCode');
-      if (req.query.statecode && req.query.statecode !== '') {
-        const stateCode = req.query.statecode;
-        a = a[`${stateCode}`];
+      if (req.query.all === 'true') {
+        res.status(200).json({ data: obj.ResponseObject.ReportRecords, message: 'police data' });
+      } else {
+        const d = this.filterPoliceData(obj.ResponseObject.ReportRecords, 'STATE COMMAND');
+        let a = this.groupBy(d[0].sub, 'StateCode');
+        if (req.query.statecode && req.query.statecode !== '') {
+          const stateCode = req.query.statecode;
+          a = a[`${stateCode}`];
+        }
+        res.status(200).json({ data: a, message: 'police data' });
       }
-      res.status(200).json({ data: a, message: 'police data' });
     } catch (error) {
       next(error);
     }
