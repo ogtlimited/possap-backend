@@ -29,12 +29,15 @@ export interface ICharacterCertApprovalLevel {
   thirdCCApproval: boolean;
   fourthCCApproval: boolean;
   fifthCCApproval: boolean;
+  secretariatRouting: boolean;
 }
 export interface IEGSApprovalLevel {
   escortRequest1: boolean;
   escortRequest2: boolean;
   escortRequest3: boolean;
   escortTactictalRequest: boolean;
+  escortTactictalSecretariatRouting: boolean;
   escortConventionalRequest1: boolean;
   escortConventionalRequest2: boolean;
+  escortConventionalSecretariatRouting: boolean;
 }
