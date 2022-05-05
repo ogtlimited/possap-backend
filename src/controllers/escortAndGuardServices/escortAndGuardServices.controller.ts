@@ -11,7 +11,7 @@ class EscortAndGuardServiceController {
 
   public getEAG = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const findAllEAGData: EscortAndGuardServiceApplication[] = await this.EscortAndGuardService.findAllEAG();
+      const findAllEAGData: EscortAndGuardServiceApplication[] = await this.EscortAndGuardService.findAllEAG(req.params.eagUnit, (<any>req).user);
 
       res.status(200).json({ data: findAllEAGData, message: 'findAll' });
     } catch (error) {
