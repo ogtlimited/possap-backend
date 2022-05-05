@@ -1,14 +1,14 @@
-import {IsNumber, IsString} from 'class-validator';
+import { IsNumber, IsString } from 'class-validator';
 
 export class CreateInvoiceDTO {
   @IsNumber()
-  amount: number
+  amount: number;
 
   @IsString()
   application_id: string;
 
-  @IsNumber()
-  service_id: number;
+  @IsString()
+  service_id: string;
 
   @IsNumber()
   userId: number;

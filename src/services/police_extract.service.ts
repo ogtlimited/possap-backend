@@ -6,12 +6,11 @@ import { IOfficers } from '@interfaces/officer.interface';
 import { HttpException } from '@exceptions/HttpException';
 
 @Entity()
-export class PoliceExtractService implements IPoliceExtractService{
-
+export class PoliceExtractService implements IPoliceExtractService {
   async createExtract(user: any, payload: IPoliceExtract): Promise<IPoliceExtract> {
-    const {id} = user
-    payload.userId = id
-    console.log(payload)
+    const { id } = user;
+    payload.userId = id;
+    console.log(payload);
     const createPoliceExtract: IPoliceExtract = await PoliceExtractEntity.create(payload).save();
     console.log(createPoliceExtract);
     return createPoliceExtract;
