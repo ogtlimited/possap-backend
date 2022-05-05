@@ -1,8 +1,8 @@
 import {Entity, Repository} from 'typeorm';
 import { HttpException } from '@exceptions/HttpException';
-import {CreateInvoiceDTO} from "@dtos/invoice.dto";
-import {InvoiceEntity} from "@entities/invoice.entity";
-import {IInvoice} from "@interfaces/invoice.interface";
+import { CreateInvoiceDTO } from '@dtos/invoice.dto';
+import { InvoiceEntity } from '@entities/invoice.entity';
+import { IInvoice } from '@interfaces/invoice.interface';
 import { v4 as uuidv4 } from 'uuid';
 
 //factor pagination
@@ -25,13 +25,11 @@ class InvoiceService extends Repository<InvoiceEntity> {
   }
 
   public async createInvoice(payload: CreateInvoiceDTO): Promise<IInvoice> {
-
     const newInvoice: IInvoice = payload
     newInvoice.id = await uuidv4(6)
     const createInvoiceData = await InvoiceEntity.create(newInvoice).save();
     return createInvoiceData;
   }
-
 }
 
 export default InvoiceService;
