@@ -14,7 +14,7 @@ class EscortAndGuardServiceRoute implements Routes {
   }
 
   private initializeRoutes() {
-    this.router.get(`${this.path}`, this.EscortAndGuardServiceController.getEAG);
+    this.router.get(`${this.path}/:eagUnit/eag-applications`, this.EscortAndGuardServiceController.getEAG);
     this.router.get(`${this.path}/police-data`, this.EscortAndGuardServiceController.getPoliceData);
     this.router.get(`${this.path}/tactical-squad`, this.EscortAndGuardServiceController.getTacticalSquad);
     this.router.get(`${this.path}/possap`, this.EscortAndGuardServiceController.getFetchPoliceData);
