@@ -4,6 +4,7 @@ import { PoliceExtractEntity } from '@entities/police_extract.entity';
 import { Entity } from 'typeorm';
 import { IOfficers } from '@interfaces/officer.interface';
 import { HttpException } from '@exceptions/HttpException';
+import {InvoiceEntity} from "@entities/invoice.entity";
 
 @Entity()
 export class PoliceExtractService implements IPoliceExtractService {
@@ -33,6 +34,10 @@ export class PoliceExtractService implements IPoliceExtractService {
 
   // middleware should check if officer is allowed to approve.
   async approveExtract(id: number, officer: IOfficers): Promise<{ message: 'extracted approved' }> {
+    const extractInvoice = await InvoiceEntity.findOne({where: {application_id: id}})
+    if(!extractInvoice){
+      throw new HttpException(403, "cannot approve unpaid extract")
+    }
     const extract: IPoliceExtract = await PoliceExtractEntity.findOne({ where: { id } });
     if (officer.extractApprovalLevel.extractFirstApproval && extract.status != 'rejected') {
       await PoliceExtractEntity.createQueryBuilder().update(PoliceExtractEntity).set({ approval_level: 2 }).where('id = :id', { id }).execute();
