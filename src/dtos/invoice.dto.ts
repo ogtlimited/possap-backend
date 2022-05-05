@@ -8,7 +8,7 @@ export class CreateInvoiceDTO {
   application_id: string;
 
   @IsNumber()
-  service_id: number;
+  service_id: string;
 
   @IsNumber()
   userId: number;
