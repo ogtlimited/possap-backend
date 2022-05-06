@@ -32,6 +32,7 @@ class EscortAndGuardServiceApplicationService extends Repository<EscortAndGuardS
   }
 
   public async findAll(officer: any): Promise<EscortAndGuardServiceApplication[]> {
+<<<<<<< HEAD
     const tactical = officer.officerSubSection;
     const tacticalCommandAccess = officer.commandAccess.map(e => e.officerSubSection);
     const tacticalArray = [tactical, ...tacticalCommandAccess];
@@ -43,15 +44,31 @@ class EscortAndGuardServiceApplicationService extends Repository<EscortAndGuardS
     const records = await EscortAndGuardServiceApplicationEntity.find({
       where: [{ commandFormation: In(conventionalArray) }, { commandFormation: In(tacticalArray) }],
     });
+=======
+    const tactical = officer.officerSubSection
+    const tacticalCommandAccess = officer.commandAccess.map(e => e.officerSubSection)
+    const tacticalArray = [tactical, ...tacticalCommandAccess]
+
+    const conventional = officer.officerSection
+    const conventionalCommandAccess = officer.commandAccess.map(e => e.officerSection)
+    const conventionalArray = [conventional, ...conventionalCommandAccess]
+
+    const records = await EscortAndGuardServiceApplicationEntity.find({
+        where: [
+          { commandFormation: In (conventionalArray) },
+          { commandFormation: In (tacticalArray) },
+        ] 
+      });
+>>>>>>> added find all eag
 
     return records;
   }
 
-  public async findByEAGId(eagId: string): Promise<EscortAndGuardServiceApplication> {
-    if (isEmpty(eagId)) throw new HttpException(400, 'Id required');
+  public async findByEAGId(eagId: number): Promise<EscortAndGuardServiceApplication> {
+    if (isEmpty(eagId)) throw new HttpException(400, "Id required");
 
     const findEAG: EscortAndGuardServiceApplication = await EscortAndGuardServiceApplicationEntity.findOne({ where: { id: eagId } });
-    if (!findEAG) throw new HttpException(409, 'This record was not found');
+    if (!findEAG) throw new HttpException(409, "This record was not found");
 
     return findEAG;
   }
