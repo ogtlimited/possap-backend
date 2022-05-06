@@ -31,11 +31,30 @@ class EscortAndGuardServiceApplicationService extends Repository<EscortAndGuardS
     return records;
   }
 
+  public async findAll(officer: any): Promise<EscortAndGuardServiceApplication[]> {
+    const tactical = officer.officerSubSection
+    const tacticalCommandAccess = officer.commandAccess.map(e => e.officerSubSection)
+    const tacticalArray = [tactical, ...tacticalCommandAccess]
+
+    const conventional = officer.officerSection
+    const conventionalCommandAccess = officer.commandAccess.map(e => e.officerSection)
+    const conventionalArray = [conventional, ...conventionalCommandAccess]
+
+    const records = await EscortAndGuardServiceApplicationEntity.find({
+        where: [
+          { commandFormation: In (conventionalArray) },
+          { commandFormation: In (tacticalArray) },
+        ] 
+      });
+
+    return records;
+  }
+
   public async findByEAGId(eagId: number): Promise<EscortAndGuardServiceApplication> {
-    if (isEmpty(eagId)) throw new HttpException(400, "You're not userId");
+    if (isEmpty(eagId)) throw new HttpException(400, "Id required");
 
     const findEAG: EscortAndGuardServiceApplication = await EscortAndGuardServiceApplicationEntity.findOne({ where: { id: eagId } });
-    if (!findEAG) throw new HttpException(409, "You're not user");
+    if (!findEAG) throw new HttpException(409, "This record was not found");
 
     return findEAG;
   }
