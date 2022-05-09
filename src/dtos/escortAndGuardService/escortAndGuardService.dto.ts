@@ -1,4 +1,4 @@
-import { IsString, IsBoolean, IsNumber, IsDate } from 'class-validator';
+import { IsString, IsBoolean, IsNumber, IsDate, IsDateString } from 'class-validator';
 export class CreateEscortAndGuardServiceDto {
 
   @IsString()
@@ -34,10 +34,10 @@ export class CreateEscortAndGuardServiceDto {
   @IsString()
   public escortAddress: string;
 
-  @IsDate()
+  @IsDateString()
   public escortStartDate: Date;
 
-  @IsDate()
+  @IsDateString()
   public escortEndDate: Date;
 
   @IsBoolean()
