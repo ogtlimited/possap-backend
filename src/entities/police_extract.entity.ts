@@ -1,15 +1,8 @@
 import { IsNotEmpty } from 'class-validator';
-import {
-  BaseEntity,
-  Entity,
-  PrimaryGeneratedColumn,
-  Column,
-  Unique,
-  ManyToOne,
-} from 'typeorm';
-import {IPoliceExtract} from "@interfaces/police_extract.interface";
-import {UserType} from "@/enums/user.enum";
-import {PaymentStatus} from "@/enums/payment_status.enum";
+import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, Unique, ManyToOne } from 'typeorm';
+import { IPoliceExtract } from '@interfaces/police_extract.interface';
+import { UserType } from '@/enums/user.enum';
+import { PaymentStatus } from '@/enums/payment_status.enum';
 
 @Entity()
 // @Unique(["verification_id"])
@@ -19,34 +12,43 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
 
   @Column()
   @IsNotEmpty()
-  category: string;
+  extractCategory: string;
 
   @Column()
-  affidavit_date_of_issuance: Date
-
-  @Column()
-  @IsNotEmpty()
-  incident_reported: boolean;
+  affidavitIssuanceDate: Date;
 
   @Column()
   @IsNotEmpty()
-  sub_category: string;
+  wasReported: boolean;
+
+  // @Column()
+  // @IsNotEmpty()
+  // sub_category: string;
+
+  @Column()
+  documentLost: string;
+
+  @Column()
+  dateReported: string;
+
+  @Column()
+  propertyLost: string;
 
   @Column()
   @IsNotEmpty()
-  court_affidavit: string;
+  courtAffidavit: string;
 
   @Column()
   @IsNotEmpty()
-  affidavit_number: string;
+  affidavitNumber: string;
 
   @Column()
   @IsNotEmpty()
-  police_division_state: string;
+  extractState: string;
 
   @Column()
   @IsNotEmpty()
-  police_division_lga: string;
+  extractLga: string;
 
   @Column({ type: 'enum', enum: ['pending', 'in progress', 'approved'], default: 'pending' })
   @IsNotEmpty()
@@ -58,7 +60,7 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
 
   @Column()
   @IsNotEmpty()
-  police_division_area: string;
+  extractPoliceDivision: string;
 
   @Column({
     type: 'enum',
@@ -75,7 +77,7 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
   @IsNotEmpty()
   payment_status: string;
 
-  @Column({default: "nil"})
+  @Column({ default: 'nil' })
   verification_id: string;
 
   @Column()
