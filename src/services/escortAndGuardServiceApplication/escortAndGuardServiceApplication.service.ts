@@ -32,19 +32,6 @@ class EscortAndGuardServiceApplicationService extends Repository<EscortAndGuardS
   }
 
   public async findAll(officer: any): Promise<EscortAndGuardServiceApplication[]> {
-<<<<<<< HEAD
-    const tactical = officer.officerSubSection;
-    const tacticalCommandAccess = officer.commandAccess.map(e => e.officerSubSection);
-    const tacticalArray = [tactical, ...tacticalCommandAccess];
-
-    const conventional = officer.officerSection;
-    const conventionalCommandAccess = officer.commandAccess.map(e => e.officerSection);
-    const conventionalArray = [conventional, ...conventionalCommandAccess];
-
-    const records = await EscortAndGuardServiceApplicationEntity.find({
-      where: [{ commandFormation: In(conventionalArray) }, { commandFormation: In(tacticalArray) }],
-    });
-=======
     const tactical = officer.officerSubSection
     const tacticalCommandAccess = officer.commandAccess.map(e => e.officerSubSection)
     const tacticalArray = [tactical, ...tacticalCommandAccess]
@@ -59,7 +46,6 @@ class EscortAndGuardServiceApplicationService extends Repository<EscortAndGuardS
           { commandFormation: In (tacticalArray) },
         ] 
       });
->>>>>>> added find all eag
 
     return records;
   }
