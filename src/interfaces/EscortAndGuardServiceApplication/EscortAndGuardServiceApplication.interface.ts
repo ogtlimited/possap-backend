@@ -14,4 +14,11 @@ export interface EscortAndGuardServiceApplication {
   escortEndDate: Date;
   escortOfficersRequired: boolean;
   //invoicePaymentMethod: string;
+  serviceSubCategory: string;
+  serviceType: string;
+  name: string;
+  phone: string;
+  address: string;
+  email: string;
+  requestType: number;
 }
