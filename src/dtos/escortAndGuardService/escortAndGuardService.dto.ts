@@ -1,6 +1,5 @@
 import { IsString, IsBoolean, IsNumber, IsDate, IsDateString } from 'class-validator';
 export class CreateEscortAndGuardServiceDto {
-
   @IsString()
   public serviceCategory: string;
 
@@ -42,4 +41,25 @@ export class CreateEscortAndGuardServiceDto {
 
   @IsBoolean()
   public escortOfficersRequired: boolean;
+
+  @IsString()
+  public serviceSubCategory: string;
+
+  @IsString()
+  public serviceType: string;
+
+  @IsString()
+  public name: string;
+
+  @IsString()
+  public phone: string;
+
+  @IsString()
+  public email: string;
+
+  @IsString()
+  public address: string;
+
+  @IsNumber()
+  public requestType: number;
 }
