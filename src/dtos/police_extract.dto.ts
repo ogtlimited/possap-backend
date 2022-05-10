@@ -1,43 +1,49 @@
-import {IsOptional, IsString} from 'class-validator';
-import {IPoliceExtract} from "@interfaces/police_extract.interface";
+import { IsOptional, IsString, IsArray } from 'class-validator';
+import { IPoliceExtract } from '@interfaces/police_extract.interface';
 
-export class PoliceExtractDto implements IPoliceExtract{
+export class PoliceExtractDto implements IPoliceExtract {
   @IsString()
-  affidavit_number: string;
+  affidavitNumber: string;
 
-  @IsString()
-  category: string;
+  @IsArray()
+  extractCategory: string;
+
+  @IsArray()
+  documentLost: string;
+
+  @IsArray()
+  propertyLost: string;
 
   @IsString()
   user_type: string;
 
   @IsString()
-  court_affidavit: string;
+  courtAffidavit: string;
 
   @IsString()
-  affidavit_date_of_issuance: string;
+  affidavitIssuanceDate: string;
 
   @IsString()
-  incident_reported: boolean;
+  wasReported: boolean;
 
   @IsString()
-  police_division_area: string;
+  dateReported: string;
 
   @IsString()
-  police_division_lga: string;
+  extractPoliceDivision: string;
 
   @IsString()
-  police_division_state: string;
+  extractLga: string;
 
   @IsString()
-  sub_category: string;
+  extractState: string;
 
+  // @IsArray()
+  // sub_category: string;
 }
 
-export class UpdatePoliceExtractDto implements IPoliceExtract{
-
+export class UpdatePoliceExtractDto implements IPoliceExtract {
   @IsString()
   @IsOptional()
   rejection_reason: string;
-
 }
