@@ -2,7 +2,6 @@ import { IsNotEmpty } from 'class-validator';
 import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm';
 import { ServiceCategory } from '@interfaces/EscortAndGuardServiceApplication/ServiceCategory.interface';
 
-
 @Entity()
 export class ServiceCategoryEntity extends BaseEntity implements ServiceCategory {
   @PrimaryGeneratedColumn()
