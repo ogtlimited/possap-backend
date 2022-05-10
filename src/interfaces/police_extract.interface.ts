@@ -3,7 +3,7 @@ import { PoliceExtractDto } from '@dtos/police_extract.dto';
 import { IOfficers } from '@interfaces/officer.interface';
 
 export interface IPoliceExtract {
-  id?: number;
+  id?: string;
   userId?: any;
   userType?: string;
   category?: string;

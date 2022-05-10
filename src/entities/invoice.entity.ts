@@ -9,6 +9,7 @@ import {
 } from 'typeorm';
 // import {IInvoice} from "@interfaces/invoice.interface";
 
+//create a one to one relationship with invoice and extracts.
 @Entity()
 export class InvoiceEntity extends BaseEntity {
   @PrimaryColumn()

@@ -63,6 +63,34 @@ export class EscortAndGuardServiceApplicationEntity extends BaseEntity implement
   @IsNotEmpty()
   escortEndDate: Date;
 
+  @Column()
+  @IsNotEmpty()
+  serviceSubCategory: string;
+
+  @Column()
+  @IsNotEmpty()
+  serviceType: string;
+
+  @Column()
+  @IsNotEmpty()
+  name: string;
+
+  @Column()
+  @IsNotEmpty()
+  phone: string;
+
+  @Column()
+  @IsNotEmpty()
+  email: string;
+
+  @Column()
+  @IsNotEmpty()
+  requestType: number;
+
+  @Column()
+  @IsNotEmpty()
+  address: string;
+
   @Column({ default: true })
   escortOfficersRequired: boolean;
 

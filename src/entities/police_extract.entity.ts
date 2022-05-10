@@ -8,22 +8,14 @@ import {
   ManyToOne,
 } from 'typeorm';
 import {IPoliceExtract} from "@interfaces/police_extract.interface";
-export enum UserType {
-  INDIVIDUAL = 'Individual',
-  CorporateNGOs = 'Corporate/NGOs',
-  MDAs = 'MDAs',
-}
-
-export enum PaymentStatus {
-  pending = 'pending',
-  paid = 'paid',
-}
+import {UserType} from "@/enums/user.enum";
+import {PaymentStatus} from "@/enums/payment_status.enum";
 
 @Entity()
 // @Unique(["verification_id"])
 export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
   @PrimaryGeneratedColumn()
-  id: number;
+  id: string;
 
   @Column()
   @IsNotEmpty()
@@ -88,5 +80,4 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
 
   @Column()
   userId: number;
-
 }
