@@ -19,6 +19,16 @@ class EscortAndGuardServiceController {
     }
   };
 
+  public findAll = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      const findAll: EscortAndGuardServiceApplication[] = await this.EscortAndGuardService.findAll((<any>req).user);
+
+      res.status(200).json({ data: findAll, message: 'findAll' });
+    } catch (error) {
+      next(error);
+    }
+  };
+
   public getEAGById = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       const eagId = Number(req.params.id);
