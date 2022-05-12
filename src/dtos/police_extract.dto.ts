@@ -3,43 +3,38 @@ import { IPoliceExtract } from '@interfaces/police_extract.interface';
 
 export class PoliceExtractDto implements IPoliceExtract {
   @IsString()
-  affidavitNumber: string;
+  affidavit_number: string;
 
-  @IsArray()
-  extractCategory: string;
+  @IsString()
+  extract_category: string;
 
-  @IsArray()
-  documentLost: string;
-
-  @IsArray()
-  propertyLost: string;
+  @IsString()
+  extract_sub_category:string;
 
   @IsString()
   user_type: string;
 
   @IsString()
-  courtAffidavit: string;
+  court_affidavit: string;
 
   @IsString()
-  affidavitIssuanceDate: string;
+  affidavit_issuance_date: string;
 
   @IsString()
-  wasReported: boolean;
+  incident_reported: boolean;
 
   @IsString()
-  dateReported: string;
+  date_reported: string;
 
   @IsString()
-  extractPoliceDivision: string;
+  extract_police_division: string;
 
   @IsString()
-  extractLga: string;
+  extract_police_division_lga: string;
 
   @IsString()
-  extractState: string;
+  extract_police_division_state: string;
 
-  // @IsArray()
-  // sub_category: string;
 }
 
 export class UpdatePoliceExtractDto implements IPoliceExtract {

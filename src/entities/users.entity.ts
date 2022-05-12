@@ -89,4 +89,7 @@ export class UserEntity extends BaseEntity implements User {
   @UpdateDateColumn()
   updatedAt: Date;
 
+  @OneToMany(() => PoliceExtractEntity, (extract) => extract.user)
+  police_extracts: PoliceExtractEntity[]
+
 }

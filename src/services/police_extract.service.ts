@@ -14,7 +14,7 @@ export class PoliceExtractService implements IPoliceExtractService {
   private invoiceService = new InvoiceService;
   async createExtract(user: any, payload: IPoliceExtract): Promise<IPoliceExtract> {
     const { id } = user;
-    payload.userId = id;
+    payload.user = id;
     const createPoliceExtract: IPoliceExtract = await PoliceExtractEntity.create(payload).save();
     const serviceInvoice = await this.invoiceService.createInvoice({
       amount: 1000,
@@ -26,13 +26,14 @@ export class PoliceExtractService implements IPoliceExtractService {
   }
 
   async getApplicantsExtracts(user: User): Promise<IPoliceExtract[]> {
-    return await PoliceExtractEntity.find({ where: { userId: user.id } });
+    return await PoliceExtractEntity.find({ where: { user: user.id }, relations: ["user"] });
   }
 
   async getOfficerExtracts(officer: IOfficers): Promise<IPoliceExtract[]> {
     const approvalLevel = officer.extractApprovalLevel.extractFirstApproval ? 1 : 2;
     return await PoliceExtractEntity.find({
       where: { approval_level: approvalLevel, police_division_area: officer.officerSection, status: 'pending' },
+      relations: ['user']
     });
   }
 
