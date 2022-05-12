@@ -76,3 +76,5 @@ export class UpdatePoliceCharacterCertificateDTO {
   @IsString()
   denial_reason: string;
 }
+
+

@@ -7,6 +7,7 @@ import {
   UpdateDateColumn,
   PrimaryColumn
 } from 'typeorm';
+import {PaymentStatus} from "@/enums/payment_status.enum";
 // import {IInvoice} from "@interfaces/invoice.interface";
 
 //create a one to one relationship with invoice and extracts.
@@ -17,6 +18,13 @@ export class InvoiceEntity extends BaseEntity {
 
   @Column()
   amount: number
+
+  @Column( {
+  type: 'enum',
+  enum: PaymentStatus,
+  default: 'pending',
+})
+  status: string;
 
   @Column()
   application_id: string;

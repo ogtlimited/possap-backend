@@ -20,6 +20,8 @@ export interface IPoliceExtract {
   approval_level?: number;
   status?: string;
   rejection_reason?: string;
+  serviceInvoice?: any;
+  createPoliceExtract?: any;
 }
 
 export interface IPoliceExtractService {

@@ -5,16 +5,24 @@ import { Entity } from 'typeorm';
 import { IOfficers } from '@interfaces/officer.interface';
 import { HttpException } from '@exceptions/HttpException';
 import {InvoiceEntity} from "@entities/invoice.entity";
+import InvoiceService from "@services/invoice.service";
+import {IsNumber, IsString} from "class-validator";
 
 @Entity()
 export class PoliceExtractService implements IPoliceExtractService {
+
+  private invoiceService = new InvoiceService;
   async createExtract(user: any, payload: IPoliceExtract): Promise<IPoliceExtract> {
     const { id } = user;
     payload.userId = id;
-    console.log(payload);
     const createPoliceExtract: IPoliceExtract = await PoliceExtractEntity.create(payload).save();
-    console.log(createPoliceExtract);
-    return createPoliceExtract;
+    const serviceInvoice = await this.invoiceService.createInvoice({
+      amount: 1000,
+      application_id: createPoliceExtract.id,
+      service_id: "1",
+      userId: id
+    })
+    return {createPoliceExtract, serviceInvoice};
   }
 
   async getApplicantsExtracts(user: User): Promise<IPoliceExtract[]> {
