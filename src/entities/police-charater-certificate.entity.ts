@@ -1,12 +1,7 @@
 import { IsNotEmpty } from 'class-validator';
-import {
-  BaseEntity,
-  Entity,
-  PrimaryGeneratedColumn,
-  Column,
-} from 'typeorm';
-import {IPoliceExtract} from "@interfaces/police_extract.interface";
-import {IPoliceCharacterCertificate} from "@interfaces/police_character_cert.interface";
+import { BaseEntity, Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { IPoliceExtract } from '@interfaces/police_extract.interface';
+import { IPoliceCharacterCertificate } from '@interfaces/police_character_cert.interface';
 export enum UserType {
   INDIVIDUAL = 'Individual',
   CorporateNGOs = 'Corporate/NGOs',
@@ -24,7 +19,7 @@ export class PoliceCharacterCertificateEntity extends BaseEntity implements IPol
   @PrimaryGeneratedColumn()
   id: string;
 
-  @Column({ type: 'enum', enum: ['domestic','international']})
+  @Column({ type: 'enum', enum: ['domestic', 'international'] })
   @IsNotEmpty()
   request_type: string;
 
@@ -41,7 +36,7 @@ export class PoliceCharacterCertificateEntity extends BaseEntity implements IPol
   place_of_birth: string;
 
   @Column()
-  date_of_birth: Date
+  date_of_birth: Date;
 
   @Column()
   @IsNotEmpty()
@@ -56,7 +51,7 @@ export class PoliceCharacterCertificateEntity extends BaseEntity implements IPol
   @Column()
   date_of_issuance: Date;
 
-  @Column({ type: 'enum', enum: ['yes','no']})
+  @Column({ type: 'enum', enum: ['yes', 'no'] })
   @IsNotEmpty()
   previously_convicted: string;
 
@@ -95,7 +90,7 @@ export class PoliceCharacterCertificateEntity extends BaseEntity implements IPol
   @Column()
   police_command: string;
 
-  @Column({default: "nil"})
+  @Column({ default: 'nil' })
   verification_id: string;
 
   @Column()
@@ -109,6 +104,4 @@ export class PoliceCharacterCertificateEntity extends BaseEntity implements IPol
 
   @Column()
   address: string;
-
-
 }
