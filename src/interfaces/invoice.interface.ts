@@ -4,4 +4,5 @@ export interface IInvoice {
   service_id: string;
   id?: string;
   userId?: number;
+  status?: string;
 }

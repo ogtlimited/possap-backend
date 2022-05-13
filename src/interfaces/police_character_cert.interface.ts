@@ -3,25 +3,27 @@ import { CreatePoliceCharacterCertificateDTO } from '@dtos/police-character-cert
 import { User } from '@interfaces/users.interface';
 
 export interface IPoliceCharacterCertificate {
-  id: string;
-  request_type: string;
-  reason_for_inquiry: string;
-  state_of_origin: string;
-  place_of_birth: string;
-  date_of_birth: Date;
-  destination_country: string;
-  passport_number: string;
-  place_of_issuance: string;
-  date_of_issuance: Date;
-  previously_convicted: string;
-  passport_photograph: string;
-  international_passport_data_page: string;
-  status: string;
+  id?: string;
+  request_type?: string;
+  reason_for_inquiry?: string;
+  state_of_origin?: string;
+  place_of_birth?: string;
+  date_of_birth?: Date;
+  destination_country?: string;
+  passport_number?: string;
+  place_of_issuance?: string;
+  date_of_issuance?: Date;
+  previously_convicted?: string;
+  passport_photograph?: string;
+  international_passport_data_page?: string;
+  status?: string;
   approval_level?: number;
-  user_type: string;
-  payment_status: string;
-  verification_id: string;
-  userId: number;
+  user_type?: string;
+  payment_status?: string;
+  verification_id?: string;
+  userId?: number;
+  createPoliceCertificate?: any;
+  serviceInvoice?: any;
 }
 
 export interface IPoliceCharacterCertificateService {
