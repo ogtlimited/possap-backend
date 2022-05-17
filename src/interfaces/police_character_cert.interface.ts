@@ -20,10 +20,12 @@ export interface IPoliceCharacterCertificate {
   certificateRequestCommand: string;
   status: string;
   approval_level?: number;
-  user_type: string;
-  payment_status: string;
-  verification_id: string;
-  userId: number;
+  user_type?: string;
+  payment_status?: string;
+  verification_id?: string;
+  userId?: number;
+  createPoliceCertificate?: any;
+  serviceInvoice?: any;
 }
 
 export interface IPoliceCharacterCertificateService {

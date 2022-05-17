@@ -36,6 +36,7 @@ export class PoliceCharacterCertificateEntity extends BaseEntity implements IPol
   placeOfBirth: string;
 
   @Column()
+  @IsNotEmpty()
   dateOfBirth: Date;
 
   @Column()

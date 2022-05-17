@@ -3,6 +3,7 @@ import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, Unique, ManyToOne }
 import { IPoliceExtract } from '@interfaces/police_extract.interface';
 import { UserType } from '@/enums/user.enum';
 import { PaymentStatus } from '@/enums/payment_status.enum';
+import { UserEntity } from '@entities/users.entity';
 
 @Entity()
 // @Unique(["verification_id"])
@@ -12,10 +13,10 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
 
   @Column()
   @IsNotEmpty()
-  extractCategory: string;
+  extract_category: string;
 
   @Column()
-  affidavitIssuanceDate: Date;
+  affidavit_issuance_date: Date;
 
   @Column()
   @IsNotEmpty()
@@ -26,28 +27,30 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
 
   @Column()
   documentLost: string;
-
-  @Column()
-  dateReported: string;
-
-  @Column()
-  propertyLost: string;
+  incident_reported: boolean;
 
   @Column()
   @IsNotEmpty()
-  courtAffidavit: string;
+  extract_sub_category: string;
+
+  @Column()
+  date_reported: string;
 
   @Column()
   @IsNotEmpty()
-  affidavitNumber: string;
+  court_affidavit: string;
 
   @Column()
   @IsNotEmpty()
-  extractState: string;
+  affidavit_number: string;
 
   @Column()
   @IsNotEmpty()
-  extractLga: string;
+  extract_police_division_state: string;
+
+  @Column()
+  @IsNotEmpty()
+  extract_police_division_lga: string;
 
   @Column({ type: 'enum', enum: ['pending', 'in progress', 'approved'], default: 'pending' })
   @IsNotEmpty()
@@ -59,7 +62,7 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
 
   @Column()
   @IsNotEmpty()
-  extractPoliceDivision: string;
+  extract_police_division: string;
 
   @Column({
     type: 'enum',
@@ -79,6 +82,6 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
   @Column({ default: 'nil' })
   verification_id: string;
 
-  @Column()
-  userId: number;
+  @ManyToOne(() => UserEntity, user => user.police_extracts)
+  user: UserEntity;
 }
