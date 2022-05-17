@@ -38,8 +38,8 @@ export class PoliceExtractDto implements IPoliceExtract {
   @IsString()
   extractState: string;
 
-  // @IsArray()
-  // sub_category: string;
+  @IsString()
+  extractReason: string;
 }
 
 export class UpdatePoliceExtractDto implements IPoliceExtract {

@@ -7,7 +7,7 @@ export interface IPoliceExtract {
   userId?: any;
   userType?: string;
   extractCategory?: string;
-  // sub_category?: string;
+  extractReason?: string;
   documentLost?: string;
   propertyLost?: string;
   dateReported?: string;

@@ -1,12 +1,7 @@
 import { IsNotEmpty } from 'class-validator';
-import {
-  BaseEntity,
-  Entity,
-  PrimaryGeneratedColumn,
-  Column,
-} from 'typeorm';
-import {IPoliceExtract} from "@interfaces/police_extract.interface";
-import {IPoliceCharacterCertificate} from "@interfaces/police_character_cert.interface";
+import { BaseEntity, Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { IPoliceExtract } from '@interfaces/police_extract.interface';
+import { IPoliceCharacterCertificate } from '@interfaces/police_character_cert.interface';
 export enum UserType {
   INDIVIDUAL = 'Individual',
   CorporateNGOs = 'Corporate/NGOs',
@@ -24,47 +19,53 @@ export class PoliceCharacterCertificateEntity extends BaseEntity implements IPol
   @PrimaryGeneratedColumn()
   id: string;
 
-  @Column({ type: 'enum', enum: ['domestic','international']})
+  @Column({ type: 'enum', enum: ['domestic', 'international'] })
   @IsNotEmpty()
-  request_type: string;
-
-  @Column()
-  @IsNotEmpty()
-  reason_for_inquiry: string;
+  requestType: string;
 
   @Column()
   @IsNotEmpty()
-  state_of_origin: string;
+  reasonForInquiry: string;
 
   @Column()
   @IsNotEmpty()
-  place_of_birth: string;
-
-  @Column()
-  date_of_birth: Date
+  stateOfOrigin: string;
 
   @Column()
   @IsNotEmpty()
-  destination_country: string;
+  placeOfBirth: string;
 
   @Column()
-  passport_number: string;
+  dateOfBirth: Date;
 
   @Column()
-  place_of_issuance: string;
-
-  @Column()
-  date_of_issuance: Date;
-
-  @Column({ type: 'enum', enum: ['yes','no']})
   @IsNotEmpty()
-  previously_convicted: string;
+  destinationCountry: string;
 
   @Column()
-  passport_photograph: string;
+  passportNumber: string;
 
   @Column()
-  international_passport_data_page: string;
+  placeOfIssuance: string;
+
+  @Column()
+  dateOfIssuance: Date;
+
+  @Column({ type: 'enum', enum: ['yes', 'no'] })
+  @IsNotEmpty()
+  hasBeenConvicted: string;
+
+  @Column()
+  passportPhotograph: string;
+
+  @Column()
+  passportBioDataPage: string;
+
+  @Column()
+  convictionHistory: string;
+
+  @Column()
+  certificateRequestCommand: string;
 
   @Column({ type: 'enum', enum: ['pending', 'in progress', 'approved'], default: 'pending' })
   @IsNotEmpty()
@@ -95,7 +96,7 @@ export class PoliceCharacterCertificateEntity extends BaseEntity implements IPol
   @Column()
   police_command: string;
 
-  @Column({default: "nil"})
+  @Column({ default: 'nil' })
   verification_id: string;
 
   @Column()
@@ -109,6 +110,4 @@ export class PoliceCharacterCertificateEntity extends BaseEntity implements IPol
 
   @Column()
   address: string;
-
-
 }

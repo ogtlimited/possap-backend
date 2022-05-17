@@ -1,47 +1,53 @@
-import {IsDate, IsEnum, IsNumber, IsOptional, IsString} from 'class-validator';
-import {UserType} from "@/enums/user.enum";
-import {IPoliceCharacterCertificate} from "@interfaces/police_character_cert.interface";
-import {Column} from "typeorm";
+import { IsDate, IsEnum, IsNumber, IsOptional, IsString } from 'class-validator';
+import { UserType } from '@/enums/user.enum';
+import { IPoliceCharacterCertificate } from '@interfaces/police_character_cert.interface';
+import { Column } from 'typeorm';
 
 export class CreatePoliceCharacterCertificateDTO implements IPoliceCharacterCertificate {
   @IsString()
   id: string;
 
   @IsString()
-  request_type: string;
+  requestType: string;
 
   @IsString()
-  reason_for_inquiry: string;
+  reasonForInquiry: string;
 
   @IsString()
-  state_of_origin: string;
+  stateOfOrigin: string;
 
   @IsString()
-  place_of_birth: string;
+  placeOfBirth: string;
 
   @IsDate()
-  date_of_birth: Date
+  dateOfBirth: Date;
 
   @IsString()
-  destination_country: string;
+  destinationCountry: string;
 
   @IsString()
-  passport_number: string;
+  passportNumber: string;
 
   @IsString()
-  place_of_issuance: string;
+  placeOfIssuance: string;
 
   @IsDate()
-  date_of_issuance: Date;
+  dateOfIssuance: Date;
 
   @IsString()
-  previously_convicted: string;
+  hasBeenConvicted: string;
 
   @IsString()
-  passport_photograph: string;
+  convictionHistory: string;
 
   @IsString()
-  international_passport_data_page: string;
+  passportPhotograph: string;
+
+  @IsString()
+  passportBioDataPage: string;
+
+  @IsString()
+  certificateRequestCommand: string;
 
   @IsString()
   status: string;

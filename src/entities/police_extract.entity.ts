@@ -21,9 +21,8 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
   @IsNotEmpty()
   wasReported: boolean;
 
-  // @Column()
-  // @IsNotEmpty()
-  // sub_category: string;
+  @Column()
+  extractReason: string;
 
   @Column()
   documentLost: string;
