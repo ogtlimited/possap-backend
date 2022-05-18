@@ -1,5 +1,5 @@
 import { IsNotEmpty } from 'class-validator';
-import { BaseEntity, Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import {BaseEntity, Entity, Unique, Column, PrimaryColumn} from 'typeorm';
 import { IPoliceExtract } from '@interfaces/police_extract.interface';
 import { IPoliceCharacterCertificate } from '@interfaces/police_character_cert.interface';
 export enum UserType {
@@ -16,7 +16,8 @@ export enum PaymentStatus {
 @Entity()
 // @Unique(["verification_id"])
 export class PoliceCharacterCertificateEntity extends BaseEntity implements IPoliceCharacterCertificate {
-  @PrimaryGeneratedColumn()
+  @PrimaryColumn()
+  @Unique(['id'])
   id: string;
 
   @Column({ type: 'enum', enum: ['domestic', 'international'] })
