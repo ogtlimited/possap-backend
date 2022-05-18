@@ -9,7 +9,7 @@ export class PoliceExtractDto implements IPoliceExtract {
   extract_category: string;
 
   @IsString()
-  extract_sub_category:string;
+  extract_sub_category: string;
 
   @IsString()
   user_type: string;
@@ -34,7 +34,6 @@ export class PoliceExtractDto implements IPoliceExtract {
 
   @IsString()
   extract_police_division_state: string;
-
 }
 
 export class UpdatePoliceExtractDto implements IPoliceExtract {

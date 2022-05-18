@@ -1,7 +1,7 @@
-import {IsDate, IsEnum, IsNumber, IsOptional, IsString} from 'class-validator';
-import {UserType} from "@/enums/user.enum";
-import {IPoliceCharacterCertificate} from "@interfaces/police_character_cert.interface";
-import {Column} from "typeorm";
+import { IsDate, IsEnum, IsNumber, IsOptional, IsString } from 'class-validator';
+import { UserType } from '@/enums/user.enum';
+import { IPoliceCharacterCertificate } from '@interfaces/police_character_cert.interface';
+import { Column } from 'typeorm';
 
 export class CreatePoliceCharacterCertificateDTO implements IPoliceCharacterCertificate {
   @IsString()
@@ -20,7 +20,7 @@ export class CreatePoliceCharacterCertificateDTO implements IPoliceCharacterCert
   place_of_birth: string;
 
   @IsDate()
-  date_of_birth: Date
+  date_of_birth: Date;
 
   @IsString()
   destination_country: string;
@@ -76,5 +76,3 @@ export class UpdatePoliceCharacterCertificateDTO {
   @IsString()
   denial_reason: string;
 }
-
-

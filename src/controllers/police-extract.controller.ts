@@ -1,9 +1,9 @@
 import { NextFunction, Request, Response } from 'express';
-import {PoliceExtractDto} from "@dtos/police_extract.dto";
+import { PoliceExtractDto } from '@dtos/police_extract.dto';
 import { User } from '@interfaces/users.interface';
-import {IPoliceExtract} from "@interfaces/police_extract.interface";
-import {IPoliceExtractService} from "@interfaces/police_extract.interface";
-import {PoliceExtractService} from "@services/police_extract.service";
+import { IPoliceExtract } from '@interfaces/police_extract.interface';
+import { IPoliceExtractService } from '@interfaces/police_extract.interface';
+import { PoliceExtractService } from '@services/police_extract.service';
 
 class PoliceExtractController {
   public extractService = new PoliceExtractService();
@@ -49,7 +49,7 @@ class PoliceExtractController {
   public approveExtract = async (req: any, res: Response, next: NextFunction): Promise<void> => {
     try {
       const extractId = Number(req.params.id);
-      const officer = (req.user);
+      const officer = req.user;
       const info = req.body;
       const updateExtract = await this.extractService.approveExtract(extractId, info);
 
@@ -62,7 +62,7 @@ class PoliceExtractController {
   public rejectExtract = async (req: any, res: Response, next: NextFunction): Promise<void> => {
     try {
       const extractId = Number(req.params.id);
-      const officer = (req.user);
+      const officer = req.user;
       const info = req.body;
       const updateExtract = await this.extractService.rejectExtract(extractId, info);
 
@@ -71,7 +71,6 @@ class PoliceExtractController {
       next(error);
     }
   };
-
 }
 
 export default PoliceExtractController;

@@ -3,7 +3,7 @@ import {BaseEntity, Entity,  Column, Unique, ManyToOne, PrimaryColumn} from 'typ
 import { IPoliceExtract } from '@interfaces/police_extract.interface';
 import { UserType } from '@/enums/user.enum';
 import { PaymentStatus } from '@/enums/payment_status.enum';
-import {UserEntity} from "@entities/users.entity";
+import { UserEntity } from '@entities/users.entity';
 
 @Entity()
 // @Unique(["verification_id"])
@@ -76,6 +76,6 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
   @Column({ default: 'nil' })
   verification_id: string;
 
-  @ManyToOne(() => UserEntity, (user) => user.police_extracts)
-  user: UserEntity
+  @ManyToOne(() => UserEntity, user => user.police_extracts)
+  user: UserEntity;
 }
