@@ -6,7 +6,7 @@ import { IOfficers } from '@interfaces/officer.interface';
 import { HttpException } from '@exceptions/HttpException';
 import {InvoiceEntity} from "@entities/invoice.entity";
 import InvoiceService from "@services/invoice.service";
-import {IsNumber, IsString} from "class-validator";
+import { v4 as uuidv4 } from 'uuid';
 
 @Entity()
 export class PoliceExtractService implements IPoliceExtractService {
@@ -15,6 +15,8 @@ export class PoliceExtractService implements IPoliceExtractService {
   async createExtract(user: any, payload: IPoliceExtract): Promise<IPoliceExtract> {
     const { id } = user;
     payload.user = id;
+    const uuid = await uuidv4(6).split("-")[0]
+    payload.id = `EXT${uuid}`
     const createPoliceExtract: IPoliceExtract = await PoliceExtractEntity.create(payload).save();
     const serviceInvoice = await this.invoiceService.createInvoice({
       amount: 1000,

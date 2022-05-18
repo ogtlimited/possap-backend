@@ -6,7 +6,7 @@ import { IOfficers } from '@interfaces/officer.interface';
 import { CreatePoliceCharacterCertificateDTO } from '@dtos/police-character-certificate.dto';
 import { InvoiceEntity } from '@entities/invoice.entity';
 import { HttpException } from '@exceptions/HttpException';
-import { PoliceExtractEntity } from '@entities/police_extract.entity';
+import { v4 as uuidv4 } from 'uuid';
 import InvoiceService from '@services/invoice.service';
 
 @Entity()
@@ -16,6 +16,8 @@ export class PoliceCharacterCertificateService implements IPoliceCharacterCertif
   async createUserPoliceCharacterCertificate(user: any, payload: CreatePoliceCharacterCertificateDTO): Promise<IPoliceCharacterCertificate> {
     const { id } = user;
     payload.userId = id;
+    const uuid = await uuidv4(6).split("-")[0]
+    payload.id = `PCC${uuid}`
     const createPoliceCertificate = await PoliceCharacterCertificateEntity.create(payload).save();
     const serviceInvoice = await this.invoiceService.createInvoice({
       amount: 1000,
