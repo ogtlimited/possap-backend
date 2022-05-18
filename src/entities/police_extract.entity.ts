@@ -1,5 +1,5 @@
 import { IsNotEmpty } from 'class-validator';
-import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, Unique, ManyToOne } from 'typeorm';
+import {BaseEntity, Entity,  Column, Unique, ManyToOne, PrimaryColumn} from 'typeorm';
 import { IPoliceExtract } from '@interfaces/police_extract.interface';
 import { UserType } from '@/enums/user.enum';
 import { PaymentStatus } from '@/enums/payment_status.enum';
@@ -8,7 +8,8 @@ import {UserEntity} from "@entities/users.entity";
 @Entity()
 // @Unique(["verification_id"])
 export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
-  @PrimaryGeneratedColumn()
+  @PrimaryColumn()
+  @Unique(['id'])
   id: string;
 
   @Column()
