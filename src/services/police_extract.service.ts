@@ -4,36 +4,35 @@ import { PoliceExtractEntity } from '@entities/police_extract.entity';
 import { Entity } from 'typeorm';
 import { IOfficers } from '@interfaces/officer.interface';
 import { HttpException } from '@exceptions/HttpException';
-import {InvoiceEntity} from "@entities/invoice.entity";
-import InvoiceService from "@services/invoice.service";
-import {IsNumber, IsString} from "class-validator";
+import { InvoiceEntity } from '@entities/invoice.entity';
+import InvoiceService from '@services/invoice.service';
+import { IsNumber, IsString } from 'class-validator';
 
 @Entity()
 export class PoliceExtractService implements IPoliceExtractService {
-
-  private invoiceService = new InvoiceService;
+  private invoiceService = new InvoiceService();
   async createExtract(user: any, payload: IPoliceExtract): Promise<IPoliceExtract> {
     const { id } = user;
-    payload.user = id;
+    payload.userId = id;
     const createPoliceExtract: IPoliceExtract = await PoliceExtractEntity.create(payload).save();
     const serviceInvoice = await this.invoiceService.createInvoice({
       amount: 1000,
       application_id: createPoliceExtract.id,
-      service_id: "1",
-      userId: id
-    })
-    return {createPoliceExtract, serviceInvoice};
+      service_id: '1',
+      userId: id,
+    });
+    return { createPoliceExtract, serviceInvoice };
   }
 
   async getApplicantsExtracts(user: User): Promise<IPoliceExtract[]> {
-    return await PoliceExtractEntity.find({ where: { user: user.id }, relations: ["user"] });
+    return await PoliceExtractEntity.find({ where: { user: user.id }, relations: ['user'] });
   }
 
   async getOfficerExtracts(officer: IOfficers): Promise<IPoliceExtract[]> {
     const approvalLevel = officer.extractApprovalLevel.extractFirstApproval ? 1 : 2;
     return await PoliceExtractEntity.find({
       where: { approval_level: approvalLevel, police_division_area: officer.officerSection, status: 'pending' },
-      relations: ['user']
+      relations: ['user'],
     });
   }
 
@@ -43,9 +42,9 @@ export class PoliceExtractService implements IPoliceExtractService {
 
   // middleware should check if officer is allowed to approve.
   async approveExtract(id: number, officer: IOfficers): Promise<{ message: 'extracted approved' }> {
-    const extractInvoice = await InvoiceEntity.findOne({where: {application_id: id}})
-    if(!extractInvoice){
-      throw new HttpException(403, "cannot approve unpaid extract")
+    const extractInvoice = await InvoiceEntity.findOne({ where: { application_id: id } });
+    if (!extractInvoice) {
+      throw new HttpException(403, 'cannot approve unpaid extract');
     }
     const extract: IPoliceExtract = await PoliceExtractEntity.findOne({ where: { id } });
     if (officer.extractApprovalLevel.extractFirstApproval && extract.status != 'rejected') {

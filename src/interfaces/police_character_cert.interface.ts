@@ -3,22 +3,22 @@ import { CreatePoliceCharacterCertificateDTO } from '@dtos/police-character-cert
 import { User } from '@interfaces/users.interface';
 
 export interface IPoliceCharacterCertificate {
-  id: string;
-  requestType: string;
-  reasonForInquiry: string;
-  stateOfOrigin: string;
-  placeOfBirth: string;
-  dateOfBirth: Date;
-  destinationCountry: string;
-  passportNumber: string;
-  placeOfIssuance: string;
-  dateOfIssuance: Date;
-  hasBeenConvicted: string;
-  convictionHistory: string;
-  passportPhotograph: string;
-  passportBioDataPage: string;
-  certificateRequestCommand: string;
-  status: string;
+  id?: string;
+  requestType?: string;
+  reasonForInquiry?: string;
+  stateOfOrigin?: string;
+  placeOfBirth?: string;
+  dateOfBirth?: Date;
+  destinationCountry?: string;
+  passportNumber?: string;
+  placeOfIssuance?: string;
+  dateOfIssuance?: Date;
+  hasBeenConvicted?: string;
+  convictionHistory?: string;
+  passportPhotograph?: string;
+  passportBioDataPage?: string;
+  certificateRequestCommand?: string;
+  status?: string;
   approval_level?: number;
   user_type?: string;
   payment_status?: string;
