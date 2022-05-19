@@ -16,6 +16,15 @@ class UsersController {
     }
   };
 
+  public findAllUserServices = async (req: any, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      const allUserServices = await this.userService.findAllUserServices(req.user);
+      res.status(200).json({ data: allUserServices, message: 'findAllUserServices' });
+    } catch (error) {
+      next(error);
+    }
+  };
+
   public getUserById = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       const userId = Number(req.params.id);
