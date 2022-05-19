@@ -1,4 +1,3 @@
-import { hash } from 'bcrypt';
 import { EntityRepository, Repository } from 'typeorm';
 import { In } from 'typeorm';
 import { CreateEscortAndGuardServiceDto } from '@dtos/escortAndGuardService/escortAndGuardService.dto';
@@ -48,7 +47,7 @@ class EscortAndGuardServiceApplicationService extends Repository<EscortAndGuardS
     return records;
   }
 
-  public async findByEAGId(eagId: number): Promise<EscortAndGuardServiceApplication> {
+  public async findByEAGId(eagId: string): Promise<EscortAndGuardServiceApplication> {
     if (isEmpty(eagId)) throw new HttpException(400, 'Id required');
 
     const findEAG: EscortAndGuardServiceApplication = await EscortAndGuardServiceApplicationEntity.findOne({ where: { id: eagId } });
@@ -63,7 +62,7 @@ class EscortAndGuardServiceApplicationService extends Repository<EscortAndGuardS
     return createEAG;
   }
 
-  public async deleteUser(eagId: number): Promise<EscortAndGuardServiceApplication> {
+  public async deleteUser(eagId: string): Promise<EscortAndGuardServiceApplication> {
     if (isEmpty(eagId)) throw new HttpException(400, 'PD required');
 
     const findEAG: EscortAndGuardServiceApplication = await EscortAndGuardServiceApplicationEntity.findOne({ where: { id: eagId } });
