@@ -31,7 +31,7 @@ class EscortAndGuardServiceController {
 
   public getEAGById = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const eagId = Number(req.params.id);
+      const eagId = req.params.id;
       const findOneEAGData: EscortAndGuardServiceApplication = await this.EscortAndGuardService.findByEAGId(eagId);
 
       res.status(200).json({ data: findOneEAGData, message: 'findOne' });
@@ -53,7 +53,7 @@ class EscortAndGuardServiceController {
 
   public deleteEAG = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const eagId = Number(req.params.id);
+      const eagId = req.params.id;
       const deleteEAGData: EscortAndGuardServiceApplication = await this.EscortAndGuardService.deleteUser(eagId);
 
       res.status(200).json({ data: deleteEAGData, message: 'deleted' });
@@ -78,7 +78,7 @@ class EscortAndGuardServiceController {
 
   public getCategory = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const eagId = Number(req.params.id);
+      const eagId = req.params.id;
       const deleteEAGData: EscortAndGuardServiceApplication = await this.EscortAndGuardService.deleteUser(eagId);
 
       res.status(200).json({ data: deleteEAGData, message: 'deleted' });
