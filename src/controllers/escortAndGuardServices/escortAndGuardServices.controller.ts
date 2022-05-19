@@ -19,7 +19,7 @@ class EscortAndGuardServiceController {
     }
   };
 
-  public findAll = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  public findAll = async (req: any, res: Response, next: NextFunction): Promise<void> => {
     try {
       const findAll: EscortAndGuardServiceApplication[] = await this.EscortAndGuardService.findAll((<any>req).user);
 
