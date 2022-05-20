@@ -36,7 +36,7 @@ class EscortAndGuardServiceController {
   public getEAGById = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       const eagId = req.params.id;
-      const findOneEAGData: EscortAndGuardServiceApplication = await this.EscortAndGuardService.findByEAGId(eagId);
+      const findOneEAGData: EscortAndGuardServiceApplication = await this.EscortAndGuardService.findByEAGId(Number(eagId));
 
       res.status(200).json({ data: findOneEAGData, message: 'findOne' });
     } catch (error) {
