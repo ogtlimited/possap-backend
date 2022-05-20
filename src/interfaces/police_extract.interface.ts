@@ -4,7 +4,7 @@ import { IOfficers } from '@interfaces/officer.interface';
 
 export interface IPoliceExtract {
   id?: string;
-  userId?: any;
+  user?: any;
   userType?: string;
   extractCategory?: string;
   extractReason?: string;

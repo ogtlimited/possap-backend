@@ -9,8 +9,8 @@ export enum PaymentMethod {
 
 @Entity()
 export class EscortAndGuardServiceApplicationEntity extends BaseEntity implements EscortAndGuardServiceApplication {
-  @PrimaryGeneratedColumn()
-  id: number;
+  @PrimaryGeneratedColumn('uuid')
+  id: string;
 
   @Column()
   @IsNotEmpty()
