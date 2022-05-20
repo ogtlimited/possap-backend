@@ -5,16 +5,18 @@ import { IOfficers } from '@interfaces/officer.interface';
 export interface IPoliceExtract {
   id?: string;
   user?: any;
-  user_type?: string;
-  extract_category?: string;
-  extract_sub_category?: string
-  date_reported?: string;
-  incident_reported?: boolean;
-  court_affidavit?: string;
-  affidavit_number?: string;
-  extract_police_division_lga?: string;
-  extract_police_division_state?: string;
-  extract_police_division?: string;
+  userType?: string;
+  extractCategory?: string;
+  extractReason?: string;
+  documentLost?: string;
+  propertyLost?: string;
+  dateReported?: string;
+  wasReported?: boolean;
+  courtAffidavit?: string;
+  affidavitNumber?: string;
+  extractState?: string;
+  extractLga?: string;
+  extractPoliceDivision?: string;
   approval_level?: number;
   status?: string;
   rejection_reason?: string;

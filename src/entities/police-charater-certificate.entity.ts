@@ -22,45 +22,52 @@ export class PoliceCharacterCertificateEntity extends BaseEntity implements IPol
 
   @Column({ type: 'enum', enum: ['domestic', 'international'] })
   @IsNotEmpty()
-  request_type: string;
+  requestType: string;
 
   @Column()
   @IsNotEmpty()
-  reason_for_inquiry: string;
+  reasonForInquiry: string;
 
   @Column()
   @IsNotEmpty()
-  state_of_origin: string;
+  stateOfOrigin: string;
 
   @Column()
   @IsNotEmpty()
-  place_of_birth: string;
-
-  @Column()
-  date_of_birth: Date;
+  placeOfBirth: string;
 
   @Column()
   @IsNotEmpty()
-  destination_country: string;
+  dateOfBirth: Date;
 
   @Column()
-  passport_number: string;
+  @IsNotEmpty()
+  destinationCountry: string;
 
   @Column()
-  place_of_issuance: string;
+  passportNumber: string;
 
   @Column()
-  date_of_issuance: Date;
+  placeOfIssuance: string;
+
+  @Column()
+  dateOfIssuance: Date;
 
   @Column({ type: 'enum', enum: ['yes', 'no'] })
   @IsNotEmpty()
-  previously_convicted: string;
+  hasBeenConvicted: string;
 
   @Column()
-  passport_photograph: string;
+  passportPhotograph: string;
 
   @Column()
-  international_passport_data_page: string;
+  passportBioDataPage: string;
+
+  @Column()
+  convictionHistory: string;
+
+  @Column()
+  certificateRequestCommand: string;
 
   @Column({ type: 'enum', enum: ['pending', 'in progress', 'approved'], default: 'pending' })
   @IsNotEmpty()
