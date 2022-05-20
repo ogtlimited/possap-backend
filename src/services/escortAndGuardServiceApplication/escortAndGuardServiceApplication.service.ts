@@ -5,6 +5,7 @@ import { EscortAndGuardServiceApplicationEntity } from '@entities/EscortAndGuard
 import { HttpException } from '@exceptions/HttpException';
 import { EscortAndGuardServiceApplication } from '@interfaces/EscortAndGuardServiceApplication/EscortAndGuardServiceApplication.interface';
 import { isEmpty } from '@utils/util';
+import { v4 as uuidv4 } from 'uuid';
 
 @EntityRepository()
 class EscortAndGuardServiceApplicationService extends Repository<EscortAndGuardServiceApplicationEntity> {
@@ -56,9 +57,11 @@ class EscortAndGuardServiceApplicationService extends Repository<EscortAndGuardS
     return findEAG;
   }
 
-  public async createEAG(payload: CreateEscortAndGuardServiceDto): Promise<EscortAndGuardServiceApplication> {
+  public async createEAG(payload: EscortAndGuardServiceApplication): Promise<EscortAndGuardServiceApplication> {
     if (isEmpty(payload)) throw new HttpException(400, 'Payload required');
     console.log(payload);
+    const uuid = await uuidv4(6).split("-")[0]
+    payload.fileNumber = `EGS${uuid}`
     const createEAG: EscortAndGuardServiceApplication = await EscortAndGuardServiceApplicationEntity.create(payload).save();
     return createEAG;
   }

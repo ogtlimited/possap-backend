@@ -55,6 +55,9 @@ export class EscortAndGuardServiceApplicationEntity extends BaseEntity implement
   @Column()
   escortAddress: string;
 
+  @Column()
+  fileNumber: string;
+
   @CreateDateColumn({ type: 'timestamptz' })
   @IsNotEmpty()
   escortStartDate: Date;
@@ -93,6 +96,10 @@ export class EscortAndGuardServiceApplicationEntity extends BaseEntity implement
 
   @Column({ default: true })
   escortOfficersRequired: boolean;
+
+  @Column({ type: 'enum', enum: ['pending', 'in progress', 'approved'], default: 'pending' })
+  @IsNotEmpty()
+  status: string;
 
   // @Column({
   //   type: 'enum',

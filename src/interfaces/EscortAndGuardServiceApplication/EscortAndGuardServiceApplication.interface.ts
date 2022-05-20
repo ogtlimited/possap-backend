@@ -21,4 +21,5 @@ export interface EscortAndGuardServiceApplication {
   address: string;
   email: string;
   requestType: number;
+  fileNumber: string;
 }
