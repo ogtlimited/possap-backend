@@ -8,11 +8,11 @@ export interface IPoliceCharacterCertificate {
   reasonForInquiry?: string;
   stateOfOrigin?: string;
   placeOfBirth?: string;
-  dateOfBirth?: Date;
+  dateOfBirth?: string;
   destinationCountry?: string;
   passportNumber?: string;
   placeOfIssuance?: string;
-  dateOfIssuance?: Date;
+  dateOfIssuance?: string;
   hasBeenConvicted?: string;
   convictionHistory?: string;
   passportPhotograph?: string;
