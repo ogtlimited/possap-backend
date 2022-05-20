@@ -5,9 +5,6 @@ import { Column } from 'typeorm';
 
 export class CreatePoliceCharacterCertificateDTO implements IPoliceCharacterCertificate {
   @IsString()
-  id: string;
-
-  @IsString()
   requestType: string;
 
   @IsString()
@@ -19,8 +16,8 @@ export class CreatePoliceCharacterCertificateDTO implements IPoliceCharacterCert
   @IsString()
   placeOfBirth: string;
 
-  @IsDate()
-  dateOfBirth: Date;
+  @IsString()
+  dateOfBirth: string;
 
   @IsString()
   destinationCountry: string;
@@ -31,8 +28,8 @@ export class CreatePoliceCharacterCertificateDTO implements IPoliceCharacterCert
   @IsString()
   placeOfIssuance: string;
 
-  @IsDate()
-  dateOfIssuance: Date;
+  @IsString()
+  dateOfIssuance: string;
 
   @IsString()
   hasBeenConvicted: string;
@@ -49,18 +46,15 @@ export class CreatePoliceCharacterCertificateDTO implements IPoliceCharacterCert
   @IsString()
   certificateRequestCommand: string;
 
-  @IsString()
-  status: string;
+  // @IsString()
+  // status: string;
 
   @IsString()
   @IsEnum(UserType)
   user_type: string;
 
-  @IsString()
-  payment_status: string;
-
-  @IsString()
-  verification_id: string;
+  // @IsString()
+  // payment_status: string;
 
   @IsNumber()
   userId: number;
@@ -68,14 +62,14 @@ export class CreatePoliceCharacterCertificateDTO implements IPoliceCharacterCert
   @IsString()
   state: string;
 
-  @IsString()
-  lga: string;
+  // @IsString()
+  // lga: string;
 
-  @IsString()
-  address: string;
+  // @IsString()
+  // address: string;
 
-  @IsString()
-  police_command: string;
+  // @IsString()
+  // police_command: string;
 }
 
 export class UpdatePoliceCharacterCertificateDTO {
