@@ -1,5 +1,5 @@
 import { IsNotEmpty } from 'class-validator';
-import {BaseEntity, Entity, Unique, Column, PrimaryColumn} from 'typeorm';
+import { BaseEntity, Entity, Unique, Column, PrimaryColumn } from 'typeorm';
 import { IPoliceExtract } from '@interfaces/police_extract.interface';
 import { IPoliceCharacterCertificate } from '@interfaces/police_character_cert.interface';
 export enum UserType {
@@ -20,47 +20,54 @@ export class PoliceCharacterCertificateEntity extends BaseEntity implements IPol
   @Unique(['id'])
   id: string;
 
-  @Column({ type: 'enum', enum: ['domestic', 'international'] })
+  @Column({ type: 'enum', enum: ['Domestic', 'International'] })
   @IsNotEmpty()
-  request_type: string;
-
-  @Column()
-  @IsNotEmpty()
-  reason_for_inquiry: string;
+  requestType: string;
 
   @Column()
   @IsNotEmpty()
-  state_of_origin: string;
+  reasonForInquiry: string;
 
   @Column()
   @IsNotEmpty()
-  place_of_birth: string;
-
-  @Column()
-  date_of_birth: Date;
+  stateOfOrigin: string;
 
   @Column()
   @IsNotEmpty()
-  destination_country: string;
+  placeOfBirth: string;
 
   @Column()
-  passport_number: string;
+  @IsNotEmpty()
+  dateOfBirth: string;
 
   @Column()
-  place_of_issuance: string;
+  @IsNotEmpty()
+  destinationCountry: string;
 
   @Column()
-  date_of_issuance: Date;
+  passportNumber: string;
+
+  @Column()
+  placeOfIssuance: string;
+
+  @Column()
+  dateOfIssuance: string;
 
   @Column({ type: 'enum', enum: ['yes', 'no'] })
   @IsNotEmpty()
-  previously_convicted: string;
+  hasBeenConvicted: string;
 
   @Column()
-  passport_photograph: string;
+  passportPhotograph: string;
 
   @Column()
-  international_passport_data_page: string;
+  passportBioDataPage: string;
+
+  @Column()
+  convictionHistory: string;
+
+  @Column()
+  certificateRequestCommand: string;
 
   @Column({ type: 'enum', enum: ['pending', 'in progress', 'approved'], default: 'pending' })
   @IsNotEmpty()
@@ -85,24 +92,12 @@ export class PoliceCharacterCertificateEntity extends BaseEntity implements IPol
   @IsNotEmpty()
   payment_status: string;
 
-  @Column()
+  @Column({ default: 'nil' })
   denial_reason: string;
-
-  @Column()
-  police_command: string;
 
   @Column({ default: 'nil' })
   verification_id: string;
 
   @Column()
   userId: number;
-
-  @Column()
-  state: string;
-
-  @Column()
-  lga: string;
-
-  @Column()
-  address: string;
 }
