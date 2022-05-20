@@ -60,8 +60,9 @@ class EscortAndGuardServiceApplicationService extends Repository<EscortAndGuardS
   }
 
   public async createEAG(payload: CreateEscortAndGuardServiceDto): Promise<EscortAndGuardServiceApplication> {
-    if (isEmpty(payload)) throw new HttpException(400, 'Payload required');
-    const createEAG: EscortAndGuardServiceApplication = await EscortAndGuardServiceApplicationEntity.create(payload);
+    if (isEmpty(payload)) throw new HttpException(400, "Payload required");
+    const createEAG = await EscortAndGuardServiceApplicationEntity.create(payload);
+    await EscortAndGuardServiceApplicationEntity.save(createEAG)
     return createEAG;
   }
 
