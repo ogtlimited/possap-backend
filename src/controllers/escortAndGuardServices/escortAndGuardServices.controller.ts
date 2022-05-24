@@ -76,6 +76,26 @@ class EscortAndGuardServiceController {
       });
   };
 
+  public approveRequest = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      const eagId = req.params.id;
+      const approveRequest = await this.EscortAndGuardService.approvalFlow((<any>req).user, eagId);
+      res.status(200).json({ data: approveRequest });
+    } catch (error) {
+      next(error);
+    }
+  }
+
+  public rejectRequest = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      const eagId = req.params.id;
+      const rejectRequest = await this.EscortAndGuardService.rejectEAG(eagId);
+      res.status(200).json({ data: rejectRequest });
+    } catch (error) {
+      next(error);
+    }
+  }
+
   public getCategory = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       const eagId = req.params.id;

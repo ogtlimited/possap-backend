@@ -46,6 +46,7 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
   @IsNotEmpty()
   extract_police_division_lga: string;
 
+  // Hash enum are better using when using postgres
   @Column({ type: 'enum', enum: ['pending', 'in progress', 'approved'], default: 'pending' })
   @IsNotEmpty()
   status: string;
