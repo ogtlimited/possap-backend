@@ -14,37 +14,47 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
 
   @Column()
   @IsNotEmpty()
-  extract_category: string;
+  extractCategory: string;
 
   @Column()
-  affidavit_issuance_date: Date;
+  affidavitIssuanceDate: Date;
 
   @Column()
   @IsNotEmpty()
+  wasReported: boolean;
+
+  // @Column()
+  // extractReason: string;
+
+  @Column()
+  documentLost: string;
   incident_reported: boolean;
 
   @Column()
-  @IsNotEmpty()
-  extract_sub_category: string;
+  propertyLost: string;
+
+  // @Column()
+  // @IsNotEmpty()
+  // extract_sub_category: string;
 
   @Column()
-  date_reported: string;
-
-  @Column()
-  @IsNotEmpty()
-  court_affidavit: string;
-
-  @Column()
-  @IsNotEmpty()
-  affidavit_number: string;
+  dateReported: string;
 
   @Column()
   @IsNotEmpty()
-  extract_police_division_state: string;
+  courtAffidavit: string;
 
   @Column()
   @IsNotEmpty()
-  extract_police_division_lga: string;
+  affidavitNumber: string;
+
+  @Column()
+  @IsNotEmpty()
+  extractState: string;
+
+  @Column()
+  @IsNotEmpty()
+  extractLga: string;
 
   // Hash enum are better using when using postgres
   @Column({ type: 'enum', enum: ['pending', 'in progress', 'approved'], default: 'pending' })
@@ -57,7 +67,7 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
 
   @Column()
   @IsNotEmpty()
-  extract_police_division: string;
+  extractPoliceDivision: string;
 
   @Column({
     type: 'enum',

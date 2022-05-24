@@ -68,7 +68,6 @@ class EscortAndGuardServiceController {
       .then(function (response) {
         const writeStream = fs.createWriteStream('./eag.json');
         response.data.pipe(writeStream);
-        console.log(response);
         res.status(200).json({ data: response.data, message: 'data' });
       })
       .catch(function (error) {

@@ -31,6 +31,7 @@ class EscortAndGuardServiceRoute implements Routes {
       [officerMiddleware],
       this.EscortAndGuardServiceController.rejectRequest);
     this.router.get(`${this.path}/:id(\\d+)`, this.EscortAndGuardServiceController.getEAGById);
+    this.router.get(`${this.path}/:id`, this.EscortAndGuardServiceController.getEAGById);
     this.router.post(
       `${this.path}`,
       [validationMiddleware(CreateEscortAndGuardServiceDto, 'body'), authMiddleware],
