@@ -21,7 +21,7 @@ class EscortAndGuardServiceRoute implements Routes {
     this.router.get(`${this.path}/police-data`, this.EscortAndGuardServiceController.getPoliceData);
     this.router.get(`${this.path}/tactical-squad`, this.EscortAndGuardServiceController.getTacticalSquad);
     this.router.get(`${this.path}/possap`, this.EscortAndGuardServiceController.getFetchPoliceData);
-    this.router.get(`${this.path}/:id(\\d+)`, this.EscortAndGuardServiceController.getEAGById);
+    this.router.get(`${this.path}/:id`, this.EscortAndGuardServiceController.getEAGById);
     this.router.post(
       `${this.path}`,
       [validationMiddleware(CreateEscortAndGuardServiceDto, 'body'), authMiddleware],
