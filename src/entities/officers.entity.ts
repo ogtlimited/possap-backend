@@ -15,6 +15,10 @@ export class OfficerEntity extends sharedProps implements IOfficers {
   @IsNotEmpty()
   apNumber: string;
 
+  @Column({default: 'Officer'})
+  @IsNotEmpty()
+  userType: string;
+
   @Column()
   useServiceNum: boolean;
 

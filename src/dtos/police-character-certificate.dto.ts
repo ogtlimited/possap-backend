@@ -5,56 +5,56 @@ import { Column } from 'typeorm';
 
 export class CreatePoliceCharacterCertificateDTO implements IPoliceCharacterCertificate {
   @IsString()
-  id: string;
+  requestType: string;
 
   @IsString()
-  request_type: string;
+  reasonForInquiry: string;
 
   @IsString()
-  reason_for_inquiry: string;
+  stateOfOrigin: string;
 
   @IsString()
-  state_of_origin: string;
+  placeOfBirth: string;
 
   @IsString()
-  place_of_birth: string;
-
-  @IsDate()
-  date_of_birth: Date;
+  dateOfBirth: string;
 
   @IsString()
-  destination_country: string;
+  destinationCountry: string;
 
   @IsString()
-  passport_number: string;
+  passportNumber: string;
 
   @IsString()
-  place_of_issuance: string;
-
-  @IsDate()
-  date_of_issuance: Date;
+  placeOfIssuance: string;
 
   @IsString()
-  previously_convicted: string;
+  dateOfIssuance: string;
 
   @IsString()
-  passport_photograph: string;
+  hasBeenConvicted: string;
 
   @IsString()
-  international_passport_data_page: string;
+  convictionHistory: string;
 
   @IsString()
-  status: string;
+  passportPhotograph: string;
+
+  @IsString()
+  passportBioDataPage: string;
+
+  @IsString()
+  certificateRequestCommand: string;
+
+  // @IsString()
+  // status: string;
 
   @IsString()
   @IsEnum(UserType)
   user_type: string;
 
-  @IsString()
-  payment_status: string;
-
-  @IsString()
-  verification_id: string;
+  // @IsString()
+  // payment_status: string;
 
   @IsNumber()
   userId: number;
@@ -62,14 +62,14 @@ export class CreatePoliceCharacterCertificateDTO implements IPoliceCharacterCert
   @IsString()
   state: string;
 
-  @IsString()
-  lga: string;
+  // @IsString()
+  // lga: string;
 
-  @IsString()
-  address: string;
+  // @IsString()
+  // address: string;
 
-  @IsString()
-  police_command: string;
+  // @IsString()
+  // police_command: string;
 }
 
 export class UpdatePoliceCharacterCertificateDTO {
