@@ -19,7 +19,7 @@ class EscortAndGuardServiceController {
     }
   };
 
-  public findAll = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  public findAll = async (req: any, res: Response, next: NextFunction): Promise<void> => {
     try {
       const findAll: EscortAndGuardServiceApplication[] = await this.EscortAndGuardService.findAll((<any>req).user);
 
@@ -31,7 +31,7 @@ class EscortAndGuardServiceController {
 
   public getEAGById = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const eagId = Number(req.params.id);
+      const eagId = req.params.id;
       const findOneEAGData: EscortAndGuardServiceApplication = await this.EscortAndGuardService.findByEAGId(eagId);
 
       res.status(200).json({ data: findOneEAGData, message: 'findOne' });
@@ -53,7 +53,7 @@ class EscortAndGuardServiceController {
 
   public deleteEAG = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const eagId = Number(req.params.id);
+      const eagId = req.params.id;
       const deleteEAGData: EscortAndGuardServiceApplication = await this.EscortAndGuardService.deleteUser(eagId);
 
       res.status(200).json({ data: deleteEAGData, message: 'deleted' });
@@ -68,7 +68,6 @@ class EscortAndGuardServiceController {
       .then(function (response) {
         const writeStream = fs.createWriteStream('./eag.json');
         response.data.pipe(writeStream);
-        console.log(response);
         res.status(200).json({ data: response.data, message: 'data' });
       })
       .catch(function (error) {
@@ -78,7 +77,7 @@ class EscortAndGuardServiceController {
 
   public getCategory = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const eagId = Number(req.params.id);
+      const eagId = req.params.id;
       const deleteEAGData: EscortAndGuardServiceApplication = await this.EscortAndGuardService.deleteUser(eagId);
 
       res.status(200).json({ data: deleteEAGData, message: 'deleted' });

@@ -14,13 +14,20 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
 
   @Column()
   @IsNotEmpty()
-  extract_category: string;
+  extractCategory: string;
 
   @Column()
-  affidavit_issuance_date: Date;
+  affidavitIssuanceDate: Date;
 
   @Column()
   @IsNotEmpty()
+  wasReported: boolean;
+
+  // @Column()
+  // extractReason: string;
+
+  @Column()
+  documentLost: string;
   incident_reported: boolean;
 
   @Column()
@@ -30,23 +37,23 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
   extractSubcategory: string;
 
   @Column()
-  date_reported: string;
+  dateReported: string;
 
   @Column()
   @IsNotEmpty()
-  court_affidavit: string;
+  courtAffidavit: string;
 
   @Column()
   @IsNotEmpty()
-  affidavit_number: string;
+  affidavitNumber: string;
 
   @Column()
   @IsNotEmpty()
-  extract_police_division_state: string;
+  extractState: string;
 
   @Column()
   @IsNotEmpty()
-  extract_police_division_lga: string;
+  extractLga: string;
 
   @Column({ type: 'enum', enum: ['pending', 'in progress', 'approved'], default: 'pending' })
   @IsNotEmpty()
@@ -58,7 +65,7 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
 
   @Column()
   @IsNotEmpty()
-  extract_police_division: string;
+  extractPoliceDivision: string;
 
   @Column({
     type: 'enum',

@@ -1,3 +1,5 @@
+import { OfficerEntity } from './../entities/officers.entity';
+import { IOfficers } from './../interfaces/officer.interface';
 import { compare, hash } from 'bcrypt';
 import config from 'config';
 import { sign } from 'jsonwebtoken';
@@ -22,18 +24,28 @@ class AuthService extends Repository<UserEntity> {
     return createUserData;
   }
 
-  public async login(userData: CreateUserDto): Promise<{ token: any; findUser: User }> {
+  public async login(userData: CreateUserDto): Promise<{ token: any; findUser: any }> {
     if (isEmpty(userData)) throw new HttpException(400, "You're not userData");
 
     const findUser: User = await UserEntity.findOne({ where: { email: userData.email } });
-    if (!findUser) throw new HttpException(409, `You're email ${userData.email} not found`);
+    const findOfficer: IOfficers = await OfficerEntity.findOne({ where: { email: userData.email } });
+    if (!findUser && !findOfficer) throw new HttpException(409, `You're email ${userData.email} not found`);
 
-    const isPasswordMatching: boolean = await compare(userData.password, findUser.password);
-    if (!isPasswordMatching) throw new HttpException(409, "You're password not matching");
+    if (findUser) {
+      const isPasswordMatching: boolean = await compare(userData.password, findUser.password);
+      if (!isPasswordMatching) throw new HttpException(409, "You're password not matching");
 
-    const token = this.createToken(findUser);
+      const token = this.createToken(findUser);
 
-    return { token, findUser };
+      return { token, findUser };
+    } else {
+      const isPasswordMatching: boolean = await compare(userData.password, findOfficer.password);
+      if (!isPasswordMatching) throw new HttpException(409, "You're password not matching");
+
+      const token = this.createToken(findOfficer);
+
+      return { token, findUser: findOfficer };
+    }
   }
 
   public async logout(userData: User): Promise<User> {
@@ -45,7 +57,7 @@ class AuthService extends Repository<UserEntity> {
     return findUser;
   }
 
-  public createToken(user: User): TokenData {
+  public createToken(user): TokenData {
     const dataStoredInToken: DataStoredInToken = { id: user.id };
     const secretKey: string = config.get('secretKey');
     const expiresIn: number = 60 * 60;

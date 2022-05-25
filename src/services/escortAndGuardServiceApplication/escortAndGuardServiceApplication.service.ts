@@ -1,4 +1,3 @@
-import { hash } from 'bcrypt';
 import { EntityRepository, Repository } from 'typeorm';
 import { In } from 'typeorm';
 import { CreateEscortAndGuardServiceDto } from '@dtos/escortAndGuardService/escortAndGuardService.dto';
@@ -48,7 +47,7 @@ class EscortAndGuardServiceApplicationService extends Repository<EscortAndGuardS
     return records;
   }
 
-  public async findByEAGId(eagId: number): Promise<EscortAndGuardServiceApplication> {
+  public async findByEAGId(eagId: string): Promise<EscortAndGuardServiceApplication> {
     if (isEmpty(eagId)) throw new HttpException(400, 'Id required');
 
     const findEAG: EscortAndGuardServiceApplication = await EscortAndGuardServiceApplicationEntity.findOne({ where: { id: eagId } });
@@ -59,11 +58,12 @@ class EscortAndGuardServiceApplicationService extends Repository<EscortAndGuardS
 
   public async createEAG(payload: CreateEscortAndGuardServiceDto): Promise<EscortAndGuardServiceApplication> {
     if (isEmpty(payload)) throw new HttpException(400, 'Payload required');
-    const createEAG: EscortAndGuardServiceApplication = await EscortAndGuardServiceApplicationEntity.create(payload);
+    const createEAG = await EscortAndGuardServiceApplicationEntity.create(payload);
+    await EscortAndGuardServiceApplicationEntity.save(createEAG);
     return createEAG;
   }
 
-  public async deleteUser(eagId: number): Promise<EscortAndGuardServiceApplication> {
+  public async deleteUser(eagId: string): Promise<EscortAndGuardServiceApplication> {
     if (isEmpty(eagId)) throw new HttpException(400, 'PD required');
 
     const findEAG: EscortAndGuardServiceApplication = await EscortAndGuardServiceApplicationEntity.findOne({ where: { id: eagId } });
