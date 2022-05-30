@@ -48,7 +48,7 @@ class PoliceCharacterCertificateController {
     try {
       const id = req.params.id;
       const officer = (req.user);
-      const result = await this.policeCharacterCertificateService.approvePoliceCharacterCertificateRecords(id, officer);
+      const result = await this.policeCharacterCertificateService.approvePoliceCharacterCertificateRecords(id, req.body, officer);
       res.status(200).json({ data: result, message: 'extract approved' });
     } catch (error) {
       next(error);
@@ -59,8 +59,7 @@ class PoliceCharacterCertificateController {
     try {
       const id = req.params.id;
       const officer = (req.user);
-      const {denial_reason} = req.body;
-      const result = await this.policeCharacterCertificateService.rejectPoliceCharacterCertificateRecords(id, officer, denial_reason);
+      const result = await this.policeCharacterCertificateService.rejectPoliceCharacterCertificateRecords(id, officer, req.body);
       res.status(200).json({ data: result, message: 'extract rejected' });
     } catch (error) {
       next(error);

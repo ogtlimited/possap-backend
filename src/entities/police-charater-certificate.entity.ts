@@ -1,7 +1,7 @@
 import { IsNotEmpty } from 'class-validator';
-import { BaseEntity, Entity, Unique, Column, PrimaryColumn } from 'typeorm';
-import { IPoliceExtract } from '@interfaces/police_extract.interface';
-import { IPoliceCharacterCertificate } from '@interfaces/police_character_cert.interface';
+import {BaseEntity, Entity, Unique, Column, PrimaryColumn, ManyToOne} from 'typeorm';
+import {IPoliceCharacterApprover, IPoliceCharacterCertificate} from '@interfaces/police_character_cert.interface';
+import {UserEntity} from "@entities/users.entity";
 export enum UserType {
   INDIVIDUAL = 'Individual',
   CorporateNGOs = 'Corporate/NGOs',
@@ -40,8 +40,9 @@ export class PoliceCharacterCertificateEntity extends BaseEntity implements IPol
   @IsNotEmpty()
   dateOfBirth: string;
 
-  @Column()
-  @IsNotEmpty()
+  @Column({
+    nullable:true
+  })
   destinationCountry: string;
 
   @Column()
@@ -63,13 +64,15 @@ export class PoliceCharacterCertificateEntity extends BaseEntity implements IPol
   @Column()
   passportBioDataPage: string;
 
-  @Column()
+  @Column({
+    nullable:true
+  })
   convictionHistory: string;
 
   @Column()
   certificateRequestCommand: string;
 
-  @Column({ type: 'enum', enum: ['pending', 'in progress', 'approved'], default: 'pending' })
+  @Column({ type: 'enum', enum: ['pending', 'in progress', 'approved', 'rejected'], default: 'pending' })
   @IsNotEmpty()
   status: string;
 
@@ -82,7 +85,7 @@ export class PoliceCharacterCertificateEntity extends BaseEntity implements IPol
     enum: UserType,
   })
   @IsNotEmpty()
-  user_type: string;
+  userType: string;
 
   @Column({
     type: 'enum',
@@ -90,14 +93,27 @@ export class PoliceCharacterCertificateEntity extends BaseEntity implements IPol
     default: 'pending',
   })
   @IsNotEmpty()
-  payment_status: string;
+  paymentStatus: string;
 
   @Column({ default: 'nil' })
-  denial_reason: string;
+  denialReason: string;
 
   @Column({ default: 'nil' })
-  verification_id: string;
+  verificationId: string;
 
   @Column()
-  userId: number;
+  state: string;
+
+  @Column()
+  lga: string;
+
+  @Column()
+  address: string;
+
+  @Column({type: 'jsonb', nullable:true})
+  approvalInfo: IPoliceCharacterApprover
+
+  @ManyToOne(() => UserEntity, user => user.police_extracts)
+  user: UserEntity
+
 }

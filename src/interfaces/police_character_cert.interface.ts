@@ -33,6 +33,22 @@ export interface IPoliceCharacterCertificateService {
   getUserPoliceCharacterCertificateRecords(user: User): Promise<IPoliceCharacterCertificate[]>;
   getPoliceCharacterCertificateRecord(id: string): Promise<IPoliceCharacterCertificate>;
   getOfficerPoliceCharacterCertificateRecords(officer: IOfficers): Promise<IPoliceCharacterCertificate[]>;
-  approvePoliceCharacterCertificateRecords(id: string, officer: IOfficers): Promise<{ message: 'certificate approved successfully' }>;
-  rejectPoliceCharacterCertificateRecords(id: string, officer: IOfficers, reason: string): Promise<{ message: 'certificate rejected successfully' }>;
+  approvePoliceCharacterCertificateRecords(id: string, payload, officer: IOfficers): Promise<{ message: 'certificate approved successfully' }>;
+  rejectPoliceCharacterCertificateRecords(id: string, officer: IOfficers, reason): Promise<{ message: 'certificate rejected successfully' }>;
+}
+
+export interface IPoliceCharacterApprover{
+  approver1?: IPoliceCharacterApproverProperties;
+  approver2?: IPoliceCharacterApproverProperties;
+  approver3?: IPoliceCharacterApproverProperties;
+  approver4?: IPoliceCharacterApproverProperties;
+  approver5?: IPoliceCharacterApproverProperties;
+  secretariatRouting?: IPoliceCharacterApproverProperties;
+}
+
+export interface IPoliceCharacterApproverProperties{
+    comment: string;
+    date: string;
+    approved: boolean;
+    officerId: string;
 }

@@ -32,7 +32,7 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
 
   @Column()
   propertyLost: string;
-  
+
   @Column()
   extractSubcategory: string;
 
