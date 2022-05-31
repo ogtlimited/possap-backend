@@ -48,18 +48,6 @@ export class CreateEscortAndGuardServiceDto {
   @IsString()
   public serviceType: string;
 
-  @IsString()
-  public name: string;
-
-  @IsString()
-  public phone: string;
-
-  @IsString()
-  public email: string;
-
-  @IsString()
-  public address: string;
-
   @IsNumber()
   public requestType: number;
 
