@@ -27,7 +27,8 @@ class PoliceCharacterCertificateController {
   public getPoliceCharacterCertificateRecord = async (req: any, res: Response, next: NextFunction): Promise<void> => {
     try {
       const id = req.params.id;
-      const findOneExtract: IPoliceCharacterCertificate = await this.policeCharacterCertificateService.getPoliceCharacterCertificateRecord(id);
+      const userType = req.user.apNumber? "officer" : "user"
+      const findOneExtract: IPoliceCharacterCertificate = await this.policeCharacterCertificateService.getPoliceCharacterCertificateRecord(id, req.user.id, userType);
       res.status(200).json({ data: findOneExtract});
     } catch (error) {
       next(error);
@@ -48,8 +49,8 @@ class PoliceCharacterCertificateController {
     try {
       const id = req.params.id;
       const officer = (req.user);
-      const result = await this.policeCharacterCertificateService.approvePoliceCharacterCertificateRecords(id, officer);
-      res.status(200).json({ data: result, message: 'extract approved' });
+      const result = await this.policeCharacterCertificateService.approvePoliceCharacterCertificateRecords(id, req.body, officer);
+      res.status(200).json({ data: result });
     } catch (error) {
       next(error);
     }
@@ -59,9 +60,8 @@ class PoliceCharacterCertificateController {
     try {
       const id = req.params.id;
       const officer = (req.user);
-      const {denial_reason} = req.body;
-      const result = await this.policeCharacterCertificateService.rejectPoliceCharacterCertificateRecords(id, officer, denial_reason);
-      res.status(200).json({ data: result, message: 'extract rejected' });
+      const result = await this.policeCharacterCertificateService.rejectPoliceCharacterCertificateRecords(id, officer, req.body);
+      res.status(200).json({ data: result});
     } catch (error) {
       next(error);
     }
