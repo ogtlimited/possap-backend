@@ -1,6 +1,7 @@
 import { IOfficers } from '@interfaces/officer.interface';
 import { CreatePoliceCharacterCertificateDTO } from '@dtos/police-character-certificate.dto';
 import { User } from '@interfaces/users.interface';
+import {UserEntity} from "@entities/users.entity";
 
 export interface IPoliceCharacterCertificate {
   id?: string;
@@ -23,7 +24,7 @@ export interface IPoliceCharacterCertificate {
   user_type?: string;
   payment_status?: string;
   verification_id?: string;
-  userId?: number;
+  user?: UserEntity;
   createPoliceCertificate?: any;
   serviceInvoice?: any;
 }
@@ -31,7 +32,7 @@ export interface IPoliceCharacterCertificate {
 export interface IPoliceCharacterCertificateService {
   createUserPoliceCharacterCertificate(user: User, payload: CreatePoliceCharacterCertificateDTO): Promise<IPoliceCharacterCertificate>;
   getUserPoliceCharacterCertificateRecords(user: User): Promise<IPoliceCharacterCertificate[]>;
-  getPoliceCharacterCertificateRecord(id: string): Promise<IPoliceCharacterCertificate>;
+  getPoliceCharacterCertificateRecord(id: string, user, userType): Promise<IPoliceCharacterCertificate>;
   getOfficerPoliceCharacterCertificateRecords(officer: IOfficers): Promise<IPoliceCharacterCertificate[]>;
   approvePoliceCharacterCertificateRecords(id: string, payload, officer: IOfficers): Promise<{ message: 'certificate approved successfully' }>;
   rejectPoliceCharacterCertificateRecords(id: string, officer: IOfficers, reason): Promise<{ message: 'certificate rejected successfully' }>;

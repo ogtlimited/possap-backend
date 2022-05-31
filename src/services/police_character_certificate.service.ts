@@ -22,7 +22,7 @@ export class PoliceCharacterCertificateService implements IPoliceCharacterCertif
 
   async createUserPoliceCharacterCertificate(user: any, payload: IPoliceCharacterCertificate): Promise<IPoliceCharacterCertificate> {
     const { id } = user;
-    payload.userId = id;
+    payload.user = id;
     const uuid = await uuidv4(6).split('-')[0];
     payload.id = `PCC${uuid}`;
     const createPoliceCertificate = await PoliceCharacterCertificateEntity.create(payload).save();
@@ -36,18 +36,24 @@ export class PoliceCharacterCertificateService implements IPoliceCharacterCertif
   }
 
   async getOfficerPoliceCharacterCertificateRecords(officer: IOfficers): Promise<IPoliceCharacterCertificate[]> {
-    const approvalLevel = this.getOfficerApprovalLevel(officer.characterCertApprovalLevel);
+    const approvalLevel = PoliceCharacterCertificateService.getOfficerApprovalLevel(officer.characterCertApprovalLevel);
     return await PoliceCharacterCertificateEntity.find({
-      where: { approval_level: approvalLevel, police_command: officer.officerSubSection, status: 'pending' },
+      where: { approvalLevel: approvalLevel, certificateRequestCommand: officer.officerSection, status: 'pending' },
+      relations: ['user'],
     });
   }
 
-  async getPoliceCharacterCertificateRecord(id: string): Promise<IPoliceCharacterCertificate> {
-    return await PoliceCharacterCertificateEntity.findOne({ where: { id } });
+  async getPoliceCharacterCertificateRecord(id: string, userId, userType): Promise<IPoliceCharacterCertificate> {
+    let record;
+    if(userType != "officer"){
+       record =  await PoliceCharacterCertificateEntity.findOne({ where: { id, user: userId } });
+    }
+    record = await PoliceCharacterCertificateEntity.findOne({ where: { id } });
+    return record
   }
 
   async getUserPoliceCharacterCertificateRecords(user: User): Promise<IPoliceCharacterCertificate[]> {
-    return await PoliceCharacterCertificateEntity.find({ where: { userId: user.id } });
+    return await PoliceCharacterCertificateEntity.find({ where: { user: user.id } });
   }
 
   async approvePoliceCharacterCertificateRecords(id: string, payload: UpdatePoliceCharacterCertificateDTO,  officer: IOfficers): Promise<{ message: 'certificate approved successfully' }> {
@@ -88,7 +94,7 @@ export class PoliceCharacterCertificateService implements IPoliceCharacterCertif
   private static async approveHelper(id, approvalLevel: number, approvalInfo: IPoliceCharacterApprover) {
     await PoliceCharacterCertificateEntity.createQueryBuilder()
       .update(PoliceCharacterCertificateEntity)
-      .set({approval_level: approvalLevel, approvalInfo})
+      .set({approvalLevel: approvalLevel, approvalInfo})
       .where('id = :id', {id})
       .execute();
   }
@@ -147,7 +153,7 @@ export class PoliceCharacterCertificateService implements IPoliceCharacterCertif
     throw new HttpException(400, 'cannot reject extract after it has been approved');
   }
 
-  private getOfficerApprovalLevel(approvalLevel) {
+  private static getOfficerApprovalLevel(approvalLevel) {
     if (approvalLevel.firstCCApproval) {
       return 1;
     } else if (approvalLevel.secondCCApproval) {
@@ -156,8 +162,10 @@ export class PoliceCharacterCertificateService implements IPoliceCharacterCertif
       return 3;
     } else if (approvalLevel.fourthCCApproval) {
       return 4;
-    } else {
+    } else if (approvalLevel.fifthCCApproval) {
       return 5;
+    } else {
+      return 6;
     }
   }
 }

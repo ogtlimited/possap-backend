@@ -78,7 +78,7 @@ export class PoliceCharacterCertificateEntity extends BaseEntity implements IPol
 
   @Column({ default: 1 })
   @IsNotEmpty()
-  approval_level: number;
+  approvalLevel: number;
 
   @Column({
     type: 'enum',
