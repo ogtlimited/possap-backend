@@ -33,7 +33,7 @@ export class PoliceExtractService implements IPoliceExtractService {
   async getOfficerExtracts(officer: IOfficers): Promise<IPoliceExtract[]> {
     const approvalLevel = officer.extractApprovalLevel.extractFirstApproval ? 1 : 2;
     return await PoliceExtractEntity.find({
-      where: { approval_level: approvalLevel, police_division_area: officer.officerSection, status: 'pending' },
+      where: { approvalLevel: approvalLevel, extractPoliceDivision: officer.officerSection, status: 'pending' },
       relations: ['user'],
     });
   }

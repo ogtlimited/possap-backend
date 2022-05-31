@@ -16,9 +16,8 @@ export interface EscortAndGuardServiceApplication {
   //invoicePaymentMethod: string;
   serviceSubCategory: string;
   serviceType: string;
-  name: string;
-  phone: string;
-  address: string;
-  email: string;
   requestType: number;
+  status: string;
+  approvalLevel: number;
+  rejectionReason: string;
 }

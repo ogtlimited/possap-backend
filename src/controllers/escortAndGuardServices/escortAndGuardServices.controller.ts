@@ -19,7 +19,7 @@ class EscortAndGuardServiceController {
     }
   };
 
-  public findAll = async (req: any, res: Response, next: NextFunction): Promise<void> => {
+  public findAll = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       const findAll: EscortAndGuardServiceApplication[] = await this.EscortAndGuardService.findAll((<any>req).user);
 
@@ -32,7 +32,7 @@ class EscortAndGuardServiceController {
   public getEAGById = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       const eagId = req.params.id;
-      const findOneEAGData: EscortAndGuardServiceApplication = await this.EscortAndGuardService.findByEAGId(eagId);
+      const findOneEAGData: EscortAndGuardServiceApplication = await this.EscortAndGuardService.findByEAGId(Number(eagId));
 
       res.status(200).json({ data: findOneEAGData, message: 'findOne' });
     } catch (error) {
@@ -74,6 +74,26 @@ class EscortAndGuardServiceController {
         next(error);
       });
   };
+
+  public approveRequest = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      const eagId = req.params.id;
+      const approveRequest = await this.EscortAndGuardService.approvalFlow((<any>req).user, eagId);
+      res.status(200).json({ data: approveRequest });
+    } catch (error) {
+      next(error);
+    }
+  }
+
+  public rejectRequest = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      const eagId = req.params.id;
+      const rejectRequest = await this.EscortAndGuardService.rejectEAG(eagId);
+      res.status(200).json({ data: rejectRequest });
+    } catch (error) {
+      next(error);
+    }
+  }
 
   public getCategory = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
