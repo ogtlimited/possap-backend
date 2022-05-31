@@ -103,9 +103,6 @@ export class EscortAndGuardServiceApplicationEntity extends BaseEntity implement
   @Column()
   rejectionReason: string;
 
-  // @Column({ type: 'enum', enum: ['pending', 'in progress', 'approved'], default: 'pending' })
-  // @IsNotEmpty()
-  // status: string;
 
   // @Column({
   //   type: 'enum',
