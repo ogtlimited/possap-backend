@@ -2,7 +2,7 @@
     "env": "development",
     "dbConfig": {
         "host": "localhost",
-        "user": "possap",
+        "user": "postgres",
         "password": "password",
         "database": "possap"
     },
