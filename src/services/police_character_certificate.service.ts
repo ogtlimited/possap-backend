@@ -31,12 +31,12 @@ export class PoliceCharacterCertificateService implements IPoliceCharacterCertif
   async getOfficerPoliceCharacterCertificateRecords(officer: IOfficers): Promise<IPoliceCharacterCertificate[]> {
     const approvalLevel = this.getOfficerApprovalLevel(officer.characterCertApprovalLevel);
     return await PoliceCharacterCertificateEntity.find({
-      where: { approval_level: approvalLevel, police_command: officer.officerSubSection, status: 'pending' },
-    });
+      where: { approval_level: approvalLevel, police_command: officer.officerSubSection, status: 'pending' }, relations: ['user']
+  });
   }
 
   async getPoliceCharacterCertificateRecord(id: string): Promise<IPoliceCharacterCertificate> {
-    return await PoliceCharacterCertificateEntity.findOne({ where: { id } });
+    return await PoliceCharacterCertificateEntity.findOne({ where: { id }, relations: ['user']  });
   }
 
   async getUserPoliceCharacterCertificateRecords(user: User): Promise<IPoliceCharacterCertificate[]> {
