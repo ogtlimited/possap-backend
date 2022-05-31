@@ -21,4 +21,7 @@ export interface EscortAndGuardServiceApplication {
   address: string;
   email: string;
   requestType: number;
+  status: string;
+  approvalLevel: number;
+  rejectionReason: string;
 }
