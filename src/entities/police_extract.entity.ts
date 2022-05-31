@@ -33,9 +33,8 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
   @Column()
   propertyLost: string;
 
-  // @Column()
-  // @IsNotEmpty()
-  // extract_sub_category: string;
+  @Column()
+  extractSubcategory: string;
 
   @Column()
   dateReported: string;
@@ -63,7 +62,7 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
 
   @Column({ default: 1 })
   @IsNotEmpty()
-  approval_level: number;
+  approvalLevel: number;
 
   @Column()
   @IsNotEmpty()
@@ -74,7 +73,7 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
     enum: UserType,
   })
   @IsNotEmpty()
-  user_type: string;
+  userType: string;
 
   @Column({
     type: 'enum',
@@ -82,11 +81,12 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
     default: 'pending',
   })
   @IsNotEmpty()
-  payment_status: string;
+  paymentStatus: string;
 
   @Column({ default: 'nil' })
-  verification_id: string;
+  verificationId: string;
 
   @ManyToOne(() => UserEntity, user => user.police_extracts)
-  user: UserEntity;
+  user: UserEntity
+  ;
 }
