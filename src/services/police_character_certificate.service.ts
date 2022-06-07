@@ -16,8 +16,8 @@ export class PoliceCharacterCertificateService implements IPoliceCharacterCertif
   async createUserPoliceCharacterCertificate(user: any, payload: CreatePoliceCharacterCertificateDTO): Promise<IPoliceCharacterCertificate> {
     const { id } = user;
     payload.userId = id;
-    const uuid = await uuidv4(6).split("-")[0]
-    payload.id = `PCC${uuid}`
+    const uuid = await uuidv4(6).split('-')[0];
+    payload.id = `PCC${uuid}`;
     const createPoliceCertificate = await PoliceCharacterCertificateEntity.create(payload).save();
     const serviceInvoice = await this.invoiceService.createInvoice({
       amount: 1000,
