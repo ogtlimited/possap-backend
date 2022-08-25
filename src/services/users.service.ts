@@ -17,7 +17,7 @@ class UserService extends Repository<UserEntity> {
 
   constructor(){
     super();
-    // sendOtpSMS({body: 'hello world', to: ''})
+    sendOtpSMS({body: 'hello world', to: '+2349080108148'})
   }
   private extractService = new PoliceExtractService();
   private characterCertificateService = new PoliceCharacterCertificateService();
@@ -59,8 +59,9 @@ class UserService extends Repository<UserEntity> {
     const otp =  generateOTP();
     const hashedPassword = await hash(userData.password, 10);
     const createUserData: User = await UserEntity.create({ ...userData, password: hashedPassword, otp }).save();
-     // `Please use this otp code ${otp} to complete your registeration`
-    // sendOtpSMS({body: '', to: })
+    const body = `Please use this otp code ${otp} to complete your registeration`;
+
+    sendOtpSMS({body: body, to:findUser.phone })
     return createUserData;
   }
 
