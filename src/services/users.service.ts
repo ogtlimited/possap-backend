@@ -1,3 +1,4 @@
+import { sendOtpSMS } from './../utils/sendOtpSms';
 import { generateOTP } from './../utils/util';
 import { hash } from 'bcrypt';
 import { EntityRepository, Repository } from 'typeorm';
@@ -50,10 +51,11 @@ class UserService extends Repository<UserEntity> {
 
     const findUser: User = await UserEntity.findOne({ where: { email: userData.email } });
     if (findUser) throw new HttpException(409, `You're email ${userData.email} already exists`);
-
+    const otp =  generateOTP();
     const hashedPassword = await hash(userData.password, 10);
-    const createUserData: User = await UserEntity.create({ ...userData, password: hashedPassword, otp: generateOTP() }).save();
-
+    const createUserData: User = await UserEntity.create({ ...userData, password: hashedPassword, otp }).save();
+     // `Please use this otp code ${otp} to complete your registeration`
+    // sendOtpSMS()
     return createUserData;
   }
 
