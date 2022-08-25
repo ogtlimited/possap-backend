@@ -1,21 +1,20 @@
+import { generateOTP } from './../utils/util';
 import { hash } from 'bcrypt';
 import { EntityRepository, Repository } from 'typeorm';
-import { CreateUserDto } from '@dtos/users.dto';
+import { CreateUserDto, UserOTPDto } from '@dtos/users.dto';
 import { UserEntity } from '@entities/users.entity';
 import { HttpException } from '@exceptions/HttpException';
 import { User } from '@interfaces/users.interface';
 import { isEmpty } from '@utils/util';
-import {PoliceExtractService} from "@services/police_extract.service";
-import {PoliceCharacterCertificateService} from "@services/police_character_certificate.service";
-import EscortAndGuardServiceApplicationService
-  from "@services/escortAndGuardServiceApplication/escortAndGuardServiceApplication.service";
-import {EscortAndGuardServiceApplicationEntity} from "@entities/EscortAndGuardService/EscortAndGuardServiceApplication.entity";
+import { PoliceExtractService } from '@services/police_extract.service';
+import { PoliceCharacterCertificateService } from '@services/police_character_certificate.service';
+import EscortAndGuardServiceApplicationService from '@services/escortAndGuardServiceApplication/escortAndGuardServiceApplication.service';
+import { EscortAndGuardServiceApplicationEntity } from '@entities/EscortAndGuardService/EscortAndGuardServiceApplication.entity';
 
 @EntityRepository()
 class UserService extends Repository<UserEntity> {
-
-  private extractService = new PoliceExtractService()
-  private characterCertificateService = new PoliceCharacterCertificateService()
+  private extractService = new PoliceExtractService();
+  private characterCertificateService = new PoliceCharacterCertificateService();
 
   public async findAllUser(): Promise<User[]> {
     const users: User[] = await UserEntity.find();
@@ -32,18 +31,18 @@ class UserService extends Repository<UserEntity> {
   }
 
   public async findAllUserServices(user: User): Promise<{
-      userExtractRecords?: any;
-      userPCCRecords?: any;
-      userEGSRecords?: any;
-    }> {
-    const userExtractRecords = await this.extractService.getApplicantsExtracts(user)
-    const userPCCRecords = await this.characterCertificateService.getUserPoliceCharacterCertificateRecords(user)
-    const userEGSRecords = await EscortAndGuardServiceApplicationEntity.find({where: {userId: user.id}})
+    userExtractRecords?: any;
+    userPCCRecords?: any;
+    userEGSRecords?: any;
+  }> {
+    const userExtractRecords = await this.extractService.getApplicantsExtracts(user);
+    const userPCCRecords = await this.characterCertificateService.getUserPoliceCharacterCertificateRecords(user);
+    const userEGSRecords = await EscortAndGuardServiceApplicationEntity.find({ where: { userId: user.id } });
     return {
       userExtractRecords,
       userPCCRecords,
-      userEGSRecords
-    }
+      userEGSRecords,
+    };
   }
 
   public async createUser(userData: CreateUserDto): Promise<User> {
@@ -53,11 +52,25 @@ class UserService extends Repository<UserEntity> {
     if (findUser) throw new HttpException(409, `You're email ${userData.email} already exists`);
 
     const hashedPassword = await hash(userData.password, 10);
-    const createUserData: User = await UserEntity.create({ ...userData, password: hashedPassword }).save();
+    const createUserData: User = await UserEntity.create({ ...userData, password: hashedPassword, otp: generateOTP() }).save();
 
     return createUserData;
   }
 
+  public async validateSignup(userId: number, userData: UserOTPDto): Promise<any> {
+    if (isEmpty(userData)) throw new HttpException(400, "You're not userData");
+
+    const findUser: User = await UserEntity.findOne({ where: { id: userId } });
+    if (!findUser) throw new HttpException(409, "You're not user");
+
+    if (findUser && findUser.otp !== userData.otp) {
+      throw new HttpException(409, 'Invalid OTP');
+    }
+    await UserEntity.update(userId, { ...findUser, active: true });
+
+    const updateUser: User = await UserEntity.findOne({ where: { id: userId } });
+    return updateUser;
+  }
   public async updateUser(userId: number, userData: CreateUserDto): Promise<User> {
     if (isEmpty(userData)) throw new HttpException(400, "You're not userData");
 

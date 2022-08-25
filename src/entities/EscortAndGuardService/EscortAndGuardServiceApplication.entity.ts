@@ -7,6 +7,13 @@ export enum PaymentMethod {
   MONTHLY = 'monthly',
 }
 
+export enum Status {
+  PENDING = 'pending',
+  IN_PROGRESS = 'in_progress',
+  APPROVED = 'approved',
+  REJECTED = 'rejected',
+}
+
 @Entity()
 export class EscortAndGuardServiceApplicationEntity extends BaseEntity implements EscortAndGuardServiceApplication {
   @PrimaryGeneratedColumn('uuid')
@@ -55,6 +62,9 @@ export class EscortAndGuardServiceApplicationEntity extends BaseEntity implement
   @Column()
   escortAddress: string;
 
+  @Column()
+  fileNumber: string;
+
   @CreateDateColumn({ type: 'timestamptz' })
   @IsNotEmpty()
   escortStartDate: Date;
@@ -73,26 +83,26 @@ export class EscortAndGuardServiceApplicationEntity extends BaseEntity implement
 
   @Column()
   @IsNotEmpty()
-  name: string;
-
-  @Column()
-  @IsNotEmpty()
-  phone: string;
-
-  @Column()
-  @IsNotEmpty()
-  email: string;
-
-  @Column()
-  @IsNotEmpty()
   requestType: number;
-
-  @Column()
-  @IsNotEmpty()
-  address: string;
 
   @Column({ default: true })
   escortOfficersRequired: boolean;
+
+  @Column({
+    type: 'enum',
+    enum: Status,
+    default: Status.PENDING
+  })
+  @IsNotEmpty()
+  status: string;
+
+  @Column({ default: 1 })
+  @IsNotEmpty()
+  approvalLevel: number;
+
+  @Column()
+  rejectionReason: string;
+
 
   // @Column({
   //   type: 'enum',

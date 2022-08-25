@@ -1,16 +1,18 @@
-import { IsDate, IsEnum, IsNumber, IsOptional, IsString } from 'class-validator';
+import { IsEnum,  IsOptional, IsString } from 'class-validator';
 import { UserType } from '@/enums/user.enum';
 import { IPoliceCharacterCertificate } from '@interfaces/police_character_cert.interface';
-import { Column } from 'typeorm';
+import {
+  PoliceCharacterCertificateReasonForEnquiryEnum,
+  PoliceCharacterCertificateRequestTypeEnum
+} from "@/enums/pcc.enums";
 
 export class CreatePoliceCharacterCertificateDTO implements IPoliceCharacterCertificate {
   @IsString()
-  id: string;
-
-  @IsString()
+  @IsEnum(PoliceCharacterCertificateRequestTypeEnum)
   requestType: string;
 
   @IsString()
+  @IsEnum(PoliceCharacterCertificateReasonForEnquiryEnum)
   reasonForInquiry: string;
 
   @IsString()
@@ -19,10 +21,11 @@ export class CreatePoliceCharacterCertificateDTO implements IPoliceCharacterCert
   @IsString()
   placeOfBirth: string;
 
-  @IsDate()
-  dateOfBirth: Date;
+  @IsString()
+  dateOfBirth: string;
 
   @IsString()
+  @IsOptional()
   destinationCountry: string;
 
   @IsString()
@@ -31,11 +34,17 @@ export class CreatePoliceCharacterCertificateDTO implements IPoliceCharacterCert
   @IsString()
   placeOfIssuance: string;
 
-  @IsDate()
-  dateOfIssuance: Date;
+  @IsString()
+  dateOfIssuance: string;
 
   @IsString()
   hasBeenConvicted: string;
+
+  @IsString()
+  address: string;
+
+  @IsString()
+  lga: string;
 
   @IsString()
   convictionHistory: string;
@@ -50,35 +59,19 @@ export class CreatePoliceCharacterCertificateDTO implements IPoliceCharacterCert
   certificateRequestCommand: string;
 
   @IsString()
-  status: string;
-
-  @IsString()
   @IsEnum(UserType)
-  user_type: string;
-
-  @IsString()
-  payment_status: string;
-
-  @IsString()
-  verification_id: string;
-
-  @IsNumber()
-  userId: number;
+  userType: string;
 
   @IsString()
   state: string;
 
-  @IsString()
-  lga: string;
-
-  @IsString()
-  address: string;
-
-  @IsString()
-  police_command: string;
 }
 
 export class UpdatePoliceCharacterCertificateDTO {
   @IsString()
+  @IsOptional()
   denial_reason: string;
+
+  @IsString()
+  comment: string;
 }

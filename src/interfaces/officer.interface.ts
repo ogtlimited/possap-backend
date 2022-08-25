@@ -1,5 +1,6 @@
 export interface IOfficers {
   apNumber: string;
+  id?: any;
   useServiceNum: boolean;
   fullName: string;
   userName: string;

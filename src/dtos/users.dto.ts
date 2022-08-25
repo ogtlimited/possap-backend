@@ -42,3 +42,7 @@ export class LoginUserDto {
   @IsString()
   public password: string;
 }
+export class UserOTPDto {
+  @IsString()
+  public otp: string;
+}

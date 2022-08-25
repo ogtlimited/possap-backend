@@ -1,3 +1,6 @@
+import { OTP_CONFIG, OTP_LENGTH } from './constants';
+
+const otpGenerator = require('otp-generator');
 /**
  * @method isEmpty
  * @param {String | Number | Object} value
@@ -16,4 +19,9 @@ export const isEmpty = (value: string | number | object): boolean => {
   } else {
     return false;
   }
+};
+
+export const generateOTP = () => {
+  const OTP = otpGenerator.generate(OTP_LENGTH, OTP_CONFIG);
+  return OTP;
 };

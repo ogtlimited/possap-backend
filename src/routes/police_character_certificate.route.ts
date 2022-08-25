@@ -23,10 +23,13 @@ class PoliceCharacterCertificateRoute implements Routes{
     this.router.get(`${this.path}`, [authMiddleware], this.controller.getUserPoliceCharacterCertificateRecords);
 
     //get officer certificates
-    this.router.get(`${this.path}/officers-extracts`, [officerMiddleware], this.controller.getOfficerPoliceCharacterCertificateRecords);
+    this.router.get(`${this.path}/officers-pcc`, [officerMiddleware], this.controller.getOfficerPoliceCharacterCertificateRecords);
+
+    //get officer certificates
+    this.router.get(`${this.path}/officers-pcc/:id`, [officerMiddleware], this.controller.getPoliceCharacterCertificateRecord);
 
     //get extract
-    this.router.get(`${this.path}/:id`, [], this.controller.getPoliceCharacterCertificateRecord);
+    this.router.get(`${this.path}/:id`, [authMiddleware], this.controller.getPoliceCharacterCertificateRecord);
 
     //create extract
     this.router.post(`${this.path}`, [validationMiddleware(CreatePoliceCharacterCertificateDTO, 'body'), authMiddleware], this.controller.createUserPoliceCharacterCertificate);

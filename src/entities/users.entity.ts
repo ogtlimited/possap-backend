@@ -64,6 +64,16 @@ export class UserEntity extends BaseEntity implements User {
 
   @Column()
   @IsNotEmpty()
+  otp: string;
+
+  @Column({
+    default: false
+  })
+  @IsNotEmpty()
+  active?: boolean;
+
+  @Column()
+  @IsNotEmpty()
   lga: string;
 
   @Column({
