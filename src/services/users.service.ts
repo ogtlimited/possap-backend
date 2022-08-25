@@ -14,6 +14,11 @@ import { EscortAndGuardServiceApplicationEntity } from '@entities/EscortAndGuard
 
 @EntityRepository()
 class UserService extends Repository<UserEntity> {
+
+  constructor(){
+    super();
+    // sendOtpSMS({body: 'hello world', to: ''})
+  }
   private extractService = new PoliceExtractService();
   private characterCertificateService = new PoliceCharacterCertificateService();
 
@@ -55,7 +60,7 @@ class UserService extends Repository<UserEntity> {
     const hashedPassword = await hash(userData.password, 10);
     const createUserData: User = await UserEntity.create({ ...userData, password: hashedPassword, otp }).save();
      // `Please use this otp code ${otp} to complete your registeration`
-    // sendOtpSMS()
+    // sendOtpSMS({body: '', to: })
     return createUserData;
   }
 
