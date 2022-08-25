@@ -15,10 +15,10 @@ import { EscortAndGuardServiceApplicationEntity } from '@entities/EscortAndGuard
 @EntityRepository()
 class UserService extends Repository<UserEntity> {
 
-  constructor(){
-    super();
-    sendOtpSMS({body: 'hello world', to: '+2349080108148'})
-  }
+  // constructor(){
+  //   super();
+  //   sendOtpSMS({body: 'hello world', to: '+2349080108148'})
+  // }
   private extractService = new PoliceExtractService();
   private characterCertificateService = new PoliceCharacterCertificateService();
 
