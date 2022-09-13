@@ -1,5 +1,5 @@
 import { IsNotEmpty } from 'class-validator';
-import {BaseEntity, Entity,  Column, Unique, ManyToOne, PrimaryColumn} from 'typeorm';
+import { BaseEntity, Entity, Column, Unique, ManyToOne, PrimaryColumn } from 'typeorm';
 import { IPoliceExtract } from '@interfaces/police_extract.interface';
 import { UserType } from '@/enums/user.enum';
 import { PaymentStatus } from '@/enums/payment_status.enum';
@@ -87,6 +87,5 @@ export class PoliceExtractEntity extends BaseEntity implements IPoliceExtract {
   verificationId: string;
 
   @ManyToOne(() => UserEntity, user => user.police_extracts)
-  user: UserEntity
-  ;
+  user: UserEntity;
 }

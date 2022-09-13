@@ -1,4 +1,4 @@
-import { sendOtpSMS } from './../utils/sendOtpSms';
+// import { sendOtpSMS } from './../utils/sendOtpSms';
 import { generateOTP } from './../utils/util';
 import { hash } from 'bcrypt';
 import { EntityRepository, Repository } from 'typeorm';
@@ -11,13 +11,17 @@ import { PoliceExtractService } from '@services/police_extract.service';
 import { PoliceCharacterCertificateService } from '@services/police_character_certificate.service';
 import EscortAndGuardServiceApplicationService from '@services/escortAndGuardServiceApplication/escortAndGuardServiceApplication.service';
 import { EscortAndGuardServiceApplicationEntity } from '@entities/EscortAndGuardService/EscortAndGuardServiceApplication.entity';
+const Twilio = require('twilio');
 
 @EntityRepository()
 class UserService extends Repository<UserEntity> {
-
-  constructor(){
+  constructor() {
     super();
-    // sendOtpSMS({body: 'hello world', to: ''})
+    // SMSVerify()
+    // const twilioClient = new Twilio(process.env.TWILIO_API_KEY,
+    //   process.env.TWILIO_API_SECRET,
+    //   {accountSid: process.env.TWILIO_ACCOUNT_SID});
+    // sendOtpSMS({ body: 'hello world', to: '+2347066565263' });
   }
   private extractService = new PoliceExtractService();
   private characterCertificateService = new PoliceCharacterCertificateService();
@@ -56,11 +60,12 @@ class UserService extends Repository<UserEntity> {
 
     const findUser: User = await UserEntity.findOne({ where: { email: userData.email } });
     if (findUser) throw new HttpException(409, `You're email ${userData.email} already exists`);
-    const otp =  generateOTP();
+    const otp = generateOTP();
     const hashedPassword = await hash(userData.password, 10);
     const createUserData: User = await UserEntity.create({ ...userData, password: hashedPassword, otp }).save();
-     // `Please use this otp code ${otp} to complete your registeration`
-    // sendOtpSMS({body: '', to: })
+    const body = `Please use this otp code ${otp} to complete your registeration`;
+
+    // sendOtpSMS({ body: body, to: findUser.phone });
     return createUserData;
   }
 

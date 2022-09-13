@@ -46,6 +46,17 @@ class UsersController {
       next(error);
     }
   };
+  public validateSignup = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      const userId = Number(req.params.id);
+      const userData: CreateUserDto = req.body;
+      const validateUserSignup: User = await this.userService.validateSignup(userId, userData);
+
+      res.status(201).json({ data: validateUserSignup, message: 'validated' });
+    } catch (error) {
+      next(error);
+    }
+  };
 
   public updateUser = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {

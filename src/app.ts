@@ -18,6 +18,7 @@ import { logger, stream } from '@utils/logger';
 import CommandService from './services/helper-services/command.service';
 const { createHash } = require('crypto');
 import axios from 'axios';
+import DynamicService from './services/Dynamic.service';
 
 class App {
   public app: express.Application;
@@ -28,14 +29,23 @@ class App {
     this.app = express();
     this.port = process.env.PORT || 3000;
     this.env = process.env.NODE_ENV || 'development';
-    const hash = createHash('sha256').update('POSSAP3U4.4)9434=)@9345K9hjer34&5%34::').digest('hex');
+    // const hash = createHash('sha256').update('POSSAP3U4.4)9434=)@9345K9hjer34&5%34::servicernumber:FN23233').digest('hex');
+    // const signature = Buffer.from(hash).toString('base64');
+    const data = {
+      ServiceNumber: 'AP205599',
+    };
+
+    const hash = createHash('sha256')
+      .update('POSSAP3U4.4)9434=)@9345K9hjer34&5%34::' + data['ServiceNumber'])
+      .digest('hex');
     const signature = Buffer.from(hash).toString('base64');
-    console.log(signature);
+
     this.env !== 'test' && this.connectToDatabase();
     this.initializeMiddlewares();
     this.initializeRoutes(routes);
     this.initializeSwagger();
     this.initializeErrorHandling();
+
     // axios
     //   .get('http://52.15.120.183/verify.php?pickNIN=30919176644&key=ZebraW3ta$')
     //   .then(res => console.log(res.data))
@@ -62,9 +72,11 @@ class App {
     });
   }
 
-  private seedDatabase() {
+  private async seedDatabase() {
     const command = new CommandService();
     command.createBulk();
+    const d = new DynamicService();
+    console.log(await d.SelectTable(), 'dynamic');
   }
 
   private initializeMiddlewares() {
