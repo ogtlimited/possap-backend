@@ -1,22 +1,12 @@
 export interface IOfficers {
   apNumber: string;
   id?: any;
-  useServiceNum: boolean;
   fullName: string;
   userName: string;
   email: string;
   phoneNumber: string;
   password: string;
-  officerFormation: string;
-  officerDepartment: string;
-  officerSection: string;
-  officerSubSection: string;
-  role: string;
-  accessType: string;
-  extractApprovalLevel: IExtractApprovalLevel;
-  characterCertApprovalLevel: ICharacterCertApprovalLevel;
-  eGSApprovalLevel: IEGSApprovalLevel;
-  service: any[];
+  profile: any;
   commandAccess: any[];
 }
 
