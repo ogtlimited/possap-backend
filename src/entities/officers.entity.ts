@@ -9,9 +9,7 @@ import {  Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateCo
 import { CommandAccessEntity } from './commandAccess.entity';
 
 export type ServiceType = 'POLICE EXTRACT' | 'ESCORT AND GUARD SERVICES' | 'POLICE CHARACTER CERTIFICATE';
-@Entity({
-  name: 'officer'
-})
+@Entity()
 export class OfficerEntity extends sharedProps implements IOfficers {
 
   @PrimaryGeneratedColumn()
@@ -50,11 +48,11 @@ export class OfficerEntity extends sharedProps implements IOfficers {
   @UpdateDateColumn()
   updatedAt: Date;
 
-  @OneToOne(() => OfficerProfileEntity)
+  @OneToOne(() => OfficerProfileEntity, (profile) => profile.officer, {onDelete: 'CASCADE', onUpdate: 'CASCADE', eager: true, cascade: true})
   @JoinColumn()
   profile: OfficerProfileEntity
 
-  @OneToOne(() => OfficerAccessEntity)
+  @OneToOne(() => OfficerAccessEntity, (access) => access.officer, {onDelete: 'CASCADE', onUpdate: 'CASCADE', eager: true, cascade: true})
   @JoinColumn()
   access: OfficerAccessEntity
 

@@ -1,3 +1,4 @@
+import { PossapServiceFieldsEntity } from '@/entities/service-field.entity';
 /* eslint-disable prettier/prettier */
 import { IsNotEmpty } from 'class-validator';
 import {
@@ -12,7 +13,6 @@ import {
 } from 'typeorm';
 import { User } from '@interfaces/users.interface';
 import {CommandAccessEntity} from "@entities/commandAccess.entity";
-import {PoliceExtractEntity} from "@entities/police_extract.entity";
 export enum UserType {
   INDIVIDUAL = 'Individual',
   CorporateNGOs = 'Corporate/NGOs',
@@ -40,15 +40,15 @@ export class UserEntity extends BaseEntity implements User {
 
   @Column()
   @IsNotEmpty()
-  identificationNumber: string;
+  nin: string;
 
-  @Column({
-    type: 'enum',
-    enum: IDENTIFICATIONType,
-    default: IDENTIFICATIONType.NIN,
-  })
-  @IsNotEmpty()
-  identificationType: string;
+  // @Column({
+  //   type: 'enum',
+  //   enum: IDENTIFICATIONType,
+  //   default: IDENTIFICATIONType.NIN,
+  // })
+  // @IsNotEmpty()
+  // identificationType: string;
 
   @Column()
   @IsNotEmpty()
@@ -84,8 +84,6 @@ export class UserEntity extends BaseEntity implements User {
   @IsNotEmpty()
   userType: string;
 
-  @Column()
-  identificationDoc?: string;
 
   @Column()
   @IsNotEmpty()
@@ -99,7 +97,8 @@ export class UserEntity extends BaseEntity implements User {
   @UpdateDateColumn()
   updatedAt: Date;
 
-  @OneToMany(() => PoliceExtractEntity, (extract) => extract.user)
-  police_extracts: PoliceExtractEntity[]
+  @OneToMany(() => PossapServiceFieldsEntity, service => service.owner)
+  service: PossapServiceFieldsEntity[];
+
 
 }

@@ -5,9 +5,13 @@ export class CreateUserDto {
   public email: string;
 
   @IsString()
+  public nin: string;
+
+  @IsString()
   public password: string;
 
   @IsString()
+  @IsOptional()
   public userType: string;
 
   @IsString()
@@ -22,15 +26,15 @@ export class CreateUserDto {
   @IsString()
   public lga: string;
 
-  @IsString()
-  public identificationType: string;
+  // @IsString()
+  // public identificationType: string;
 
-  @IsString()
-  public identificationNumber: string;
+  // @IsString()
+  // public identificationNumber: string;
 
-  @IsString()
-  @IsOptional()
-  public identificationDoc: string;
+  // @IsString()
+  // @IsOptional()
+  // public identificationDoc: string;
 
   @IsString()
   public address: string;

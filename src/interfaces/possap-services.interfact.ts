@@ -1,10 +1,20 @@
 export interface IPossapService {
-  id: number;
-  name: string;
-  services: any[];
+  id?: number;
+  name?: string;
+  approvalWorkFlow?: any[];
+  services?: any[];
 }
 export interface IPossapServiceFields {
-  id: number;
-  serviceId: any;
-  formFields: any[];
+  id?: number;
+  service?: any;
+  formFields?: any[];
+  ref?: string;
+  status?: string;
+  owner?: any;
+  approvalLevel?: string;
+  approvingOfficers?: IApprovers[];
+}
+export interface IApprovers {
+  officerId: string;
+  approvalLevel: string;
 }
