@@ -44,6 +44,19 @@ class HelperController {
       next(error);
     }
   };
+
+  public getFetchPoliceData = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    axios
+      .get('https://api.npprm.net/commandcategory/POSSAP/MDc5YzIyZTM1ZDAxNzlkYzVkOTViYmUwYTJkMjgxN2RkNmNjMzJhZjQzZmYxNzk2ZWY3OTA3ZWFmYjg5ZmIxMQ==/1')
+      .then(function (response) {
+        // const writeStream = fs.createWriteStream('./eag.json');
+        // response.data.pipe(writeStream);
+        res.status(200).json({ data: response.data, message: 'data' });
+      })
+      .catch(function (error) {
+        next(error);
+      });
+  };
 }
 
 export default HelperController;
