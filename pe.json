@@ -1,0 +1,135 @@
+[
+    {
+      "name": "Police Extract",
+       "approvalWorkFlow": [
+          "Extract First Approval",
+          "Extract Second Approval"
+      ],
+      "formSchema": [
+        {
+          "id": "extractCategory",
+          "label": "Select Category of Extract",
+          "mandatory": "yes",
+          "placeholder": "Select an extract category.",
+          "type": "select",
+          "options": [
+            {"key": "documentLost", "value": "Loss of Document"},
+            {"key": "propertyLost", "value": "Loss of Property"},
+            {"key": "others", "value": "Others"}
+          ],
+          "value": ""
+        },
+        {
+          "id": "documentLost",
+          "label": "Loss of Document",
+          "mandatory": "yes",
+          "placeholder": "Loss of Document",
+          "type": "select",
+          "showIf": {
+            "value": "extractCategory",
+            "equals": "documentLost"
+          },
+          "options": [
+            {"key": "Identification", "value": "Identification"},
+            {"key": "Certificate", "value": "Certificate"},
+            {"key": "Book/Journal", "value": "Book/Journal"},
+            {"key": "Vehicle Particulars", "value": "Vehicle Particulars"},
+            {"key": "Government issued document", "value": "Government issued document"},
+            {"key": "Others", "value": "Others"}
+          ]
+        },
+        {
+          "id": "propertyLost",
+          "label": "Loss of Property",
+          "mandatory": "yes",
+          "placeholder": "Loss of Property",
+          "type": "select",
+          "showIf": {
+            "value": "extractCategory",
+            "equals": "propertyLost"
+          },
+          "options": [
+            {"key": "Identification", "value": "Identification"},
+            {"key": "Certificate", "value": "Certificate"},
+            {"key": "Book/Journal", "value": "Book/Journal"},
+            {"key": "Vehicle Particulars", "value": "Vehicle Particulars"},
+            {"key": "Government issued document", "value": "Government issued document"},
+            {"key": "Others", "value": "Others"}
+          ],
+          "value": ""
+        },
+        {
+          "id": "extractReason",
+          "label": "Reason for Request",
+          "mandatory": "yes",
+          "placeholder": "Enter your reason for extract",
+          "type": "text",
+          "value": ""
+        },
+        {
+          "id": "wasReported",
+          "label": "Was incident reported at a police station?",
+          "mandatory": "yes",
+          "placeholder": "",
+          "type": "radio",
+          "value": ""
+        },
+        {
+          "id": "dateReported",
+          "label": "Select the date the incident was reported",
+          "mandatory": "yes",
+          "placeholder": "Enter Incident Reported Date",
+          "type": "date",
+          "value": ""
+        },
+        {
+          "id": "courtAffidavit",
+          "label": "Upload Court Affidavit",
+          "mandatory": "yes",
+          "placeholder": "Add a court affidavit file here. Maximum size: 1MB",
+          "type": "file",
+          "value": ""
+        },
+        {
+          "id": "affidavitNumber",
+          "label": "Affidavit Number",
+          "mandatory": "yes",
+          "placeholder": "Enter Affidavit Number",
+          "type": "text",
+          "value": ""
+        },
+        {
+          "id": "affidavitDateOfIssuance",
+          "label": "Affidavit Date of Issuance",
+          "mandatory": "yes",
+          "placeholder": "Enter affidavit date of issuance",
+          "type": "date",
+          "value": ""
+        },
+        {
+          "id": "extractState",
+          "label": "State",
+          "mandatory": "yes",
+          "placeholder": "Select State of the Police Formation/Division",
+          "type": "select",
+          "value": ""
+        },
+        {
+          "id": "extractLga",
+          "label": "Local Government Area",
+          "mandatory": "yes",
+          "placeholder": "Select LGA of the Police Formation/Division",
+          "type": "select",
+          "value": ""
+        },
+        {
+          "id": "extractPoliceDivision",
+          "label": "Select the Police Formation/Division",
+          "mandatory": "yes",
+          "placeholder": "Select the Formation/Division",
+          "type": "select",
+          "value": ""
+        }
+      ]
+    }
+  ]
