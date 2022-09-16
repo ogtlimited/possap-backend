@@ -3,7 +3,7 @@ import { IPossapService } from './../interfaces/possap-services.interfact';
 import { HttpException } from '@/exceptions/HttpException';
 import { isEmpty } from 'class-validator';
 import { EntityRepository, Repository } from 'typeorm';
-import { PossapServiceEntity } from '@/entities/service.entity';
+import { PossapServiceEntity } from '@/entities/possap-service.entity';
 
 @EntityRepository()
 class PossapService extends Repository<PossapServiceEntity> {
@@ -13,10 +13,10 @@ class PossapService extends Repository<PossapServiceEntity> {
   }
 
   public async findPossapServiceById(AllPossapId: any): Promise<IPossapService> {
-    if (isEmpty(AllPossapId)) throw new HttpException(400, "You're not AllPossapId");
-
+    if (isEmpty(AllPossapId)) throw new HttpException(400, 'no data passed');
+    console.log(AllPossapId, 'id');
     const findAllPossap: IPossapService = await PossapServiceEntity.findOne({ where: { id: AllPossapId } });
-    if (!findAllPossap) throw new HttpException(409, "You're not AllPossap");
+    if (!findAllPossap) throw new HttpException(409, 'Service does not exist');
 
     return findAllPossap;
   }

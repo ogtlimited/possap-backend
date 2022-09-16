@@ -7,9 +7,10 @@ export interface User {
   fullName: string;
   state: string;
   lga: string;
-  identificationType: string;
-  identificationNumber: string;
-  identificationDoc?: string;
+  nin: string;
+  // identificationType: string;
+  // identificationNumber: string;
+  // identificationDoc?: string;
   otp?: string;
   active?: boolean;
   address: string;
