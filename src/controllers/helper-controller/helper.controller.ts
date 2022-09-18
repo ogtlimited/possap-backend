@@ -46,16 +46,35 @@ class HelperController {
   };
 
   public getFetchPoliceData = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    const data = req.body.data;
+    console.log(data);
     axios
       .get('https://api.npprm.net/commandcategory/POSSAP/MDc5YzIyZTM1ZDAxNzlkYzVkOTViYmUwYTJkMjgxN2RkNmNjMzJhZjQzZmYxNzk2ZWY3OTA3ZWFmYjg5ZmIxMQ==/1')
-      .then(function (response) {
+      .then(response => {
         // const writeStream = fs.createWriteStream('./eag.json');
         // response.data.pipe(writeStream);
-        res.status(200).json({ data: response.data, message: 'data' });
+        const records = response.data.ResponseObject.ReportRecords;
+        const finale = this.deepLook(data, data.length, records);
+        res.status(200).json({ data: finale, message: 'data' });
       })
       .catch(function (error) {
         next(error);
       });
+  };
+
+  public deepLook = (arr, len, mainArr) => {
+    let result = [];
+    const looper = (arr, len, mainArr) => {
+      if (len > 0) {
+        console.log('recursion', len, mainArr);
+        const filter = mainArr.filter(obj => obj['code'] === arr[0] || obj['Code'] === arr[0])[0];
+        const slice = arr.slice(1);
+        result = filter.sub;
+        looper(slice, len - 1, filter.sub);
+      }
+    };
+    looper(arr, len, mainArr);
+    return result;
   };
 }
 
