@@ -25,3 +25,14 @@ export const generateOTP = () => {
   const OTP = otpGenerator.generate(OTP_LENGTH, OTP_CONFIG);
   return OTP;
 };
+export const ObjectId = function () {
+  const timestamp = ((new Date().getTime() / 1000) | 0).toString(16);
+  return (
+    timestamp +
+    'xxxxxxxxxxxxxxxx'
+      .replace(/[x]/g, function () {
+        return ((Math.random() * 16) | 0).toString(16);
+      })
+      .toLowerCase()
+  );
+};

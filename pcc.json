@@ -1,0 +1,134 @@
+
+    {
+      
+      "formSchema": [
+        {
+          "id": "requestType",
+          "label": "Request Types",
+          "mandatory": "yes",
+          "placeholder": "Select a request type",
+          "type": "select",
+          "value": ""
+        },
+        {
+          "id": "reasonForInquiry",
+          "label": "Reason for Inquiry",
+          "mandatory": "yes",
+          "placeholder": "Select Reason for Inquiry",
+          "type": "select",
+          "options": [
+            {"key": "Travelling", "value": "Travelling"},
+            {"key": "Employment", "value": "Employment"},
+            {"key": "Education", "value": "Education"},
+            {"key": "others", "value": "Others"}
+          ],
+          "value": ""
+        },
+        {
+          "id": "reasonForInquiry",
+          "label": "Reason for Inquiry",
+          "mandatory": "yes",
+          "placeholder": "Select Reason for Inquiry",
+          "type": "select-api",
+          "options": [],
+          "value": ""
+        },
+        {
+          "id": "stateOfOrigin",
+          "label": "State of Origin",
+          "mandatory": "yes",
+          "placeholder": "Select your state of origin",
+          "type": "select",
+          "value": ""
+        },
+        {
+          "id": "placeOfBirth",
+          "label": "Place of Birth",
+          "mandatory": "yes",
+          "placeholder": "Enter place of birth here",
+          "type": "text",
+          "value": ""
+        },
+        {
+          "id": "dateOfBirth",
+          "label": "Date of Birth",
+          "mandatory": "yes",
+          "placeholder": "Select your date of birth.",
+          "type": "date",
+          "value": ""
+        },
+        {
+          "id": "destinationCountry",
+          "label": "Destination Country",
+          "mandatory": "yes",
+          "placeholder": "Select your destination country.",
+          "type": "select",
+          "value": ""
+        },
+        {
+          "id": "passportNumber",
+          "label": "Passport Number",
+          "mandatory": "yes",
+          "placeholder": "Specify your international passport number",
+          "type": "text",
+          "value": ""
+        },
+        {
+          "id": "placeOfIssuance",
+          "label": "Place of Issuance",
+          "mandatory": "yes",
+          "placeholder": "Specify where your passport was issued",
+          "type": "text",
+          "value": ""
+        },
+        {
+          "id": "dateOfIssuance",
+          "label": "Date of Issuance",
+          "mandatory": "yes",
+          "placeholder": "Specify the date your passport was issued",
+          "type": "date",
+          "value": ""
+        },
+        {
+          "id": "hasBeenConvicted",
+          "label": "Have you previously been convicted?",
+          "mandatory": "yes",
+          "placeholder": "",
+          "type": "radio",
+          "value": ""
+        },
+        {
+          "id": "convictionHistory",
+          "label": "Previous Conviction History",
+          "mandatory": "yes",
+          "placeholder": "Enter info about your previous conviction history",
+          "type": "text",
+          "value": ""
+        },
+        {
+          "id": "passportPhotograph",
+          "label": "Upload Current Passport Photograph",
+          "mandatory": "yes",
+          "placeholder": "Add your current passport photograph file here. Maximum size: 2MB",
+          "type": "file",
+          "value": ""
+        },
+        {
+          "id": "passportBioDataPage",
+          "label": "Upload International Passport Bio Datapage",
+          "mandatory": "yes",
+          "placeholder": "Add an image of your international passport bio datapage here. Maximum size:2MB",
+          "type": "file",
+          "value": ""
+        },
+        {
+          "id": "certificateRequestCommand",
+          "label": "Select Police Command to Request Character Certificate",
+          "mandatory": "yes",
+          "placeholder": "Select state for the police command",
+          "type": "select",
+          "value": ""
+        }
+      ]
+    }
+  

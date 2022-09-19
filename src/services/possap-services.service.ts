@@ -4,8 +4,12 @@ import { IOfficers } from './../interfaces/officer.interface';
 import { HttpException } from '@/exceptions/HttpException';
 import { isEmpty } from 'class-validator';
 import { EntityRepository, Repository } from 'typeorm';
+<<<<<<< HEAD
 import { PossapServiceEntity } from '@/entities/service.entity';
 import { OfficerEntity } from '@entities/officers.entity';
+=======
+import { PossapServiceEntity } from '@/entities/possap-service.entity';
+>>>>>>> 05acc335d97490a57a381f07a98323582c10a878
 
 @EntityRepository()
 class PossapService extends Repository<PossapServiceEntity> {
@@ -15,10 +19,10 @@ class PossapService extends Repository<PossapServiceEntity> {
   }
 
   public async findPossapServiceById(AllPossapId: any): Promise<IPossapService> {
-    if (isEmpty(AllPossapId)) throw new HttpException(400, "You're not AllPossapId");
-
+    if (isEmpty(AllPossapId)) throw new HttpException(400, 'no data passed');
+    console.log(AllPossapId, 'id');
     const findAllPossap: IPossapService = await PossapServiceEntity.findOne({ where: { id: AllPossapId } });
-    if (!findAllPossap) throw new HttpException(409, "You're not AllPossap");
+    if (!findAllPossap) throw new HttpException(409, 'Service does not exist');
 
     return findAllPossap;
   }
