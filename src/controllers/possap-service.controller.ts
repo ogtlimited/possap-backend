@@ -17,7 +17,8 @@ class PossapServiceController {
 
   public findServiceById = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const result: IPossapService = await this.possapS.findPossapServiceById(req.query['id']);
+      console.log(req.params, req.query);
+      const result: IPossapService = await this.possapS.findPossapServiceById(req.params['id']);
       res.status(200).json({ data: result });
     } catch (error) {
       next(error);

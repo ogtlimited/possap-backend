@@ -1,6 +1,8 @@
 import { NextFunction, Request, Response } from 'express';
 const { createHash } = require('crypto');
 import axios from 'axios';
+const fs = require('fs');
+const util = require('util');
 class HelperController {
   public verifyNIN = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
@@ -45,21 +47,41 @@ class HelperController {
     }
   };
 
-  public getFetchPoliceData = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
-    const data = req.body.data;
-    console.log(data);
-    axios
-      .get('https://api.npprm.net/commandcategory/POSSAP/MDc5YzIyZTM1ZDAxNzlkYzVkOTViYmUwYTJkMjgxN2RkNmNjMzJhZjQzZmYxNzk2ZWY3OTA3ZWFmYjg5ZmIxMQ==/1')
-      .then(response => {
-        // const writeStream = fs.createWriteStream('./eag.json');
-        // response.data.pipe(writeStream);
-        const records = response.data.ResponseObject.ReportRecords;
-        const finale = this.deepLook(data, data.length, records);
-        res.status(200).json({ data: finale, message: 'data' });
-      })
-      .catch(function (error) {
-        next(error);
-      });
+  public getFetchPoliceData = async (): Promise<void> => {
+    try {
+      const { data } = await axios.get(
+        'https://api.npprm.net/commandcategory/POSSAP/MDc5YzIyZTM1ZDAxNzlkYzVkOTViYmUwYTJkMjgxN2RkNmNjMzJhZjQzZmYxNzk2ZWY3OTA3ZWFmYjg5ZmIxMQ==/1',
+        { responseType: 'stream' },
+      );
+      data.pipe(fs.createWriteStream('./eag.json'));
+    } catch (error) {
+      console.log(error);
+    }
+    // axios
+    //   .get(
+    //     'https://api.npprm.net/commandcategory/POSSAP/MDc5YzIyZTM1ZDAxNzlkYzVkOTViYmUwYTJkMjgxN2RkNmNjMzJhZjQzZmYxNzk2ZWY3OTA3ZWFmYjg5ZmIxMQ==/1',
+    //     { responseType: 'stream' },
+    //   )
+    //   .then(response => {
+    //     const writeStream = fs.createWriteStream('./eag.json');
+    //     response.pipe(writeStream);
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error);
+    //   });
+  };
+  public getPoliceData = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      console.log(req.query);
+      const obj = JSON.parse(fs.readFileSync('./eag.json', 'utf8'));
+      const data = req.body.data;
+      console.log(obj);
+      const records = obj.ResponseObject.ReportRecords;
+      const finale = this.deepLook(data, data.length, records);
+      res.status(200).json({ data: finale, message: 'data' });
+    } catch (error) {
+      next(error);
+    }
   };
 
   public deepLook = (arr, len, mainArr) => {
