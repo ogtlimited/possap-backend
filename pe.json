@@ -7,9 +7,9 @@
       ],
       "formSchema": [
         {
-          "id": "extractCategory",
+          "name": "extractCategory",
           "label": "Select Category of Extract",
-          "mandatory": "yes",
+          "validators": {"required": true},
           "placeholder": "Select an extract category.",
           "type": "select",
           "options": [
@@ -20,9 +20,9 @@
           "value": ""
         },
         {
-          "id": "documentLost",
+          "name": "documentLost",
           "label": "Loss of Document",
-          "mandatory": "yes",
+          "validators": {"required": true},
           "placeholder": "Loss of Document",
           "type": "select",
           "showIf": {
@@ -39,9 +39,9 @@
           ]
         },
         {
-          "id": "propertyLost",
+          "name": "propertyLost",
           "label": "Loss of Property",
-          "mandatory": "yes",
+          "validators": {"required": true},
           "placeholder": "Loss of Property",
           "type": "select",
           "showIf": {
@@ -59,73 +59,73 @@
           "value": ""
         },
         {
-          "id": "extractReason",
+          "name": "extractReason",
           "label": "Reason for Request",
-          "mandatory": "yes",
+          "validators": {"required": true},
           "placeholder": "Enter your reason for extract",
           "type": "text",
           "value": ""
         },
         {
-          "id": "wasReported",
+          "name": "wasReported",
           "label": "Was incident reported at a police station?",
-          "mandatory": "yes",
+          "validators": {"required": true},
           "placeholder": "",
           "type": "radio",
           "value": ""
         },
         {
-          "id": "dateReported",
+          "name": "dateReported",
           "label": "Select the date the incident was reported",
-          "mandatory": "yes",
+          "validators": {"required": true},
           "placeholder": "Enter Incident Reported Date",
           "type": "date",
           "value": ""
         },
         {
-          "id": "courtAffidavit",
+          "name": "courtAffidavit",
           "label": "Upload Court Affidavit",
-          "mandatory": "yes",
+          "validators": {"required": true},
           "placeholder": "Add a court affidavit file here. Maximum size: 1MB",
           "type": "file",
           "value": ""
         },
         {
-          "id": "affidavitNumber",
+          "name": "affidavitNumber",
           "label": "Affidavit Number",
-          "mandatory": "yes",
+          "validators": {"required": true},
           "placeholder": "Enter Affidavit Number",
           "type": "text",
           "value": ""
         },
         {
-          "id": "affidavitDateOfIssuance",
+          "name": "affidavitDateOfIssuance",
           "label": "Affidavit Date of Issuance",
-          "mandatory": "yes",
+          "validators": {"required": true},
           "placeholder": "Enter affidavit date of issuance",
           "type": "date",
           "value": ""
         },
         {
-          "id": "extractState",
+          "name": "extractState",
           "label": "State",
-          "mandatory": "yes",
+          "validators": {"required": true},
           "placeholder": "Select State of the Police Formation/Division",
           "type": "select",
           "value": ""
         },
         {
-          "id": "extractLga",
+          "name": "extractLga",
           "label": "Local Government Area",
-          "mandatory": "yes",
+          "validators": {"required": true},
           "placeholder": "Select LGA of the Police Formation/Division",
           "type": "select",
           "value": ""
         },
         {
-          "id": "extractPoliceDivision",
+          "name": "extractPoliceDivision",
           "label": "Select the Police Formation/Division",
-          "mandatory": "yes",
+          "validators": {"required": true},
           "placeholder": "Select the Formation/Division",
           "type": "select",
           "value": ""
