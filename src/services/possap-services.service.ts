@@ -1,15 +1,9 @@
 import { CreatePossapServiceDto } from './../dtos/possap-service.dto';
 import { IPossapService } from './../interfaces/possap-services.interfact';
-import { IOfficers } from './../interfaces/officer.interface';
 import { HttpException } from '@/exceptions/HttpException';
 import { isEmpty } from 'class-validator';
 import { EntityRepository, Repository } from 'typeorm';
-<<<<<<< HEAD
-import { PossapServiceEntity } from '@/entities/service.entity';
-import { OfficerEntity } from '@entities/officers.entity';
-=======
 import { PossapServiceEntity } from '@/entities/possap-service.entity';
->>>>>>> 05acc335d97490a57a381f07a98323582c10a878
 
 @EntityRepository()
 class PossapService extends Repository<PossapServiceEntity> {
@@ -47,24 +41,6 @@ class PossapService extends Repository<PossapServiceEntity> {
 
     const updateAllPossap: IPossapService = await PossapServiceEntity.findOne({ where: { id: AllPossapId } });
     return updateAllPossap;
-  }
-
-  public async updateOfficer(AllPossapId: any, AllOfficerData: any): Promise<IPossapService> {
-    //[{officerId:1,approvalLevel:"ffh"},{}]
-    if (isEmpty(AllOfficerData)) throw new HttpException(400, "You're not AllOfficerData");
-
-    const findAllPossap: IPossapService = await PossapServiceEntity.findOne({ where: { id: AllPossapId } });
-    if (!findAllPossap) throw new HttpException(409, "You're not AllPossap");
-    let updateAllOfficers;
-    AllOfficerData.forEach(async obj => {
-      if (isEmpty(obj.officerId)) throw new HttpException(400, "There's no Officer Data");
-      const findAllOfficer: IOfficers = await OfficerEntity.findOne({ where: { id: obj.officerId } });
-      if (!findAllOfficer) throw new HttpException(409, "There's no Officer with that id");
-      await OfficerEntity.update(obj.officerId, obj.approvalLevel);
-      const updateAllOfficer: IOfficers = await OfficerEntity.findOne({ where: { id: obj.officerId } });
-      updateAllOfficers = updateAllOfficer;
-    });
-    return updateAllOfficers;
   }
 
   public async deletePossapService(AllPossapId: number): Promise<IPossapService> {
