@@ -25,6 +25,9 @@ class HelperRoute implements Routes {
     this.router.get(`${this.path}/verifyNIN`, this.helperController.verifyNIN);
     this.router.post(`${this.path}/police-hr`, this.helperController.getPoliceData);
     this.router.post(`${this.path}/verifyAPNumber`, this.helperController.verifyAPNumber);
+    this.router.post(`${this.path}/state-lga`, this.helperController.getStateLga);
+    this.router.post(`${this.path}/state-scid`, this.helperController.getPoliceSCID);
+    this.router.post(`${this.path}/countries`, this.helperController.getCountries);
   }
 }
 

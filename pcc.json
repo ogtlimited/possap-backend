@@ -8,6 +8,19 @@
       },
       "placeholder": "Select a request type",
       "type": "select",
+      "config": {
+        "multiple": false
+      },
+      "options": [
+        {
+          "key": "Domestic",
+          "value": "Domestic"
+        },
+        {
+          "key": "International",
+          "value": "International"
+        }
+      ],
       "value": ""
     },
     {
@@ -15,6 +28,9 @@
       "label": "Reason for Inquiry",
       "validators": {
         "required": true
+      },
+      "config": {
+        "multiple": false
       },
       "placeholder": "Select Reason for Inquiry",
       "type": "select",
@@ -44,18 +60,25 @@
       "validators": {
         "required": true
       },
+      "config": {
+        "multiple": false
+      },
       "placeholder": "Select Reason for Inquiry",
       "type": "select-api",
       "options": [],
       "value": ""
     },
     {
-      "name": "stateOfOrigin",
-      "label": "State of Origin",
+      "name": "countryOfOrigin",
+      "label": "Country of Origin",
       "validators": {
         "required": true
       },
-      "placeholder": "Select your state of origin",
+      "placeholder": "Enter the country you are frin",
+      "api": {
+        "path": "countries",
+        "body": null
+      },
       "type": "select",
       "value": ""
     },
@@ -84,6 +107,34 @@
       "label": "Destination Country",
       "validators": {
         "required": true
+      },
+      "showIf": {
+        "value": "requestType",
+        "equals": "International"
+      },
+      "config": {
+        "multiple": false
+      },
+      "api": {
+        "path": "countries",
+        "body": null
+      },
+      "placeholder": "Select your destination country.",
+      "type": "select",
+      "value": ""
+    },
+    {
+      "name": "countryOfPassport",
+      "label": "Country of Passport",
+      "validators": {
+        "required": true
+      },
+      "config": {
+        "multiple": false
+      },
+      "api": {
+        "path": "countries",
+        "body": null
       },
       "placeholder": "Select your destination country.",
       "type": "select",
@@ -160,13 +211,40 @@
       "value": ""
     },
     {
-      "name": "certificateRequestCommand",
+      "name": "requestState",
       "label": "Select Police Command to Request Character Certificate",
       "validators": {
         "required": true
       },
+      "config": {
+        "multiple": false
+      },
       "placeholder": "Select state for the police command",
       "type": "select",
+      "api": {
+        "path": "state-lga",
+        "body": null
+      },
+      "value": ""
+    },
+    {
+      "name": "requestStateCommand",
+      "label": "Select the Police Formation/Division",
+      "validators": {
+        "required": true
+      },
+      "config": {
+        "multiple": false
+      },
+      "placeholder": "Select state for the police command",
+      "type": "select",
+      "api": {
+        "path": "state-scid",
+        "body": {
+          "key": "state",
+          "value": "requestState"
+        }
+      },
       "value": ""
     }
   ]

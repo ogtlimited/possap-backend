@@ -3,6 +3,8 @@ const { createHash } = require('crypto');
 import axios from 'axios';
 const fs = require('fs');
 const util = require('util');
+import NaijaStates from 'naija-state-local-government';
+import { countries } from 'countries-list';
 class HelperController {
   public verifyNIN = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
@@ -78,6 +80,53 @@ class HelperController {
       console.log(obj);
       const records = obj.ResponseObject.ReportRecords;
       const finale = this.deepLook(data, data.length, records);
+      res.status(200).json({ data: finale, message: 'data' });
+    } catch (error) {
+      next(error);
+    }
+  };
+  public getPoliceSCID = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      console.log(req.query);
+      const obj = JSON.parse(fs.readFileSync('./eag.json', 'utf8'));
+      const data = req.body;
+      console.log(req.body, 'state');
+      const records = obj.ResponseObject.ReportRecords[2];
+      // console.log(JSON.stringify(obj.ResponseObject.ReportRecords), 'records');
+      const stateC = records.sub.filter(e => {
+        const slice = e['Name'].split(' ')[0];
+        if (data.state.toLowerCase().includes(slice.toLowerCase())) {
+          return e;
+        }
+      })[0];
+      console.log(stateC);
+      const finale = stateC.sub.filter(sc => sc['Name'].includes('SCID'))[0];
+      res.status(200).json({ data: [finale['Name']], message: 'data' });
+    } catch (error) {
+      next(error);
+    }
+  };
+  public getStateLga = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      console.log(req.body);
+      const data = req.body;
+      let result = NaijaStates.states();
+      // const state = NaijaStates.states().filter(s => s === data.state);
+      if (data?.state) {
+        console.log(data.state);
+        result = NaijaStates.lgas(data.state).lgas;
+      }
+      res.status(200).json({ data: result, message: 'data' });
+    } catch (error) {
+      next(error);
+    }
+  };
+  public getCountries = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      console.log(req.body);
+      const finale = Object.keys(countries).map(e => countries[e].name);
+      console.log(finale);
+
       res.status(200).json({ data: finale, message: 'data' });
     } catch (error) {
       next(error);

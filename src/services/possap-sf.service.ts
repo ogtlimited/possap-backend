@@ -12,6 +12,7 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
   public possapS = new PossapService();
   public async findPossapSF(): Promise<IPossapServiceFields[]> {
     const AllPossaps: IPossapServiceFields[] = await PossapServiceFieldsEntity.find();
+    console.log(AllPossaps);
     return AllPossaps;
   }
 
@@ -48,6 +49,17 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
   }
 
   public async updatePossapService(AllPossapId: any, AllPossapData: any): Promise<IPossapServiceFields> {
+    if (isEmpty(AllPossapData)) throw new HttpException(400, "You're not AllPossapData");
+
+    const findAllPossap: IPossapServiceFields = await PossapServiceFieldsEntity.findOne({ where: { id: AllPossapId } });
+    if (!findAllPossap) throw new HttpException(409, "You're not AllPossap");
+
+    await PossapServiceFieldsEntity.update(AllPossapId, AllPossapData);
+
+    const updateAllPossap: IPossapServiceFields = await PossapServiceFieldsEntity.findOne({ where: { id: AllPossapId } });
+    return updateAllPossap;
+  }
+  public async assignOfficer(AllPossapId: any, AllPossapData: any): Promise<IPossapServiceFields> {
     if (isEmpty(AllPossapData)) throw new HttpException(400, "You're not AllPossapData");
 
     const findAllPossap: IPossapServiceFields = await PossapServiceFieldsEntity.findOne({ where: { id: AllPossapId } });

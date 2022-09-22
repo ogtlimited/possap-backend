@@ -13,7 +13,7 @@ export class PossapServiceFieldsEntity extends BaseEntity implements IPossapServ
   @Column()
   ref: string;
 
-  @ManyToOne(() => PossapServiceEntity, service => service.services)
+  @ManyToOne(() => PossapServiceEntity, service => service.services, { eager: true })
   service: PossapServiceEntity;
 
   @Column({
@@ -24,7 +24,9 @@ export class PossapServiceFieldsEntity extends BaseEntity implements IPossapServ
   @Column({ type: 'enum', enum: ['pending', 'in progress', 'approved'], default: 'pending' })
   status: string;
 
-  @Column()
+  @Column({
+    default: null,
+  })
   approvalLevel: string;
 
   @Column({
