@@ -2,10 +2,12 @@ import { IPossapService } from './../interfaces/possap-services.interfact';
 import { IPossapServiceFields } from '../interfaces/possap-services.interfact';
 import { HttpException } from '@/exceptions/HttpException';
 import { isEmpty } from 'class-validator';
-import { EntityRepository, Repository } from 'typeorm';
+import { EntityRepository, In, Repository } from 'typeorm';
 import { PossapServiceFieldsEntity } from '@entities/service-field.entity';
 import { ObjectId } from '@/utils/util';
 import PossapService from './possap-services.service';
+import { IOfficers } from './../interfaces/officer.interface';
+import { OfficerEntity } from '@entities/officers.entity';
 
 @EntityRepository()
 class PossapSFService extends Repository<PossapServiceFieldsEntity> {
@@ -59,16 +61,22 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
     const updateAllPossap: IPossapServiceFields = await PossapServiceFieldsEntity.findOne({ where: { id: AllPossapId } });
     return updateAllPossap;
   }
-  public async assignOfficer(AllPossapId: any, AllPossapData: any): Promise<IPossapServiceFields> {
-    if (isEmpty(AllPossapData)) throw new HttpException(400, "You're not AllPossapData");
+  public async updateServiceAprrover(AllPossapId: any, AllApproverData: any): Promise<IPossapService> {
+    if (isEmpty(AllApproverData)) throw new HttpException(400, "You're not AllOfficerData");
 
-    const findAllPossap: IPossapServiceFields = await PossapServiceFieldsEntity.findOne({ where: { id: AllPossapId } });
+    const findAllPossap: IPossapService = await PossapServiceFieldsEntity.findOne({ where: { id: AllPossapId } });
     if (!findAllPossap) throw new HttpException(409, "You're not AllPossap");
 
-    await PossapServiceFieldsEntity.update(AllPossapId, AllPossapData);
+    const arr = [];
+    AllApproverData.forEach(element => {
+      arr.push(element.officerId);
+    });
 
-    const updateAllPossap: IPossapServiceFields = await PossapServiceFieldsEntity.findOne({ where: { id: AllPossapId } });
-    return updateAllPossap;
+    const findAllOfficer: IOfficers[] = await OfficerEntity.find({ where: { id: In([...arr]) } });
+    if (findAllOfficer.length != arr.length) throw new HttpException(409, "There's no Officer with that id");
+
+    const updateAllAprovers: IPossapServiceFields = await PossapServiceFieldsEntity.findOne({ where: { id: AllPossapId } });
+    return updateAllAprovers;
   }
 
   public async deleteAllPossap(AllPossapId: number): Promise<IPossapServiceFields> {
