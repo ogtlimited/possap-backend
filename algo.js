@@ -47,3 +47,18 @@
 //       }
 //   ]
 // }
+POLICE EXTRACT2
+[2->2 ]['1', '2']
+[2->1 ]['1', '2']
+{
+    serviceId: 2,
+    approval: [{
+        officerId: 1,
+        approvalLevel: 'Extract First Approval'
+    },
+    {
+        officerId: 2,
+        approvalLevel: 'Extract Second Approval'
+    }
+]
+}

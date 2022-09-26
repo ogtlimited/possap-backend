@@ -11,25 +11,25 @@ export class CommandAccessEntity extends BaseEntity implements ICommandAccess {
   id: number;
 
   @Column()
-  @IsNotEmpty()
-  formation: string;
+  // @IsNotEmpty()
+  officerFormation: string;
 
   @Column()
-  @IsNotEmpty()
-  department: string;
+  // @IsNotEmpty()
+  officerDepartment: string;
 
   @Column()
+  // @IsNotEmpty()
+  officerSection: string;
+
+  @Column({nullable: true})
   @IsNotEmpty()
-  section: string;
-
-  @Column()
-  @IsNotEmpty()
-  subsection: string;
+  officerSubSection: string;
 
 
-  @ManyToOne(() => OfficerEntity, (officer) => officer.commandAccess)
-  @JoinColumn({ name: "officer_id", referencedColumnName: "id"})
-  officer: OfficerEntity;
+  @ManyToOne(() => OfficerEntity, (officer) => officer.commandAccessIds)
+  @JoinColumn()
+  officerId: OfficerEntity;
 
 
 }

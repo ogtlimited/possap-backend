@@ -7,7 +7,7 @@ export interface IOfficers {
   phoneNumber: string;
   password: string;
   profile: any;
-  commandAccess: any[];
+  commandAccess?: any[];
 }
 
 export interface IExtractApprovalLevel {

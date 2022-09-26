@@ -57,6 +57,6 @@ export class OfficerEntity extends sharedProps implements IOfficers {
   access: OfficerAccessEntity
 
 
-  @OneToMany(() => CommandAccessEntity, (command) => command.officer, {onDelete: 'CASCADE', onUpdate: 'CASCADE', eager: true, cascade: true})
-  commandAccess: CommandAccessEntity[]
+  @OneToMany(() => CommandAccessEntity, (command) => command.officerId, {onDelete: 'CASCADE', onUpdate: 'CASCADE', eager: true, cascade: true})
+  commandAccessIds: CommandAccessEntity[]
 }

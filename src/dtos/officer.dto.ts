@@ -21,7 +21,7 @@ export class CreateOfficerDto {
 
   @IsArray()
   @IsOptional()
-  public commandAccess: [];
+  public commandAccessIds: [];
 
   @IsObject()
   @IsOptional()
