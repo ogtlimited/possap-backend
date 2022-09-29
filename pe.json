@@ -1,4 +1,4 @@
-[
+
     {
       "name": "Police Extract",
        "approvalWorkFlow": [
@@ -14,7 +14,7 @@
       "placeholder": "Select an extract category.",
       "type": "select",
       "config": {
-          "multiple": false
+          "multiple": true
       },
       "options": [
         {"key": "documentLost", "value": "Loss of Document"},
@@ -78,7 +78,7 @@
         "equals": "others"
       },
       "type": "text",
-      "value": ""
+      "value": false
     },
     {
       "name": "wasReported",
@@ -86,6 +86,16 @@
       "validators": {"required": true},
       "placeholder": "",
       "type": "radio",
+      "radioOptions": [
+        {
+          "label": "Yes",
+          "value": true
+        },
+        {
+          "label": "No",
+          "value": false
+        }
+      ],
       "value": ""
     },
     {
@@ -94,7 +104,11 @@
       "validators": {"required": true},
       "placeholder": "Enter Incident Reported Date",
       "type": "date",
-      "value": ""
+      "value": "",
+      "showIf": {
+        "value": "wasReported",
+        "equals": true
+      }
     },
     {
       "name": "courtAffidavit",
@@ -174,4 +188,4 @@
     
   ]
     }
-  ]
+  
