@@ -11,7 +11,7 @@ export class SmsHelperDto {
   @IsNotEmpty({ message: 'Phone number should not be empty' })
   phoneNumber: string;
 
-  @IsNotEmpty()
+  @IsNotEmpty({ message: 'OTP is required' })
   @IsOptional()
   code: string;
 }
