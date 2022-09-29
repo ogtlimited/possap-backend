@@ -3,8 +3,10 @@ const { createHash } = require('crypto');
 import axios from 'axios';
 import { HttpException } from '@exceptions/HttpException';
 import { S3 } from 'aws-sdk';
+import twilio from 'twilio';
 import { v4 as uuidv4 } from 'uuid';
 import * as dotenv from 'dotenv';
+import { SmsHelperDto } from '@dtos/helpers/sms-helper.dto';
 dotenv.config();
 
 class HelperController {
@@ -63,7 +65,7 @@ class HelperController {
   }
 
   // Upload files
-  public uploadMedia = async (req: Request | any, res: Response, next: NextFunction) => {
+  public uploadMedia = async (req: Request | any, res: Response, next: NextFunction): Promise<unknown> => {
     const files = req.files;
 
     if (!files) {
@@ -93,8 +95,45 @@ class HelperController {
   };
 
   //  Sent otp
-  public sendOtp = async (req: Request | any, res: Response, next: NextFunction) => {};
+  public sendOtp = async (req: Request | any, res: Response, next: NextFunction): Promise<unknown> => {
+    const smsHelperDto: SmsHelperDto = req.body;
+    const { phoneNumber } = smsHelperDto;
 
+    const accountSid = process.env.TWILIO_ACCOUNT_SID;
+    const authToken = process.env.TWILIO_AUTH_TOKEN;
+    const client = twilio(accountSid, authToken);
+    try {
+      return await client.verify.services(process.env.TWILIO_SERVICE_SID).verifications.create({
+        to: `${process.env.COUNTRY_CODE}${parseInt(phoneNumber, 10)}`,
+        channel: 'sms',
+      });
+    } catch (err) {
+      console.log(err);
+      next(err);
+    }
+  };
+
+  // Verify otp
+  public verifyOtp = async (req: Request | any, res: Response, next: NextFunction): Promise<unknown> => {
+    try {
+      const smsHelperDto: SmsHelperDto = req.body;
+      const { phoneNumber, code } = smsHelperDto;
+
+      const accountSid = process.env.TWILIO_ACCOUNT_SID;
+      const authToken = process.env.TWILIO_AUTH_TOKEN;
+      const client = twilio(accountSid, authToken);
+
+      const verify = await client.verify.services(process.env.TWILIO_SERVICE_SID).verificationChecks.create({ to: phoneNumber, code: code });
+
+      if (verify.status === 'pending') {
+        return res.status(403).json({ message: 'Invalid otp', statusCode: 403 });
+      }
+      return res.status(200).json({ message: 'Verified successfully', statusCode: 200, status: 'Success' });
+    } catch (err) {
+      console.log(err);
+      next(err);
+    }
+  };
   //  One time use
   public createBucket = async (req: Request | any, res: Response, next: NextFunction) => {
     const BUCKET_NAME = process.env['AWS_S3_BUCKET'];
@@ -111,6 +150,19 @@ class HelperController {
       createBucket.createBucket(params, function (err, data) {
         return res.status(200).json({ data: data.Location });
       });
+    } catch (err) {
+      console.log(err);
+      next(err);
+    }
+  };
+
+  public createService = (req: Request | any, res: Response, next: NextFunction) => {
+    try {
+      const accountSid = process.env.TWILIO_ACCOUNT_SID;
+      const authToken = process.env.TWILIO_AUTH_TOKEN;
+      const client = twilio(accountSid, authToken);
+      const data = client.verify.v2.services.create({ friendlyName: 'Possap' }).then(service => console.log(service.sid));
+      return res.status(200).json({ data: data });
     } catch (err) {
       console.log(err);
       next(err);
