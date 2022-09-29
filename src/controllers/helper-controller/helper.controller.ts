@@ -38,7 +38,7 @@ class HelperController {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       });
       if (result.data) {
-        res.status(200).json({ data: result.data, message: 'verified' });
+        res.status(200).json({ data: result.data.ResponseObject.ReportRecords[0], message: 'verified' });
       } else {
         console.log(result);
         res.status(400).json({ data: null, message: 'Invalid NIN Number' });
