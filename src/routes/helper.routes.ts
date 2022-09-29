@@ -23,8 +23,6 @@ class HelperRoute implements Routes {
     this.router.post(`${this.path}/uploadMedia`, upload.array('documents', 3), this.helperController.uploadMedia);
     this.router.post(`${this.path}/sendOtp`, validationMiddleware(SmsHelperDto, 'body'), this.helperController.sendOtp);
     this.router.post(`${this.path}/verifyOtp`, validationMiddleware(SmsHelperDto, 'body'), this.helperController.verifyOtp);
-    // this.router.post(`${this.path}/createBucket`, this.helperController.createBucket);
-    // this.router.post(`${this.path}/createService`, this.helperController.createService);
   }
 }
 

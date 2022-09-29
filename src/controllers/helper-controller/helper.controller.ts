@@ -68,10 +68,6 @@ class HelperController {
   public uploadMedia = async (req: Request | any, res: Response, next: NextFunction): Promise<unknown> => {
     const files = req.files;
 
-    if (!files) {
-      throw new HttpException(400, 'File is required');
-    }
-
     try {
       const awsS3Upload = await HelperController.awsS3();
 
@@ -87,9 +83,9 @@ class HelperController {
           .promise(),
       );
       const responses = await Promise.all(allFilesUpload);
-      return res.status(200).json({ status: 'Success', statusCode: 200, message: 'Uploaded successfully', data: responses });
+      return res.status(200).json({ status: 'Success', statusCode: 200, message: 'Files uploaded successfully', data: responses });
     } catch (err) {
-      console.log(err);
+      res.status(500).json({ message: 'An error occurred', statusCode: 500, status: 'Failed' });
       next(err);
     }
   };
@@ -108,7 +104,7 @@ class HelperController {
         channel: 'sms',
       });
     } catch (err) {
-      console.log(err);
+      res.status(500).json({ errors: err });
       next(err);
     }
   };
@@ -126,45 +122,11 @@ class HelperController {
       const verify = await client.verify.services(process.env.TWILIO_SERVICE_SID).verificationChecks.create({ to: phoneNumber, code: code });
 
       if (verify.status === 'pending') {
-        return res.status(403).json({ message: 'Invalid otp', statusCode: 403 });
+        return res.status(403).json({ message: 'Invalid or expired OTP', statusCode: 403 });
       }
       return res.status(200).json({ message: 'Verified successfully', statusCode: 200, status: 'Success' });
     } catch (err) {
-      console.log(err);
-      next(err);
-    }
-  };
-  //  One time use
-  public createBucket = async (req: Request | any, res: Response, next: NextFunction) => {
-    const BUCKET_NAME = process.env['AWS_S3_BUCKET'];
-    try {
-      const createBucket = await HelperController.awsS3();
-
-      const params = {
-        Bucket: BUCKET_NAME,
-        CreateBucketConfiguration: {
-          LocationConstraint: process.env.AWS_REGION,
-        },
-      };
-
-      createBucket.createBucket(params, function (err, data) {
-        return res.status(200).json({ data: data.Location });
-      });
-    } catch (err) {
-      console.log(err);
-      next(err);
-    }
-  };
-
-  public createService = (req: Request | any, res: Response, next: NextFunction) => {
-    try {
-      const accountSid = process.env.TWILIO_ACCOUNT_SID;
-      const authToken = process.env.TWILIO_AUTH_TOKEN;
-      const client = twilio(accountSid, authToken);
-      const data = client.verify.v2.services.create({ friendlyName: 'Possap' }).then(service => console.log(service.sid));
-      return res.status(200).json({ data: data });
-    } catch (err) {
-      console.log(err);
+      res.status(500).json({ errors: err });
       next(err);
     }
   };
