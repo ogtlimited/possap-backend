@@ -17,7 +17,7 @@ class PossapServiceFieldController {
 
   public findSFById = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const result: IPossapServiceFields = await this.possapS.findAPossapSFById(req.query['id']);
+      const result: IPossapServiceFields = await this.possapS.findAPossapSFById(req.params.id);
       res.status(200).json({ data: result });
     } catch (error) {
       next(error);
