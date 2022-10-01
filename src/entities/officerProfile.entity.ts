@@ -23,7 +23,6 @@ export class OfficerProfileEntity extends sharedProps  {
   officerSection: string;
 
   @Column()
-  @IsNotEmpty()
   officerSubSection: string;
 
 

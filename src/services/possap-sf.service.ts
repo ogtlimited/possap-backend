@@ -39,7 +39,7 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
           ref,
           approvalLevel: parent.approvalWorkFlow[0],
         };
-        const createAllPossapData = await PossapServiceFieldsEntity.create(obj).save();
+        const createAllPossapData = await PossapServiceFieldsEntity.save(obj);
 
         return createAllPossapData;
       } else {
