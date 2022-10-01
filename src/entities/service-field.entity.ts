@@ -35,6 +35,6 @@ export class PossapServiceFieldsEntity extends BaseEntity implements IPossapServ
   })
   approvingOfficers: IApprovers[];
 
-  @ManyToOne(() => UserEntity, user => user.service, { cascade: true })
+  @ManyToOne(() => UserEntity, user => user.service, { cascade: true, eager: true })
   owner: UserEntity;
 }
