@@ -3,7 +3,7 @@
     "dbConfig": {
         "host": "localhost",
         "user": "postgres",
-        "password": "mathias",
+        "password": "password",
         "database": "possap"
     },
     "secretKey": "secretKey",
