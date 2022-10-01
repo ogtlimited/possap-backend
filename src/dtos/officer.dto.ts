@@ -20,7 +20,8 @@ export class CreateOfficerDto {
   public phoneNumber: string;
 
   @IsArray()
-  public commandAccess: [];
+  @IsOptional()
+  public commandAccessIds: [];
 
   @IsObject()
   @IsOptional()

@@ -1,6 +1,10 @@
 import { NextFunction, Request, Response } from 'express';
 const { createHash } = require('crypto');
 import axios from 'axios';
+const fs = require('fs');
+const util = require('util');
+import NaijaStates from 'naija-state-local-government';
+import { countries } from 'countries-list';
 import { HttpException } from '@exceptions/HttpException';
 import { S3 } from 'aws-sdk';
 import twilio from 'twilio';
@@ -42,7 +46,7 @@ class HelperController {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       });
       if (result.data) {
-        res.status(200).json({ data: result.data, message: 'verified' });
+        res.status(200).json({ data: result.data.ResponseObject.ReportRecords[0], message: 'verified' });
       } else {
         console.log(result);
         res.status(400).json({ data: null, message: 'Invalid NIN Number' });
@@ -51,6 +55,105 @@ class HelperController {
       console.log(error);
       next(error);
     }
+  };
+
+  public getFetchPoliceData = async (): Promise<void> => {
+    try {
+      const { data } = await axios.get(
+        'https://api.npprm.net/commandcategory/POSSAP/MDc5YzIyZTM1ZDAxNzlkYzVkOTViYmUwYTJkMjgxN2RkNmNjMzJhZjQzZmYxNzk2ZWY3OTA3ZWFmYjg5ZmIxMQ==/1',
+        { responseType: 'stream' },
+      );
+      data.pipe(fs.createWriteStream('./eag.json'));
+    } catch (error) {
+      console.log(error);
+    }
+    // axios
+    //   .get(
+    //     'https://api.npprm.net/commandcategory/POSSAP/MDc5YzIyZTM1ZDAxNzlkYzVkOTViYmUwYTJkMjgxN2RkNmNjMzJhZjQzZmYxNzk2ZWY3OTA3ZWFmYjg5ZmIxMQ==/1',
+    //     { responseType: 'stream' },
+    //   )
+    //   .then(response => {
+    //     const writeStream = fs.createWriteStream('./eag.json');
+    //     response.pipe(writeStream);
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error);
+    //   });
+  };
+  public getPoliceData = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      console.log(req.query);
+      const obj = JSON.parse(fs.readFileSync('./eag.json', 'utf8'));
+      const data = req.body.data;
+      console.log(obj);
+      const records = obj.ResponseObject.ReportRecords;
+      const finale = this.deepLook(data, data.length, records);
+      res.status(200).json({ data: finale, message: 'data' });
+    } catch (error) {
+      next(error);
+    }
+  };
+  public getPoliceSCID = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      console.log(req.query);
+      const obj = JSON.parse(fs.readFileSync('./eag.json', 'utf8'));
+      const data = req.body;
+      console.log(req.body, 'state');
+      const records = obj.ResponseObject.ReportRecords[2];
+      // console.log(JSON.stringify(obj.ResponseObject.ReportRecords), 'records');
+      const stateC = records.sub.filter(e => {
+        const slice = e['Name'].split(' ')[0];
+        if (data.state.toLowerCase().includes(slice.toLowerCase())) {
+          return e;
+        }
+      })[0];
+      console.log(stateC);
+      const finale = stateC.sub.filter(sc => sc['Name'].includes('SCID'))[0];
+      res.status(200).json({ data: [finale['Name']], message: 'data' });
+    } catch (error) {
+      next(error);
+    }
+  };
+  public getStateLga = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      console.log(req.body);
+      const data = req.body;
+      let result = NaijaStates.states();
+      // const state = NaijaStates.states().filter(s => s === data.state);
+      if (data?.state) {
+        console.log(data.state);
+        result = NaijaStates.lgas(data.state).lgas;
+      }
+      res.status(200).json({ data: result, message: 'data' });
+    } catch (error) {
+      next(error);
+    }
+  };
+  public getCountries = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      console.log(req.body);
+      const finale = Object.keys(countries).map(e => countries[e].name);
+      console.log(finale);
+
+      res.status(200).json({ data: finale, message: 'data' });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  public deepLook = (arr, len, mainArr) => {
+    let result = [];
+    const looper = (arr, len, mainArr) => {
+      if (len > 0) {
+        console.log('recursion', len, mainArr);
+        const filter = mainArr.filter(obj => obj['code'] === arr[0] || obj['Code'] === arr[0])[0];
+        const slice = arr.slice(1);
+        result = filter.sub;
+        looper(slice, len - 1, filter.sub);
+      }
+    };
+    looper(arr, len, mainArr);
+    return result;
   };
 
   /*
