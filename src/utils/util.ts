@@ -22,7 +22,7 @@ export const isEmpty = (value: string | number | object): boolean => {
 };
 
 export const generateOTP = () => {
-  const OTP = otpGenerator.generate(OTP_LENGTH, OTP_CONFIG);
+  const OTP = Math.floor(100000 + Math.random() * 900000);
   return OTP;
 };
 export const ObjectId = function () {

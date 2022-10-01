@@ -15,6 +15,10 @@ export class CreateUserDto {
   public userType: string;
 
   @IsString()
+  @IsOptional()
+  public gender: string;
+
+  @IsString()
   public phone: string;
 
   @IsString()
