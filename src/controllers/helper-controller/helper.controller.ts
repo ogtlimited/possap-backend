@@ -5,6 +5,14 @@ const fs = require('fs');
 const util = require('util');
 import NaijaStates from 'naija-state-local-government';
 import { countries } from 'countries-list';
+import { HttpException } from '@exceptions/HttpException';
+import { S3 } from 'aws-sdk';
+import twilio from 'twilio';
+import { v4 as uuidv4 } from 'uuid';
+import * as dotenv from 'dotenv';
+import { SmsHelperDto } from '@dtos/helpers/sms-helper.dto';
+dotenv.config();
+
 class HelperController {
   public verifyNIN = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
@@ -146,6 +154,84 @@ class HelperController {
     };
     looper(arr, len, mainArr);
     return result;
+  };
+
+  /*
+   * AWS Configuration
+   * */
+  private static async awsS3() {
+    return new S3({
+      accessKeyId: process.env['AWS_ACCESS_KEY_ID'],
+      secretAccessKey: process.env['AWS_SECRET_ACCESS_KEY'],
+      region: process.env['AWS_REGION'],
+    });
+  }
+
+  // Upload files
+  public uploadMedia = async (req: Request | any, res: Response, next: NextFunction): Promise<unknown> => {
+    const files = req.files;
+
+    try {
+      const awsS3Upload = await HelperController.awsS3();
+
+      const allFilesUpload = files.map(item =>
+        awsS3Upload
+          .upload({
+            Bucket: process.env['AWS_S3_BUCKET'],
+            Body: item.buffer,
+            Key: String(`${process.env['BUCKET_FOLDER_NAME']}/${Date.now()}-${uuidv4()}.${item.mimetype.split('/').pop()}`),
+            ContentType: 'image/jpg',
+            ACL: 'public-read',
+          })
+          .promise(),
+      );
+      const responses = await Promise.all(allFilesUpload);
+      return res.status(200).json({ status: 'Success', statusCode: 200, message: 'Files uploaded successfully', data: responses });
+    } catch (err) {
+      res.status(500).json({ message: 'An error occurred', statusCode: 500, status: 'Failed' });
+      next(err);
+    }
+  };
+
+  //  Sent otp
+  public sendOtp = async (req: Request | any, res: Response, next: NextFunction): Promise<unknown> => {
+    const smsHelperDto: SmsHelperDto = req.body;
+    const { phoneNumber } = smsHelperDto;
+
+    const accountSid = process.env.TWILIO_ACCOUNT_SID;
+    const authToken = process.env.TWILIO_AUTH_TOKEN;
+    const client = twilio(accountSid, authToken);
+    try {
+      return await client.verify.services(process.env.TWILIO_SERVICE_SID).verifications.create({
+        to: `${process.env.COUNTRY_CODE}${parseInt(phoneNumber, 10)}`,
+        channel: 'sms',
+      });
+    } catch (err) {
+      res.status(500).json({ errors: err });
+      next(err);
+    }
+  };
+
+  // Verify otp
+  public verifyOtp = async (req: Request | any, res: Response, next: NextFunction): Promise<unknown> => {
+    try {
+      const smsHelperDto: SmsHelperDto = req.body;
+      const { phoneNumber, code } = smsHelperDto;
+
+      const accountSid = process.env.TWILIO_ACCOUNT_SID;
+      const authToken = process.env.TWILIO_AUTH_TOKEN;
+      const client = twilio(accountSid, authToken);
+
+      const verify = await client.verify.services(process.env.TWILIO_SERVICE_SID).verificationChecks.create({ to: phoneNumber, code: code });
+
+      if (verify.status === 'pending') {
+        return res.status(403).json({ message: 'Invalid or expired OTP', statusCode: 403 });
+      }
+      return res.status(200).json({ message: 'Verified successfully', statusCode: 200, status: 'Success' });
+    } catch (err) {
+      res.status(500).json({ errors: err });
+      next(err);
+    }
   };
 }
 

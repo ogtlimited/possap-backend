@@ -45,12 +45,12 @@ class App {
     this.initializeRoutes(routes);
     this.initializeSwagger();
     this.initializeErrorHandling();
-    console.log('NIN VERIFY');
+    //   console.log('NIN VERIFY');
 
-    axios
-      .get('http://52.15.120.183/verify.php?pickNIN=30919176644&key=t/BLOvt6c95mV20ka1pqreVkrwprcbdb')
-      .then(res => console.log(res.data))
-      .catch(error => console.log(error.response));
+    //   axios
+    //     .get('http://52.15.120.183/verify.php?pickNIN=30919176644&key=t/BLOvt6c95mV20ka1pqreVkrwprcbdb')
+    //     .then(res => console.log(res.data))
+    //     .catch(error => console.log(error.response));
   }
 
   public listen() {
