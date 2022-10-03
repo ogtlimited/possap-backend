@@ -77,7 +77,7 @@ class App {
     // const command = new CommandService();
     // command.createBulk();
     const d = new DynamicService();
-    console.log(await d.SelectTable(), 'dynamic');
+    // console.log(await d.SelectTable(), 'dynamic');
   }
 
   private initializeMiddlewares() {

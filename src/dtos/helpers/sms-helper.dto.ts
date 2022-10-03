@@ -9,7 +9,7 @@ export class SmsHelperDto {
   })
   @MinLength(11, { message: 'Phone number must be 11 digit' })
   @IsNotEmpty({ message: 'Phone number should not be empty' })
-  phoneNumber: string;
+  phone: string;
 
   @IsNotEmpty({ message: 'OTP is required' })
   @IsOptional()

@@ -196,14 +196,16 @@ class HelperController {
   //  Sent otp
   public sendOtp = async (req: Request | any, res: Response, next: NextFunction): Promise<unknown> => {
     const smsHelperDto: SmsHelperDto = req.body;
-    const { phoneNumber } = smsHelperDto;
+    const { phone } = smsHelperDto;
 
     const accountSid = process.env.TWILIO_ACCOUNT_SID;
     const authToken = process.env.TWILIO_AUTH_TOKEN;
+    console.log(accountSid, authToken);
     const client = twilio(accountSid, authToken);
+    console.log('VERIFICATION SID', process.env.VERIFY_SERVICE_SID);
     try {
-      return await client.verify.services(process.env.TWILIO_SERVICE_SID).verifications.create({
-        to: `${process.env.COUNTRY_CODE}${parseInt(phoneNumber, 10)}`,
+      return await client.verify.services(process.env.VERIFY_SERVICE_SID).verifications.create({
+        to: `${process.env.COUNTRY_CODE}${parseInt(phone, 10)}`,
         channel: 'sms',
       });
     } catch (err) {
@@ -216,13 +218,13 @@ class HelperController {
   public verifyOtp = async (req: Request | any, res: Response, next: NextFunction): Promise<unknown> => {
     try {
       const smsHelperDto: SmsHelperDto = req.body;
-      const { phoneNumber, code } = smsHelperDto;
+      const { phone, code } = smsHelperDto;
 
       const accountSid = process.env.TWILIO_ACCOUNT_SID;
       const authToken = process.env.TWILIO_AUTH_TOKEN;
       const client = twilio(accountSid, authToken);
 
-      const verify = await client.verify.services(process.env.TWILIO_SERVICE_SID).verificationChecks.create({ to: phoneNumber, code: code });
+      const verify = await client.verify.services(process.env.TWILIO_SERVICE_SID).verificationChecks.create({ to: phone, code: code });
 
       if (verify.status === 'pending') {
         return res.status(403).json({ message: 'Invalid or expired OTP', statusCode: 403 });

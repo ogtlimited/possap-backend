@@ -2,7 +2,7 @@ export interface User {
   id: number;
   email: string;
   password: string;
-  userType: string;
+  userType?: string;
   phone: string;
   fullName: string;
   state: string;
@@ -11,7 +11,9 @@ export interface User {
   // identificationType: string;
   // identificationNumber: string;
   // identificationDoc?: string;
-  otp?: string;
   active?: boolean;
   address: string;
+  createdAt: Date;
+  updatedAt: Date;
+  service: any[];
 }
