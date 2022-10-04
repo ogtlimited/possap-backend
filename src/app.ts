@@ -82,7 +82,13 @@ class App {
 
   private initializeMiddlewares() {
     this.app.use(morgan(config.get('log.format'), { stream }));
-    this.app.use(cors({ origin: config.get('cors.origin'), credentials: config.get('cors.credentials') }));
+    const allowedOrigins = ['https://52e9-197-210-53-235.eu.ngrok.io'];
+    const options: cors.CorsOptions = {
+      origin: allowedOrigins,
+    };
+    this.app.use(cors());
+    // this.app.use(cors(options));
+    // this.app.use(cors({ origin: config.get('cors.origin'), credentials: config.get('cors.credentials') }));
     this.app.use(hpp());
     this.app.use(helmet());
     this.app.use(compression());
