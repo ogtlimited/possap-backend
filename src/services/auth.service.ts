@@ -1,3 +1,4 @@
+import { LoginUserDto } from './../dtos/users.dto';
 import { OfficerEntity } from './../entities/officers.entity';
 import { IOfficers } from './../interfaces/officer.interface';
 import { compare, hash } from 'bcrypt';
@@ -24,7 +25,7 @@ class AuthService extends Repository<UserEntity> {
     return createUserData;
   }
 
-  public async login(userData: CreateUserDto): Promise<{ token: any; findUser: any }> {
+  public async login(userData: LoginUserDto): Promise<{ token: any; findUser: any }> {
     if (isEmpty(userData)) throw new HttpException(400, "You're not userData");
 
     const findUser: User = await UserEntity.findOne({ where: { email: userData.email } });

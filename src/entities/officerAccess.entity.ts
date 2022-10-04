@@ -30,17 +30,12 @@ export class OfficerAccessEntity extends sharedProps {
   @IsNotEmpty()
   accessType: string;
 
-  @ManyToMany(() => PossapServiceEntity)
-  @JoinTable()
-  services: PossapServiceEntity[];
+  // @ManyToMany(() => PossapServiceEntity, {cascade: true})
+  // @JoinTable()
+  @Column({type: 'json'})
+  services: string[];
 
-  @Column()
-  @CreateDateColumn()
-  createdAt: Date;
 
-  @Column()
-  @UpdateDateColumn()
-  updatedAt: Date;
 
   @OneToOne(type => OfficerEntity, user => user.access)
   officer: OfficerEntity;

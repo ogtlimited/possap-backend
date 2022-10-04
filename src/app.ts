@@ -15,7 +15,7 @@ import { dbConnection } from '@databases';
 import { Routes } from '@interfaces/routes.interface';
 import errorMiddleware from '@middlewares/error.middleware';
 import { logger, stream } from '@utils/logger';
-import CommandService from './services/helper-services/command.service';
+// import CommandService from './services/helper-services/command.service';
 const { createHash } = require('crypto');
 import axios from 'axios';
 import DynamicService from './services/Dynamic.service';
@@ -45,11 +45,12 @@ class App {
     this.initializeRoutes(routes);
     this.initializeSwagger();
     this.initializeErrorHandling();
+    //   console.log('NIN VERIFY');
 
-    // axios
-    //   .get('http://52.15.120.183/verify.php?pickNIN=30919176644&key=ZebraW3ta$')
-    //   .then(res => console.log(res.data))
-    //   .catch(error => console.log(error));
+    //   axios
+    //     .get('http://52.15.120.183/verify.php?pickNIN=30919176644&key=t/BLOvt6c95mV20ka1pqreVkrwprcbdb')
+    //     .then(res => console.log(res.data))
+    //     .catch(error => console.log(error.response));
   }
 
   public listen() {
@@ -73,10 +74,10 @@ class App {
   }
 
   private async seedDatabase() {
-    const command = new CommandService();
-    command.createBulk();
+    // const command = new CommandService();
+    // command.createBulk();
     const d = new DynamicService();
-    console.log(await d.SelectTable(), 'dynamic');
+    // console.log(await d.SelectTable(), 'dynamic');
   }
 
   private initializeMiddlewares() {

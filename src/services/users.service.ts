@@ -1,4 +1,4 @@
-// import { sendOtpSMS } from './../utils/sendOtpSms';
+import { verifyOtp } from './../utils/sendOtpSms';
 import { generateOTP } from './../utils/util';
 import { hash } from 'bcrypt';
 import { EntityRepository, Repository } from 'typeorm';
@@ -7,6 +7,8 @@ import { UserEntity } from '@entities/users.entity';
 import { HttpException } from '@exceptions/HttpException';
 import { User } from '@interfaces/users.interface';
 import { isEmpty } from '@utils/util';
+import { sendOtpSMS } from '@/utils/sendOtpSms';
+import { SmsHelperDto } from '@/dtos/helpers/sms-helper.dto';
 const Twilio = require('twilio');
 
 @EntityRepository()
@@ -38,33 +40,48 @@ class UserService extends Repository<UserEntity> {
     return {};
   }
 
-  public async createUser(userData: CreateUserDto): Promise<User> {
+  public async createUser(userData): Promise<User> {
     if (isEmpty(userData)) throw new HttpException(400, "You're not userData");
-
+    console.log(userData);
     const findUser: User = await UserEntity.findOne({ where: { email: userData.email } });
     if (findUser) throw new HttpException(409, `You're email ${userData.email} already exists`);
-    const otp = generateOTP();
     const hashedPassword = await hash(userData.password, 10);
-    const createUserData: User = await UserEntity.create({ ...userData, password: hashedPassword, otp }).save();
-    const body = `Please use this otp code ${otp} to complete your registeration`;
-
-    // sendOtpSMS({ body: body, to: findUser.phone });
-    return createUserData;
+    console.log(userData.phone);
+    const createUserData: User = await UserEntity.save({ ...userData, password: hashedPassword });
+    try {
+      const send = await sendOtpSMS({ phone: userData.phone });
+      console.log('send error', send.status);
+      if (send.status === 400) {
+        this.deleteUser(createUserData.id);
+        throw 'failed to verify phone number';
+      } else {
+        return createUserData;
+      }
+    } catch (error) {
+      console.log(error);
+      throw new HttpException(409, error);
+    }
   }
 
-  public async validateSignup(userId: number, userData: UserOTPDto): Promise<any> {
+  public async validateSignup(userId: number, userData: SmsHelperDto): Promise<any> {
     if (isEmpty(userData)) throw new HttpException(400, "You're not userData");
 
     const findUser: User = await UserEntity.findOne({ where: { id: userId } });
     if (!findUser) throw new HttpException(409, "You're not user");
+    try {
+      const verify: any = await verifyOtp(userData);
+      console.log('verify otp', verify);
+      if (!verify.valid) {
+        throw 'Invalid OTP';
+      } else {
+        await UserEntity.update(userId, { ...findUser, active: true });
 
-    if (findUser && findUser.otp !== userData.otp) {
-      throw new HttpException(409, 'Invalid OTP');
+        const updateUser: User = await UserEntity.findOne({ where: { id: userId } });
+        return updateUser;
+      }
+    } catch (error) {
+      throw new HttpException(500, error);
     }
-    await UserEntity.update(userId, { ...findUser, active: true });
-
-    const updateUser: User = await UserEntity.findOne({ where: { id: userId } });
-    return updateUser;
   }
   public async updateUser(userId: number, userData: CreateUserDto): Promise<User> {
     if (isEmpty(userData)) throw new HttpException(400, "You're not userData");

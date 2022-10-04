@@ -26,7 +26,7 @@ class PossapService extends Repository<PossapServiceEntity> {
 
     const findAllPossap: IPossapService = await PossapServiceEntity.findOne({ where: { name: AllPossapData.name } });
     if (findAllPossap) throw new HttpException(409, `service with this name ${AllPossapData.name} already exists`);
-    const createAllPossapData: IPossapService = await PossapServiceEntity.create(AllPossapData).save();
+    const createAllPossapData: IPossapService = await PossapServiceEntity.save(AllPossapData);
 
     return createAllPossapData;
   }

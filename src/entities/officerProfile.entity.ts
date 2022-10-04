@@ -23,7 +23,6 @@ export class OfficerProfileEntity extends sharedProps  {
   officerSection: string;
 
   @Column()
-  @IsNotEmpty()
   officerSubSection: string;
 
 
@@ -35,6 +34,6 @@ export class OfficerProfileEntity extends sharedProps  {
   @UpdateDateColumn()
   updatedAt: Date;
 
-  @OneToOne(type => OfficerEntity, user => user.profile)
+  @OneToOne(() => OfficerEntity, user => user.profile)
   officer: OfficerEntity;
 }
