@@ -1,0 +1,15 @@
+
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: possap-backend
+  labels:
+    app: possap-backend
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: possap-backend
+  minReplicas: 1
+  maxReplicas: 9
+  targetCPUUtilizationPercentage: 70
