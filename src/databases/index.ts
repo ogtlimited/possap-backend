@@ -6,11 +6,11 @@ import { dbConfig } from '@interfaces/db.interface';
 const { host, user, password, database }: dbConfig = config.get('dbConfig');
 export const dbConnection: ConnectionOptions = {
   type: 'postgres',
-  host: host,
+  host: process.env.DB_HOST,
   port: 5432,
-  username: user,
-  password: password,
-  database: database,
+  username: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
   synchronize: true,
   logging: ['error'],
   entities: [join(__dirname, '../**/*.entity{.ts,.js}')],
