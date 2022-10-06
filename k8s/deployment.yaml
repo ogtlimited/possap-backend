@@ -1,0 +1,59 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: possap
+  labels:
+    app: possap
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: possap
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: possap
+    spec:  
+      containers:
+        - name: possap
+          volumeMounts:
+            - mountPath: /usr/src/app.env
+              name: config-volume
+              subPath: .env
+          image: 651611223190.dkr.ecr.eu-west-2.amazonaws.com/possap:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+              protocol: TCP
+          resources:
+            requests: 
+              cpu: 150m
+              memory: 250Mi
+            limits: 
+              cpu: 250m
+              memory: 500Mi
+          livenessProbe:
+            failureThreshold: 3
+            initialDelaySeconds: 150
+            periodSeconds: 30
+            successThreshold: 1
+            tcpSocket:
+              port: 3000
+            timeoutSeconds: 30
+          readinessProbe:
+            failureThreshold: 3
+            initialDelaySeconds: 120
+            periodSeconds: 30
+            successThreshold: 1
+            tcpSocket:
+              port: 3000
+            timeoutSeconds: 30
+      volumes:  
+        - name: config-volume
+          configMap:
+            name: possap

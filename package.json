@@ -48,7 +48,6 @@
     "reflect-metadata": "^0.1.13",
     "swagger-jsdoc": "^6.0.0",
     "swagger-ui-express": "^4.1.6",
-    "tsc": "^2.0.4",
     "twilio": "^3.81.0",
     "typeorm": "^0.2.34",
     "typeorm-seeding": "^1.6.1",
