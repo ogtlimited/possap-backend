@@ -170,6 +170,7 @@ class HelperController {
   // Upload files
   public uploadMedia = async (req: Request | any, res: Response, next: NextFunction): Promise<unknown> => {
     const files = req.files;
+    console.log(files);
 
     try {
       const awsS3Upload = await HelperController.awsS3();
@@ -186,7 +187,9 @@ class HelperController {
           .promise(),
       );
       const responses = await Promise.all(allFilesUpload);
-      return res.status(200).json({ status: 'Success', statusCode: 200, message: 'Files uploaded successfully', data: responses });
+      const location = responses[0].Location;
+      console.log(location);
+      return res.status(200).json({ status: 'Success', statusCode: 200, message: 'Files uploaded successfully', data: location });
     } catch (err) {
       res.status(500).json({ message: 'An error occurred', statusCode: 500, status: 'Failed' });
       next(err);
