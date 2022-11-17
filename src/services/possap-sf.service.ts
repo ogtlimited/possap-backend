@@ -40,7 +40,7 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
           approvalLevel: parent.approvalWorkFlow[0],
         };
         const createAllPossapData = await PossapServiceFieldsEntity.save(obj);
-
+        this.distributor(parent, data);
         return createAllPossapData;
       } else {
         throw new HttpException(409, 'Parent service does not exist');
@@ -49,6 +49,31 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
       console.log(error);
     }
   }
+
+  public async distributor(parent: IPossapService, data) {
+    switch (parent.slug) {
+      case 'cmr':
+        this.cmrProcessessor(data);
+        break;
+      case 'egs':
+        this.egsProcessessor(data);
+        break;
+      case 'pcc':
+        this.pccProcessessor(data);
+        break;
+      case 'pe':
+        this.peProcessessor(data);
+        break;
+      default:
+        console.log('slug is not found');
+        break;
+    }
+  }
+
+  public async cmrProcessessor(data) {}
+  public async peProcessessor(data) {}
+  public async egsProcessessor(data) {}
+  public async pccProcessessor(data) {}
 
   public async updatePossapService(AllPossapId: any, AllPossapData: any): Promise<IPossapServiceFields> {
     if (isEmpty(AllPossapData)) throw new HttpException(400, "You're not AllPossapData");

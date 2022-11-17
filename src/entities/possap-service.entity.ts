@@ -12,6 +12,9 @@ export class PossapServiceEntity extends BaseEntity implements IPossapService {
   @Column()
   name: string;
 
+  @Column()
+  slug: string;
+
   @Column('simple-array')
   approvalWorkFlow: string[];
 
