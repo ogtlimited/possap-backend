@@ -21,7 +21,7 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
   public async findAPossapSFById(AllPossapId: any): Promise<IPossapServiceFields> {
     if (isEmpty(AllPossapId)) throw new HttpException(400, "You're not AllPossapId");
 
-    const findAllPossap: IPossapServiceFields = await PossapServiceFieldsEntity.findOne({ where: { id: AllPossapId } });
+    const findAllPossap: IPossapServiceFields = await PossapServiceFieldsEntity.find({ where: { service: AllPossapId } });
     if (!findAllPossap) throw new HttpException(409, "You're not AllPossap");
 
     return findAllPossap;
