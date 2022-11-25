@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 import { IPossapService } from './../interfaces/possap-services.interfact';
 import { IPossapServiceFields } from '../interfaces/possap-services.interfact';
 import { HttpException } from '@/exceptions/HttpException';
@@ -8,6 +9,7 @@ import { ObjectId } from '@/utils/util';
 import PossapService from './possap-services.service';
 import { IOfficers } from './../interfaces/officer.interface';
 import { OfficerEntity } from '@entities/officers.entity';
+import { InvoiceEntity } from '@/entities/invoice.entity';
 
 @EntityRepository()
 class PossapSFService extends Repository<PossapServiceFieldsEntity> {
@@ -40,7 +42,7 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
           approvalLevel: parent.approvalWorkFlow[0],
         };
         const createAllPossapData = await PossapServiceFieldsEntity.save(obj);
-
+        this.distributor(parent, data);
         return createAllPossapData;
       } else {
         throw new HttpException(409, 'Parent service does not exist');
@@ -48,6 +50,57 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
     } catch (error) {
       console.log(error);
     }
+  }
+
+  public async distributor(parent: IPossapService, data) {
+    switch (parent.slug) {
+      case 'cmr':
+        this.cmrProcessessor(data);
+        break;
+      case 'egs':
+        this.egsProcessessor(data);
+        break;
+      case 'pcc':
+        this.pccProcessessor(data);
+        break;
+      case 'pe':
+        this.peProcessessor(data);
+        break;
+      default:
+        console.log('slug is not found');
+        break;
+    }
+  }
+
+  public async cmrProcessessor(data) {}
+  public async peProcessessor(data) {}
+  public async egsProcessessor(data) {}
+  public async pccProcessessor(data) {}
+
+  public async officerRequest(officerId: string) {
+    const officer: IOfficers = await OfficerEntity.findOne({ where: { id: officerId } });
+    if (officer) {
+      const reqList = await PossapServiceFieldsEntity.find({ where: { approvalLevel: In(officer.canApprove) } });
+      return reqList;
+    }
+  }
+
+  async approveRequest(id: number, officer: IOfficers): Promise<{ message: 'request approved' }> {
+    const serviceInvoice = await InvoiceEntity.findOne({ where: { application_id: id } });
+    if (!serviceInvoice) {
+      throw new HttpException(403, 'cannot approve unpaid request');
+    }
+    const request: IPossapServiceFields = await PossapServiceFieldsEntity.findOne({ where: { id } });
+    const requestParent: IPossapService = await this.possapS.findOne({ where: { id } });
+    const approvalWorkFlow = requestParent.approvalWorkFlow;
+    return { message: 'request approved' };
+    // if (officer.extractApprovalLevel.extractFirstApproval && request.status != 'rejected') {
+    //   await PoliceExtractEntity.createQueryBuilder().update(PoliceExtractEntity).set({ approvalLevel: 2 }).where('id = :id', { id }).execute();
+    //   return { message: 'extracted approved' };
+    // } else {
+    //   await PoliceExtractEntity.createQueryBuilder().update(PoliceExtractEntity).set({ status: 'approved' }).where('id = :id', { id }).execute();
+    //   return { message: 'extracted approved' };
+    // }
   }
 
   public async updatePossapService(AllPossapId: any, AllPossapData: any): Promise<IPossapServiceFields> {
@@ -65,7 +118,7 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
     if (isEmpty(AllApproverData)) throw new HttpException(400, "You're not AllOfficerData");
 
     const findAllPossap: IPossapService = await PossapServiceFieldsEntity.findOne({ where: { id: AllPossapId } });
-    if (!findAllPossap) throw new HttpException(409, "You're not AllPossap");
+    if (!findAllPossap) throw new HttpException(409, 'Request not found');
 
     const arr = [];
     AllApproverData.forEach(element => {
@@ -83,7 +136,7 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
     if (isEmpty(AllPossapId)) throw new HttpException(400, "You're not AllPossapId");
 
     const findAllPossap: IPossapServiceFields = await PossapServiceFieldsEntity.findOne({ where: { id: AllPossapId } });
-    if (!findAllPossap) throw new HttpException(409, "You're not AllPossap");
+    if (!findAllPossap) throw new HttpException(409, 'Service does not exist');
 
     await PossapServiceFieldsEntity.delete({ id: AllPossapId });
     return findAllPossap;

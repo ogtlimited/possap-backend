@@ -1,6 +1,7 @@
 export interface IPossapService {
   id?: number;
   name?: string;
+  slug?: string;
   approvalWorkFlow?: any[];
   services?: any[];
 }

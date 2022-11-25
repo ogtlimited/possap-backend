@@ -1,14 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+<<<<<<< HEAD
+  name: possap-backend
+  labels:
+    app: possap-backend
+=======
   name: possap
   labels:
     app: possap
+>>>>>>> 5e45ab897601fe794f3d69f89cfe40db02b48508
 spec:
   replicas: 1
   selector:
     matchLabels:
+<<<<<<< HEAD
+      app: possap-backend
+=======
       app: possap
+>>>>>>> 5e45ab897601fe794f3d69f89cfe40db02b48508
   strategy:
     rollingUpdate:
       maxSurge: 1
@@ -17,15 +27,26 @@ spec:
   template:
     metadata:
       labels:
+<<<<<<< HEAD
+        app: possap-backend
+    spec:  
+      containers:
+        - name: possap-backend
+=======
         app: possap
     spec:  
       containers:
         - name: possap
+>>>>>>> 5e45ab897601fe794f3d69f89cfe40db02b48508
           volumeMounts:
             - mountPath: /usr/src/app.env
               name: config-volume
               subPath: .env
+<<<<<<< HEAD
+          image: 651611223190.dkr.ecr.eu-west-2.amazonaws.com/possap-backend:2
+=======
           image: 651611223190.dkr.ecr.eu-west-2.amazonaws.com/possap:latest
+>>>>>>> 5e45ab897601fe794f3d69f89cfe40db02b48508
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
@@ -56,4 +77,8 @@ spec:
       volumes:  
         - name: config-volume
           configMap:
+<<<<<<< HEAD
+            name: possap-backend
+=======
             name: possap
+>>>>>>> 5e45ab897601fe794f3d69f89cfe40db02b48508
