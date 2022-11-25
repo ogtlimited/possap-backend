@@ -2,14 +2,14 @@
 apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: possap-backend
+  name: possap
   labels:
-    app: possap-backend
+    app: possap
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: possap-backend
+    name: erp-test
   minReplicas: 1
   maxReplicas: 9
   targetCPUUtilizationPercentage: 70
