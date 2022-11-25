@@ -23,7 +23,7 @@ export class PossapServiceFieldsEntity extends BaseEntity implements IPossapServ
   })
   formFields: [];
 
-  @Column({ type: 'enum', enum: ['pending', 'in progress', 'approved'], default: 'pending' })
+  @Column({ type: 'enum', enum: ['pending', 'in progress', 'approved', 'rejected'], default: 'pending' })
   status: string;
 
   @Column({

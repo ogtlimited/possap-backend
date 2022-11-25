@@ -43,6 +43,15 @@ class PossapServiceController {
       next(error);
     }
   };
+  public deleteServiceById = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      console.log(req.params, req.query);
+      const result: IPossapService = await this.possapS.deletePossapService(parseInt(req.params['id']));
+      res.status(200).json({ data: result });
+    } catch (error) {
+      next(error);
+    }
+  };
 }
 
 export default PossapServiceController;

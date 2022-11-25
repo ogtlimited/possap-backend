@@ -1,4 +1,14 @@
 {
+  "name": "Police Character Certificate",
+  "approvalWorkFlow": [
+    "First character certificate approval (DIG)",
+    "Second character certificate approval (CP CCR)",
+    "Third character certificate approval - Biometric Capture (SCID)",
+    "Fourth character certificate approval (DA CCR)",
+    "Fifth character certificate approval (CP CCR)",
+    "Secretariat Routing"
+  ],
+  "slug": "PCC",
   "formSchema": [
     {
       "name": "requestType",

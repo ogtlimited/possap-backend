@@ -35,6 +35,9 @@ export class OfficerAccessEntity extends sharedProps {
   @Column({type: 'json'})
   services: string[];
 
+  @Column({type: 'simple-array', default: []})
+  canApprove: string[];
+
 
 
   @OneToOne(type => OfficerEntity, user => user.access)
