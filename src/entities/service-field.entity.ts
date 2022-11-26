@@ -31,11 +31,11 @@ export class PossapServiceFieldsEntity extends BaseEntity implements IPossapServ
   })
   approvalLevel: string;
 
-  @Column({
-    type: 'jsonb',
-    nullable: true,
-  })
-  approvingOfficers: IApprovers[];
+  // @Column({
+  //   type: 'jsonb',
+  //   nullable: true,
+  // })
+  // approvingOfficers: IApprovers[];
 
   @ManyToOne(() => UserEntity, user => user.service, { cascade: true, eager: true })
   owner: UserEntity;

@@ -5,10 +5,10 @@ export class CreateInvoiceDTO {
   amount: number;
 
   @IsString()
-  applicationId: string;
+  applicationId: number;
 
   @IsString()
-  serviceId: string;
+  serviceId: number;
 
   @IsString()
   status: string;

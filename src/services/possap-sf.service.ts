@@ -10,10 +10,12 @@ import PossapService from './possap-services.service';
 import { IOfficers } from './../interfaces/officer.interface';
 import { OfficerEntity } from '@entities/officers.entity';
 import { InvoiceEntity } from '@/entities/invoice.entity';
+import InvoiceService from './invoice.service';
 
 @EntityRepository()
 class PossapSFService extends Repository<PossapServiceFieldsEntity> {
   public possapS = new PossapService();
+  public invoiceS = new InvoiceService();
   public async findPossapSF(): Promise<IPossapServiceFields[]> {
     const AllPossaps: IPossapServiceFields[] = await PossapServiceFieldsEntity.find();
     console.log(AllPossaps);
@@ -30,25 +32,34 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
   }
 
   public async createPossapSF(data): Promise<any> {
-    if (isEmpty(data)) throw new HttpException(400, 'Data is empty');
     try {
-      const ref = ObjectId();
+      if (isEmpty(data)) throw new HttpException(400, 'Data is empty');
       console.log('service id', data.service);
       const parent: IPossapService = await this.possapS.findPossapServiceById(data.service);
+      const ref = parent?.slug.toUpperCase() + '-' + ObjectId();
       if (parent) {
+        const { amount, ...others } = data;
         const obj = {
-          ...data,
+          ...others,
           ref,
           approvalLevel: parent.approvalWorkFlow[0],
         };
         const createAllPossapData = await PossapServiceFieldsEntity.save(obj);
+        const genInvoice = await this.invoiceS.createInvoice({
+          amount: amount,
+          applicationId: createAllPossapData.id,
+          serviceId: parent.id,
+          userId: data.owner,
+          status: 'pending',
+        });
         this.distributor(parent, data);
-        return createAllPossapData;
+        return { createAllPossapData, genInvoice };
       } else {
         throw new HttpException(409, 'Parent service does not exist');
       }
     } catch (error) {
       console.log(error);
+      throw new HttpException(400, error);
     }
   }
 
