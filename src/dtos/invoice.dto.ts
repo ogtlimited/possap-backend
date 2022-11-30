@@ -16,3 +16,7 @@ export class CreateInvoiceDTO {
   @IsNumber()
   userId: number;
 }
+export class updateInvoiceDTO {
+  @IsString()
+  status: string;
+}
