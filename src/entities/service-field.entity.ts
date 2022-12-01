@@ -23,7 +23,7 @@ export class PossapServiceFieldsEntity extends BaseEntity implements IPossapServ
   })
   formFields: [];
 
-  @Column({ type: 'enum', enum: ['pending', 'in progress', 'approved'], default: 'pending' })
+  @Column({ type: 'enum', enum: ['pending', 'in progress', 'approved', 'rejected'], default: 'pending' })
   status: string;
 
   @Column({
@@ -31,11 +31,11 @@ export class PossapServiceFieldsEntity extends BaseEntity implements IPossapServ
   })
   approvalLevel: string;
 
-  @Column({
-    type: 'jsonb',
-    nullable: true,
-  })
-  approvingOfficers: IApprovers[];
+  // @Column({
+  //   type: 'jsonb',
+  //   nullable: true,
+  // })
+  // approvingOfficers: IApprovers[];
 
   @ManyToOne(() => UserEntity, user => user.service, { cascade: true, eager: true })
   owner: UserEntity;

@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: possap-backend
+  name: possap
   labels:
-    app: possap-backend
+    app: possap
 spec:
   type: NodePort
   ports:
@@ -12,4 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app: possap-backend
+    app: possap

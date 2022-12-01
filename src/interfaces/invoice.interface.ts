@@ -1,6 +1,8 @@
 export interface IInvoice {
   id?: any;
-  serviceCost: string;
+  amount: number;
   serviceId: any;
+  applicationId: any;
+  userId: any;
   status: string;
 }

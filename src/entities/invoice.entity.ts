@@ -1,3 +1,4 @@
+import { PaymentStatus } from './../enums/payment_status.enum';
 import { PossapServiceFieldsEntity } from './service-field.entity';
 
 import { sharedProps } from './helper/sharedProps.helper';
@@ -13,11 +14,14 @@ export class InvoiceEntity extends sharedProps implements IInvoice {
 
   @Column()
   @IsNotEmpty()
-  serviceCost: string;
+  amount: number;
 
-  @Column()
-  @IsNotEmpty()
-  status: string;
+  @Column( {
+    type: 'enum',
+    enum: PaymentStatus,
+    default: 'pending',
+  })
+    status: string;
 
   @Column()
   @CreateDateColumn()
@@ -27,6 +31,12 @@ export class InvoiceEntity extends sharedProps implements IInvoice {
   @UpdateDateColumn()
   updatedAt: Date;
 
+  @Column()
+  applicationId: string;
+
   @OneToOne(() => PossapServiceFieldsEntity, service => service.invoice)
   serviceId: PossapServiceFieldsEntity;
+
+  @Column()
+  userId: number;
 }
