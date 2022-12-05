@@ -10,8 +10,6 @@ import PossapSFService from './possap-sf.service';
 //factor pagination
 @Entity()
 class InvoiceService extends Repository<InvoiceEntity> {
-  public possapSF = new PossapSFService();
-
   public async findAllUserInvoices(user, queryParams): Promise<IInvoice[]> {
     queryParams.userId = user.id;
     const invoices: IInvoice[] = await InvoiceEntity.find(queryParams);

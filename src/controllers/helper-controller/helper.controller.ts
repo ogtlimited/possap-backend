@@ -11,6 +11,8 @@ import twilio from 'twilio';
 import { v4 as uuidv4 } from 'uuid';
 import * as dotenv from 'dotenv';
 import { SmsHelperDto } from '@dtos/helpers/sms-helper.dto';
+import States from '../../../state.json';
+import Lgas from '../../../lgas.json';
 dotenv.config();
 
 class HelperController {
@@ -117,12 +119,14 @@ class HelperController {
   public getStateLga = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       console.log(req.body);
+      console.log(States);
       const data = req.body;
-      let result = NaijaStates.states();
+      let result = States.ResponseObject.ReportRecords;
       // const state = NaijaStates.states().filter(s => s === data.state);
-      if (data?.state) {
-        console.log(data.state);
-        result = NaijaStates.lgas(data.state).lgas;
+      if (data?.StateCode) {
+        console.log(data.StateCode);
+        result = Lgas.ResponseObject.ReportRecords.filter(lgas => lgas.StateCode === data.StateCode);
+        console.log(result);
       }
       res.status(200).json({ data: result, message: 'data' });
     } catch (error) {
