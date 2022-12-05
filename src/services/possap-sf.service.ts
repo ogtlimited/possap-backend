@@ -26,10 +26,10 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
     return AllPossaps;
   }
 
-  public async findAPossapSFById(AllPossapId: any): Promise<IPossapServiceFields> {
+  public async findAPossapSFById(AllPossapId: any): Promise<IPossapServiceFields[]> {
     if (isEmpty(AllPossapId)) throw new HttpException(400, "You're not AllPossapId");
 
-    const findAllPossap: IPossapServiceFields = await PossapServiceFieldsEntity.findOne({ where: { id: AllPossapId } });
+    const findAllPossap: IPossapServiceFields[] = await PossapServiceFieldsEntity.find({ where: { id: AllPossapId } });
     if (!findAllPossap) throw new HttpException(409, "You're not AllPossap");
 
     return findAllPossap;
@@ -106,7 +106,15 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
   public async officerRequest(officerId: string) {
     const officer: IOfficers = await OfficerEntity.findOne({ where: { id: officerId } });
     if (officer) {
-      const reqList = await PossapServiceFieldsEntity.find({ where: { approvalLevel: In(officer.canApprove) } });
+      // get officer services
+      const services = officer.access.services
+      // officer formation, department section and subsection
+      const access = this.mapOfficerAccess(officer.profile); // '1-17-92'
+      const commandAccess = officer.commandAccess.map(ac => this.mapOfficerAccess(ac)); // ['3-32-76']
+      const fullAccess = [access, ...commandAccess]
+      const reqList = PossapServiceFieldsEntity.find({ where: { serviceId: In([...services]), processor: In(fullAccess) } })
+
+      // const reqList = await PossapServiceFieldsEntity.find({ where: { approvalLevel: In(officer.canApprove) } });
       return reqList;
     }
   }
