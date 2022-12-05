@@ -1,3 +1,4 @@
+import { IApprovalLog } from './../interfaces/possap-services.interfact';
 import { UserEntity } from '@entities/users.entity';
 import { IApprovers, IPossapServiceFields } from '@/interfaces/possap-services.interfact';
 import { BaseEntity, PrimaryGeneratedColumn, ManyToOne, Column, Entity, OneToMany, JoinColumn, OneToOne } from 'typeorm';
@@ -31,11 +32,16 @@ export class PossapServiceFieldsEntity extends BaseEntity implements IPossapServ
   })
   approvalLevel: string;
 
-  // @Column({
-  //   type: 'jsonb',
-  //   nullable: true,
-  // })
-  // approvingOfficers: IApprovers[];
+  @Column({
+    default: null,
+  })
+  processor: string;
+
+  @Column({
+    type: 'jsonb',
+    nullable: true,
+  })
+  approvalLog: IApprovalLog[];
 
   @ManyToOne(() => UserEntity, user => user.service, { cascade: true, eager: true })
   owner: UserEntity;

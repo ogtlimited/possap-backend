@@ -1,0 +1,156 @@
+{
+    "Error": false,
+    "ErrorCode": null,
+    "ResponseObject": {
+        "ReportRecords": [
+            {
+                "Name": "Anambra",
+                "Code": "1"
+            },
+            {
+                "Name": "Akwa Ibom",
+                "Code": "2"
+            },
+            {
+                "Name": "Cross River",
+                "Code": "3"
+            },
+            {
+                "Name": "Delta",
+                "Code": "4"
+            },
+            {
+                "Name": "Edo",
+                "Code": "5"
+            },
+            {
+                "Name": "Zamfara",
+                "Code": "6"
+            },
+            {
+                "Name": "Kano",
+                "Code": "7"
+            },
+            {
+                "Name": "Enugu",
+                "Code": "8"
+            },
+            {
+                "Name": "Katsina",
+                "Code": "9"
+            },
+            {
+                "Name": "Sokoto",
+                "Code": "10"
+            },
+            {
+                "Name": "Bauchi",
+                "Code": "11"
+            },
+            {
+                "Name": "Bayelsa",
+                "Code": "12"
+            },
+            {
+                "Name": "Jigawa",
+                "Code": "13"
+            },
+            {
+                "Name": "Plateau",
+                "Code": "14"
+            },
+            {
+                "Name": "Kogi",
+                "Code": "15"
+            },
+            {
+                "Name": "Niger",
+                "Code": "16"
+            },
+            {
+                "Name": "Oyo",
+                "Code": "17"
+            },
+            {
+                "Name": "Imo",
+                "Code": "18"
+            },
+            {
+                "Name": "FCT",
+                "Code": "19"
+            },
+            {
+                "Name": "Ondo",
+                "Code": "20"
+            },
+            {
+                "Name": "Osun",
+                "Code": "21"
+            },
+            {
+                "Name": "Kaduna",
+                "Code": "22"
+            },
+            {
+                "Name": "Taraba",
+                "Code": "23"
+            },
+            {
+                "Name": "Gombe",
+                "Code": "24"
+            },
+            {
+                "Name": "Kebbi",
+                "Code": "25"
+            },
+            {
+                "Name": "Kwara",
+                "Code": "26"
+            },
+            {
+                "Name": "Lagos",
+                "Code": "27"
+            },
+            {
+                "Name": "Nasarawa",
+                "Code": "28"
+            },
+            {
+                "Name": "Rivers",
+                "Code": "29"
+            },
+            {
+                "Name": "Ekiti",
+                "Code": "30"
+            },
+            {
+                "Name": "Yobe",
+                "Code": "31"
+            },
+            {
+                "Name": "Abia",
+                "Code": "32"
+            },
+            {
+                "Name": "Adamawa",
+                "Code": "33"
+            },
+            {
+                "Name": "Benue",
+                "Code": "34"
+            },
+            {
+                "Name": "Borno",
+                "Code": "35"
+            },
+            {
+                "Name": "Ogun",
+                "Code": "36"
+            },
+            {
+                "Name": "Ebonyi",
+                "Code": "37"
+            }
+        ]
+    }
+}
