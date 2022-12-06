@@ -11,14 +11,26 @@ class PossapService extends Repository<PossapServiceEntity> {
     const AllPossaps: IPossapService[] = await PossapServiceEntity.find();
     return AllPossaps;
   }
+  public async getServiceCharge(serviceId: any): Promise<any> {
+    if (isEmpty(serviceId)) throw new HttpException(400, 'Provide service id');
+
+    return {
+      invoiceAmount: 3000,
+      proccessingFee: 1000,
+    };
+  }
 
   public async findPossapServiceById(AllPossapId: any): Promise<IPossapService> {
-    if (isEmpty(AllPossapId)) throw new HttpException(400, 'no data passed');
-    console.log(AllPossapId, 'id');
-    const findAllPossap: IPossapService = await PossapServiceEntity.findOne({ where: { id: AllPossapId } });
-    if (!findAllPossap) throw new HttpException(409, 'Service does not exist');
+    try {
+      if (isEmpty(AllPossapId)) throw new HttpException(400, 'no data passed');
+      console.log(AllPossapId, 'id');
+      const findAllPossap: IPossapService = await PossapServiceEntity.findOne({ where: { id: AllPossapId } });
+      if (!findAllPossap) throw new HttpException(409, 'Service does not exist');
 
-    return findAllPossap;
+      return findAllPossap;
+    } catch (error) {
+      throw new HttpException(400, error);
+    }
   }
 
   public async createPossapService(AllPossapData): Promise<IPossapService> {

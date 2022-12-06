@@ -1,0 +1,80 @@
+{
+  "name": "CMR",
+  "approvalWorkFlow": [
+    "CMR First Approval",
+    "CMR Second Approval"
+  ],
+  "formSchema": [
+    {
+      "name": "vin",
+      "label": "VIN",
+      "validators": {
+        "required": true
+      },
+      "api": {
+        "path": "state-lga",
+        "body": null
+      },
+      "placeholder": "Enter your VIN",
+      "type": "text",
+      "value": ""
+    },
+    {
+      "name": "plateNumber",
+      "label": "Plate Number",
+      "validators": {
+        "required": true
+      },
+      "placeholder": "Enter your plate number",
+      "type": "text",
+      "value": ""
+    },
+    {
+      "name": "vehColor",
+      "label": "Vehicle color",
+      "validators": {
+        "required": false
+      },
+      "placeholder": "Upload Colored photo of vehicle. Maximum size: 1MB",
+      "type": "file",
+      "value": ""
+    },
+    {
+      "name": "ownershipProof",
+      "label": "Proof of ownership",
+      "validators": {
+        "required": true
+      },
+      "placeholder": "Upload proof of ownership. Maximum size: 1MB",
+      "type": "file",
+      "value": ""
+    },
+    {
+      "name": "roadWorthiness",
+      "label": "Road worthiness",
+      "validators": {
+        "required": true
+      },
+      "placeholder": "Upload road worthiness document. Maximum size: 1MB",
+      "type": "file",
+      "value": ""
+    },
+    {
+      "name": "pickupLocation",
+      "label": "Pick up location",
+      "validators": {
+        "required": true
+      },
+      "placeholder": "Select Pick up location",
+      "type": "select",
+      "value": "",
+      "config": {
+        "multiple": false
+      },
+      "api": {
+        "path": "state-lga",
+        "body": null
+      }
+    }
+  ]
+}

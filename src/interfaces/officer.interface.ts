@@ -8,6 +8,8 @@ export interface IOfficers {
   password: string;
   profile: any;
   commandAccess?: any[];
+  canApprove?: any[];
+  access?: any;
 }
 
 export interface IExtractApprovalLevel {

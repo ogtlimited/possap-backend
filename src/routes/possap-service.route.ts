@@ -1,7 +1,6 @@
 import { Router } from 'express';
 import { Routes } from '@interfaces/routes.interface';
 import PossapServiceController from '@/controllers/possap-service.controller';
-import officerMiddleware from '@/middlewares/officer.middleware';
 
 class PossapServiceRoute implements Routes {
   public path = '/possap-services';
@@ -14,9 +13,11 @@ class PossapServiceRoute implements Routes {
 
   private initializeRoutes() {
     this.router.get(`${this.path}`, this.possapS.findAllPossapServices);
-    this.router.get(`${this.path}/:id(\\d+)`,  this.possapS.findServiceById);
-    this.router.post(`${this.path}`,officerMiddleware, this.possapS.createPossapService);
+    this.router.get(`${this.path}/:id(\\d+)`, this.possapS.findServiceById);
+    this.router.get(`${this.path}/service-charge/:id(\\d+)`, this.possapS.getServiceCharge);
+    this.router.post(`${this.path}`, this.possapS.createPossapService);
     this.router.put(`${this.path}/:id(\\d+)`, this.possapS.updatePosssapService);
+    this.router.delete(`${this.path}/:id(\\d+)`, this.possapS.deleteServiceById);
   }
 }
 
