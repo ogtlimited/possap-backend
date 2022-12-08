@@ -35,6 +35,7 @@ class HelperRoute implements Routes {
     this.router.post(`${this.path}/verifyOtp`, validationMiddleware(SmsHelperDto, 'body'), this.helperController.verifyOtp);
     this.router.post(`${this.path}/state-lga`, this.helperController.getStateLga);
     this.router.post(`${this.path}/state-scid`, this.helperController.getPoliceSCID);
+    this.router.post(`${this.path}/state-area-division`, this.helperController.getPoliceAreaDivision);
     this.router.post(`${this.path}/countries`, this.helperController.getCountries);
   }
 }

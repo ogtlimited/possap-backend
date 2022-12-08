@@ -4,3883 +4,3883 @@
     "ResponseObject": {
         "ReportRecords": [
             {
-                "Name": "Gwagwalada",
-                "Code": "1",
+                "key": "Gwagwalada",
+                "value": "1",
                 "StateCode": "19"
             },
             {
-                "Name": "Kuje",
-                "Code": "2",
+                "key": "Kuje",
+                "value": "2",
                 "StateCode": "19"
             },
             {
-                "Name": "Abaji",
-                "Code": "3",
+                "key": "Abaji",
+                "value": "3",
                 "StateCode": "19"
             },
             {
-                "Name": "ABUJA Municipal Area Council",
-                "Code": "4",
+                "key": "ABUJA Municipal Area Council",
+                "value": "4",
                 "StateCode": "19"
             },
             {
-                "Name": "Bwari",
-                "Code": "5",
+                "key": "Bwari",
+                "value": "5",
                 "StateCode": "19"
             },
             {
-                "Name": "Kwali",
-                "Code": "6",
+                "key": "Kwali",
+                "value": "6",
                 "StateCode": "19"
             },
             {
-                "Name": "Aba North",
-                "Code": "7",
+                "key": "Aba North",
+                "value": "7",
                 "StateCode": "32"
             },
             {
-                "Name": "Aba South",
-                "Code": "8",
+                "key": "Aba South",
+                "value": "8",
                 "StateCode": "32"
             },
             {
-                "Name": "Arochukwu",
-                "Code": "9",
+                "key": "Arochukwu",
+                "value": "9",
                 "StateCode": "32"
             },
             {
-                "Name": "Bende",
-                "Code": "10",
+                "key": "Bende",
+                "value": "10",
                 "StateCode": "32"
             },
             {
-                "Name": "Ikwuano",
-                "Code": "11",
+                "key": "Ikwuano",
+                "value": "11",
                 "StateCode": "32"
             },
             {
-                "Name": "Isiala-Ngwa North",
-                "Code": "12",
+                "key": "Isiala-Ngwa North",
+                "value": "12",
                 "StateCode": "32"
             },
             {
-                "Name": "Isiala-Ngwa South",
-                "Code": "13",
+                "key": "Isiala-Ngwa South",
+                "value": "13",
                 "StateCode": "32"
             },
             {
-                "Name": "Isuikwato",
-                "Code": "14",
+                "key": "Isuikwato",
+                "value": "14",
                 "StateCode": "32"
             },
             {
-                "Name": "Obi Ngwa",
-                "Code": "15",
+                "key": "Obi Ngwa",
+                "value": "15",
                 "StateCode": "32"
             },
             {
-                "Name": "Ohafia",
-                "Code": "16",
+                "key": "Ohafia",
+                "value": "16",
                 "StateCode": "32"
             },
             {
-                "Name": "Osisioma NGWA",
-                "Code": "17",
+                "key": "Osisioma NGWA",
+                "value": "17",
                 "StateCode": "32"
             },
             {
-                "Name": "Ugwunagbo",
-                "Code": "19",
+                "key": "Ugwunagbo",
+                "value": "19",
                 "StateCode": "32"
             },
             {
-                "Name": "Ukwa East",
-                "Code": "20",
+                "key": "Ukwa East",
+                "value": "20",
                 "StateCode": "32"
             },
             {
-                "Name": "Ukwa West",
-                "Code": "21",
+                "key": "Ukwa West",
+                "value": "21",
                 "StateCode": "32"
             },
             {
-                "Name": "Umuahia North",
-                "Code": "22",
+                "key": "Umuahia North",
+                "value": "22",
                 "StateCode": "32"
             },
             {
-                "Name": "Umuahia South",
-                "Code": "23",
+                "key": "Umuahia South",
+                "value": "23",
                 "StateCode": "32"
             },
             {
-                "Name": "Umu-NNeochi",
-                "Code": "24",
+                "key": "Umu-NNeochi",
+                "value": "24",
                 "StateCode": "32"
             },
             {
-                "Name": "Demsa",
-                "Code": "25",
+                "key": "Demsa",
+                "value": "25",
                 "StateCode": "33"
             },
             {
-                "Name": "Fufore",
-                "Code": "26",
+                "key": "Fufore",
+                "value": "26",
                 "StateCode": "33"
             },
             {
-                "Name": "Ganye",
-                "Code": "27",
+                "key": "Ganye",
+                "value": "27",
                 "StateCode": "33"
             },
             {
-                "Name": "GIreI",
-                "Code": "28",
+                "key": "GIreI",
+                "value": "28",
                 "StateCode": "33"
             },
             {
-                "Name": "Gombi",
-                "Code": "29",
+                "key": "Gombi",
+                "value": "29",
                 "StateCode": "33"
             },
             {
-                "Name": "Guyuk",
-                "Code": "30",
+                "key": "Guyuk",
+                "value": "30",
                 "StateCode": "33"
             },
             {
-                "Name": "Hong",
-                "Code": "31",
+                "key": "Hong",
+                "value": "31",
                 "StateCode": "33"
             },
             {
-                "Name": "Jada",
-                "Code": "32",
+                "key": "Jada",
+                "value": "32",
                 "StateCode": "33"
             },
             {
-                "Name": "Lamurde",
-                "Code": "33",
+                "key": "Lamurde",
+                "value": "33",
                 "StateCode": "33"
             },
             {
-                "Name": "Madagali",
-                "Code": "34",
+                "key": "Madagali",
+                "value": "34",
                 "StateCode": "33"
             },
             {
-                "Name": "Maiha",
-                "Code": "35",
+                "key": "Maiha",
+                "value": "35",
                 "StateCode": "33"
             },
             {
-                "Name": "Mayo Belwa",
-                "Code": "36",
+                "key": "Mayo Belwa",
+                "value": "36",
                 "StateCode": "33"
             },
             {
-                "Name": "Michika",
-                "Code": "37",
+                "key": "Michika",
+                "value": "37",
                 "StateCode": "33"
             },
             {
-                "Name": "Mubi North",
-                "Code": "38",
+                "key": "Mubi North",
+                "value": "38",
                 "StateCode": "33"
             },
             {
-                "Name": "Mubi South",
-                "Code": "39",
+                "key": "Mubi South",
+                "value": "39",
                 "StateCode": "33"
             },
             {
-                "Name": "Numan",
-                "Code": "40",
+                "key": "Numan",
+                "value": "40",
                 "StateCode": "33"
             },
             {
-                "Name": "Shelleng",
-                "Code": "41",
+                "key": "Shelleng",
+                "value": "41",
                 "StateCode": "33"
             },
             {
-                "Name": "Song",
-                "Code": "42",
+                "key": "Song",
+                "value": "42",
                 "StateCode": "33"
             },
             {
-                "Name": "Toungo",
-                "Code": "43",
+                "key": "Toungo",
+                "value": "43",
                 "StateCode": "33"
             },
             {
-                "Name": "Yola North",
-                "Code": "44",
+                "key": "Yola North",
+                "value": "44",
                 "StateCode": "33"
             },
             {
-                "Name": "Yola South",
-                "Code": "45",
+                "key": "Yola South",
+                "value": "45",
                 "StateCode": "33"
             },
             {
-                "Name": "Abak",
-                "Code": "46",
+                "key": "Abak",
+                "value": "46",
                 "StateCode": "2"
             },
             {
-                "Name": "Eastern Obolo",
-                "Code": "47",
+                "key": "Eastern Obolo",
+                "value": "47",
                 "StateCode": "2"
             },
             {
-                "Name": "Eket",
-                "Code": "48",
+                "key": "Eket",
+                "value": "48",
                 "StateCode": "2"
             },
             {
-                "Name": "Esit Eket",
-                "Code": "49",
+                "key": "Esit Eket",
+                "value": "49",
                 "StateCode": "2"
             },
             {
-                "Name": "Essien Udim",
-                "Code": "50",
+                "key": "Essien Udim",
+                "value": "50",
                 "StateCode": "2"
             },
             {
-                "Name": "Etim Ekpo",
-                "Code": "51",
+                "key": "Etim Ekpo",
+                "value": "51",
                 "StateCode": "2"
             },
             {
-                "Name": "Etinan",
-                "Code": "52",
+                "key": "Etinan",
+                "value": "52",
                 "StateCode": "2"
             },
             {
-                "Name": "Ibeno",
-                "Code": "53",
+                "key": "Ibeno",
+                "value": "53",
                 "StateCode": "2"
             },
             {
-                "Name": "Ibesikpo Asutan",
-                "Code": "54",
+                "key": "Ibesikpo Asutan",
+                "value": "54",
                 "StateCode": "2"
             },
             {
-                "Name": "Ibiono-Ibom",
-                "Code": "55",
+                "key": "Ibiono-Ibom",
+                "value": "55",
                 "StateCode": "2"
             },
             {
-                "Name": "Ika",
-                "Code": "56",
+                "key": "Ika",
+                "value": "56",
                 "StateCode": "2"
             },
             {
-                "Name": "Ikono",
-                "Code": "57",
+                "key": "Ikono",
+                "value": "57",
                 "StateCode": "2"
             },
             {
-                "Name": "Ikot Abasi",
-                "Code": "58",
+                "key": "Ikot Abasi",
+                "value": "58",
                 "StateCode": "2"
             },
             {
-                "Name": "Ikot Ekpene",
-                "Code": "59",
+                "key": "Ikot Ekpene",
+                "value": "59",
                 "StateCode": "2"
             },
             {
-                "Name": "Ini",
-                "Code": "60",
+                "key": "Ini",
+                "value": "60",
                 "StateCode": "2"
             },
             {
-                "Name": "Itu",
-                "Code": "61",
+                "key": "Itu",
+                "value": "61",
                 "StateCode": "2"
             },
             {
-                "Name": "Mbo",
-                "Code": "62",
+                "key": "Mbo",
+                "value": "62",
                 "StateCode": "2"
             },
             {
-                "Name": "Mkpat-Enin",
-                "Code": "63",
+                "key": "Mkpat-Enin",
+                "value": "63",
                 "StateCode": "2"
             },
             {
-                "Name": "Nsit-Atai",
-                "Code": "64",
+                "key": "Nsit-Atai",
+                "value": "64",
                 "StateCode": "2"
             },
             {
-                "Name": "Nsit-Ibom",
-                "Code": "65",
+                "key": "Nsit-Ibom",
+                "value": "65",
                 "StateCode": "2"
             },
             {
-                "Name": "Nsit-Ubium",
-                "Code": "66",
+                "key": "Nsit-Ubium",
+                "value": "66",
                 "StateCode": "2"
             },
             {
-                "Name": "Obot Akara",
-                "Code": "67",
+                "key": "Obot Akara",
+                "value": "67",
                 "StateCode": "2"
             },
             {
-                "Name": "Okobo",
-                "Code": "68",
+                "key": "Okobo",
+                "value": "68",
                 "StateCode": "2"
             },
             {
-                "Name": "Onna",
-                "Code": "69",
+                "key": "Onna",
+                "value": "69",
                 "StateCode": "2"
             },
             {
-                "Name": "Oron",
-                "Code": "70",
+                "key": "Oron",
+                "value": "70",
                 "StateCode": "2"
             },
             {
-                "Name": "Oruk Anam",
-                "Code": "71",
+                "key": "Oruk Anam",
+                "value": "71",
                 "StateCode": "2"
             },
             {
-                "Name": "Udung Uko",
-                "Code": "72",
+                "key": "Udung Uko",
+                "value": "72",
                 "StateCode": "2"
             },
             {
-                "Name": "Ukanafun",
-                "Code": "73",
+                "key": "Ukanafun",
+                "value": "73",
                 "StateCode": "2"
             },
             {
-                "Name": "Uruan",
-                "Code": "74",
+                "key": "Uruan",
+                "value": "74",
                 "StateCode": "2"
             },
             {
-                "Name": "Urue-Offong/Oruko",
-                "Code": "75",
+                "key": "Urue-Offong/Oruko",
+                "value": "75",
                 "StateCode": "2"
             },
             {
-                "Name": "Uyo",
-                "Code": "76",
+                "key": "Uyo",
+                "value": "76",
                 "StateCode": "2"
             },
             {
-                "Name": "Aguata",
-                "Code": "77",
+                "key": "Aguata",
+                "value": "77",
                 "StateCode": "1"
             },
             {
-                "Name": "Anambra East",
-                "Code": "78",
+                "key": "Anambra East",
+                "value": "78",
                 "StateCode": "1"
             },
             {
-                "Name": "Anambra West",
-                "Code": "79",
+                "key": "Anambra West",
+                "value": "79",
                 "StateCode": "1"
             },
             {
-                "Name": "Anaocha",
-                "Code": "80",
+                "key": "Anaocha",
+                "value": "80",
                 "StateCode": "1"
             },
             {
-                "Name": "Awka North",
-                "Code": "81",
+                "key": "Awka North",
+                "value": "81",
                 "StateCode": "1"
             },
             {
-                "Name": "Awka South",
-                "Code": "82",
+                "key": "Awka South",
+                "value": "82",
                 "StateCode": "1"
             },
             {
-                "Name": "Ayamelum",
-                "Code": "83",
+                "key": "Ayamelum",
+                "value": "83",
                 "StateCode": "1"
             },
             {
-                "Name": "Dunukofia",
-                "Code": "84",
+                "key": "Dunukofia",
+                "value": "84",
                 "StateCode": "1"
             },
             {
-                "Name": "Ekwusigo",
-                "Code": "85",
+                "key": "Ekwusigo",
+                "value": "85",
                 "StateCode": "1"
             },
             {
-                "Name": "Idemili North",
-                "Code": "86",
+                "key": "Idemili North",
+                "value": "86",
                 "StateCode": "1"
             },
             {
-                "Name": "Idemili south",
-                "Code": "87",
+                "key": "Idemili south",
+                "value": "87",
                 "StateCode": "1"
             },
             {
-                "Name": "Ihiala",
-                "Code": "88",
+                "key": "Ihiala",
+                "value": "88",
                 "StateCode": "1"
             },
             {
-                "Name": "Njikoka",
-                "Code": "89",
+                "key": "Njikoka",
+                "value": "89",
                 "StateCode": "1"
             },
             {
-                "Name": "Nnewi North",
-                "Code": "90",
+                "key": "Nnewi North",
+                "value": "90",
                 "StateCode": "1"
             },
             {
-                "Name": "Nnewi South",
-                "Code": "91",
+                "key": "Nnewi South",
+                "value": "91",
                 "StateCode": "1"
             },
             {
-                "Name": "Ogbaru",
-                "Code": "92",
+                "key": "Ogbaru",
+                "value": "92",
                 "StateCode": "1"
             },
             {
-                "Name": "Onitsha North",
-                "Code": "93",
+                "key": "Onitsha North",
+                "value": "93",
                 "StateCode": "1"
             },
             {
-                "Name": "Onitsha South",
-                "Code": "94",
+                "key": "Onitsha South",
+                "value": "94",
                 "StateCode": "1"
             },
             {
-                "Name": "Orumba North",
-                "Code": "95",
+                "key": "Orumba North",
+                "value": "95",
                 "StateCode": "1"
             },
             {
-                "Name": "Orumba South",
-                "Code": "96",
+                "key": "Orumba South",
+                "value": "96",
                 "StateCode": "1"
             },
             {
-                "Name": "Oyi",
-                "Code": "97",
+                "key": "Oyi",
+                "value": "97",
                 "StateCode": "1"
             },
             {
-                "Name": "Alkaleri",
-                "Code": "98",
+                "key": "Alkaleri",
+                "value": "98",
                 "StateCode": "11"
             },
             {
-                "Name": "Bauchi",
-                "Code": "99",
+                "key": "Bauchi",
+                "value": "99",
                 "StateCode": "11"
             },
             {
-                "Name": "Bogoro",
-                "Code": "100",
+                "key": "Bogoro",
+                "value": "100",
                 "StateCode": "11"
             },
             {
-                "Name": "DambaM",
-                "Code": "101",
+                "key": "DambaM",
+                "value": "101",
                 "StateCode": "11"
             },
             {
-                "Name": "Darazo",
-                "Code": "102",
+                "key": "Darazo",
+                "value": "102",
                 "StateCode": "11"
             },
             {
-                "Name": "Dass",
-                "Code": "103",
+                "key": "Dass",
+                "value": "103",
                 "StateCode": "11"
             },
             {
-                "Name": "Ganjuwa",
-                "Code": "104",
+                "key": "Ganjuwa",
+                "value": "104",
                 "StateCode": "11"
             },
             {
-                "Name": "Giade",
-                "Code": "105",
+                "key": "Giade",
+                "value": "105",
                 "StateCode": "11"
             },
             {
-                "Name": "Itas/Gadau",
-                "Code": "106",
+                "key": "Itas/Gadau",
+                "value": "106",
                 "StateCode": "11"
             },
             {
-                "Name": "Jama'are",
-                "Code": "107",
+                "key": "Jama'are",
+                "value": "107",
                 "StateCode": "11"
             },
             {
-                "Name": "Katagum",
-                "Code": "108",
+                "key": "Katagum",
+                "value": "108",
                 "StateCode": "11"
             },
             {
-                "Name": "Kirfi",
-                "Code": "109",
+                "key": "Kirfi",
+                "value": "109",
                 "StateCode": "11"
             },
             {
-                "Name": "Misau",
-                "Code": "110",
+                "key": "Misau",
+                "value": "110",
                 "StateCode": "11"
             },
             {
-                "Name": "Ningi",
-                "Code": "111",
+                "key": "Ningi",
+                "value": "111",
                 "StateCode": "11"
             },
             {
-                "Name": "Shira",
-                "Code": "112",
+                "key": "Shira",
+                "value": "112",
                 "StateCode": "11"
             },
             {
-                "Name": "Tafawa Balewa",
-                "Code": "113",
+                "key": "Tafawa Balewa",
+                "value": "113",
                 "StateCode": "11"
             },
             {
-                "Name": "Toro",
-                "Code": "114",
+                "key": "Toro",
+                "value": "114",
                 "StateCode": "11"
             },
             {
-                "Name": "Warji",
-                "Code": "115",
+                "key": "Warji",
+                "value": "115",
                 "StateCode": "11"
             },
             {
-                "Name": "Zaki",
-                "Code": "116",
+                "key": "Zaki",
+                "value": "116",
                 "StateCode": "11"
             },
             {
-                "Name": "Brass",
-                "Code": "117",
+                "key": "Brass",
+                "value": "117",
                 "StateCode": "12"
             },
             {
-                "Name": "Ekeremor",
-                "Code": "118",
+                "key": "Ekeremor",
+                "value": "118",
                 "StateCode": "12"
             },
             {
-                "Name": "Kolokuma/Opokuma",
-                "Code": "119",
+                "key": "Kolokuma/Opokuma",
+                "value": "119",
                 "StateCode": "12"
             },
             {
-                "Name": "Nembe",
-                "Code": "120",
+                "key": "Nembe",
+                "value": "120",
                 "StateCode": "12"
             },
             {
-                "Name": "Ogbia",
-                "Code": "121",
+                "key": "Ogbia",
+                "value": "121",
                 "StateCode": "12"
             },
             {
-                "Name": "Sagbama",
-                "Code": "122",
+                "key": "Sagbama",
+                "value": "122",
                 "StateCode": "12"
             },
             {
-                "Name": "Southern Ijaw",
-                "Code": "123",
+                "key": "Southern Ijaw",
+                "value": "123",
                 "StateCode": "12"
             },
             {
-                "Name": "YenAgoa",
-                "Code": "124",
+                "key": "YenAgoa",
+                "value": "124",
                 "StateCode": "12"
             },
             {
-                "Name": "Ado",
-                "Code": "125",
+                "key": "Ado",
+                "value": "125",
                 "StateCode": "34"
             },
             {
-                "Name": "Agatu",
-                "Code": "126",
+                "key": "Agatu",
+                "value": "126",
                 "StateCode": "34"
             },
             {
-                "Name": "Apa",
-                "Code": "127",
+                "key": "Apa",
+                "value": "127",
                 "StateCode": "34"
             },
             {
-                "Name": "Buruku",
-                "Code": "128",
+                "key": "Buruku",
+                "value": "128",
                 "StateCode": "34"
             },
             {
-                "Name": "Gboko",
-                "Code": "129",
+                "key": "Gboko",
+                "value": "129",
                 "StateCode": "34"
             },
             {
-                "Name": "Guma",
-                "Code": "130",
+                "key": "Guma",
+                "value": "130",
                 "StateCode": "34"
             },
             {
-                "Name": "Gwer East",
-                "Code": "131",
+                "key": "Gwer East",
+                "value": "131",
                 "StateCode": "34"
             },
             {
-                "Name": "Gwer West",
-                "Code": "132",
+                "key": "Gwer West",
+                "value": "132",
                 "StateCode": "34"
             },
             {
-                "Name": "Katsina-Ala",
-                "Code": "133",
+                "key": "Katsina-Ala",
+                "value": "133",
                 "StateCode": "34"
             },
             {
-                "Name": "Konshisha",
-                "Code": "134",
+                "key": "Konshisha",
+                "value": "134",
                 "StateCode": "34"
             },
             {
-                "Name": "Kwande",
-                "Code": "135",
+                "key": "Kwande",
+                "value": "135",
                 "StateCode": "34"
             },
             {
-                "Name": "Logo",
-                "Code": "136",
+                "key": "Logo",
+                "value": "136",
                 "StateCode": "34"
             },
             {
-                "Name": "Makurdi",
-                "Code": "137",
+                "key": "Makurdi",
+                "value": "137",
                 "StateCode": "34"
             },
             {
-                "Name": "Obi",
-                "Code": "138",
+                "key": "Obi",
+                "value": "138",
                 "StateCode": "34"
             },
             {
-                "Name": "Ogbadibo",
-                "Code": "139",
+                "key": "Ogbadibo",
+                "value": "139",
                 "StateCode": "34"
             },
             {
-                "Name": "Oju",
-                "Code": "140",
+                "key": "Oju",
+                "value": "140",
                 "StateCode": "34"
             },
             {
-                "Name": "Okpokwu",
-                "Code": "141",
+                "key": "Okpokwu",
+                "value": "141",
                 "StateCode": "34"
             },
             {
-                "Name": "Ohimini",
-                "Code": "142",
+                "key": "Ohimini",
+                "value": "142",
                 "StateCode": "34"
             },
             {
-                "Name": "Otukpo",
-                "Code": "143",
+                "key": "Otukpo",
+                "value": "143",
                 "StateCode": "34"
             },
             {
-                "Name": "Tarka",
-                "Code": "144",
+                "key": "Tarka",
+                "value": "144",
                 "StateCode": "34"
             },
             {
-                "Name": "Ukum",
-                "Code": "145",
+                "key": "Ukum",
+                "value": "145",
                 "StateCode": "34"
             },
             {
-                "Name": "Ushongo",
-                "Code": "146",
+                "key": "Ushongo",
+                "value": "146",
                 "StateCode": "34"
             },
             {
-                "Name": "Vandeikya",
-                "Code": "147",
+                "key": "Vandeikya",
+                "value": "147",
                 "StateCode": "34"
             },
             {
-                "Name": "Abadam",
-                "Code": "148",
+                "key": "Abadam",
+                "value": "148",
                 "StateCode": "35"
             },
             {
-                "Name": "Askira/Uba",
-                "Code": "149",
+                "key": "Askira/Uba",
+                "value": "149",
                 "StateCode": "35"
             },
             {
-                "Name": "Bama",
-                "Code": "150",
+                "key": "Bama",
+                "value": "150",
                 "StateCode": "35"
             },
             {
-                "Name": "Bayo",
-                "Code": "151",
+                "key": "Bayo",
+                "value": "151",
                 "StateCode": "35"
             },
             {
-                "Name": "Biu",
-                "Code": "152",
+                "key": "Biu",
+                "value": "152",
                 "StateCode": "35"
             },
             {
-                "Name": "Chibok",
-                "Code": "153",
+                "key": "Chibok",
+                "value": "153",
                 "StateCode": "35"
             },
             {
-                "Name": "Damboa",
-                "Code": "154",
+                "key": "Damboa",
+                "value": "154",
                 "StateCode": "35"
             },
             {
-                "Name": "Dikwa",
-                "Code": "155",
+                "key": "Dikwa",
+                "value": "155",
                 "StateCode": "35"
             },
             {
-                "Name": "Gubio",
-                "Code": "156",
+                "key": "Gubio",
+                "value": "156",
                 "StateCode": "35"
             },
             {
-                "Name": "Guzamala",
-                "Code": "157",
+                "key": "Guzamala",
+                "value": "157",
                 "StateCode": "35"
             },
             {
-                "Name": "Gwoza",
-                "Code": "158",
+                "key": "Gwoza",
+                "value": "158",
                 "StateCode": "35"
             },
             {
-                "Name": "Hawul",
-                "Code": "159",
+                "key": "Hawul",
+                "value": "159",
                 "StateCode": "35"
             },
             {
-                "Name": "Jere",
-                "Code": "160",
+                "key": "Jere",
+                "value": "160",
                 "StateCode": "35"
             },
             {
-                "Name": "Kaga",
-                "Code": "161",
+                "key": "Kaga",
+                "value": "161",
                 "StateCode": "35"
             },
             {
-                "Name": "Kala/Balge",
-                "Code": "162",
+                "key": "Kala/Balge",
+                "value": "162",
                 "StateCode": "35"
             },
             {
-                "Name": "Konduga",
-                "Code": "163",
+                "key": "Konduga",
+                "value": "163",
                 "StateCode": "35"
             },
             {
-                "Name": "Kukawa",
-                "Code": "164",
+                "key": "Kukawa",
+                "value": "164",
                 "StateCode": "35"
             },
             {
-                "Name": "Kwaya Kusar",
-                "Code": "165",
+                "key": "Kwaya Kusar",
+                "value": "165",
                 "StateCode": "35"
             },
             {
-                "Name": "Mafa",
-                "Code": "166",
+                "key": "Mafa",
+                "value": "166",
                 "StateCode": "35"
             },
             {
-                "Name": "Magumeri",
-                "Code": "167",
+                "key": "Magumeri",
+                "value": "167",
                 "StateCode": "35"
             },
             {
-                "Name": "Maiduguri",
-                "Code": "168",
+                "key": "Maiduguri",
+                "value": "168",
                 "StateCode": "35"
             },
             {
-                "Name": "Marte",
-                "Code": "169",
+                "key": "Marte",
+                "value": "169",
                 "StateCode": "35"
             },
             {
-                "Name": "Mobbar",
-                "Code": "170",
+                "key": "Mobbar",
+                "value": "170",
                 "StateCode": "35"
             },
             {
-                "Name": "Monguno",
-                "Code": "171",
+                "key": "Monguno",
+                "value": "171",
                 "StateCode": "35"
             },
             {
-                "Name": "Ngala",
-                "Code": "172",
+                "key": "Ngala",
+                "value": "172",
                 "StateCode": "35"
             },
             {
-                "Name": "Nganzai",
-                "Code": "173",
+                "key": "Nganzai",
+                "value": "173",
                 "StateCode": "35"
             },
             {
-                "Name": "Shani",
-                "Code": "174",
+                "key": "Shani",
+                "value": "174",
                 "StateCode": "35"
             },
             {
-                "Name": "Akpabuyo",
-                "Code": "175",
+                "key": "Akpabuyo",
+                "value": "175",
                 "StateCode": "3"
             },
             {
-                "Name": "Odukpani",
-                "Code": "176",
+                "key": "Odukpani",
+                "value": "176",
                 "StateCode": "3"
             },
             {
-                "Name": "Akamkpa",
-                "Code": "177",
+                "key": "Akamkpa",
+                "value": "177",
                 "StateCode": "3"
             },
             {
-                "Name": "Biase",
-                "Code": "178",
+                "key": "Biase",
+                "value": "178",
                 "StateCode": "3"
             },
             {
-                "Name": "Abi",
-                "Code": "179",
+                "key": "Abi",
+                "value": "179",
                 "StateCode": "3"
             },
             {
-                "Name": "Ikom",
-                "Code": "180",
+                "key": "Ikom",
+                "value": "180",
                 "StateCode": "3"
             },
             {
-                "Name": "YakuRR",
-                "Code": "181",
+                "key": "YakuRR",
+                "value": "181",
                 "StateCode": "3"
             },
             {
-                "Name": "Obubra",
-                "Code": "182",
+                "key": "Obubra",
+                "value": "182",
                 "StateCode": "3"
             },
             {
-                "Name": "Boki",
-                "Code": "183",
+                "key": "Boki",
+                "value": "183",
                 "StateCode": "3"
             },
             {
-                "Name": "Ogoja",
-                "Code": "184",
+                "key": "Ogoja",
+                "value": "184",
                 "StateCode": "3"
             },
             {
-                "Name": "Yala",
-                "Code": "185",
+                "key": "Yala",
+                "value": "185",
                 "StateCode": "3"
             },
             {
-                "Name": "Obanliku",
-                "Code": "186",
+                "key": "Obanliku",
+                "value": "186",
                 "StateCode": "3"
             },
             {
-                "Name": "Obudu",
-                "Code": "187",
+                "key": "Obudu",
+                "value": "187",
                 "StateCode": "3"
             },
             {
-                "Name": "Calabar South",
-                "Code": "188",
+                "key": "Calabar South",
+                "value": "188",
                 "StateCode": "3"
             },
             {
-                "Name": "Etung",
-                "Code": "189",
+                "key": "Etung",
+                "value": "189",
                 "StateCode": "3"
             },
             {
-                "Name": "BekwaRra",
-                "Code": "190",
+                "key": "BekwaRra",
+                "value": "190",
                 "StateCode": "3"
             },
             {
-                "Name": "Bakassi",
-                "Code": "191",
+                "key": "Bakassi",
+                "value": "191",
                 "StateCode": "3"
             },
             {
-                "Name": "Calabar Municipal",
-                "Code": "192",
+                "key": "Calabar Municipal",
+                "value": "192",
                 "StateCode": "3"
             },
             {
-                "Name": "Oshimili South",
-                "Code": "193",
+                "key": "Oshimili South",
+                "value": "193",
                 "StateCode": "4"
             },
             {
-                "Name": "Aniocha North",
-                "Code": "194",
+                "key": "Aniocha North",
+                "value": "194",
                 "StateCode": "4"
             },
             {
-                "Name": "Aniocha South",
-                "Code": "195",
+                "key": "Aniocha South",
+                "value": "195",
                 "StateCode": "4"
             },
             {
-                "Name": "Ika South",
-                "Code": "196",
+                "key": "Ika South",
+                "value": "196",
                 "StateCode": "4"
             },
             {
-                "Name": "Ika North East",
-                "Code": "197",
+                "key": "Ika North East",
+                "value": "197",
                 "StateCode": "4"
             },
             {
-                "Name": "Ndokwa West",
-                "Code": "198",
+                "key": "Ndokwa West",
+                "value": "198",
                 "StateCode": "4"
             },
             {
-                "Name": "Ndokwa East",
-                "Code": "199",
+                "key": "Ndokwa East",
+                "value": "199",
                 "StateCode": "4"
             },
             {
-                "Name": "Isoko south",
-                "Code": "200",
+                "key": "Isoko south",
+                "value": "200",
                 "StateCode": "4"
             },
             {
-                "Name": "Isoko North",
-                "Code": "201",
+                "key": "Isoko North",
+                "value": "201",
                 "StateCode": "4"
             },
             {
-                "Name": "Bomadi",
-                "Code": "202",
+                "key": "Bomadi",
+                "value": "202",
                 "StateCode": "4"
             },
             {
-                "Name": "Burutu",
-                "Code": "203",
+                "key": "Burutu",
+                "value": "203",
                 "StateCode": "4"
             },
             {
-                "Name": "Ughelli South",
-                "Code": "204",
+                "key": "Ughelli South",
+                "value": "204",
                 "StateCode": "4"
             },
             {
-                "Name": "Ughelli North",
-                "Code": "205",
+                "key": "Ughelli North",
+                "value": "205",
                 "StateCode": "4"
             },
             {
-                "Name": "Ethiope West",
-                "Code": "206",
+                "key": "Ethiope West",
+                "value": "206",
                 "StateCode": "4"
             },
             {
-                "Name": "Ethiope East",
-                "Code": "207",
+                "key": "Ethiope East",
+                "value": "207",
                 "StateCode": "4"
             },
             {
-                "Name": "Sapele",
-                "Code": "208",
+                "key": "Sapele",
+                "value": "208",
                 "StateCode": "4"
             },
             {
-                "Name": "Okpe",
-                "Code": "209",
+                "key": "Okpe",
+                "value": "209",
                 "StateCode": "4"
             },
             {
-                "Name": "Warri North",
-                "Code": "210",
+                "key": "Warri North",
+                "value": "210",
                 "StateCode": "4"
             },
             {
-                "Name": "Warri South",
-                "Code": "211",
+                "key": "Warri South",
+                "value": "211",
                 "StateCode": "4"
             },
             {
-                "Name": "Uvwie",
-                "Code": "212",
+                "key": "Uvwie",
+                "value": "212",
                 "StateCode": "4"
             },
             {
-                "Name": "Udu",
-                "Code": "213",
+                "key": "Udu",
+                "value": "213",
                 "StateCode": "4"
             },
             {
-                "Name": "Warri South West",
-                "Code": "214",
+                "key": "Warri South West",
+                "value": "214",
                 "StateCode": "4"
             },
             {
-                "Name": "Ukwuani",
-                "Code": "215",
+                "key": "Ukwuani",
+                "value": "215",
                 "StateCode": "4"
             },
             {
-                "Name": "Oshimili North",
-                "Code": "216",
+                "key": "Oshimili North",
+                "value": "216",
                 "StateCode": "4"
             },
             {
-                "Name": "Patani",
-                "Code": "217",
+                "key": "Patani",
+                "value": "217",
                 "StateCode": "4"
             },
             {
-                "Name": "Afikpo South",
-                "Code": "218",
+                "key": "Afikpo South",
+                "value": "218",
                 "StateCode": "37"
             },
             {
-                "Name": "Afikpo North",
-                "Code": "219",
+                "key": "Afikpo North",
+                "value": "219",
                 "StateCode": "37"
             },
             {
-                "Name": "Onicha",
-                "Code": "220",
+                "key": "Onicha",
+                "value": "220",
                 "StateCode": "37"
             },
             {
-                "Name": "Ohaozara",
-                "Code": "221",
+                "key": "Ohaozara",
+                "value": "221",
                 "StateCode": "37"
             },
             {
-                "Name": "Abakaliki",
-                "Code": "222",
+                "key": "Abakaliki",
+                "value": "222",
                 "StateCode": "37"
             },
             {
-                "Name": "Ishielu",
-                "Code": "223",
+                "key": "Ishielu",
+                "value": "223",
                 "StateCode": "37"
             },
             {
-                "Name": "Ikwo",
-                "Code": "224",
+                "key": "Ikwo",
+                "value": "224",
                 "StateCode": "37"
             },
             {
-                "Name": "Ezza North",
-                "Code": "225",
+                "key": "Ezza North",
+                "value": "225",
                 "StateCode": "37"
             },
             {
-                "Name": "Ezza South",
-                "Code": "226",
+                "key": "Ezza South",
+                "value": "226",
                 "StateCode": "37"
             },
             {
-                "Name": "Ohaukwu",
-                "Code": "227",
+                "key": "Ohaukwu",
+                "value": "227",
                 "StateCode": "37"
             },
             {
-                "Name": "Ebonyi",
-                "Code": "228",
+                "key": "Ebonyi",
+                "value": "228",
                 "StateCode": "37"
             },
             {
-                "Name": "Ivo",
-                "Code": "229",
+                "key": "Ivo",
+                "value": "229",
                 "StateCode": "37"
             },
             {
-                "Name": "Esan North East",
-                "Code": "230",
+                "key": "Esan North East",
+                "value": "230",
                 "StateCode": "5"
             },
             {
-                "Name": "Esan Central",
-                "Code": "231",
+                "key": "Esan Central",
+                "value": "231",
                 "StateCode": "5"
             },
             {
-                "Name": "Esan West",
-                "Code": "232",
+                "key": "Esan West",
+                "value": "232",
                 "StateCode": "5"
             },
             {
-                "Name": "Egor",
-                "Code": "233",
+                "key": "Egor",
+                "value": "233",
                 "StateCode": "5"
             },
             {
-                "Name": "Ikpoba Okha",
-                "Code": "234",
+                "key": "Ikpoba Okha",
+                "value": "234",
                 "StateCode": "5"
             },
             {
-                "Name": "Etsako Central",
-                "Code": "236",
+                "key": "Etsako Central",
+                "value": "236",
                 "StateCode": "5"
             },
             {
-                "Name": "Igueben",
-                "Code": "237",
+                "key": "Igueben",
+                "value": "237",
                 "StateCode": "5"
             },
             {
-                "Name": "Oredo",
-                "Code": "238",
+                "key": "Oredo",
+                "value": "238",
                 "StateCode": "5"
             },
             {
-                "Name": "Ovia South-West",
-                "Code": "239",
+                "key": "Ovia South-West",
+                "value": "239",
                 "StateCode": "5"
             },
             {
-                "Name": "Ovia North-East",
-                "Code": "240",
+                "key": "Ovia North-East",
+                "value": "240",
                 "StateCode": "5"
             },
             {
-                "Name": "Orhionmwon",
-                "Code": "241",
+                "key": "Orhionmwon",
+                "value": "241",
                 "StateCode": "5"
             },
             {
-                "Name": "Uhunmwonde",
-                "Code": "242",
+                "key": "Uhunmwonde",
+                "value": "242",
                 "StateCode": "5"
             },
             {
-                "Name": "Etsako East",
-                "Code": "243",
+                "key": "Etsako East",
+                "value": "243",
                 "StateCode": "5"
             },
             {
-                "Name": "Esan South East",
-                "Code": "244",
+                "key": "Esan South East",
+                "value": "244",
                 "StateCode": "5"
             },
             {
-                "Name": "Ado Ekiti",
-                "Code": "245",
+                "key": "Ado Ekiti",
+                "value": "245",
                 "StateCode": "30"
             },
             {
-                "Name": "Ekiti East",
-                "Code": "246",
+                "key": "Ekiti East",
+                "value": "246",
                 "StateCode": "30"
             },
             {
-                "Name": "Ekiti West",
-                "Code": "247",
+                "key": "Ekiti West",
+                "value": "247",
                 "StateCode": "30"
             },
             {
-                "Name": "Emure",
-                "Code": "248",
+                "key": "Emure",
+                "value": "248",
                 "StateCode": "30"
             },
             {
-                "Name": "Ekiti South-West",
-                "Code": "249",
+                "key": "Ekiti South-West",
+                "value": "249",
                 "StateCode": "30"
             },
             {
-                "Name": "Ikere",
-                "Code": "250",
+                "key": "Ikere",
+                "value": "250",
                 "StateCode": "30"
             },
             {
-                "Name": "Irepodun/Ifelodun",
-                "Code": "251",
+                "key": "Irepodun/Ifelodun",
+                "value": "251",
                 "StateCode": "30"
             },
             {
-                "Name": "Ijero",
-                "Code": "252",
+                "key": "Ijero",
+                "value": "252",
                 "StateCode": "30"
             },
             {
-                "Name": "Ido Osi",
-                "Code": "253",
+                "key": "Ido Osi",
+                "value": "253",
                 "StateCode": "30"
             },
             {
-                "Name": "Oye",
-                "Code": "254",
+                "key": "Oye",
+                "value": "254",
                 "StateCode": "30"
             },
             {
-                "Name": "Ikole",
-                "Code": "255",
+                "key": "Ikole",
+                "value": "255",
                 "StateCode": "30"
             },
             {
-                "Name": "Moba",
-                "Code": "256",
+                "key": "Moba",
+                "value": "256",
                 "StateCode": "30"
             },
             {
-                "Name": "Gbonyin",
-                "Code": "257",
+                "key": "Gbonyin",
+                "value": "257",
                 "StateCode": "30"
             },
             {
-                "Name": "Efon",
-                "Code": "258",
+                "key": "Efon",
+                "value": "258",
                 "StateCode": "30"
             },
             {
-                "Name": "Ise/Orun",
-                "Code": "259",
+                "key": "Ise/Orun",
+                "value": "259",
                 "StateCode": "30"
             },
             {
-                "Name": "Ilejemeje",
-                "Code": "260",
+                "key": "Ilejemeje",
+                "value": "260",
                 "StateCode": "30"
             },
             {
-                "Name": "Enugu South",
-                "Code": "261",
+                "key": "Enugu South",
+                "value": "261",
                 "StateCode": "8"
             },
             {
-                "Name": "Igbo Eze South",
-                "Code": "262",
+                "key": "Igbo Eze South",
+                "value": "262",
                 "StateCode": "8"
             },
             {
-                "Name": "Enugu North",
-                "Code": "263",
+                "key": "Enugu North",
+                "value": "263",
                 "StateCode": "8"
             },
             {
-                "Name": "Nkanu West",
-                "Code": "264",
+                "key": "Nkanu West",
+                "value": "264",
                 "StateCode": "8"
             },
             {
-                "Name": "AWgu",
-                "Code": "265",
+                "key": "AWgu",
+                "value": "265",
                 "StateCode": "8"
             },
             {
-                "Name": "Oji River",
-                "Code": "266",
+                "key": "Oji River",
+                "value": "266",
                 "StateCode": "8"
             },
             {
-                "Name": "Ezeagu",
-                "Code": "267",
+                "key": "Ezeagu",
+                "value": "267",
                 "StateCode": "8"
             },
             {
-                "Name": "Igbo Eze North",
-                "Code": "268",
+                "key": "Igbo Eze North",
+                "value": "268",
                 "StateCode": "8"
             },
             {
-                "Name": "Isi Uzo",
-                "Code": "269",
+                "key": "Isi Uzo",
+                "value": "269",
                 "StateCode": "8"
             },
             {
-                "Name": "Nsukka",
-                "Code": "270",
+                "key": "Nsukka",
+                "value": "270",
                 "StateCode": "8"
             },
             {
-                "Name": "Igbo-ETiti",
-                "Code": "271",
+                "key": "Igbo-ETiti",
+                "value": "271",
                 "StateCode": "8"
             },
             {
-                "Name": "Uzo-Uwani",
-                "Code": "272",
+                "key": "Uzo-Uwani",
+                "value": "272",
                 "StateCode": "8"
             },
             {
-                "Name": "Enugu East",
-                "Code": "273",
+                "key": "Enugu East",
+                "value": "273",
                 "StateCode": "8"
             },
             {
-                "Name": "Aninri",
-                "Code": "274",
+                "key": "Aninri",
+                "value": "274",
                 "StateCode": "8"
             },
             {
-                "Name": "Nkanu East",
-                "Code": "275",
+                "key": "Nkanu East",
+                "value": "275",
                 "StateCode": "8"
             },
             {
-                "Name": "Udenu",
-                "Code": "276",
+                "key": "Udenu",
+                "value": "276",
                 "StateCode": "8"
             },
             {
-                "Name": "Akko",
-                "Code": "277",
+                "key": "Akko",
+                "value": "277",
                 "StateCode": "24"
             },
             {
-                "Name": "Balanga",
-                "Code": "278",
+                "key": "Balanga",
+                "value": "278",
                 "StateCode": "24"
             },
             {
-                "Name": "Billiri",
-                "Code": "279",
+                "key": "Billiri",
+                "value": "279",
                 "StateCode": "24"
             },
             {
-                "Name": "Dukku",
-                "Code": "280",
+                "key": "Dukku",
+                "value": "280",
                 "StateCode": "24"
             },
             {
-                "Name": "Kaltungo",
-                "Code": "281",
+                "key": "Kaltungo",
+                "value": "281",
                 "StateCode": "24"
             },
             {
-                "Name": "Kwami",
-                "Code": "282",
+                "key": "Kwami",
+                "value": "282",
                 "StateCode": "24"
             },
             {
-                "Name": "Shongom",
-                "Code": "283",
+                "key": "Shongom",
+                "value": "283",
                 "StateCode": "24"
             },
             {
-                "Name": "Funakaye",
-                "Code": "284",
+                "key": "Funakaye",
+                "value": "284",
                 "StateCode": "24"
             },
             {
-                "Name": "Gombe",
-                "Code": "285",
+                "key": "Gombe",
+                "value": "285",
                 "StateCode": "24"
             },
             {
-                "Name": "Nafada",
-                "Code": "286",
+                "key": "Nafada",
+                "value": "286",
                 "StateCode": "24"
             },
             {
-                "Name": "Yamaltu/Deba",
-                "Code": "287",
+                "key": "Yamaltu/Deba",
+                "value": "287",
                 "StateCode": "24"
             },
             {
-                "Name": "Aboh Mbaise",
-                "Code": "288",
+                "key": "Aboh Mbaise",
+                "value": "288",
                 "StateCode": "18"
             },
             {
-                "Name": "Ahiazu Mbaise",
-                "Code": "289",
+                "key": "Ahiazu Mbaise",
+                "value": "289",
                 "StateCode": "18"
             },
             {
-                "Name": "Ehime Mbano",
-                "Code": "290",
+                "key": "Ehime Mbano",
+                "value": "290",
                 "StateCode": "18"
             },
             {
-                "Name": "Ezinihitte",
-                "Code": "291",
+                "key": "Ezinihitte",
+                "value": "291",
                 "StateCode": "18"
             },
             {
-                "Name": "Ideato North",
-                "Code": "292",
+                "key": "Ideato North",
+                "value": "292",
                 "StateCode": "18"
             },
             {
-                "Name": "Ideato South",
-                "Code": "293",
+                "key": "Ideato South",
+                "value": "293",
                 "StateCode": "18"
             },
             {
-                "Name": "Ihitte/Uboma",
-                "Code": "294",
+                "key": "Ihitte/Uboma",
+                "value": "294",
                 "StateCode": "18"
             },
             {
-                "Name": "Ikeduru",
-                "Code": "295",
+                "key": "Ikeduru",
+                "value": "295",
                 "StateCode": "18"
             },
             {
-                "Name": "Isiala Mbano",
-                "Code": "296",
+                "key": "Isiala Mbano",
+                "value": "296",
                 "StateCode": "18"
             },
             {
-                "Name": "Isu",
-                "Code": "297",
+                "key": "Isu",
+                "value": "297",
                 "StateCode": "18"
             },
             {
-                "Name": "Mbaitoli",
-                "Code": "298",
+                "key": "Mbaitoli",
+                "value": "298",
                 "StateCode": "18"
             },
             {
-                "Name": "Onuimo",
-                "Code": "299",
+                "key": "Onuimo",
+                "value": "299",
                 "StateCode": "18"
             },
             {
-                "Name": "Ngor Okpala",
-                "Code": "300",
+                "key": "Ngor Okpala",
+                "value": "300",
                 "StateCode": "18"
             },
             {
-                "Name": "Njaba",
-                "Code": "301",
+                "key": "Njaba",
+                "value": "301",
                 "StateCode": "18"
             },
             {
-                "Name": "Nwangele",
-                "Code": "302",
+                "key": "Nwangele",
+                "value": "302",
                 "StateCode": "18"
             },
             {
-                "Name": "Nkwerre",
-                "Code": "303",
+                "key": "Nkwerre",
+                "value": "303",
                 "StateCode": "18"
             },
             {
-                "Name": "Obowo",
-                "Code": "304",
+                "key": "Obowo",
+                "value": "304",
                 "StateCode": "18"
             },
             {
-                "Name": "Oguta",
-                "Code": "305",
+                "key": "Oguta",
+                "value": "305",
                 "StateCode": "18"
             },
             {
-                "Name": "Ohaji/Egbema",
-                "Code": "306",
+                "key": "Ohaji/Egbema",
+                "value": "306",
                 "StateCode": "18"
             },
             {
-                "Name": "Okigwe",
-                "Code": "307",
+                "key": "Okigwe",
+                "value": "307",
                 "StateCode": "18"
             },
             {
-                "Name": "Orlu",
-                "Code": "308",
+                "key": "Orlu",
+                "value": "308",
                 "StateCode": "18"
             },
             {
-                "Name": "Orsu",
-                "Code": "309",
+                "key": "Orsu",
+                "value": "309",
                 "StateCode": "18"
             },
             {
-                "Name": "Oru East",
-                "Code": "310",
+                "key": "Oru East",
+                "value": "310",
                 "StateCode": "18"
             },
             {
-                "Name": "Oru West",
-                "Code": "311",
+                "key": "Oru West",
+                "value": "311",
                 "StateCode": "18"
             },
             {
-                "Name": "Owerri Municipal",
-                "Code": "312",
+                "key": "Owerri Municipal",
+                "value": "312",
                 "StateCode": "18"
             },
             {
-                "Name": "Owerri North",
-                "Code": "313",
+                "key": "Owerri North",
+                "value": "313",
                 "StateCode": "18"
             },
             {
-                "Name": "Owerri West",
-                "Code": "314",
+                "key": "Owerri West",
+                "value": "314",
                 "StateCode": "18"
             },
             {
-                "Name": "Auyo",
-                "Code": "315",
+                "key": "Auyo",
+                "value": "315",
                 "StateCode": "13"
             },
             {
-                "Name": "Babura",
-                "Code": "316",
+                "key": "Babura",
+                "value": "316",
                 "StateCode": "13"
             },
             {
-                "Name": "Birni Kudu",
-                "Code": "317",
+                "key": "Birni Kudu",
+                "value": "317",
                 "StateCode": "13"
             },
             {
-                "Name": "Biriniwa",
-                "Code": "318",
+                "key": "Biriniwa",
+                "value": "318",
                 "StateCode": "13"
             },
             {
-                "Name": "Buji",
-                "Code": "319",
+                "key": "Buji",
+                "value": "319",
                 "StateCode": "13"
             },
             {
-                "Name": "Dutse",
-                "Code": "320",
+                "key": "Dutse",
+                "value": "320",
                 "StateCode": "13"
             },
             {
-                "Name": "Gagarawa",
-                "Code": "321",
+                "key": "Gagarawa",
+                "value": "321",
                 "StateCode": "13"
             },
             {
-                "Name": "Garki",
-                "Code": "322",
+                "key": "Garki",
+                "value": "322",
                 "StateCode": "13"
             },
             {
-                "Name": "Gumel",
-                "Code": "323",
+                "key": "Gumel",
+                "value": "323",
                 "StateCode": "13"
             },
             {
-                "Name": "Guri",
-                "Code": "324",
+                "key": "Guri",
+                "value": "324",
                 "StateCode": "13"
             },
             {
-                "Name": "Gwaram",
-                "Code": "325",
+                "key": "Gwaram",
+                "value": "325",
                 "StateCode": "13"
             },
             {
-                "Name": "Gwiwa",
-                "Code": "326",
+                "key": "Gwiwa",
+                "value": "326",
                 "StateCode": "13"
             },
             {
-                "Name": "Hadejia",
-                "Code": "327",
+                "key": "Hadejia",
+                "value": "327",
                 "StateCode": "13"
             },
             {
-                "Name": "Jahun",
-                "Code": "328",
+                "key": "Jahun",
+                "value": "328",
                 "StateCode": "13"
             },
             {
-                "Name": "Kafin Hausa",
-                "Code": "329",
+                "key": "Kafin Hausa",
+                "value": "329",
                 "StateCode": "13"
             },
             {
-                "Name": "Kaugama",
-                "Code": "330",
+                "key": "Kaugama",
+                "value": "330",
                 "StateCode": "13"
             },
             {
-                "Name": "Kiri Kasamma",
-                "Code": "331",
+                "key": "Kiri Kasamma",
+                "value": "331",
                 "StateCode": "13"
             },
             {
-                "Name": "Kiyawa",
-                "Code": "332",
+                "key": "Kiyawa",
+                "value": "332",
                 "StateCode": "13"
             },
             {
-                "Name": "Maigatari",
-                "Code": "333",
+                "key": "Maigatari",
+                "value": "333",
                 "StateCode": "13"
             },
             {
-                "Name": "Malam Madori",
-                "Code": "334",
+                "key": "Malam Madori",
+                "value": "334",
                 "StateCode": "13"
             },
             {
-                "Name": "Miga",
-                "Code": "335",
+                "key": "Miga",
+                "value": "335",
                 "StateCode": "13"
             },
             {
-                "Name": "Ringim",
-                "Code": "336",
+                "key": "Ringim",
+                "value": "336",
                 "StateCode": "13"
             },
             {
-                "Name": "Roni",
-                "Code": "337",
+                "key": "Roni",
+                "value": "337",
                 "StateCode": "13"
             },
             {
-                "Name": "Sule Tankarkar",
-                "Code": "338",
+                "key": "Sule Tankarkar",
+                "value": "338",
                 "StateCode": "13"
             },
             {
-                "Name": "Taura",
-                "Code": "339",
+                "key": "Taura",
+                "value": "339",
                 "StateCode": "13"
             },
             {
-                "Name": "Yankwashi",
-                "Code": "340",
+                "key": "Yankwashi",
+                "value": "340",
                 "StateCode": "13"
             },
             {
-                "Name": "BirniN Gwari",
-                "Code": "341",
+                "key": "BirniN Gwari",
+                "value": "341",
                 "StateCode": "22"
             },
             {
-                "Name": "Chikun",
-                "Code": "342",
+                "key": "Chikun",
+                "value": "342",
                 "StateCode": "22"
             },
             {
-                "Name": "Giwa",
-                "Code": "343",
+                "key": "Giwa",
+                "value": "343",
                 "StateCode": "22"
             },
             {
-                "Name": "Igabi",
-                "Code": "344",
+                "key": "Igabi",
+                "value": "344",
                 "StateCode": "22"
             },
             {
-                "Name": "Ikara",
-                "Code": "345",
+                "key": "Ikara",
+                "value": "345",
                 "StateCode": "22"
             },
             {
-                "Name": "jaba",
-                "Code": "346",
+                "key": "jaba",
+                "value": "346",
                 "StateCode": "22"
             },
             {
-                "Name": "Jema'a",
-                "Code": "347",
+                "key": "Jema'a",
+                "value": "347",
                 "StateCode": "22"
             },
             {
-                "Name": "Kachia",
-                "Code": "348",
+                "key": "Kachia",
+                "value": "348",
                 "StateCode": "22"
             },
             {
-                "Name": "Kaduna North",
-                "Code": "349",
+                "key": "Kaduna North",
+                "value": "349",
                 "StateCode": "22"
             },
             {
-                "Name": "Kaduna South",
-                "Code": "350",
+                "key": "Kaduna South",
+                "value": "350",
                 "StateCode": "22"
             },
             {
-                "Name": "Kagarko",
-                "Code": "351",
+                "key": "Kagarko",
+                "value": "351",
                 "StateCode": "22"
             },
             {
-                "Name": "Kajuru",
-                "Code": "352",
+                "key": "Kajuru",
+                "value": "352",
                 "StateCode": "22"
             },
             {
-                "Name": "Kaura",
-                "Code": "353",
+                "key": "Kaura",
+                "value": "353",
                 "StateCode": "22"
             },
             {
-                "Name": "Kauru",
-                "Code": "354",
+                "key": "Kauru",
+                "value": "354",
                 "StateCode": "22"
             },
             {
-                "Name": "Kubau",
-                "Code": "355",
+                "key": "Kubau",
+                "value": "355",
                 "StateCode": "22"
             },
             {
-                "Name": "Kudan",
-                "Code": "356",
+                "key": "Kudan",
+                "value": "356",
                 "StateCode": "22"
             },
             {
-                "Name": "Lere",
-                "Code": "357",
+                "key": "Lere",
+                "value": "357",
                 "StateCode": "22"
             },
             {
-                "Name": "Makarfi",
-                "Code": "358",
+                "key": "Makarfi",
+                "value": "358",
                 "StateCode": "22"
             },
             {
-                "Name": "Sabon Gari",
-                "Code": "359",
+                "key": "Sabon Gari",
+                "value": "359",
                 "StateCode": "22"
             },
             {
-                "Name": "Sanga",
-                "Code": "360",
+                "key": "Sanga",
+                "value": "360",
                 "StateCode": "22"
             },
             {
-                "Name": "Soba",
-                "Code": "361",
+                "key": "Soba",
+                "value": "361",
                 "StateCode": "22"
             },
             {
-                "Name": "Zango Kataf",
-                "Code": "362",
+                "key": "Zango Kataf",
+                "value": "362",
                 "StateCode": "22"
             },
             {
-                "Name": "Zaria",
-                "Code": "363",
+                "key": "Zaria",
+                "value": "363",
                 "StateCode": "22"
             },
             {
-                "Name": "Ajingi",
-                "Code": "364",
+                "key": "Ajingi",
+                "value": "364",
                 "StateCode": "7"
             },
             {
-                "Name": "Albasu",
-                "Code": "365",
+                "key": "Albasu",
+                "value": "365",
                 "StateCode": "7"
             },
             {
-                "Name": "Bagwai",
-                "Code": "366",
+                "key": "Bagwai",
+                "value": "366",
                 "StateCode": "7"
             },
             {
-                "Name": "Bebeji",
-                "Code": "367",
+                "key": "Bebeji",
+                "value": "367",
                 "StateCode": "7"
             },
             {
-                "Name": "Bichi",
-                "Code": "368",
+                "key": "Bichi",
+                "value": "368",
                 "StateCode": "7"
             },
             {
-                "Name": "Bunkure",
-                "Code": "369",
+                "key": "Bunkure",
+                "value": "369",
                 "StateCode": "7"
             },
             {
-                "Name": "Dala",
-                "Code": "370",
+                "key": "Dala",
+                "value": "370",
                 "StateCode": "7"
             },
             {
-                "Name": "DaNbatta",
-                "Code": "371",
+                "key": "DaNbatta",
+                "value": "371",
                 "StateCode": "7"
             },
             {
-                "Name": "Dawakin Kudu",
-                "Code": "372",
+                "key": "Dawakin Kudu",
+                "value": "372",
                 "StateCode": "7"
             },
             {
-                "Name": "Dawakin Tofa",
-                "Code": "373",
+                "key": "Dawakin Tofa",
+                "value": "373",
                 "StateCode": "7"
             },
             {
-                "Name": "Doguwa",
-                "Code": "374",
+                "key": "Doguwa",
+                "value": "374",
                 "StateCode": "7"
             },
             {
-                "Name": "Fagge",
-                "Code": "375",
+                "key": "Fagge",
+                "value": "375",
                 "StateCode": "7"
             },
             {
-                "Name": "Gabasawa",
-                "Code": "376",
+                "key": "Gabasawa",
+                "value": "376",
                 "StateCode": "7"
             },
             {
-                "Name": "Garko",
-                "Code": "377",
+                "key": "Garko",
+                "value": "377",
                 "StateCode": "7"
             },
             {
-                "Name": "GaruN Mallam",
-                "Code": "378",
+                "key": "GaruN Mallam",
+                "value": "378",
                 "StateCode": "7"
             },
             {
-                "Name": "Gaya",
-                "Code": "380",
+                "key": "Gaya",
+                "value": "380",
                 "StateCode": "7"
             },
             {
-                "Name": "Gezawa",
-                "Code": "381",
+                "key": "Gezawa",
+                "value": "381",
                 "StateCode": "7"
             },
             {
-                "Name": "Gwale",
-                "Code": "382",
+                "key": "Gwale",
+                "value": "382",
                 "StateCode": "7"
             },
             {
-                "Name": "Gwarzo",
-                "Code": "383",
+                "key": "Gwarzo",
+                "value": "383",
                 "StateCode": "7"
             },
             {
-                "Name": "Kabo",
-                "Code": "384",
+                "key": "Kabo",
+                "value": "384",
                 "StateCode": "7"
             },
             {
-                "Name": "Kano Municipal",
-                "Code": "385",
+                "key": "Kano Municipal",
+                "value": "385",
                 "StateCode": "7"
             },
             {
-                "Name": "Karaye",
-                "Code": "386",
+                "key": "Karaye",
+                "value": "386",
                 "StateCode": "7"
             },
             {
-                "Name": "Kibiya",
-                "Code": "387",
+                "key": "Kibiya",
+                "value": "387",
                 "StateCode": "7"
             },
             {
-                "Name": "Kiru",
-                "Code": "388",
+                "key": "Kiru",
+                "value": "388",
                 "StateCode": "7"
             },
             {
-                "Name": "kumbotso",
-                "Code": "389",
+                "key": "kumbotso",
+                "value": "389",
                 "StateCode": "7"
             },
             {
-                "Name": "Kunchi",
-                "Code": "390",
+                "key": "Kunchi",
+                "value": "390",
                 "StateCode": "7"
             },
             {
-                "Name": "Kura",
-                "Code": "391",
+                "key": "Kura",
+                "value": "391",
                 "StateCode": "7"
             },
             {
-                "Name": "Madobi",
-                "Code": "392",
+                "key": "Madobi",
+                "value": "392",
                 "StateCode": "7"
             },
             {
-                "Name": "Makoda",
-                "Code": "393",
+                "key": "Makoda",
+                "value": "393",
                 "StateCode": "7"
             },
             {
-                "Name": "Minjibir",
-                "Code": "394",
+                "key": "Minjibir",
+                "value": "394",
                 "StateCode": "7"
             },
             {
-                "Name": "NasSarawa",
-                "Code": "395",
+                "key": "NasSarawa",
+                "value": "395",
                 "StateCode": "7"
             },
             {
-                "Name": "Rano",
-                "Code": "396",
+                "key": "Rano",
+                "value": "396",
                 "StateCode": "7"
             },
             {
-                "Name": "Rimin Gado",
-                "Code": "397",
+                "key": "Rimin Gado",
+                "value": "397",
                 "StateCode": "7"
             },
             {
-                "Name": "Rogo",
-                "Code": "398",
+                "key": "Rogo",
+                "value": "398",
                 "StateCode": "7"
             },
             {
-                "Name": "Shanono",
-                "Code": "399",
+                "key": "Shanono",
+                "value": "399",
                 "StateCode": "7"
             },
             {
-                "Name": "Sumaila",
-                "Code": "400",
+                "key": "Sumaila",
+                "value": "400",
                 "StateCode": "7"
             },
             {
-                "Name": "Takai",
-                "Code": "401",
+                "key": "Takai",
+                "value": "401",
                 "StateCode": "7"
             },
             {
-                "Name": "Tarauni",
-                "Code": "402",
+                "key": "Tarauni",
+                "value": "402",
                 "StateCode": "7"
             },
             {
-                "Name": "Tofa",
-                "Code": "403",
+                "key": "Tofa",
+                "value": "403",
                 "StateCode": "7"
             },
             {
-                "Name": "Tsanyawa",
-                "Code": "404",
+                "key": "Tsanyawa",
+                "value": "404",
                 "StateCode": "7"
             },
             {
-                "Name": "Tudun Wada",
-                "Code": "405",
+                "key": "Tudun Wada",
+                "value": "405",
                 "StateCode": "7"
             },
             {
-                "Name": "Ungogo",
-                "Code": "406",
+                "key": "Ungogo",
+                "value": "406",
                 "StateCode": "7"
             },
             {
-                "Name": "Warawa",
-                "Code": "407",
+                "key": "Warawa",
+                "value": "407",
                 "StateCode": "7"
             },
             {
-                "Name": "Wudil",
-                "Code": "408",
+                "key": "Wudil",
+                "value": "408",
                 "StateCode": "7"
             },
             {
-                "Name": "Bakori",
-                "Code": "409",
+                "key": "Bakori",
+                "value": "409",
                 "StateCode": "9"
             },
             {
-                "Name": "Batagarawa",
-                "Code": "410",
+                "key": "Batagarawa",
+                "value": "410",
                 "StateCode": "9"
             },
             {
-                "Name": "Batsari",
-                "Code": "411",
+                "key": "Batsari",
+                "value": "411",
                 "StateCode": "9"
             },
             {
-                "Name": "Baure",
-                "Code": "412",
+                "key": "Baure",
+                "value": "412",
                 "StateCode": "9"
             },
             {
-                "Name": "Bindawa",
-                "Code": "413",
+                "key": "Bindawa",
+                "value": "413",
                 "StateCode": "9"
             },
             {
-                "Name": "Charanchi",
-                "Code": "414",
+                "key": "Charanchi",
+                "value": "414",
                 "StateCode": "9"
             },
             {
-                "Name": "Dandume",
-                "Code": "415",
+                "key": "Dandume",
+                "value": "415",
                 "StateCode": "9"
             },
             {
-                "Name": "Danja",
-                "Code": "416",
+                "key": "Danja",
+                "value": "416",
                 "StateCode": "9"
             },
             {
-                "Name": "Dan Musa",
-                "Code": "417",
+                "key": "Dan Musa",
+                "value": "417",
                 "StateCode": "9"
             },
             {
-                "Name": "Daura",
-                "Code": "418",
+                "key": "Daura",
+                "value": "418",
                 "StateCode": "9"
             },
             {
-                "Name": "Dutsi",
-                "Code": "419",
+                "key": "Dutsi",
+                "value": "419",
                 "StateCode": "9"
             },
             {
-                "Name": "Dutsin-Ma",
-                "Code": "420",
+                "key": "Dutsin-Ma",
+                "value": "420",
                 "StateCode": "9"
             },
             {
-                "Name": "Faskari",
-                "Code": "421",
+                "key": "Faskari",
+                "value": "421",
                 "StateCode": "9"
             },
             {
-                "Name": "Funtua",
-                "Code": "422",
+                "key": "Funtua",
+                "value": "422",
                 "StateCode": "9"
             },
             {
-                "Name": "Ingawa",
-                "Code": "423",
+                "key": "Ingawa",
+                "value": "423",
                 "StateCode": "9"
             },
             {
-                "Name": "Jibia",
-                "Code": "424",
+                "key": "Jibia",
+                "value": "424",
                 "StateCode": "9"
             },
             {
-                "Name": "Kafur",
-                "Code": "425",
+                "key": "Kafur",
+                "value": "425",
                 "StateCode": "9"
             },
             {
-                "Name": "Kaita",
-                "Code": "426",
+                "key": "Kaita",
+                "value": "426",
                 "StateCode": "9"
             },
             {
-                "Name": "Kankara",
-                "Code": "427",
+                "key": "Kankara",
+                "value": "427",
                 "StateCode": "9"
             },
             {
-                "Name": "Kankia",
-                "Code": "428",
+                "key": "Kankia",
+                "value": "428",
                 "StateCode": "9"
             },
             {
-                "Name": "Katsina",
-                "Code": "429",
+                "key": "Katsina",
+                "value": "429",
                 "StateCode": "9"
             },
             {
-                "Name": "Kurfi",
-                "Code": "430",
+                "key": "Kurfi",
+                "value": "430",
                 "StateCode": "9"
             },
             {
-                "Name": "Kusada",
-                "Code": "431",
+                "key": "Kusada",
+                "value": "431",
                 "StateCode": "9"
             },
             {
-                "Name": "Mai'Adua",
-                "Code": "432",
+                "key": "Mai'Adua",
+                "value": "432",
                 "StateCode": "9"
             },
             {
-                "Name": "Malumfashi",
-                "Code": "433",
+                "key": "Malumfashi",
+                "value": "433",
                 "StateCode": "9"
             },
             {
-                "Name": "Mani",
-                "Code": "434",
+                "key": "Mani",
+                "value": "434",
                 "StateCode": "9"
             },
             {
-                "Name": "Mashi",
-                "Code": "435",
+                "key": "Mashi",
+                "value": "435",
                 "StateCode": "9"
             },
             {
-                "Name": "Matazu",
-                "Code": "436",
+                "key": "Matazu",
+                "value": "436",
                 "StateCode": "9"
             },
             {
-                "Name": "Musawa",
-                "Code": "437",
+                "key": "Musawa",
+                "value": "437",
                 "StateCode": "9"
             },
             {
-                "Name": "Rimi",
-                "Code": "438",
+                "key": "Rimi",
+                "value": "438",
                 "StateCode": "9"
             },
             {
-                "Name": "Sabuwa",
-                "Code": "439",
+                "key": "Sabuwa",
+                "value": "439",
                 "StateCode": "9"
             },
             {
-                "Name": "Safana",
-                "Code": "440",
+                "key": "Safana",
+                "value": "440",
                 "StateCode": "9"
             },
             {
-                "Name": "Sandamu",
-                "Code": "441",
+                "key": "Sandamu",
+                "value": "441",
                 "StateCode": "9"
             },
             {
-                "Name": "Zango",
-                "Code": "442",
+                "key": "Zango",
+                "value": "442",
                 "StateCode": "9"
             },
             {
-                "Name": "AlIero",
-                "Code": "443",
+                "key": "AlIero",
+                "value": "443",
                 "StateCode": "25"
             },
             {
-                "Name": "Arewa Dandi",
-                "Code": "444",
+                "key": "Arewa Dandi",
+                "value": "444",
                 "StateCode": "25"
             },
             {
-                "Name": "Argungu",
-                "Code": "445",
+                "key": "Argungu",
+                "value": "445",
                 "StateCode": "25"
             },
             {
-                "Name": "Augie",
-                "Code": "446",
+                "key": "Augie",
+                "value": "446",
                 "StateCode": "25"
             },
             {
-                "Name": "Bagudo",
-                "Code": "447",
+                "key": "Bagudo",
+                "value": "447",
                 "StateCode": "25"
             },
             {
-                "Name": "Birnin Kebbi",
-                "Code": "448",
+                "key": "Birnin Kebbi",
+                "value": "448",
                 "StateCode": "25"
             },
             {
-                "Name": "Bunza",
-                "Code": "449",
+                "key": "Bunza",
+                "value": "449",
                 "StateCode": "25"
             },
             {
-                "Name": "Dandi",
-                "Code": "450",
+                "key": "Dandi",
+                "value": "450",
                 "StateCode": "25"
             },
             {
-                "Name": "Fakai",
-                "Code": "451",
+                "key": "Fakai",
+                "value": "451",
                 "StateCode": "25"
             },
             {
-                "Name": "Gwandu",
-                "Code": "452",
+                "key": "Gwandu",
+                "value": "452",
                 "StateCode": "25"
             },
             {
-                "Name": "Jega",
-                "Code": "453",
+                "key": "Jega",
+                "value": "453",
                 "StateCode": "25"
             },
             {
-                "Name": "Kalgo",
-                "Code": "454",
+                "key": "Kalgo",
+                "value": "454",
                 "StateCode": "25"
             },
             {
-                "Name": "Koko/Besse",
-                "Code": "455",
+                "key": "Koko/Besse",
+                "value": "455",
                 "StateCode": "25"
             },
             {
-                "Name": "Maiyama",
-                "Code": "456",
+                "key": "Maiyama",
+                "value": "456",
                 "StateCode": "25"
             },
             {
-                "Name": "Ngaski",
-                "Code": "457",
+                "key": "Ngaski",
+                "value": "457",
                 "StateCode": "25"
             },
             {
-                "Name": "Sakaba",
-                "Code": "458",
+                "key": "Sakaba",
+                "value": "458",
                 "StateCode": "25"
             },
             {
-                "Name": "Shanga",
-                "Code": "459",
+                "key": "Shanga",
+                "value": "459",
                 "StateCode": "25"
             },
             {
-                "Name": "Suru",
-                "Code": "460",
+                "key": "Suru",
+                "value": "460",
                 "StateCode": "25"
             },
             {
-                "Name": "Wasagu/Danko",
-                "Code": "461",
+                "key": "Wasagu/Danko",
+                "value": "461",
                 "StateCode": "25"
             },
             {
-                "Name": "Yauri",
-                "Code": "462",
+                "key": "Yauri",
+                "value": "462",
                 "StateCode": "25"
             },
             {
-                "Name": "Zuru",
-                "Code": "463",
+                "key": "Zuru",
+                "value": "463",
                 "StateCode": "25"
             },
             {
-                "Name": "Adavi",
-                "Code": "464",
+                "key": "Adavi",
+                "value": "464",
                 "StateCode": "15"
             },
             {
-                "Name": "Ajaokuta",
-                "Code": "465",
+                "key": "Ajaokuta",
+                "value": "465",
                 "StateCode": "15"
             },
             {
-                "Name": "Ankpa",
-                "Code": "466",
+                "key": "Ankpa",
+                "value": "466",
                 "StateCode": "15"
             },
             {
-                "Name": "Bassa",
-                "Code": "467",
+                "key": "Bassa",
+                "value": "467",
                 "StateCode": "15"
             },
             {
-                "Name": "Dekina",
-                "Code": "468",
+                "key": "Dekina",
+                "value": "468",
                 "StateCode": "15"
             },
             {
-                "Name": "Ibaji",
-                "Code": "469",
+                "key": "Ibaji",
+                "value": "469",
                 "StateCode": "15"
             },
             {
-                "Name": "Idah",
-                "Code": "470",
+                "key": "Idah",
+                "value": "470",
                 "StateCode": "15"
             },
             {
-                "Name": "Igalamela Odolu",
-                "Code": "471",
+                "key": "Igalamela Odolu",
+                "value": "471",
                 "StateCode": "15"
             },
             {
-                "Name": "Ijumu",
-                "Code": "472",
+                "key": "Ijumu",
+                "value": "472",
                 "StateCode": "15"
             },
             {
-                "Name": "Kabba/Bunu",
-                "Code": "473",
+                "key": "Kabba/Bunu",
+                "value": "473",
                 "StateCode": "15"
             },
             {
-                "Name": "Koton Karfe",
-                "Code": "474",
+                "key": "Koton Karfe",
+                "value": "474",
                 "StateCode": "15"
             },
             {
-                "Name": "Lokoja",
-                "Code": "475",
+                "key": "Lokoja",
+                "value": "475",
                 "StateCode": "15"
             },
             {
-                "Name": "Mopa Muro",
-                "Code": "476",
+                "key": "Mopa Muro",
+                "value": "476",
                 "StateCode": "15"
             },
             {
-                "Name": "Ofu",
-                "Code": "477",
+                "key": "Ofu",
+                "value": "477",
                 "StateCode": "15"
             },
             {
-                "Name": "Ogori-Magongo",
-                "Code": "478",
+                "key": "Ogori-Magongo",
+                "value": "478",
                 "StateCode": "15"
             },
             {
-                "Name": "Okehi",
-                "Code": "479",
+                "key": "Okehi",
+                "value": "479",
                 "StateCode": "15"
             },
             {
-                "Name": "Okene",
-                "Code": "480",
+                "key": "Okene",
+                "value": "480",
                 "StateCode": "15"
             },
             {
-                "Name": "Olamaboro",
-                "Code": "481",
+                "key": "Olamaboro",
+                "value": "481",
                 "StateCode": "15"
             },
             {
-                "Name": "Omala",
-                "Code": "482",
+                "key": "Omala",
+                "value": "482",
                 "StateCode": "15"
             },
             {
-                "Name": "Yagba East",
-                "Code": "483",
+                "key": "Yagba East",
+                "value": "483",
                 "StateCode": "15"
             },
             {
-                "Name": "Yagba West",
-                "Code": "484",
+                "key": "Yagba West",
+                "value": "484",
                 "StateCode": "15"
             },
             {
-                "Name": "Asa",
-                "Code": "485",
+                "key": "Asa",
+                "value": "485",
                 "StateCode": "26"
             },
             {
-                "Name": "Baruten",
-                "Code": "486",
+                "key": "Baruten",
+                "value": "486",
                 "StateCode": "26"
             },
             {
-                "Name": "Edu",
-                "Code": "487",
+                "key": "Edu",
+                "value": "487",
                 "StateCode": "26"
             },
             {
-                "Name": "Ekiti",
-                "Code": "488",
+                "key": "Ekiti",
+                "value": "488",
                 "StateCode": "26"
             },
             {
-                "Name": "Ifelodun",
-                "Code": "489",
+                "key": "Ifelodun",
+                "value": "489",
                 "StateCode": "26"
             },
             {
-                "Name": "Ilorin East",
-                "Code": "490",
+                "key": "Ilorin East",
+                "value": "490",
                 "StateCode": "26"
             },
             {
-                "Name": "Ilorin West",
-                "Code": "491",
+                "key": "Ilorin West",
+                "value": "491",
                 "StateCode": "26"
             },
             {
-                "Name": "Irepodun",
-                "Code": "492",
+                "key": "Irepodun",
+                "value": "492",
                 "StateCode": "26"
             },
             {
-                "Name": "Isin",
-                "Code": "493",
+                "key": "Isin",
+                "value": "493",
                 "StateCode": "26"
             },
             {
-                "Name": "Kaiama",
-                "Code": "494",
+                "key": "Kaiama",
+                "value": "494",
                 "StateCode": "26"
             },
             {
-                "Name": "Moro",
-                "Code": "495",
+                "key": "Moro",
+                "value": "495",
                 "StateCode": "26"
             },
             {
-                "Name": "Offa",
-                "Code": "496",
+                "key": "Offa",
+                "value": "496",
                 "StateCode": "26"
             },
             {
-                "Name": "Oke Ero",
-                "Code": "497",
+                "key": "Oke Ero",
+                "value": "497",
                 "StateCode": "26"
             },
             {
-                "Name": "Oyun",
-                "Code": "498",
+                "key": "Oyun",
+                "value": "498",
                 "StateCode": "26"
             },
             {
-                "Name": "Pategi",
-                "Code": "499",
+                "key": "Pategi",
+                "value": "499",
                 "StateCode": "26"
             },
             {
-                "Name": "Agege",
-                "Code": "500",
+                "key": "Agege",
+                "value": "500",
                 "StateCode": "27"
             },
             {
-                "Name": "Ajeromi-Ifelodun",
-                "Code": "501",
+                "key": "Ajeromi-Ifelodun",
+                "value": "501",
                 "StateCode": "27"
             },
             {
-                "Name": "Alimosho",
-                "Code": "502",
+                "key": "Alimosho",
+                "value": "502",
                 "StateCode": "27"
             },
             {
-                "Name": "Amuwo-Odofin",
-                "Code": "503",
+                "key": "Amuwo-Odofin",
+                "value": "503",
                 "StateCode": "27"
             },
             {
-                "Name": "Apapa",
-                "Code": "504",
+                "key": "Apapa",
+                "value": "504",
                 "StateCode": "27"
             },
             {
-                "Name": "Badagry",
-                "Code": "505",
+                "key": "Badagry",
+                "value": "505",
                 "StateCode": "27"
             },
             {
-                "Name": "Epe",
-                "Code": "506",
+                "key": "Epe",
+                "value": "506",
                 "StateCode": "27"
             },
             {
-                "Name": "Eti Osa",
-                "Code": "507",
+                "key": "Eti Osa",
+                "value": "507",
                 "StateCode": "27"
             },
             {
-                "Name": "Ibeju-Lekki",
-                "Code": "508",
+                "key": "Ibeju-Lekki",
+                "value": "508",
                 "StateCode": "27"
             },
             {
-                "Name": "Ifako-Ijaiye",
-                "Code": "509",
+                "key": "Ifako-Ijaiye",
+                "value": "509",
                 "StateCode": "27"
             },
             {
-                "Name": "Ikeja",
-                "Code": "510",
+                "key": "Ikeja",
+                "value": "510",
                 "StateCode": "27"
             },
             {
-                "Name": "Ikorodu",
-                "Code": "511",
+                "key": "Ikorodu",
+                "value": "511",
                 "StateCode": "27"
             },
             {
-                "Name": "Kosofe",
-                "Code": "512",
+                "key": "Kosofe",
+                "value": "512",
                 "StateCode": "27"
             },
             {
-                "Name": "Lagos Island",
-                "Code": "513",
+                "key": "Lagos Island",
+                "value": "513",
                 "StateCode": "27"
             },
             {
-                "Name": "Lagos Mainland",
-                "Code": "514",
+                "key": "Lagos Mainland",
+                "value": "514",
                 "StateCode": "27"
             },
             {
-                "Name": "Mushin",
-                "Code": "515",
+                "key": "Mushin",
+                "value": "515",
                 "StateCode": "27"
             },
             {
-                "Name": "Ojo",
-                "Code": "516",
+                "key": "Ojo",
+                "value": "516",
                 "StateCode": "27"
             },
             {
-                "Name": "Oshodi-Isolo",
-                "Code": "517",
+                "key": "Oshodi-Isolo",
+                "value": "517",
                 "StateCode": "27"
             },
             {
-                "Name": "Shomolu",
-                "Code": "518",
+                "key": "Shomolu",
+                "value": "518",
                 "StateCode": "27"
             },
             {
-                "Name": "Surulere",
-                "Code": "519",
+                "key": "Surulere",
+                "value": "519",
                 "StateCode": "27"
             },
             {
-                "Name": "Akwanga",
-                "Code": "520",
+                "key": "Akwanga",
+                "value": "520",
                 "StateCode": "28"
             },
             {
-                "Name": "Awe",
-                "Code": "521",
+                "key": "Awe",
+                "value": "521",
                 "StateCode": "28"
             },
             {
-                "Name": "Doma",
-                "Code": "522",
+                "key": "Doma",
+                "value": "522",
                 "StateCode": "28"
             },
             {
-                "Name": "Karu",
-                "Code": "523",
+                "key": "Karu",
+                "value": "523",
                 "StateCode": "28"
             },
             {
-                "Name": "Keana",
-                "Code": "524",
+                "key": "Keana",
+                "value": "524",
                 "StateCode": "28"
             },
             {
-                "Name": "Keffi",
-                "Code": "525",
+                "key": "Keffi",
+                "value": "525",
                 "StateCode": "28"
             },
             {
-                "Name": "Kokona",
-                "Code": "526",
+                "key": "Kokona",
+                "value": "526",
                 "StateCode": "28"
             },
             {
-                "Name": "Lafia",
-                "Code": "527",
+                "key": "Lafia",
+                "value": "527",
                 "StateCode": "28"
             },
             {
-                "Name": "Nasarawa",
-                "Code": "528",
+                "key": "Nasarawa",
+                "value": "528",
                 "StateCode": "28"
             },
             {
-                "Name": "Nasarawa EgGon",
-                "Code": "529",
+                "key": "Nasarawa EgGon",
+                "value": "529",
                 "StateCode": "28"
             },
             {
-                "Name": "Obi",
-                "Code": "530",
+                "key": "Obi",
+                "value": "530",
                 "StateCode": "28"
             },
             {
-                "Name": "Toto",
-                "Code": "531",
+                "key": "Toto",
+                "value": "531",
                 "StateCode": "28"
             },
             {
-                "Name": "Wamba",
-                "Code": "532",
+                "key": "Wamba",
+                "value": "532",
                 "StateCode": "28"
             },
             {
-                "Name": "Agaie",
-                "Code": "533",
+                "key": "Agaie",
+                "value": "533",
                 "StateCode": "16"
             },
             {
-                "Name": "Agwara",
-                "Code": "534",
+                "key": "Agwara",
+                "value": "534",
                 "StateCode": "16"
             },
             {
-                "Name": "Bida",
-                "Code": "535",
+                "key": "Bida",
+                "value": "535",
                 "StateCode": "16"
             },
             {
-                "Name": "Borgu",
-                "Code": "536",
+                "key": "Borgu",
+                "value": "536",
                 "StateCode": "16"
             },
             {
-                "Name": "Bosso",
-                "Code": "537",
+                "key": "Bosso",
+                "value": "537",
                 "StateCode": "16"
             },
             {
-                "Name": "Chanchaga",
-                "Code": "538",
+                "key": "Chanchaga",
+                "value": "538",
                 "StateCode": "16"
             },
             {
-                "Name": "Edati",
-                "Code": "539",
+                "key": "Edati",
+                "value": "539",
                 "StateCode": "16"
             },
             {
-                "Name": "Gbako",
-                "Code": "540",
+                "key": "Gbako",
+                "value": "540",
                 "StateCode": "16"
             },
             {
-                "Name": "Gurara",
-                "Code": "541",
+                "key": "Gurara",
+                "value": "541",
                 "StateCode": "16"
             },
             {
-                "Name": "Katcha",
-                "Code": "542",
+                "key": "Katcha",
+                "value": "542",
                 "StateCode": "16"
             },
             {
-                "Name": "Kontagora",
-                "Code": "543",
+                "key": "Kontagora",
+                "value": "543",
                 "StateCode": "16"
             },
             {
-                "Name": "Lapai",
-                "Code": "544",
+                "key": "Lapai",
+                "value": "544",
                 "StateCode": "16"
             },
             {
-                "Name": "Lavun",
-                "Code": "545",
+                "key": "Lavun",
+                "value": "545",
                 "StateCode": "16"
             },
             {
-                "Name": "Magama",
-                "Code": "546",
+                "key": "Magama",
+                "value": "546",
                 "StateCode": "16"
             },
             {
-                "Name": "Mariga",
-                "Code": "547",
+                "key": "Mariga",
+                "value": "547",
                 "StateCode": "16"
             },
             {
-                "Name": "Mashegu",
-                "Code": "548",
+                "key": "Mashegu",
+                "value": "548",
                 "StateCode": "16"
             },
             {
-                "Name": "Mokwa",
-                "Code": "549",
+                "key": "Mokwa",
+                "value": "549",
                 "StateCode": "16"
             },
             {
-                "Name": "MUNya",
-                "Code": "550",
+                "key": "MUNya",
+                "value": "550",
                 "StateCode": "16"
             },
             {
-                "Name": "Paikoro",
-                "Code": "551",
+                "key": "Paikoro",
+                "value": "551",
                 "StateCode": "16"
             },
             {
-                "Name": "Rafi",
-                "Code": "552",
+                "key": "Rafi",
+                "value": "552",
                 "StateCode": "16"
             },
             {
-                "Name": "Rijau",
-                "Code": "553",
+                "key": "Rijau",
+                "value": "553",
                 "StateCode": "16"
             },
             {
-                "Name": "Shiroro",
-                "Code": "554",
+                "key": "Shiroro",
+                "value": "554",
                 "StateCode": "16"
             },
             {
-                "Name": "Suleja",
-                "Code": "555",
+                "key": "Suleja",
+                "value": "555",
                 "StateCode": "16"
             },
             {
-                "Name": "Tafa",
-                "Code": "556",
+                "key": "Tafa",
+                "value": "556",
                 "StateCode": "16"
             },
             {
-                "Name": "Wushishi",
-                "Code": "557",
+                "key": "Wushishi",
+                "value": "557",
                 "StateCode": "16"
             },
             {
-                "Name": "Abeokuta North",
-                "Code": "558",
+                "key": "Abeokuta North",
+                "value": "558",
                 "StateCode": "36"
             },
             {
-                "Name": "Abeokuta South",
-                "Code": "559",
+                "key": "Abeokuta South",
+                "value": "559",
                 "StateCode": "36"
             },
             {
-                "Name": "Ado-Odo/Ota",
-                "Code": "560",
+                "key": "Ado-Odo/Ota",
+                "value": "560",
                 "StateCode": "36"
             },
             {
-                "Name": "Egbado North",
-                "Code": "561",
+                "key": "Egbado North",
+                "value": "561",
                 "StateCode": "36"
             },
             {
-                "Name": "Egbado South",
-                "Code": "562",
+                "key": "Egbado South",
+                "value": "562",
                 "StateCode": "36"
             },
             {
-                "Name": "Ewekoro",
-                "Code": "563",
+                "key": "Ewekoro",
+                "value": "563",
                 "StateCode": "36"
             },
             {
-                "Name": "Ifo",
-                "Code": "564",
+                "key": "Ifo",
+                "value": "564",
                 "StateCode": "36"
             },
             {
-                "Name": "Ijebu East",
-                "Code": "565",
+                "key": "Ijebu East",
+                "value": "565",
                 "StateCode": "36"
             },
             {
-                "Name": "Ijebu North",
-                "Code": "566",
+                "key": "Ijebu North",
+                "value": "566",
                 "StateCode": "36"
             },
             {
-                "Name": "Ijebu North East",
-                "Code": "567",
+                "key": "Ijebu North East",
+                "value": "567",
                 "StateCode": "36"
             },
             {
-                "Name": "Ijebu Ode",
-                "Code": "568",
+                "key": "Ijebu Ode",
+                "value": "568",
                 "StateCode": "36"
             },
             {
-                "Name": "Ikenne",
-                "Code": "569",
+                "key": "Ikenne",
+                "value": "569",
                 "StateCode": "36"
             },
             {
-                "Name": "Imeko Afon",
-                "Code": "570",
+                "key": "Imeko Afon",
+                "value": "570",
                 "StateCode": "36"
             },
             {
-                "Name": "Ipokia",
-                "Code": "571",
+                "key": "Ipokia",
+                "value": "571",
                 "StateCode": "36"
             },
             {
-                "Name": "Obafemi Owode",
-                "Code": "572",
+                "key": "Obafemi Owode",
+                "value": "572",
                 "StateCode": "36"
             },
             {
-                "Name": "Ogun Waterside",
-                "Code": "573",
+                "key": "Ogun Waterside",
+                "value": "573",
                 "StateCode": "36"
             },
             {
-                "Name": "Odeda",
-                "Code": "574",
+                "key": "Odeda",
+                "value": "574",
                 "StateCode": "36"
             },
             {
-                "Name": "Odogbolu",
-                "Code": "575",
+                "key": "Odogbolu",
+                "value": "575",
                 "StateCode": "36"
             },
             {
-                "Name": "Remo North",
-                "Code": "576",
+                "key": "Remo North",
+                "value": "576",
                 "StateCode": "36"
             },
             {
-                "Name": "SagamU",
-                "Code": "577",
+                "key": "SagamU",
+                "value": "577",
                 "StateCode": "36"
             },
             {
-                "Name": "Akoko North-East",
-                "Code": "578",
+                "key": "Akoko North-East",
+                "value": "578",
                 "StateCode": "20"
             },
             {
-                "Name": "Akoko North-West",
-                "Code": "579",
+                "key": "Akoko North-West",
+                "value": "579",
                 "StateCode": "20"
             },
             {
-                "Name": "Akoko South-East",
-                "Code": "580",
+                "key": "Akoko South-East",
+                "value": "580",
                 "StateCode": "20"
             },
             {
-                "Name": "Akoko South-West",
-                "Code": "581",
+                "key": "Akoko South-West",
+                "value": "581",
                 "StateCode": "20"
             },
             {
-                "Name": "Akure North",
-                "Code": "582",
+                "key": "Akure North",
+                "value": "582",
                 "StateCode": "20"
             },
             {
-                "Name": "Akure South",
-                "Code": "583",
+                "key": "Akure South",
+                "value": "583",
                 "StateCode": "20"
             },
             {
-                "Name": "Ese Odo",
-                "Code": "584",
+                "key": "Ese Odo",
+                "value": "584",
                 "StateCode": "20"
             },
             {
-                "Name": "Idanre",
-                "Code": "585",
+                "key": "Idanre",
+                "value": "585",
                 "StateCode": "20"
             },
             {
-                "Name": "Ifedore",
-                "Code": "586",
+                "key": "Ifedore",
+                "value": "586",
                 "StateCode": "20"
             },
             {
-                "Name": "Ilaje",
-                "Code": "587",
+                "key": "Ilaje",
+                "value": "587",
                 "StateCode": "20"
             },
             {
-                "Name": "Ile Oluji/Okeigbo",
-                "Code": "588",
+                "key": "Ile Oluji/Okeigbo",
+                "value": "588",
                 "StateCode": "20"
             },
             {
-                "Name": "Irele",
-                "Code": "590",
+                "key": "Irele",
+                "value": "590",
                 "StateCode": "20"
             },
             {
-                "Name": "Odigbo",
-                "Code": "591",
+                "key": "Odigbo",
+                "value": "591",
                 "StateCode": "20"
             },
             {
-                "Name": "Okitipupa",
-                "Code": "592",
+                "key": "Okitipupa",
+                "value": "592",
                 "StateCode": "20"
             },
             {
-                "Name": "Ondo East",
-                "Code": "593",
+                "key": "Ondo East",
+                "value": "593",
                 "StateCode": "20"
             },
             {
-                "Name": "Ondo West",
-                "Code": "594",
+                "key": "Ondo West",
+                "value": "594",
                 "StateCode": "20"
             },
             {
-                "Name": "Ose",
-                "Code": "595",
+                "key": "Ose",
+                "value": "595",
                 "StateCode": "20"
             },
             {
-                "Name": "Owo",
-                "Code": "596",
+                "key": "Owo",
+                "value": "596",
                 "StateCode": "20"
             },
             {
-                "Name": "ayedaade",
-                "Code": "597",
+                "key": "ayedaade",
+                "value": "597",
                 "StateCode": "21"
             },
             {
-                "Name": "Ayedire",
-                "Code": "598",
+                "key": "Ayedire",
+                "value": "598",
                 "StateCode": "21"
             },
             {
-                "Name": "Atakunmosa East",
-                "Code": "599",
+                "key": "Atakunmosa East",
+                "value": "599",
                 "StateCode": "21"
             },
             {
-                "Name": "Atakunmosa West",
-                "Code": "600",
+                "key": "Atakunmosa West",
+                "value": "600",
                 "StateCode": "21"
             },
             {
-                "Name": "Boluwaduro",
-                "Code": "601",
+                "key": "Boluwaduro",
+                "value": "601",
                 "StateCode": "21"
             },
             {
-                "Name": "Boripe",
-                "Code": "602",
+                "key": "Boripe",
+                "value": "602",
                 "StateCode": "21"
             },
             {
-                "Name": "Ede North",
-                "Code": "603",
+                "key": "Ede North",
+                "value": "603",
                 "StateCode": "21"
             },
             {
-                "Name": "Ede South",
-                "Code": "604",
+                "key": "Ede South",
+                "value": "604",
                 "StateCode": "21"
             },
             {
-                "Name": "Egbedore",
-                "Code": "605",
+                "key": "Egbedore",
+                "value": "605",
                 "StateCode": "21"
             },
             {
-                "Name": "Ejigbo",
-                "Code": "606",
+                "key": "Ejigbo",
+                "value": "606",
                 "StateCode": "21"
             },
             {
-                "Name": "Ife Central",
-                "Code": "607",
+                "key": "Ife Central",
+                "value": "607",
                 "StateCode": "21"
             },
             {
-                "Name": "Ife East",
-                "Code": "608",
+                "key": "Ife East",
+                "value": "608",
                 "StateCode": "21"
             },
             {
-                "Name": "Ife North",
-                "Code": "609",
+                "key": "Ife North",
+                "value": "609",
                 "StateCode": "21"
             },
             {
-                "Name": "Ife South",
-                "Code": "610",
+                "key": "Ife South",
+                "value": "610",
                 "StateCode": "21"
             },
             {
-                "Name": "Ifedayo",
-                "Code": "611",
+                "key": "Ifedayo",
+                "value": "611",
                 "StateCode": "21"
             },
             {
-                "Name": "Ifelodun",
-                "Code": "612",
+                "key": "Ifelodun",
+                "value": "612",
                 "StateCode": "21"
             },
             {
-                "Name": "Ila",
-                "Code": "613",
+                "key": "Ila",
+                "value": "613",
                 "StateCode": "21"
             },
             {
-                "Name": "Ilesa East",
-                "Code": "614",
+                "key": "Ilesa East",
+                "value": "614",
                 "StateCode": "21"
             },
             {
-                "Name": "Ilesa West",
-                "Code": "615",
+                "key": "Ilesa West",
+                "value": "615",
                 "StateCode": "21"
             },
             {
-                "Name": "Irepodun",
-                "Code": "616",
+                "key": "Irepodun",
+                "value": "616",
                 "StateCode": "21"
             },
             {
-                "Name": "Irewole",
-                "Code": "617",
+                "key": "Irewole",
+                "value": "617",
                 "StateCode": "21"
             },
             {
-                "Name": "Isokan",
-                "Code": "618",
+                "key": "Isokan",
+                "value": "618",
                 "StateCode": "21"
             },
             {
-                "Name": "Iwo",
-                "Code": "619",
+                "key": "Iwo",
+                "value": "619",
                 "StateCode": "21"
             },
             {
-                "Name": "Obokun",
-                "Code": "620",
+                "key": "Obokun",
+                "value": "620",
                 "StateCode": "21"
             },
             {
-                "Name": "Odo Otin",
-                "Code": "621",
+                "key": "Odo Otin",
+                "value": "621",
                 "StateCode": "21"
             },
             {
-                "Name": "OlaOluwa",
-                "Code": "622",
+                "key": "OlaOluwa",
+                "value": "622",
                 "StateCode": "21"
             },
             {
-                "Name": "Olorunda",
-                "Code": "623",
+                "key": "Olorunda",
+                "value": "623",
                 "StateCode": "21"
             },
             {
-                "Name": "Oriade",
-                "Code": "624",
+                "key": "Oriade",
+                "value": "624",
                 "StateCode": "21"
             },
             {
-                "Name": "Orolu",
-                "Code": "625",
+                "key": "Orolu",
+                "value": "625",
                 "StateCode": "21"
             },
             {
-                "Name": "Osogbo",
-                "Code": "626",
+                "key": "Osogbo",
+                "value": "626",
                 "StateCode": "21"
             },
             {
-                "Name": "Afijio",
-                "Code": "627",
+                "key": "Afijio",
+                "value": "627",
                 "StateCode": "17"
             },
             {
-                "Name": "Akinyele",
-                "Code": "628",
+                "key": "Akinyele",
+                "value": "628",
                 "StateCode": "17"
             },
             {
-                "Name": "Atiba",
-                "Code": "629",
+                "key": "Atiba",
+                "value": "629",
                 "StateCode": "17"
             },
             {
-                "Name": "Atisbo",
-                "Code": "630",
+                "key": "Atisbo",
+                "value": "630",
                 "StateCode": "17"
             },
             {
-                "Name": "Egbeda",
-                "Code": "631",
+                "key": "Egbeda",
+                "value": "631",
                 "StateCode": "17"
             },
             {
-                "Name": "Ibadan North-East",
-                "Code": "632",
+                "key": "Ibadan North-East",
+                "value": "632",
                 "StateCode": "17"
             },
             {
-                "Name": "Ibadan North",
-                "Code": "633",
+                "key": "Ibadan North",
+                "value": "633",
                 "StateCode": "17"
             },
             {
-                "Name": "Ibadan North-West",
-                "Code": "634",
+                "key": "Ibadan North-West",
+                "value": "634",
                 "StateCode": "17"
             },
             {
-                "Name": "Ibadan South-East",
-                "Code": "635",
+                "key": "Ibadan South-East",
+                "value": "635",
                 "StateCode": "17"
             },
             {
-                "Name": "Ibadan South-West",
-                "Code": "636",
+                "key": "Ibadan South-West",
+                "value": "636",
                 "StateCode": "17"
             },
             {
-                "Name": "Ibarapa Central",
-                "Code": "637",
+                "key": "Ibarapa Central",
+                "value": "637",
                 "StateCode": "17"
             },
             {
-                "Name": "Ibarapa East",
-                "Code": "638",
+                "key": "Ibarapa East",
+                "value": "638",
                 "StateCode": "17"
             },
             {
-                "Name": "Ibarapa North",
-                "Code": "639",
+                "key": "Ibarapa North",
+                "value": "639",
                 "StateCode": "17"
             },
             {
-                "Name": "Ido",
-                "Code": "640",
+                "key": "Ido",
+                "value": "640",
                 "StateCode": "17"
             },
             {
-                "Name": "Irepo",
-                "Code": "641",
+                "key": "Irepo",
+                "value": "641",
                 "StateCode": "17"
             },
             {
-                "Name": "Iseyin",
-                "Code": "642",
+                "key": "Iseyin",
+                "value": "642",
                 "StateCode": "17"
             },
             {
-                "Name": "Itesiwaju",
-                "Code": "643",
+                "key": "Itesiwaju",
+                "value": "643",
                 "StateCode": "17"
             },
             {
-                "Name": "Iwajowa",
-                "Code": "644",
+                "key": "Iwajowa",
+                "value": "644",
                 "StateCode": "17"
             },
             {
-                "Name": "Kajola",
-                "Code": "645",
+                "key": "Kajola",
+                "value": "645",
                 "StateCode": "17"
             },
             {
-                "Name": "Lagelu",
-                "Code": "646",
+                "key": "Lagelu",
+                "value": "646",
                 "StateCode": "17"
             },
             {
-                "Name": "Ogbmosho South",
-                "Code": "647",
+                "key": "Ogbmosho South",
+                "value": "647",
                 "StateCode": "17"
             },
             {
-                "Name": "Ogo Oluwa",
-                "Code": "648",
+                "key": "Ogo Oluwa",
+                "value": "648",
                 "StateCode": "17"
             },
             {
-                "Name": "Olorunsogo",
-                "Code": "649",
+                "key": "Olorunsogo",
+                "value": "649",
                 "StateCode": "17"
             },
             {
-                "Name": "Oluyole",
-                "Code": "650",
+                "key": "Oluyole",
+                "value": "650",
                 "StateCode": "17"
             },
             {
-                "Name": "Ona Ara",
-                "Code": "651",
+                "key": "Ona Ara",
+                "value": "651",
                 "StateCode": "17"
             },
             {
-                "Name": "Orelope",
-                "Code": "652",
+                "key": "Orelope",
+                "value": "652",
                 "StateCode": "17"
             },
             {
-                "Name": "Ori Ire",
-                "Code": "653",
+                "key": "Ori Ire",
+                "value": "653",
                 "StateCode": "17"
             },
             {
-                "Name": "Oyo East",
-                "Code": "654",
+                "key": "Oyo East",
+                "value": "654",
                 "StateCode": "17"
             },
             {
-                "Name": "Oyo",
-                "Code": "655",
+                "key": "Oyo",
+                "value": "655",
                 "StateCode": "17"
             },
             {
-                "Name": "Saki East",
-                "Code": "656",
+                "key": "Saki East",
+                "value": "656",
                 "StateCode": "17"
             },
             {
-                "Name": "Saki West",
-                "Code": "657",
+                "key": "Saki West",
+                "value": "657",
                 "StateCode": "17"
             },
             {
-                "Name": "Surulere",
-                "Code": "658",
+                "key": "Surulere",
+                "value": "658",
                 "StateCode": "17"
             },
             {
-                "Name": "Barkin Ladi",
-                "Code": "659",
+                "key": "Barkin Ladi",
+                "value": "659",
                 "StateCode": "14"
             },
             {
-                "Name": "Bassa",
-                "Code": "660",
+                "key": "Bassa",
+                "value": "660",
                 "StateCode": "14"
             },
             {
-                "Name": "Bokkos",
-                "Code": "661",
+                "key": "Bokkos",
+                "value": "661",
                 "StateCode": "14"
             },
             {
-                "Name": "Jos East",
-                "Code": "662",
+                "key": "Jos East",
+                "value": "662",
                 "StateCode": "14"
             },
             {
-                "Name": "Jos North",
-                "Code": "663",
+                "key": "Jos North",
+                "value": "663",
                 "StateCode": "14"
             },
             {
-                "Name": "Jos South",
-                "Code": "664",
+                "key": "Jos South",
+                "value": "664",
                 "StateCode": "14"
             },
             {
-                "Name": "Kanam",
-                "Code": "665",
+                "key": "Kanam",
+                "value": "665",
                 "StateCode": "14"
             },
             {
-                "Name": "Kanke",
-                "Code": "666",
+                "key": "Kanke",
+                "value": "666",
                 "StateCode": "14"
             },
             {
-                "Name": "Langtang North",
-                "Code": "667",
+                "key": "Langtang North",
+                "value": "667",
                 "StateCode": "14"
             },
             {
-                "Name": "Langtang South",
-                "Code": "668",
+                "key": "Langtang South",
+                "value": "668",
                 "StateCode": "14"
             },
             {
-                "Name": "Mangu",
-                "Code": "669",
+                "key": "Mangu",
+                "value": "669",
                 "StateCode": "14"
             },
             {
-                "Name": "Mikang",
-                "Code": "670",
+                "key": "Mikang",
+                "value": "670",
                 "StateCode": "14"
             },
             {
-                "Name": "Pankshin",
-                "Code": "671",
+                "key": "Pankshin",
+                "value": "671",
                 "StateCode": "14"
             },
             {
-                "Name": "Qua'an Pan",
-                "Code": "672",
+                "key": "Qua'an Pan",
+                "value": "672",
                 "StateCode": "14"
             },
             {
-                "Name": "Riyom",
-                "Code": "673",
+                "key": "Riyom",
+                "value": "673",
                 "StateCode": "14"
             },
             {
-                "Name": "Shendam",
-                "Code": "674",
+                "key": "Shendam",
+                "value": "674",
                 "StateCode": "14"
             },
             {
-                "Name": "Wase",
-                "Code": "675",
+                "key": "Wase",
+                "value": "675",
                 "StateCode": "14"
             },
             {
-                "Name": "Abua/Odual",
-                "Code": "676",
+                "key": "Abua/Odual",
+                "value": "676",
                 "StateCode": "29"
             },
             {
-                "Name": "Ahoada East",
-                "Code": "677",
+                "key": "Ahoada East",
+                "value": "677",
                 "StateCode": "29"
             },
             {
-                "Name": "Ahoada West",
-                "Code": "678",
+                "key": "Ahoada West",
+                "value": "678",
                 "StateCode": "29"
             },
             {
-                "Name": "Akuku-Toru",
-                "Code": "679",
+                "key": "Akuku-Toru",
+                "value": "679",
                 "StateCode": "29"
             },
             {
-                "Name": "Andoni",
-                "Code": "680",
+                "key": "Andoni",
+                "value": "680",
                 "StateCode": "29"
             },
             {
-                "Name": "Asari-Toru",
-                "Code": "681",
+                "key": "Asari-Toru",
+                "value": "681",
                 "StateCode": "29"
             },
             {
-                "Name": "Bonny",
-                "Code": "682",
+                "key": "Bonny",
+                "value": "682",
                 "StateCode": "29"
             },
             {
-                "Name": "Degema",
-                "Code": "683",
+                "key": "Degema",
+                "value": "683",
                 "StateCode": "29"
             },
             {
-                "Name": "Emohua",
-                "Code": "684",
+                "key": "Emohua",
+                "value": "684",
                 "StateCode": "29"
             },
             {
-                "Name": "Eleme",
-                "Code": "685",
+                "key": "Eleme",
+                "value": "685",
                 "StateCode": "29"
             },
             {
-                "Name": "Etche",
-                "Code": "686",
+                "key": "Etche",
+                "value": "686",
                 "StateCode": "29"
             },
             {
-                "Name": "Gokana",
-                "Code": "687",
+                "key": "Gokana",
+                "value": "687",
                 "StateCode": "29"
             },
             {
-                "Name": "Ikwerre",
-                "Code": "688",
+                "key": "Ikwerre",
+                "value": "688",
                 "StateCode": "29"
             },
             {
-                "Name": "Khana",
-                "Code": "689",
+                "key": "Khana",
+                "value": "689",
                 "StateCode": "29"
             },
             {
-                "Name": "Obio/Akpor",
-                "Code": "690",
+                "key": "Obio/Akpor",
+                "value": "690",
                 "StateCode": "29"
             },
             {
-                "Name": "Ogba/Egbema/Ndoni",
-                "Code": "691",
+                "key": "Ogba/Egbema/Ndoni",
+                "value": "691",
                 "StateCode": "29"
             },
             {
-                "Name": "Ogu/Bolo",
-                "Code": "692",
+                "key": "Ogu/Bolo",
+                "value": "692",
                 "StateCode": "29"
             },
             {
-                "Name": "Okrika",
-                "Code": "693",
+                "key": "Okrika",
+                "value": "693",
                 "StateCode": "29"
             },
             {
-                "Name": "Omuma",
-                "Code": "694",
+                "key": "Omuma",
+                "value": "694",
                 "StateCode": "29"
             },
             {
-                "Name": "Opobo/Nkoro",
-                "Code": "695",
+                "key": "Opobo/Nkoro",
+                "value": "695",
                 "StateCode": "29"
             },
             {
-                "Name": "Oyigbo",
-                "Code": "696",
+                "key": "Oyigbo",
+                "value": "696",
                 "StateCode": "29"
             },
             {
-                "Name": "Port Harcourt",
-                "Code": "697",
+                "key": "Port Harcourt",
+                "value": "697",
                 "StateCode": "29"
             },
             {
-                "Name": "Tai",
-                "Code": "698",
+                "key": "Tai",
+                "value": "698",
                 "StateCode": "29"
             },
             {
-                "Name": "Binji",
-                "Code": "699",
+                "key": "Binji",
+                "value": "699",
                 "StateCode": "10"
             },
             {
-                "Name": "Bodinga",
-                "Code": "700",
+                "key": "Bodinga",
+                "value": "700",
                 "StateCode": "10"
             },
             {
-                "Name": "Dange Shuni",
-                "Code": "701",
+                "key": "Dange Shuni",
+                "value": "701",
                 "StateCode": "10"
             },
             {
-                "Name": "Gada",
-                "Code": "702",
+                "key": "Gada",
+                "value": "702",
                 "StateCode": "10"
             },
             {
-                "Name": "Goronyo",
-                "Code": "703",
+                "key": "Goronyo",
+                "value": "703",
                 "StateCode": "10"
             },
             {
-                "Name": "Gudu",
-                "Code": "704",
+                "key": "Gudu",
+                "value": "704",
                 "StateCode": "10"
             },
             {
-                "Name": "Gwadabawa",
-                "Code": "705",
+                "key": "Gwadabawa",
+                "value": "705",
                 "StateCode": "10"
             },
             {
-                "Name": "Illela",
-                "Code": "706",
+                "key": "Illela",
+                "value": "706",
                 "StateCode": "10"
             },
             {
-                "Name": "Isa",
-                "Code": "707",
+                "key": "Isa",
+                "value": "707",
                 "StateCode": "10"
             },
             {
-                "Name": "Kware",
-                "Code": "708",
+                "key": "Kware",
+                "value": "708",
                 "StateCode": "10"
             },
             {
-                "Name": "kebbe",
-                "Code": "709",
+                "key": "kebbe",
+                "value": "709",
                 "StateCode": "10"
             },
             {
-                "Name": "Rabah",
-                "Code": "710",
+                "key": "Rabah",
+                "value": "710",
                 "StateCode": "10"
             },
             {
-                "Name": "Sabon birni",
-                "Code": "711",
+                "key": "Sabon birni",
+                "value": "711",
                 "StateCode": "10"
             },
             {
-                "Name": "Shagari",
-                "Code": "712",
+                "key": "Shagari",
+                "value": "712",
                 "StateCode": "10"
             },
             {
-                "Name": "Silame",
-                "Code": "713",
+                "key": "Silame",
+                "value": "713",
                 "StateCode": "10"
             },
             {
-                "Name": "Sokoto North",
-                "Code": "714",
+                "key": "Sokoto North",
+                "value": "714",
                 "StateCode": "10"
             },
             {
-                "Name": "Sokoto South",
-                "Code": "715",
+                "key": "Sokoto South",
+                "value": "715",
                 "StateCode": "10"
             },
             {
-                "Name": "Tambuwal",
-                "Code": "716",
+                "key": "Tambuwal",
+                "value": "716",
                 "StateCode": "10"
             },
             {
-                "Name": "Tangaza",
-                "Code": "717",
+                "key": "Tangaza",
+                "value": "717",
                 "StateCode": "10"
             },
             {
-                "Name": "Tureta",
-                "Code": "718",
+                "key": "Tureta",
+                "value": "718",
                 "StateCode": "10"
             },
             {
-                "Name": "Wamako",
-                "Code": "719",
+                "key": "Wamako",
+                "value": "719",
                 "StateCode": "10"
             },
             {
-                "Name": "Wurno",
-                "Code": "720",
+                "key": "Wurno",
+                "value": "720",
                 "StateCode": "10"
             },
             {
-                "Name": "Yabo",
-                "Code": "721",
+                "key": "Yabo",
+                "value": "721",
                 "StateCode": "10"
             },
             {
-                "Name": "Ardo Kola",
-                "Code": "722",
+                "key": "Ardo Kola",
+                "value": "722",
                 "StateCode": "23"
             },
             {
-                "Name": "Bali",
-                "Code": "723",
+                "key": "Bali",
+                "value": "723",
                 "StateCode": "23"
             },
             {
-                "Name": "Donga",
-                "Code": "724",
+                "key": "Donga",
+                "value": "724",
                 "StateCode": "23"
             },
             {
-                "Name": "Gashaka",
-                "Code": "725",
+                "key": "Gashaka",
+                "value": "725",
                 "StateCode": "23"
             },
             {
-                "Name": "Gassol",
-                "Code": "726",
+                "key": "Gassol",
+                "value": "726",
                 "StateCode": "23"
             },
             {
-                "Name": "Ibi",
-                "Code": "727",
+                "key": "Ibi",
+                "value": "727",
                 "StateCode": "23"
             },
             {
-                "Name": "Jalingo",
-                "Code": "728",
+                "key": "Jalingo",
+                "value": "728",
                 "StateCode": "23"
             },
             {
-                "Name": "Karim Lamido",
-                "Code": "729",
+                "key": "Karim Lamido",
+                "value": "729",
                 "StateCode": "23"
             },
             {
-                "Name": "KuRmi",
-                "Code": "730",
+                "key": "KuRmi",
+                "value": "730",
                 "StateCode": "23"
             },
             {
-                "Name": "Lau",
-                "Code": "731",
+                "key": "Lau",
+                "value": "731",
                 "StateCode": "23"
             },
             {
-                "Name": "Sardauna",
-                "Code": "732",
+                "key": "Sardauna",
+                "value": "732",
                 "StateCode": "23"
             },
             {
-                "Name": "Takum",
-                "Code": "733",
+                "key": "Takum",
+                "value": "733",
                 "StateCode": "23"
             },
             {
-                "Name": "Ussa",
-                "Code": "734",
+                "key": "Ussa",
+                "value": "734",
                 "StateCode": "23"
             },
             {
-                "Name": "Wukari",
-                "Code": "735",
+                "key": "Wukari",
+                "value": "735",
                 "StateCode": "23"
             },
             {
-                "Name": "Yorro",
-                "Code": "736",
+                "key": "Yorro",
+                "value": "736",
                 "StateCode": "23"
             },
             {
-                "Name": "Zing",
-                "Code": "737",
+                "key": "Zing",
+                "value": "737",
                 "StateCode": "23"
             },
             {
-                "Name": "Bade",
-                "Code": "738",
+                "key": "Bade",
+                "value": "738",
                 "StateCode": "31"
             },
             {
-                "Name": "Bursari",
-                "Code": "739",
+                "key": "Bursari",
+                "value": "739",
                 "StateCode": "31"
             },
             {
-                "Name": "Damaturu",
-                "Code": "740",
+                "key": "Damaturu",
+                "value": "740",
                 "StateCode": "31"
             },
             {
-                "Name": "Fika",
-                "Code": "741",
+                "key": "Fika",
+                "value": "741",
                 "StateCode": "31"
             },
             {
-                "Name": "Fune",
-                "Code": "742",
+                "key": "Fune",
+                "value": "742",
                 "StateCode": "31"
             },
             {
-                "Name": "Geidam",
-                "Code": "743",
+                "key": "Geidam",
+                "value": "743",
                 "StateCode": "31"
             },
             {
-                "Name": "Gujba",
-                "Code": "744",
+                "key": "Gujba",
+                "value": "744",
                 "StateCode": "31"
             },
             {
-                "Name": "Gulani",
-                "Code": "745",
+                "key": "Gulani",
+                "value": "745",
                 "StateCode": "31"
             },
             {
-                "Name": "Jakusko",
-                "Code": "746",
+                "key": "Jakusko",
+                "value": "746",
                 "StateCode": "31"
             },
             {
-                "Name": "Karasuwa",
-                "Code": "747",
+                "key": "Karasuwa",
+                "value": "747",
                 "StateCode": "31"
             },
             {
-                "Name": "Machina",
-                "Code": "749",
+                "key": "Machina",
+                "value": "749",
                 "StateCode": "31"
             },
             {
-                "Name": "Nangere",
-                "Code": "750",
+                "key": "Nangere",
+                "value": "750",
                 "StateCode": "31"
             },
             {
-                "Name": "Nguru",
-                "Code": "751",
+                "key": "Nguru",
+                "value": "751",
                 "StateCode": "31"
             },
             {
-                "Name": "Tarmuwa",
-                "Code": "752",
+                "key": "Tarmuwa",
+                "value": "752",
                 "StateCode": "31"
             },
             {
-                "Name": "Yunusari",
-                "Code": "753",
+                "key": "Yunusari",
+                "value": "753",
                 "StateCode": "31"
             },
             {
-                "Name": "Yusufari",
-                "Code": "754",
+                "key": "Yusufari",
+                "value": "754",
                 "StateCode": "31"
             },
             {
-                "Name": "Anka",
-                "Code": "755",
+                "key": "Anka",
+                "value": "755",
                 "StateCode": "6"
             },
             {
-                "Name": "Bakura",
-                "Code": "756",
+                "key": "Bakura",
+                "value": "756",
                 "StateCode": "6"
             },
             {
-                "Name": "Birnin Magaji/Kiyaw",
-                "Code": "757",
+                "key": "Birnin Magaji/Kiyaw",
+                "value": "757",
                 "StateCode": "6"
             },
             {
-                "Name": "Bukkuyum",
-                "Code": "758",
+                "key": "Bukkuyum",
+                "value": "758",
                 "StateCode": "6"
             },
             {
-                "Name": "Bungudu",
-                "Code": "759",
+                "key": "Bungudu",
+                "value": "759",
                 "StateCode": "6"
             },
             {
-                "Name": "Gummi",
-                "Code": "760",
+                "key": "Gummi",
+                "value": "760",
                 "StateCode": "6"
             },
             {
-                "Name": "Gusau",
-                "Code": "761",
+                "key": "Gusau",
+                "value": "761",
                 "StateCode": "6"
             },
             {
-                "Name": "Kaura Namoda",
-                "Code": "762",
+                "key": "Kaura Namoda",
+                "value": "762",
                 "StateCode": "6"
             },
             {
-                "Name": "Maradun",
-                "Code": "764",
+                "key": "Maradun",
+                "value": "764",
                 "StateCode": "6"
             },
             {
-                "Name": "Maru",
-                "Code": "765",
+                "key": "Maru",
+                "value": "765",
                 "StateCode": "6"
             },
             {
-                "Name": "Shinkafi",
-                "Code": "766",
+                "key": "Shinkafi",
+                "value": "766",
                 "StateCode": "6"
             },
             {
-                "Name": "Talata Mafara",
-                "Code": "767",
+                "key": "Talata Mafara",
+                "value": "767",
                 "StateCode": "6"
             },
             {
-                "Name": "Chafe",
-                "Code": "768",
+                "key": "Chafe",
+                "value": "768",
                 "StateCode": "6"
             },
             {
-                "Name": "Zurmi",
-                "Code": "769",
+                "key": "Zurmi",
+                "value": "769",
                 "StateCode": "6"
             },
             {
-                "Name": "Gamawa",
-                "Code": "770",
+                "key": "Gamawa",
+                "value": "770",
                 "StateCode": "11"
             },
             {
-                "Name": "Izzi",
-                "Code": "771",
+                "key": "Izzi",
+                "value": "771",
                 "StateCode": "37"
             },
             {
-                "Name": "Akoko-Edo",
-                "Code": "772",
+                "key": "Akoko-Edo",
+                "value": "772",
                 "StateCode": "5"
             },
             {
-                "Name": "Etsako West",
-                "Code": "773",
+                "key": "Etsako West",
+                "value": "773",
                 "StateCode": "5"
             },
             {
-                "Name": "Owan East",
-                "Code": "774",
+                "key": "Owan East",
+                "value": "774",
                 "StateCode": "5"
             },
             {
-                "Name": "Owan West",
-                "Code": "775",
+                "key": "Owan West",
+                "value": "775",
                 "StateCode": "5"
             },
             {
-                "Name": "Udi",
-                "Code": "776",
+                "key": "Udi",
+                "value": "776",
                 "StateCode": "8"
             },
             {
-                "Name": "Kazaure",
-                "Code": "777",
+                "key": "Kazaure",
+                "value": "777",
                 "StateCode": "13"
             },
             {
-                "Name": "Yewa North",
-                "Code": "778",
+                "key": "Yewa North",
+                "value": "778",
                 "StateCode": "36"
             },
             {
-                "Name": "Yewa South",
-                "Code": "779",
+                "key": "Yewa South",
+                "value": "779",
                 "StateCode": "36"
             },
             {
-                "Name": "Ogbomosho North",
-                "Code": "780",
+                "key": "Ogbomosho North",
+                "value": "780",
                 "StateCode": "17"
             },
             {
-                "Name": "Potiskum",
-                "Code": "781",
+                "key": "Potiskum",
+                "value": "781",
                 "StateCode": "31"
             },
             {
-                "Name": "ILORIN SOUTH",
-                "Code": "782",
+                "key": "ILORIN SOUTH",
+                "value": "782",
                 "StateCode": "26"
             }
         ]

@@ -1,155 +1,155 @@
 {
     "Error": false,
-    "ErrorCode": null,
+    "Errorvalue": null,
     "ResponseObject": {
         "ReportRecords": [
             {
-                "Name": "Anambra",
-                "Code": "1"
+                "key": "Anambra",
+                "value": "1"
             },
             {
-                "Name": "Akwa Ibom",
-                "Code": "2"
+                "key": "Akwa Ibom",
+                "value": "2"
             },
             {
-                "Name": "Cross River",
-                "Code": "3"
+                "key": "Cross River",
+                "value": "3"
             },
             {
-                "Name": "Delta",
-                "Code": "4"
+                "key": "Delta",
+                "value": "4"
             },
             {
-                "Name": "Edo",
-                "Code": "5"
+                "key": "Edo",
+                "value": "5"
             },
             {
-                "Name": "Zamfara",
-                "Code": "6"
+                "key": "Zamfara",
+                "value": "6"
             },
             {
-                "Name": "Kano",
-                "Code": "7"
+                "key": "Kano",
+                "value": "7"
             },
             {
-                "Name": "Enugu",
-                "Code": "8"
+                "key": "Enugu",
+                "value": "8"
             },
             {
-                "Name": "Katsina",
-                "Code": "9"
+                "key": "Katsina",
+                "value": "9"
             },
             {
-                "Name": "Sokoto",
-                "Code": "10"
+                "key": "Sokoto",
+                "value": "10"
             },
             {
-                "Name": "Bauchi",
-                "Code": "11"
+                "key": "Bauchi",
+                "value": "11"
             },
             {
-                "Name": "Bayelsa",
-                "Code": "12"
+                "key": "Bayelsa",
+                "value": "12"
             },
             {
-                "Name": "Jigawa",
-                "Code": "13"
+                "key": "Jigawa",
+                "value": "13"
             },
             {
-                "Name": "Plateau",
-                "Code": "14"
+                "key": "Plateau",
+                "value": "14"
             },
             {
-                "Name": "Kogi",
-                "Code": "15"
+                "key": "Kogi",
+                "value": "15"
             },
             {
-                "Name": "Niger",
-                "Code": "16"
+                "key": "Niger",
+                "value": "16"
             },
             {
-                "Name": "Oyo",
-                "Code": "17"
+                "key": "Oyo",
+                "value": "17"
             },
             {
-                "Name": "Imo",
-                "Code": "18"
+                "key": "Imo",
+                "value": "18"
             },
             {
-                "Name": "FCT",
-                "Code": "19"
+                "key": "FCT",
+                "value": "19"
             },
             {
-                "Name": "Ondo",
-                "Code": "20"
+                "key": "Ondo",
+                "value": "20"
             },
             {
-                "Name": "Osun",
-                "Code": "21"
+                "key": "Osun",
+                "value": "21"
             },
             {
-                "Name": "Kaduna",
-                "Code": "22"
+                "key": "Kaduna",
+                "value": "22"
             },
             {
-                "Name": "Taraba",
-                "Code": "23"
+                "key": "Taraba",
+                "value": "23"
             },
             {
-                "Name": "Gombe",
-                "Code": "24"
+                "key": "Gombe",
+                "value": "24"
             },
             {
-                "Name": "Kebbi",
-                "Code": "25"
+                "key": "Kebbi",
+                "value": "25"
             },
             {
-                "Name": "Kwara",
-                "Code": "26"
+                "key": "Kwara",
+                "value": "26"
             },
             {
-                "Name": "Lagos",
-                "Code": "27"
+                "key": "Lagos",
+                "value": "27"
             },
             {
-                "Name": "Nasarawa",
-                "Code": "28"
+                "key": "Nasarawa",
+                "value": "28"
             },
             {
-                "Name": "Rivers",
-                "Code": "29"
+                "key": "Rivers",
+                "value": "29"
             },
             {
-                "Name": "Ekiti",
-                "Code": "30"
+                "key": "Ekiti",
+                "value": "30"
             },
             {
-                "Name": "Yobe",
-                "Code": "31"
+                "key": "Yobe",
+                "value": "31"
             },
             {
-                "Name": "Abia",
-                "Code": "32"
+                "key": "Abia",
+                "value": "32"
             },
             {
-                "Name": "Adamawa",
-                "Code": "33"
+                "key": "Adamawa",
+                "value": "33"
             },
             {
-                "Name": "Benue",
-                "Code": "34"
+                "key": "Benue",
+                "value": "34"
             },
             {
-                "Name": "Borno",
-                "Code": "35"
+                "key": "Borno",
+                "value": "35"
             },
             {
-                "Name": "Ogun",
-                "Code": "36"
+                "key": "Ogun",
+                "value": "36"
             },
             {
-                "Name": "Ebonyi",
-                "Code": "37"
+                "key": "Ebonyi",
+                "value": "37"
             }
         ]
     }

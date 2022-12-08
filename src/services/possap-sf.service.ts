@@ -1,5 +1,6 @@
 import { IApprovalLog } from './../interfaces/possap-services.interfact';
 /* eslint-disable @typescript-eslint/no-empty-function */
+import HelperController from '@/controllers/helper-controller/helper.controller';
 import OfficerService from '@services/officers.service';
 import { IPossapService } from './../interfaces/possap-services.interfact';
 import { IPossapServiceFields } from '../interfaces/possap-services.interfact';
@@ -18,6 +19,7 @@ import { threadId } from 'worker_threads';
 @EntityRepository()
 class PossapSFService extends Repository<PossapServiceFieldsEntity> {
   public possapS = new PossapService();
+  public helperC = new HelperController();
   public invoiceS = new InvoiceService();
   public officerS = new OfficerService();
   public async findPossapSF(): Promise<IPossapServiceFields[]> {
@@ -41,13 +43,14 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
       console.log('service id', data.service);
       const parent: IPossapService = await this.possapS.findPossapServiceById(data.service);
       const ref = parent?.slug.toUpperCase() + '-' + ObjectId();
-      const processor = this.distributor(parent, data);
-      if (parent) {
+      const processor = await this.distributor(parent, data);
+      console.log(processor, 'processor');
+      if (parent && processor) {
         const { amount, ...others } = data;
         const obj = {
           ...others,
           ref,
-          processor,
+          processor: processor,
           approvalLevel: parent.approvalWorkFlow[0],
         };
         const createAllPossapData = await PossapServiceFieldsEntity.save(obj);
@@ -70,7 +73,7 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
 
   public async distributor(parent: IPossapService, data) {
     let processed = null;
-    switch (parent.slug) {
+    switch (parent.slug.toLowerCase()) {
       case 'cmr':
         processed = this.cmrProcessessor(data);
         break;
@@ -87,6 +90,7 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
         console.log('slug is not found');
         break;
     }
+    console.log('processed', processed);
     return processed;
   }
 
@@ -95,12 +99,19 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
   }
   public async peProcessessor(data) {
     const { extractState, extractPoliceDivision } = data.formFields[0];
-    return 3 + '-' + extractState + '-' + extractPoliceDivision;
+    console.log(extractState, extractPoliceDivision);
+    const stateCode = this.helperC.getState(extractState);
+    const divisionCode = this.helperC.getStateDivision(stateCode, extractPoliceDivision);
+    return 3 + '-' + stateCode.value + '-' + divisionCode.Code;
   }
   public async egsProcessessor(data) {}
   public async pccProcessessor(data) {
-    const { requestState, requestStateCommand } = data.formFields[0];
-    return 3 + '-' + requestState + '-' + requestStateCommand;
+    const { requestState, requestStateCID } = data.formFields[0];
+    const stateCode = this.helperC.getState(requestState);
+    const stateCID = this.helperC.getStateCID(stateCode, requestStateCID);
+    console.log(stateCode, 'statecode');
+    console.log(stateCID, 'statecode');
+    return 3 + '-' + stateCode.value + '-' + stateCID?.Code;
   }
 
   public async officerRequest(officerId: string) {
