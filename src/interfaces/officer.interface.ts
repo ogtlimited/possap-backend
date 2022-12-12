@@ -7,8 +7,9 @@ export interface IOfficers {
   phoneNumber: string;
   password: string;
   profile: any;
-  commandAccess?: any[];
+  commandAccessIds?: any[];
   canApprove?: any[];
+  access?: any;
 }
 
 export interface IExtractApprovalLevel {

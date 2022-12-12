@@ -158,16 +158,22 @@ class HelperController {
   public getStateDivision = (city, div) => {
     const obj = JSON.parse(fs.readFileSync('./eag.json', 'utf8'));
     const records = obj.ResponseObject.ReportRecords[2].sub;
-    const filtered = records.filter(c => c.StateCode === city.value)[0].sub;
-    const res = filtered.filter(f => f.Name === div);
-    return res[0];
+    const commands = records.filter(c => c.StateCode === city.value)[0];
+    const res = commands.sub.filter(f => f.Name === div);
+    return {
+      command: commands.Code,
+      division: res[0],
+    };
   };
   public getStateCID = (city, div) => {
     const obj = JSON.parse(fs.readFileSync('./eag.json', 'utf8'));
     const records = obj.ResponseObject.ReportRecords[2].sub;
-    const filtered = records.filter(c => c.StateCode === city.value)[0].sub;
-    const res = filtered.filter(f => f.Name.includes('SCID'));
-    return res[0];
+    const commands = records.filter(c => c.StateCode === city.value)[0];
+    const res = commands.sub.filter(f => f.Name.includes('SCID'));
+    return {
+      command: commands.Code,
+      division: res[0],
+    };
   };
   public getCountries = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {

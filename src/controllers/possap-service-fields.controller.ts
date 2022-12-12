@@ -23,6 +23,14 @@ class PossapServiceFieldController {
       next(error);
     }
   };
+  public getOfficerRequest = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      const result: IPossapServiceFields[] = await this.possapS.officerRequest(req.params.id);
+      res.status(200).json({ data: result });
+    } catch (error) {
+      next(error);
+    }
+  };
 
   public createPossapSF = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {

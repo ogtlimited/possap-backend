@@ -1,7 +1,18 @@
 import { IApprovalLog } from './../interfaces/possap-services.interfact';
 import { UserEntity } from '@entities/users.entity';
 import { IApprovers, IPossapServiceFields } from '@/interfaces/possap-services.interfact';
-import { BaseEntity, PrimaryGeneratedColumn, ManyToOne, Column, Entity, OneToMany, JoinColumn, OneToOne } from 'typeorm';
+import {
+  BaseEntity,
+  PrimaryGeneratedColumn,
+  ManyToOne,
+  Column,
+  Entity,
+  OneToMany,
+  JoinColumn,
+  OneToOne,
+  CreateDateColumn,
+  UpdateDateColumn,
+} from 'typeorm';
 import { PossapServiceEntity } from './possap-service.entity';
 import { InvoiceEntity } from './invoice.entity';
 import { OfficerAccessEntity } from './officerAccess.entity';
@@ -49,4 +60,12 @@ export class PossapServiceFieldsEntity extends BaseEntity implements IPossapServ
   @OneToOne(() => InvoiceEntity, invoice => invoice.serviceId, { onDelete: 'CASCADE', onUpdate: 'CASCADE', eager: true, cascade: true })
   @JoinColumn()
   invoice: InvoiceEntity;
+
+  @Column()
+  @CreateDateColumn()
+  createdAt: Date;
+
+  @Column()
+  @UpdateDateColumn()
+  updatedAt: Date;
 }

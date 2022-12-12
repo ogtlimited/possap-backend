@@ -102,7 +102,7 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
     console.log(extractState, extractPoliceDivision);
     const stateCode = this.helperC.getState(extractState);
     const divisionCode = this.helperC.getStateDivision(stateCode, extractPoliceDivision);
-    return 3 + '-' + stateCode.value + '-' + divisionCode.Code;
+    return 3 + '-' + divisionCode.command + '-' + divisionCode.division.Code;
   }
   public async egsProcessessor(data) {}
   public async pccProcessessor(data) {
@@ -111,13 +111,24 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
     const stateCID = this.helperC.getStateCID(stateCode, requestStateCID);
     console.log(stateCode, 'statecode');
     console.log(stateCID, 'statecode');
-    return 3 + '-' + stateCode.value + '-' + stateCID?.Code;
+    return 3 + '-' + stateCID.command + '-' + stateCID?.division.Code;
   }
 
   public async officerRequest(officerId: string) {
     const officer: IOfficers = await OfficerEntity.findOne({ where: { id: officerId } });
     if (officer) {
-      const reqList = await PossapServiceFieldsEntity.find({ where: { approvalLevel: In(officer.canApprove) } });
+      // get officer services
+      const services = officer.access.services;
+      // officer formation, department section and subsection
+      const access = this.mapOfficerAccess(officer.profile); // '1-17-92'
+      console.log(officer);
+      console.log(access);
+      const commandAccess = officer.commandAccessIds.map(ac => this.mapOfficerAccess(ac)); // ['3-32-76']
+      console.log(commandAccess);
+      const fullAccess = [access, ...commandAccess];
+      const reqList = PossapServiceFieldsEntity.find({ where: { service: { id: In([...services]) }, processor: In(fullAccess) } });
+
+      // const reqList = await PossapServiceFieldsEntity.find({ where: { approvalLevel: In(officer.canApprove) } });
       return reqList;
     }
   }
@@ -133,7 +144,7 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
     const request: IPossapServiceFields = await PossapServiceFieldsEntity.findOne({ where: { id } });
     if (officerDetails) {
       const access = this.mapOfficerAccess(officerDetails.profile);
-      const commandAccess = officerDetails.commandAccess.map(ac => this.mapOfficerAccess(ac));
+      const commandAccess = officerDetails.commandAccessIds.map(ac => this.mapOfficerAccess(ac));
       const fullAccess = [access, ...commandAccess];
       if (!fullAccess.includes(request.processor)) {
         throw new HttpException(403, 'Request cannot be approved by you');
@@ -175,7 +186,7 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
   public mapOfficerAccess(obj) {
     const { officerFormation, officerDepartment, officerSection, officerSubSection } = obj;
     let primary = officerFormation + '-' + officerDepartment + '-' + officerSection;
-    if (officerSubSection !== '') {
+    if (officerSubSection !== '' && officerSubSection !== null) {
       primary = primary + '-' + officerSubSection;
     }
     return primary;
