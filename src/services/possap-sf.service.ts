@@ -121,13 +121,14 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
       const services = officer.access.services;
       // officer formation, department section and subsection
       const access = this.mapOfficerAccess(officer.profile); // '1-17-92'
-      console.log(officer);
-      console.log(access);
+      // console.log(officer);
+      // console.log(access);
       const commandAccess = officer.commandAccessIds.map(ac => this.mapOfficerAccess(ac)); // ['3-32-76']
-      console.log(commandAccess);
+      // console.log(commandAccess);
       const fullAccess = [access, ...commandAccess];
-      const reqList = PossapServiceFieldsEntity.find({ where: { service: { id: In([...services]) }, processor: In(fullAccess) } });
-
+      console.log(fullAccess, services);
+      const reqList = await PossapServiceFieldsEntity.find({ where: { service: { id: In([...services]) }, processor: In(fullAccess) } });
+      console.log(reqList, 'reqList');
       // const reqList = await PossapServiceFieldsEntity.find({ where: { approvalLevel: In(officer.canApprove) } });
       return reqList;
     }
