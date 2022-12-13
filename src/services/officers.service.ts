@@ -35,16 +35,16 @@ class OfficerService extends Repository<OfficerEntity> {
 
     const findOfficer: IOfficers = await OfficerEntity.findOne({ where: { apNumber: apNumber } });
     if (!findOfficer) throw new HttpException(409, 'This AP Numnber is not attached to any officer');
-    try {
-      const send = await sendOtpSMS({ phone: findOfficer.phoneNumber });
-      console.log('send error', send.status);
-      if (send.status === 400) {
-        throw 'failed to verify phone number';
-      }
-    } catch (error) {
-      console.log(error);
-      throw new HttpException(409, error);
-    }
+    // try {
+    //   const send = await sendOtpSMS({ phone: findOfficer.phoneNumber });
+    //   console.log('send error', send);
+    //   if (send.status === 400) {
+    //     throw 'failed to verify phone number';
+    //   }
+    // } catch (error) {
+    //   console.log(error);
+    //   throw new HttpException(409, error);
+    // }
 
     return findOfficer;
   }
@@ -54,15 +54,18 @@ class OfficerService extends Repository<OfficerEntity> {
     const officer: IOfficers = await OfficerEntity.findOne({ where: { apNumber: apNumber } });
     if (!officer) throw new HttpException(409, 'AP number is not attched to a user');
     try {
-      const verify: any = await verifyOtp(userData);
-      console.log('verify otp', verify);
-      if (!verify.valid) {
-        throw 'Invalid OTP';
-      } else {
-        const token = this.createToken(officer);
+      // const verify: any = await verifyOtp(userData);
+      // console.log('verify otp', verify);
+      // if (!verify.valid) {
+      // if (!verify.valid) {
+      //   throw 'Invalid OTP';
+      // } else {
+      //   const token = this.createToken(officer);
 
-        return { token, officer };
-      }
+      //   return { token, officer };
+      // }
+      const token = this.createToken(officer);
+      return { token, officer };
     } catch (error) {
       throw new HttpException(500, error);
     }
