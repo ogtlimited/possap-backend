@@ -1,3 +1,6 @@
+import { verifyOtp } from './../utils/sendOtpSms';
+import { SmsHelperDto } from '@/dtos/helpers/sms-helper.dto';
+import { sendOtpSMS } from '@/utils/sendOtpSms';
 import { CommandAccessEntity } from '@entities/commandAccess.entity';
 import { EntityRepository, getRepository, Repository } from 'typeorm';
 import { CreateOfficerDto } from '@dtos/officer.dto';
@@ -7,6 +10,9 @@ import { HttpException } from '@exceptions/HttpException';
 import { IOfficers } from '@interfaces/officer.interface';
 import { isEmpty } from '@utils/util';
 import { ICommandAccess } from '@/interfaces/commandAccess';
+import { DataStoredInToken, TokenData } from '@/interfaces/auth.interface';
+import config from 'config';
+import { sign } from 'jsonwebtoken';
 
 @EntityRepository()
 class OfficerService extends Repository<OfficerEntity> {
@@ -23,6 +29,43 @@ class OfficerService extends Repository<OfficerEntity> {
     if (!findOfficer) throw new HttpException(409, "You're not Officer");
 
     return findOfficer;
+  }
+  public async loginOfficer(apNumber: number): Promise<IOfficers> {
+    if (isEmpty(apNumber)) throw new HttpException(400, "You're not OfficerId");
+
+    const findOfficer: IOfficers = await OfficerEntity.findOne({ where: { apNumber: apNumber } });
+    if (!findOfficer) throw new HttpException(409, 'This AP Numnber is not attached to any officer');
+    try {
+      const send = await sendOtpSMS({ phone: findOfficer.phoneNumber });
+      console.log('send error', send.status);
+      if (send.status === 400) {
+        throw 'failed to verify phone number';
+      }
+    } catch (error) {
+      console.log(error);
+      throw new HttpException(409, error);
+    }
+
+    return findOfficer;
+  }
+  public async validateOfficerOTP(apNumber: number, userData: SmsHelperDto): Promise<any> {
+    if (isEmpty(userData)) throw new HttpException(400, "You're not userData");
+
+    const officer: IOfficers = await OfficerEntity.findOne({ where: { apNumber: apNumber } });
+    if (!officer) throw new HttpException(409, 'AP number is not attched to a user');
+    try {
+      const verify: any = await verifyOtp(userData);
+      console.log('verify otp', verify);
+      if (!verify.valid) {
+        throw 'Invalid OTP';
+      } else {
+        const token = this.createToken(officer);
+
+        return { token, officer };
+      }
+    } catch (error) {
+      throw new HttpException(500, error);
+    }
   }
 
   public async createOfficer(OfficerData: CreateOfficerDto): Promise<any> {
@@ -78,6 +121,13 @@ class OfficerService extends Repository<OfficerEntity> {
 
     await OfficerEntity.delete({ id: OfficerId });
     return findOfficer;
+  }
+  public createToken(user): TokenData {
+    const dataStoredInToken: DataStoredInToken = { id: user.id };
+    const secretKey: string = config.get('secretKey');
+    const expiresIn: number = 60 * 30;
+
+    return { expiresIn, token: sign(dataStoredInToken, secretKey, { expiresIn }) };
   }
 }
 

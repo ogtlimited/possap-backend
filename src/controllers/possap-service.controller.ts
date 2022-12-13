@@ -24,6 +24,15 @@ class PossapServiceController {
       next(error);
     }
   };
+  public getServiceCharge = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      console.log(req.params, req.query);
+      const result: any = await this.possapS.getServiceCharge(req.params['id']);
+      res.status(200).json({ data: result });
+    } catch (error) {
+      next(error);
+    }
+  };
 
   public createPossapService = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {

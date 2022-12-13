@@ -17,7 +17,8 @@ export const sendOtpSMS = async obj => {
 export const verifyOtp = async (obj): Promise<unknown> => {
   try {
     const { phone, code } = obj;
-
+    console.log(obj);
+    console.log(`${process.env.COUNTRY_CODE}${parseInt(obj.phone, 10)}`);
     return await client.verify
       .services(process.env.VERIFY_SERVICE_SID)
       .verificationChecks.create({ to: `${process.env.COUNTRY_CODE}${parseInt(obj.phone, 10)}`, code: code });

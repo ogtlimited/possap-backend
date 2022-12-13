@@ -11,6 +11,8 @@ import twilio from 'twilio';
 import { v4 as uuidv4 } from 'uuid';
 import * as dotenv from 'dotenv';
 import { SmsHelperDto } from '@dtos/helpers/sms-helper.dto';
+import States from '../../../state.json';
+import Lgas from '../../../lgas.json';
 dotenv.config();
 
 class HelperController {
@@ -109,7 +111,26 @@ class HelperController {
       })[0];
       console.log(stateC);
       const finale = stateC.sub.filter(sc => sc['Name'].includes('SCID'))[0];
-      res.status(200).json({ data: [finale['Name']], message: 'data' });
+      res.status(200).json({ data: [{ key: finale['Name'], value: finale['Name'] }], message: 'data' });
+    } catch (error) {
+      next(error);
+    }
+  };
+  public getPoliceAreaDivision = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      console.log(req.query);
+      const obj = JSON.parse(fs.readFileSync('./eag.json', 'utf8'));
+      const data = req.body;
+      console.log(req.body, 'state');
+      const records = obj.ResponseObject.ReportRecords[2];
+      const lga = Lgas.ResponseObject.ReportRecords.filter(lgas => lgas.key === data.lga)[0];
+      console.log(lga, 'lga value');
+      // console.log(JSON.stringify(obj.ResponseObject.ReportRecords), 'records');
+      const commands = records.sub.filter(e => e.StateCode === lga.StateCode)[0].sub;
+      const divisions = commands.filter(e => e.LgaCode === lga.value).map(e => ({ key: e.Name, value: e.Code }));
+      console.log(divisions);
+      // const finale = stateC.sub.filter(sc => sc['Name'].includes('SCID'))[0];
+      res.status(200).json({ data: divisions, message: 'data' });
     } catch (error) {
       next(error);
     }
@@ -117,22 +138,47 @@ class HelperController {
   public getStateLga = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       console.log(req.body);
+      console.log(States);
       const data = req.body;
-      let result = NaijaStates.states();
+      let result = States.ResponseObject.ReportRecords;
       // const state = NaijaStates.states().filter(s => s === data.state);
       if (data?.state) {
-        console.log(data.state);
-        result = NaijaStates.lgas(data.state).lgas;
+        const state = States.ResponseObject.ReportRecords.filter(s => s.key === data.state)[0];
+        result = Lgas.ResponseObject.ReportRecords.filter(lgas => lgas.StateCode === state.value);
+        console.log(result);
       }
       res.status(200).json({ data: result, message: 'data' });
     } catch (error) {
       next(error);
     }
   };
+  public getState = state => {
+    return States.ResponseObject.ReportRecords.filter(s => s.key === state)[0];
+  };
+  public getStateDivision = (city, div) => {
+    const obj = JSON.parse(fs.readFileSync('./eag.json', 'utf8'));
+    const records = obj.ResponseObject.ReportRecords[2].sub;
+    const commands = records.filter(c => c.StateCode === city.value)[0];
+    const res = commands.sub.filter(f => f.Name === div);
+    return {
+      command: commands.Code,
+      division: res[0],
+    };
+  };
+  public getStateCID = (city, div) => {
+    const obj = JSON.parse(fs.readFileSync('./eag.json', 'utf8'));
+    const records = obj.ResponseObject.ReportRecords[2].sub;
+    const commands = records.filter(c => c.StateCode === city.value)[0];
+    const res = commands.sub.filter(f => f.Name.includes('SCID'));
+    return {
+      command: commands.Code,
+      division: res[0],
+    };
+  };
   public getCountries = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       console.log(req.body);
-      const finale = Object.keys(countries).map(e => countries[e].name);
+      const finale = Object.keys(countries).map(e => ({ key: countries[e].name, value: countries[e].name }));
       console.log(finale);
 
       res.status(200).json({ data: finale, message: 'data' });

@@ -26,6 +26,17 @@ class OfficersController {
       next(error);
     }
   };
+  public loginOfficer = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      const { apNumber } = req.body;
+      console.log(apNumber);
+      const officerInfo: IOfficers = await this.OfficerService.loginOfficer(apNumber);
+
+      res.status(200).json({ data: officerInfo, message: 'findOne' });
+    } catch (error) {
+      next(error);
+    }
+  };
 
   public createOfficer = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
@@ -33,6 +44,17 @@ class OfficersController {
       const createOfficerData: IOfficers = await this.OfficerService.createOfficer(OfficerData);
 
       res.status(201).json({ data: createOfficerData, message: 'created' });
+    } catch (error) {
+      next(error);
+    }
+  };
+  public validateOfficerOTP = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      const officerId = Number(req.params.id);
+      const { apNumber, ...officerData } = req.body;
+      const validateOfficerOTP: IOfficers = await this.OfficerService.validateOfficerOTP(apNumber, officerData);
+
+      res.status(201).json({ data: validateOfficerOTP, message: 'validated' });
     } catch (error) {
       next(error);
     }
