@@ -43,7 +43,7 @@
                                 "sub": []
                             },
                             {
-                                "Name": "DRP FHQ ADMIN, AUDIT AND INSPECTION",
+                                "Name": "ADMIN, AUDIT AND INSPECTION DRP FHQ",
                                 "Code": "106",
                                 "Address": "NIGERIA POLICE FORCE HEADQUARTERS LOUIS EDET HOUSE SHEHU SHAGARI WAY ABUJA",
                                 "ZoneCode": "30",
@@ -71,7 +71,7 @@
                         "LgaCode": "4",
                         "sub": [
                             {
-                                "Name": "DICT FHQ ADMIN",
+                                "Name": "ADMIN DICT FHQ",
                                 "Code": "82",
                                 "Address": "NIGERIA POLICE FORCE HEADQUARTERS LOUIS EDET HOUSE SHEHU SHAGARI WAY ABUJA",
                                 "ZoneCode": "30",
@@ -205,7 +205,7 @@
                                 "sub": []
                             },
                             {
-                                "Name": "DLS FHQ ADMIN",
+                                "Name": "ADMIN DLS FHQ",
                                 "Code": "95",
                                 "Address": "NIGERIA POLICE FORCE HEADQUARTERS LOUIS EDET HOUSE SHEHU SHAGARI WAY ABUJA",
                                 "ZoneCode": "30",
@@ -350,7 +350,7 @@
                                 "sub": []
                             },
                             {
-                                "Name": "FCID FHQ ADMIN",
+                                "Name": "ADMIN FCID FHQ",
                                 "Code": "99",
                                 "Address": "NIGERIA POLICE FORCE CID HEADQUARTERS AREA 10 ABUJA",
                                 "ZoneCode": "30",
@@ -440,7 +440,7 @@
                                 "sub": []
                             },
                             {
-                                "Name": "SPECIAL WEAPONS AND TACTICS TEAM",
+                                "Name": "SPECIAL WEAPONS AND TACTICS UNIT",
                                 "Code": "2461",
                                 "Address": "NIGERIA POLICE FORCE CID HEADQUARTERS AREA 10 ABUJA",
                                 "ZoneCode": "30",
@@ -459,7 +459,7 @@
                         "LgaCode": "4",
                         "sub": [
                             {
-                                "Name": "DTD FHQ FIN AND ADMIN",
+                                "Name": "FINANCE AND ADMINISTRATION",
                                 "Code": "67",
                                 "Address": "NIGERIA POLICE FORCE HEADQUARTERS LOUIS EDET HOUSE SHEHU SHAGARI WAY ABUJA",
                                 "ZoneCode": "30",
@@ -576,7 +576,7 @@
                                 "sub": []
                             },
                             {
-                                "Name": "POLICE DETECTIVE COLLEGE ENUGU",
+                                "Name": "POLICE DETECTIVE COLLEGE",
                                 "Code": "2355",
                                 "Address": "AGBANI ROAD ENUGU",
                                 "ZoneCode": "74",
@@ -711,7 +711,7 @@
                                 "sub": []
                             },
                             {
-                                "Name": "NATIONAL DEFENCE COLLEGE",
+                                "Name": "NDC",
                                 "Code": "2405",
                                 "Address": "ABUJA",
                                 "ZoneCode": "30",
@@ -2005,7 +2005,7 @@
                                         "LgaCode": "0"
                                     },
                                     {
-                                        "Name": "FORCE EDUCATION HQ",
+                                        "Name": "FORCE EDUCATION HEADQUARTERS",
                                         "Code": "305",
                                         "Address": "dei-dei abuja",
                                         "ZoneCode": "30",
@@ -2187,16 +2187,7 @@
                                 "ZoneCode": "77",
                                 "StateCode": "29",
                                 "LgaCode": "685",
-                                "sub": [
-                                    {
-                                        "Name": "PAP DIVISION",
-                                        "Code": "386",
-                                        "Address": "CALABAR",
-                                        "ZoneCode": "29",
-                                        "StateCode": "3",
-                                        "LgaCode": "192"
-                                    }
-                                ]
+                                "sub": []
                             },
                             {
                                 "Name": "PAP WESTERN COMMAND",
@@ -2243,7 +2234,7 @@
                                 ]
                             },
                             {
-                                "Name": "DFA FHQ ADMIN",
+                                "Name": "CENTRAL ADMIN",
                                 "Code": "84",
                                 "Address": "NIGERIA POLICE FORCE HEADQUARTERS LOUIS EDET HOUSE SHEHU SHAGARI WAY ABUJA",
                                 "ZoneCode": "30",
@@ -2316,15 +2307,6 @@
                                 "StateCode": "19",
                                 "LgaCode": "4",
                                 "sub": []
-                            },
-                            {
-                                "Name": "DFA FHQ ADMIN",
-                                "Code": "2491",
-                                "Address": "NIGERIA POLICE FORCE HEADQUARTERS LOUIS EDET HOUSE SHEHU SHAGARI WAY ABUJA",
-                                "ZoneCode": "30",
-                                "StateCode": "19",
-                                "LgaCode": "4",
-                                "sub": []
                             }
                         ]
                     },
@@ -2346,7 +2328,7 @@
                                 "sub": []
                             },
                             {
-                                "Name": "DOPs FHQ ADMIN",
+                                "Name": "DOPs ADMIN",
                                 "Code": "23",
                                 "Address": "NIGERIA POLICE FORCE HEADQUARTERS LOUIS EDET HOUSE SHEHU SHAGARI WAY ABUJA",
                                 "ZoneCode": "30",
@@ -2665,14 +2647,6 @@
                                         "ZoneCode": "26",
                                         "StateCode": "23",
                                         "LgaCode": "728"
-                                    },
-                                    {
-                                        "Name": "EOD HQ ABUJA",
-                                        "Code": "384",
-                                        "Address": "NIGERIA POLICE FORCE HEADQUARTERS LOUIS EDET HOUSE SHEHU SHAGARI WAY ABUJA",
-                                        "ZoneCode": "30",
-                                        "StateCode": "19",
-                                        "LgaCode": "4"
                                     }
                                 ]
                             },
@@ -2731,7 +2705,7 @@
                                 "sub": []
                             },
                             {
-                                "Name": "BORDER PATROL",
+                                "Name": "JOINT BORDER PATROL",
                                 "Code": "32",
                                 "Address": "NIGERIA POLICE FORCE HEADQUARTERS LOUIS EDET HOUSE SHEHU SHAGARI WAY ABUJA",
                                 "ZoneCode": "30",
@@ -3952,24 +3926,6 @@
                                 "sub": []
                             },
                             {
-                                "Name": "SIB RIVERS STATE",
-                                "Code": "2495",
-                                "Address": "PORT HARCOURT",
-                                "ZoneCode": "77",
-                                "StateCode": "29",
-                                "LgaCode": "697",
-                                "sub": []
-                            },
-                            {
-                                "Name": "SIB KATSINA STATE",
-                                "Code": "2500",
-                                "Address": "KATSINA",
-                                "ZoneCode": "75",
-                                "StateCode": "9",
-                                "LgaCode": "429",
-                                "sub": []
-                            },
-                            {
                                 "Name": "FIB FHQ ABUJA",
                                 "Code": "2420",
                                 "Address": "NIGERIA POLICE FORCE CID HEADQUARTERS AREA 10 ABUJA",
@@ -4256,204 +4212,6 @@
                                 "StateCode": "14",
                                 "LgaCode": "664",
                                 "sub": []
-                            },
-                            {
-                                "Name": "INTELLIGENCE RESPONSE TEAM",
-                                "Code": "2492",
-                                "Address": "NIGERIA POLICE FORCE HEADQUARTERS LOUIS EDET HOUSE SHEHU SHAGARI WAY ABUJA",
-                                "ZoneCode": "30",
-                                "StateCode": "19",
-                                "LgaCode": "4",
-                                "sub": []
-                            },
-                            {
-                                "Name": "SIB SOKOTO STATE",
-                                "Code": "2496",
-                                "Address": "SOKOTO",
-                                "ZoneCode": "33",
-                                "StateCode": "10",
-                                "LgaCode": "714",
-                                "sub": []
-                            },
-                            {
-                                "Name": "SIB TARABA STATE",
-                                "Code": "2497",
-                                "Address": "JALINGO",
-                                "ZoneCode": "26",
-                                "StateCode": "23",
-                                "LgaCode": "728",
-                                "sub": []
-                            },
-                            {
-                                "Name": "SIB YOBE STATE",
-                                "Code": "2498",
-                                "Address": "DAMATURU",
-                                "ZoneCode": "76",
-                                "StateCode": "31",
-                                "LgaCode": "740",
-                                "sub": []
-                            },
-                            {
-                                "Name": "SIB ZAMFARA STATE",
-                                "Code": "2499",
-                                "Address": "GUSAU",
-                                "ZoneCode": "33",
-                                "StateCode": "6",
-                                "LgaCode": "761",
-                                "sub": []
-                            },
-                            {
-                                "Name": "ZIB ZONE 1 KANO",
-                                "Code": "2502",
-                                "Address": "KANO",
-                                "ZoneCode": "24",
-                                "StateCode": "7",
-                                "LgaCode": "385",
-                                "sub": []
-                            },
-                            {
-                                "Name": "ZIB ZONE 17 AKURE",
-                                "Code": "2503",
-                                "Address": "AKURE",
-                                "ZoneCode": "78",
-                                "StateCode": "20",
-                                "LgaCode": "583",
-                                "sub": []
-                            },
-                            {
-                                "Name": "ZIB ZONE 16 YENAGOA",
-                                "Code": "2504",
-                                "Address": "YENAGOA",
-                                "ZoneCode": "77",
-                                "StateCode": "12",
-                                "LgaCode": "124",
-                                "sub": []
-                            },
-                            {
-                                "Name": "ZIB ZONE 15 MAIDUGURI",
-                                "Code": "2505",
-                                "Address": "MAIDUGURI",
-                                "ZoneCode": "76",
-                                "StateCode": "35",
-                                "LgaCode": "168",
-                                "sub": []
-                            },
-                            {
-                                "Name": "ZIB ZONE 14 KATSINA",
-                                "Code": "2506",
-                                "Address": "KATSINA",
-                                "ZoneCode": "75",
-                                "StateCode": "9",
-                                "LgaCode": "429",
-                                "sub": []
-                            },
-                            {
-                                "Name": "ZIB ZONE 13 DUNUKOFIA",
-                                "Code": "2507",
-                                "Address": "DUNUKOFIA",
-                                "ZoneCode": "74",
-                                "StateCode": "1",
-                                "LgaCode": "84",
-                                "sub": []
-                            },
-                            {
-                                "Name": "ZIB ZONE 12 BAUCHI",
-                                "Code": "2508",
-                                "Address": "BAUCHI",
-                                "ZoneCode": "35",
-                                "StateCode": "11",
-                                "LgaCode": "99",
-                                "sub": []
-                            },
-                            {
-                                "Name": "ZIB ZONE 11 OSOGBO",
-                                "Code": "2509",
-                                "Address": "OSOGBO",
-                                "ZoneCode": "34",
-                                "StateCode": "21",
-                                "LgaCode": "626",
-                                "sub": []
-                            },
-                            {
-                                "Name": "ZIB ZONE 10 SOKOTO",
-                                "Code": "2510",
-                                "Address": "SOKOTO",
-                                "ZoneCode": "33",
-                                "StateCode": "10",
-                                "LgaCode": "715",
-                                "sub": []
-                            },
-                            {
-                                "Name": "ZIB ZONE 9 UMUAHIA",
-                                "Code": "2511",
-                                "Address": "UMUAHIA",
-                                "ZoneCode": "32",
-                                "StateCode": "32",
-                                "LgaCode": "22",
-                                "sub": []
-                            },
-                            {
-                                "Name": "ZIB ZONE 8 LOKOJA",
-                                "Code": "2512",
-                                "Address": "LOKOJA",
-                                "ZoneCode": "31",
-                                "StateCode": "15",
-                                "LgaCode": "475",
-                                "sub": []
-                            },
-                            {
-                                "Name": "ZIB ZONE 7 ABUJA",
-                                "Code": "2513",
-                                "Address": "ABUJA",
-                                "ZoneCode": "30",
-                                "StateCode": "19",
-                                "LgaCode": "4",
-                                "sub": []
-                            },
-                            {
-                                "Name": "ZIB ZONE 6 CALABAR",
-                                "Code": "2514",
-                                "Address": "CALABAR",
-                                "ZoneCode": "29",
-                                "StateCode": "3",
-                                "LgaCode": "192",
-                                "sub": []
-                            },
-                            {
-                                "Name": "ZIB ZONE 5 BENIN",
-                                "Code": "2515",
-                                "Address": "BENIN CITY",
-                                "ZoneCode": "28",
-                                "StateCode": "5",
-                                "LgaCode": "238",
-                                "sub": []
-                            },
-                            {
-                                "Name": "ZIB ZONE 4 MAKURDI",
-                                "Code": "2516",
-                                "Address": "MAKURDI",
-                                "ZoneCode": "27",
-                                "StateCode": "34",
-                                "LgaCode": "137",
-                                "sub": []
-                            },
-                            {
-                                "Name": "ZIB ZONE 3 YOLA",
-                                "Code": "2517",
-                                "Address": "YOLA",
-                                "ZoneCode": "26",
-                                "StateCode": "33",
-                                "LgaCode": "44",
-                                "sub": []
-                            },
-                            {
-                                "Name": "ZIB ZONE 2 LAGOS",
-                                "Code": "2518",
-                                "Address": "ONIKAN",
-                                "ZoneCode": "25",
-                                "StateCode": "27",
-                                "LgaCode": "513",
-                                "sub": []
                             }
                         ]
                     },
@@ -4550,24 +4308,6 @@
                                 "Name": "ESTABLISHMENT",
                                 "Code": "2460",
                                 "Address": "NIGERIA POLICE FORCE HEADQUARTERS LOUIS EDET HOUSE SHEHU SHAGARI WAY ABUJA",
-                                "ZoneCode": "30",
-                                "StateCode": "19",
-                                "LgaCode": "4",
-                                "sub": []
-                            },
-                            {
-                                "Name": "NATIONAL ASSEMBLY LIAISON",
-                                "Code": "2493",
-                                "Address": "NATIONAL ASSEMBLY COMPLEX",
-                                "ZoneCode": "30",
-                                "StateCode": "19",
-                                "LgaCode": "4",
-                                "sub": []
-                            },
-                            {
-                                "Name": "PRESIDENCY STATE HOUSE ABUJA",
-                                "Code": "2494",
-                                "Address": "PRESIDENCY STATE HOUSE ABUJA",
                                 "ZoneCode": "30",
                                 "StateCode": "19",
                                 "LgaCode": "4",
@@ -6731,10 +6471,10 @@
                             {
                                 "Name": "GYAWANA DIVISION",
                                 "Code": "488",
-                                "Address": "GYAWANA",
-                                "ZoneCode": "26",
-                                "StateCode": "33",
-                                "LgaCode": "40",
+                                "Address": "",
+                                "ZoneCode": "0",
+                                "StateCode": "0",
+                                "LgaCode": "0",
                                 "sub": []
                             },
                             {
@@ -7514,15 +7254,6 @@
                         "LgaCode": "81",
                         "sub": [
                             {
-                                "Name": "OTUOCHA AREA COMMAND",
-                                "Code": "761",
-                                "Address": "OTUOCHA",
-                                "ZoneCode": "74",
-                                "StateCode": "1",
-                                "LgaCode": "78",
-                                "sub": []
-                            },
-                            {
                                 "Name": "AWKA AREA COMMAND",
                                 "Code": "1293",
                                 "Address": "ENUGU EXPRESS, AWKA",
@@ -8133,15 +7864,6 @@
                                 "StateCode": "1",
                                 "LgaCode": "82",
                                 "sub": []
-                            },
-                            {
-                                "Name": "ATANI DIVISION",
-                                "Code": "2519",
-                                "Address": "ATANI",
-                                "ZoneCode": "74",
-                                "StateCode": "1",
-                                "LgaCode": "92",
-                                "sub": []
                             }
                         ]
                     },
@@ -8593,6 +8315,15 @@
                                 "ZoneCode": "77",
                                 "StateCode": "12",
                                 "LgaCode": "117",
+                                "sub": []
+                            },
+                            {
+                                "Name": "OTUOCHA AREA COMMAND",
+                                "Code": "761",
+                                "Address": "",
+                                "ZoneCode": "0",
+                                "StateCode": "0",
+                                "LgaCode": "0",
                                 "sub": []
                             },
                             {
@@ -19528,16 +19259,7 @@
                                 "ZoneCode": "25",
                                 "StateCode": "27",
                                 "LgaCode": "510",
-                                "sub": [
-                                    {
-                                        "Name": "OPG",
-                                        "Code": "385",
-                                        "Address": "LAGOS STATE COMMAND HEADQUARTERS, IKEJA, LAGOS",
-                                        "ZoneCode": "25",
-                                        "StateCode": "27",
-                                        "LgaCode": "510"
-                                    }
-                                ]
+                                "sub": []
                             },
                             {
                                 "Name": "DLS LAGOS COMMAND",
@@ -19677,15 +19399,6 @@
                             {
                                 "Name": "OFFICE OF CP LAGOS COMMAND",
                                 "Code": "2440",
-                                "Address": "IKEJA",
-                                "ZoneCode": "25",
-                                "StateCode": "27",
-                                "LgaCode": "510",
-                                "sub": []
-                            },
-                            {
-                                "Name": "RRS",
-                                "Code": "2501",
                                 "Address": "IKEJA",
                                 "ZoneCode": "25",
                                 "StateCode": "27",
@@ -21957,10 +21670,10 @@
                             {
                                 "Name": "ILUTUNTUN DIVISION",
                                 "Code": "1593",
-                                "Address": "ILUTUNTUN OKITIPUPA",
-                                "ZoneCode": "78",
-                                "StateCode": "20",
-                                "LgaCode": "592",
+                                "Address": "",
+                                "ZoneCode": "0",
+                                "StateCode": "0",
+                                "LgaCode": "0",
                                 "sub": []
                             },
                             {
@@ -21993,10 +21706,10 @@
                             {
                                 "Name": "IKARE DIVISION",
                                 "Code": "1597",
-                                "Address": "IKARE ",
-                                "ZoneCode": "78",
-                                "StateCode": "20",
-                                "LgaCode": "578",
+                                "Address": "",
+                                "ZoneCode": "0",
+                                "StateCode": "0",
+                                "LgaCode": "0",
                                 "sub": []
                             },
                             {
@@ -22994,10 +22707,10 @@
                             {
                                 "Name": "MOKOLA DIVISION",
                                 "Code": "1507",
-                                "Address": "MOKOLA",
-                                "ZoneCode": "34",
-                                "StateCode": "17",
-                                "LgaCode": "634",
+                                "Address": "",
+                                "ZoneCode": "0",
+                                "StateCode": "0",
+                                "LgaCode": "0",
                                 "sub": []
                             },
                             {
@@ -23021,10 +22734,10 @@
                             {
                                 "Name": "ERUWA DIVISION",
                                 "Code": "1510",
-                                "Address": "ERUWA",
-                                "ZoneCode": "34",
-                                "StateCode": "17",
-                                "LgaCode": "638",
+                                "Address": "",
+                                "ZoneCode": "0",
+                                "StateCode": "0",
+                                "LgaCode": "0",
                                 "sub": []
                             },
                             {
@@ -23111,10 +22824,10 @@
                             {
                                 "Name": "LANLATE DIVISION",
                                 "Code": "1520",
-                                "Address": "LANLATE",
-                                "ZoneCode": "34",
-                                "StateCode": "17",
-                                "LgaCode": "638",
+                                "Address": "",
+                                "ZoneCode": "0",
+                                "StateCode": "0",
+                                "LgaCode": "0",
                                 "sub": []
                             },
                             {
@@ -23147,10 +22860,10 @@
                             {
                                 "Name": "BODIJA MARKET DIVISION",
                                 "Code": "1524",
-                                "Address": "BODIJA",
-                                "ZoneCode": "34",
-                                "StateCode": "17",
-                                "LgaCode": "633",
+                                "Address": "",
+                                "ZoneCode": "0",
+                                "StateCode": "0",
+                                "LgaCode": "0",
                                 "sub": []
                             },
                             {
@@ -23174,10 +22887,10 @@
                             {
                                 "Name": "BODIJA HOUSING DIVISION",
                                 "Code": "1527",
-                                "Address": "BODIJA",
-                                "ZoneCode": "34",
-                                "StateCode": "17",
-                                "LgaCode": "633",
+                                "Address": "",
+                                "ZoneCode": "0",
+                                "StateCode": "0",
+                                "LgaCode": "0",
                                 "sub": []
                             },
                             {
@@ -23201,10 +22914,10 @@
                             {
                                 "Name": "YEMETU DIVISION",
                                 "Code": "1530",
-                                "Address": "YEMETU",
-                                "ZoneCode": "34",
-                                "StateCode": "17",
-                                "LgaCode": "633",
+                                "Address": "",
+                                "ZoneCode": "0",
+                                "StateCode": "0",
+                                "LgaCode": "0",
                                 "sub": []
                             },
                             {
@@ -23622,7 +23335,7 @@
                                 "sub": []
                             },
                             {
-                                "Name": "OFFICE OF CP OYO COMMAND",
+                                "Name": "OFFICE OF THE CP OYO COMMAND",
                                 "Code": "2447",
                                 "Address": "ELEYELE IBADAN",
                                 "ZoneCode": "34",
@@ -25103,7 +24816,7 @@
                             {
                                 "Name": "SOKOTO CENTRAL DIVISION",
                                 "Code": "1399",
-                                "Address": "MARNA",
+                                "Address": "CENTRAL",
                                 "ZoneCode": "33",
                                 "StateCode": "10",
                                 "LgaCode": "715",

@@ -2,17 +2,14 @@ import { NextFunction, Request, Response } from 'express';
 const { createHash } = require('crypto');
 import axios from 'axios';
 const fs = require('fs');
-const util = require('util');
-import NaijaStates from 'naija-state-local-government';
 import { countries } from 'countries-list';
-import { HttpException } from '@exceptions/HttpException';
 import { S3 } from 'aws-sdk';
 import twilio from 'twilio';
 import { v4 as uuidv4 } from 'uuid';
 import * as dotenv from 'dotenv';
 import { SmsHelperDto } from '@dtos/helpers/sms-helper.dto';
-import States from '../../../state.json';
-import Lgas from '../../../lgas.json';
+import States from '@db/state.json';
+import Lgas from '@db/lgas.json';
 dotenv.config();
 
 class HelperController {
