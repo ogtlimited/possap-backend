@@ -5,17 +5,28 @@ import { OfficerProfileEntity } from './officerProfile.entity';
 import { sharedProps } from './helper/sharedProps.helper';
 /* eslint-disable prettier/prettier */
 import { IsNotEmpty } from 'class-validator';
-import {  Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, ManyToOne, OneToMany, JoinTable, ManyToMany, JoinColumn, OneToOne } from 'typeorm';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  CreateDateColumn,
+  UpdateDateColumn,
+  ManyToOne,
+  OneToMany,
+  JoinTable,
+  ManyToMany,
+  JoinColumn,
+  OneToOne,
+} from 'typeorm';
 import { CommandAccessEntity } from './commandAccess.entity';
 
 export type ServiceType = 'POLICE EXTRACT' | 'ESCORT AND GUARD SERVICES' | 'POLICE CHARACTER CERTIFICATE';
 @Entity()
 export class OfficerEntity extends sharedProps implements IOfficers {
-
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column()
+  @Column({ unique: true })
   @IsNotEmpty()
   apNumber: string;
 
@@ -27,14 +38,13 @@ export class OfficerEntity extends sharedProps implements IOfficers {
   @IsNotEmpty()
   userName: string;
 
-  @Column()
+  @Column({ unique: true })
   @IsNotEmpty()
   email: string;
 
-  @Column()
+  @Column({ unique: true})
   @IsNotEmpty()
   phoneNumber: string;
-
 
   @Column()
   @IsNotEmpty()
@@ -48,15 +58,14 @@ export class OfficerEntity extends sharedProps implements IOfficers {
   @UpdateDateColumn()
   updatedAt: Date;
 
-  @OneToOne(() => OfficerProfileEntity, (profile) => profile.officer, {onDelete: 'CASCADE', onUpdate: 'CASCADE', eager: true, cascade: true})
+  @OneToOne(() => OfficerProfileEntity, profile => profile.officer, { onDelete: 'CASCADE', onUpdate: 'CASCADE', eager: true, cascade: true })
   @JoinColumn()
-  profile: OfficerProfileEntity
+  profile: OfficerProfileEntity;
 
-  @OneToOne(() => OfficerAccessEntity, (access) => access.officer, {onDelete: 'CASCADE', onUpdate: 'CASCADE', eager: true, cascade: true})
+  @OneToOne(() => OfficerAccessEntity, access => access.officer, { onDelete: 'CASCADE', onUpdate: 'CASCADE', eager: true, cascade: true })
   @JoinColumn()
-  access: OfficerAccessEntity
+  access: OfficerAccessEntity;
 
-
-  @OneToMany(() => CommandAccessEntity, (command) => command.officerId, {onDelete: 'CASCADE', onUpdate: 'CASCADE', eager: true, cascade: true})
-  commandAccessIds: CommandAccessEntity[]
+  @OneToMany(() => CommandAccessEntity, command => command.officerId, { onDelete: 'CASCADE', onUpdate: 'CASCADE', eager: true, cascade: true })
+  commandAccessIds: CommandAccessEntity[];
 }

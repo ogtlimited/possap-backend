@@ -1,3 +1,5 @@
+import { OfficerProfileEntity } from './../entities/officerProfile.entity';
+import { OfficerAccessEntity } from './../entities/officerAccess.entity';
 import { verifyOtp } from './../utils/sendOtpSms';
 import { SmsHelperDto } from '@/dtos/helpers/sms-helper.dto';
 import { sendOtpSMS } from '@/utils/sendOtpSms';
@@ -17,6 +19,7 @@ import { sign } from 'jsonwebtoken';
 @EntityRepository()
 class OfficerService extends Repository<OfficerEntity> {
   public commandAccess = new CommandAccessEntity();
+  // public OfficerAccess = new OfficerAccessEntity();
   public async findAllOfficer(): Promise<IOfficers[]> {
     const Officers: IOfficers[] = await getRepository(OfficerEntity).find();
     return Officers;
@@ -109,10 +112,38 @@ class OfficerService extends Repository<OfficerEntity> {
 
     const findOfficer: IOfficers = await OfficerEntity.findOne({ where: { id: OfficerId } });
     if (!findOfficer) throw new HttpException(409, "You're not Officer");
-
+    console.log(OfficerData);
+    if (OfficerData.access) {
+      await this.updateOfficerAccess(findOfficer.access.id, OfficerData.access);
+    }
+    if (OfficerData.profile) {
+      await this.updateOfficerAccess(findOfficer.profile.id, OfficerData.profile);
+    }
     await OfficerEntity.update(OfficerId, OfficerData);
 
     const updateOfficer: IOfficers = await OfficerEntity.findOne({ where: { id: OfficerId } });
+    return updateOfficer;
+  }
+  public async updateOfficerAccess(OfficerId: string, OfficerData: any): Promise<IOfficers> {
+    if (isEmpty(OfficerData)) throw new HttpException(400, "You're not OfficerData");
+
+    const access = await OfficerAccessEntity.findOne({ where: { id: OfficerId } });
+    if (!access) throw new HttpException(409, 'Access id not found');
+    console.log(OfficerData);
+    await OfficerAccessEntity.update(OfficerId, OfficerData);
+
+    const updateOfficer: IOfficers = await OfficerEntity.findOne({ where: { access: OfficerId } });
+    return updateOfficer;
+  }
+  public async updateOfficerProfile(OfficerId: string, OfficerData: any): Promise<IOfficers> {
+    if (isEmpty(OfficerData)) throw new HttpException(400, "You're not OfficerData");
+
+    const profile = await OfficerProfileEntity.findOne({ where: { id: OfficerId } });
+    if (!profile) throw new HttpException(409, 'Profile id not found');
+    console.log(OfficerData);
+    await OfficerProfileEntity.update(OfficerId, OfficerData);
+
+    const updateOfficer: IOfficers = await OfficerEntity.findOne({ where: { access: OfficerId } });
     return updateOfficer;
   }
 

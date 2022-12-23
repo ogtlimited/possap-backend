@@ -71,6 +71,17 @@ class OfficersController {
       next(error);
     }
   };
+  public updateOfficerAccess = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      const OfficerId = req.params.id;
+      const OfficerData: CreateOfficerDto = req.body;
+      const updateOfficerData: IOfficers = await this.OfficerService.updateOfficerAccess(OfficerId, OfficerData);
+
+      res.status(200).json({ data: updateOfficerData, message: 'updated' });
+    } catch (error) {
+      next(error);
+    }
+  };
 
   public deleteOfficer = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {

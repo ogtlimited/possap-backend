@@ -21,8 +21,8 @@ import { OfficerAccessEntity } from './officerAccess.entity';
   name: 'possap-service-field',
 })
 export class PossapServiceFieldsEntity extends BaseEntity implements IPossapServiceFields {
-  @PrimaryGeneratedColumn()
-  id: number;
+  @PrimaryGeneratedColumn('uuid')
+  id: string;
 
   @Column()
   ref: string;

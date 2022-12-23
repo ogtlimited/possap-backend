@@ -1,14 +1,46 @@
 {
     "name": "Escort and Guard Services",
-    "approvalWorkFlow": [
-        "Approval of Escort Request 1",
-        "Approval of Escort Request 2",
-        "Approval of Escort Request 3",
-        "Escort back and forth approval level",
-        "Secretariat Routing",
-        "Escort back and forth approval level",
-        "Escort back and forth approval level",
-        "Secretariat Routing"
+    "slug": "EGS",
+    "workFlow": [
+        {
+            "name": "Escort Request Flow",
+            "WorkFlowApprovalLevel": [
+                {
+                    "name": "Approval of Escort Request 1"
+                },
+                {
+                    "name": "Approval of Escort Request 2"
+                },
+                {
+                    "name": "Approval of Escort Request 3"
+                }
+            ]
+        },
+        {
+            "name": "Escort Tactical Request Flow",
+            "WorkFlowApprovalLevel": [
+                {
+                    "name": "Escort back and forth approval level"
+                },
+                {
+                    "name": "Secretariat Routing"
+                }
+            ]
+        },
+        {
+            "name": "Escort Conventional Request Flow",
+            "WorkFlowApprovalLevel": [
+                {
+                    "name": "Escort back and forth approval level"
+                },
+                {
+                    "name": "Escort back and forth approval level"
+                },
+                {
+                    "name": "Secretariat Routing"
+                }
+            ]
+        }
     ],
     "formSchema": [
         {

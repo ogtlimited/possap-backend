@@ -9,8 +9,8 @@ export type ServiceType = 'POLICE EXTRACT' | 'ESCORT AND GUARD SERVICES' | 'POLI
 @Entity()
 export class OfficerProfileEntity extends sharedProps  {
 
-  @PrimaryGeneratedColumn()
-  id: number;
+  @PrimaryGeneratedColumn('uuid')
+  id: string;
 
   @Column()
   officerFormation: string;

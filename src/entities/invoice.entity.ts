@@ -10,7 +10,7 @@ import { IInvoice } from '@/interfaces/invoice.interface';
 @Entity()
 export class InvoiceEntity extends sharedProps implements IInvoice {
   @PrimaryGeneratedColumn('uuid')
-  id: number;
+  id: string;
 
   @Column()
   @IsNotEmpty()

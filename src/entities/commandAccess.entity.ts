@@ -7,8 +7,8 @@ import { OfficerEntity } from '@entities/officers.entity';
 
 @Entity()
 export class CommandAccessEntity extends BaseEntity implements ICommandAccess {
-  @PrimaryGeneratedColumn()
-  id: number;
+  @PrimaryGeneratedColumn('uuid')
+  id: string;
 
   @Column()
   // @IsNotEmpty()

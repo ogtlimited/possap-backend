@@ -43,7 +43,7 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
       console.log('service id', data.service);
       const parent: IPossapService = await this.possapS.findPossapServiceById(data.service);
       const ref = parent?.slug.toUpperCase() + '-' + ObjectId();
-      const processor = await this.distributor(parent, data);
+      const { processor, workflow } = await this.distributor(parent, data);
       console.log(processor, 'processor');
       if (parent && processor) {
         const { amount, ...others } = data;
@@ -51,7 +51,7 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
           ...others,
           ref,
           processor: processor,
-          approvalLevel: parent.approvalWorkFlow[0],
+          approvalLevel: workflow,
         };
         const createAllPossapData = await PossapServiceFieldsEntity.save(obj);
         const genInvoice = await this.invoiceS.createInvoice({
@@ -73,18 +73,19 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
 
   public async distributor(parent: IPossapService, data) {
     let processed = null;
+    // console.log(parent, 'parent');
     switch (parent.slug.toLowerCase()) {
       case 'cmr':
-        processed = this.cmrProcessessor(data);
+        processed = this.cmrProcessessor(parent, data);
         break;
       case 'egs':
         processed = this.egsProcessessor(data);
         break;
       case 'pcc':
-        processed = this.pccProcessessor(data);
+        processed = this.pccProcessessor(parent, data);
         break;
       case 'pe':
-        processed = this.peProcessessor(data);
+        processed = this.peProcessessor(parent, data);
         break;
       default:
         console.log('slug is not found');
@@ -94,31 +95,35 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
     return processed;
   }
 
-  public async cmrProcessessor(data) {
-    return '1-17-92';
+  public async cmrProcessessor(parent, data) {
+    const workflow = parent.workFlow[0].WorkFlowApprovalLevel[0].id;
+    return { processor: '1-17-92', workflow };
   }
-  public async peProcessessor(data) {
+  public async peProcessessor(parent: IPossapService, data) {
     const { extractState, extractPoliceDivision } = data.formFields[0];
     console.log(extractState, extractPoliceDivision);
     const stateCode = this.helperC.getState(extractState);
     const divisionCode = this.helperC.getStateDivision(stateCode, extractPoliceDivision);
-    return 3 + '-' + divisionCode.command + '-' + divisionCode.division.Code;
+    const workflow = parent.workFlow[0].WorkFlowApprovalLevel[0].id;
+    console.log(workflow, 'wprkflow');
+    return { processor: 3 + '-' + divisionCode.command + '-' + divisionCode.division.Code, workflow };
   }
   public async egsProcessessor(data) {}
-  public async pccProcessessor(data) {
+  public async pccProcessessor(parent, data) {
     const { requestState, requestStateCID } = data.formFields[0];
     const stateCode = this.helperC.getState(requestState);
     const stateCID = this.helperC.getStateCID(stateCode, requestStateCID);
     console.log(stateCode, 'statecode');
     console.log(stateCID, 'statecode');
-    return 3 + '-' + stateCID.command + '-' + stateCID?.division.Code;
+    const workflow = parent.workFlow[0].WorkFlowApprovalLevel[0].id;
+    return { processor: 3 + '-' + stateCID.command + '-' + stateCID?.division.Code, workflow };
   }
 
   public async officerRequest(officerId: string) {
     const officer: IOfficers = await OfficerEntity.findOne({ where: { id: officerId } });
     if (officer) {
       // get officer services
-      const services = officer.access.services;
+      const { services, canApprove } = officer.access;
       // officer formation, department section and subsection
       const access = this.mapOfficerAccess(officer.profile); // '1-17-92'
       // console.log(officer);
@@ -127,20 +132,23 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
       // console.log(commandAccess);
       const fullAccess = [access, ...commandAccess];
       console.log(fullAccess, services);
-      const reqList = await PossapServiceFieldsEntity.find({ where: { service: { id: In([...services]) }, processor: In(fullAccess) } });
+      const reqList = await PossapServiceFieldsEntity.find({
+        where: { service: { id: In([...services]) }, processor: In(fullAccess), approvalLevel: In(canApprove) },
+      });
       console.log(reqList, 'reqList');
       // const reqList = await PossapServiceFieldsEntity.find({ where: { approvalLevel: In(officer.canApprove) } });
       return reqList;
     }
   }
 
-  async approveRequest(id: number, officerId: number, approvalInfo: IApprovalLog): Promise<{ message: 'request approved' }> {
+  async approveRequest(id: number, officerId: number, approvalInfo: IApprovalLog): Promise<{ message: 'request approved'; update: any }> {
     // check invoice
-    const serviceInvoice = await InvoiceEntity.findOne({ where: { application_id: id } });
+    const serviceInvoice = await InvoiceEntity.findOne({ where: { applicationId: id } });
     if (!serviceInvoice) {
       throw new HttpException(403, 'cannot approve unpaid request');
     }
     // check whether request is under officer jurisdiction
+    console.log(officerId);
     const officerDetails = await this.officerS.findOfficerById(officerId);
     const request: IPossapServiceFields = await PossapServiceFieldsEntity.findOne({ where: { id } });
     if (officerDetails) {
@@ -151,7 +159,8 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
         throw new HttpException(403, 'Request cannot be approved by you');
       }
     }
-    const requestParent: IPossapService = await this.possapS.findOne({ where: { id } });
+    const requestParent: IPossapService = await this.possapS.findPossapServiceById(request.service.id);
+    console.log(requestParent);
     const approvalWorkFlow = requestParent.approvalWorkFlow;
     const currentApproval = request.approvalLevel;
     const nextApprovalLevel = approvalWorkFlow.findIndex(e => e === currentApproval) + 1;
@@ -171,8 +180,8 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
         request.approvalLog.push(approvalInfo);
       }
     }
-    // const updates =
-    // await this.updatePossapService(id, request);
+
+    const update = await this.updatePossapService(id, request);
 
     // if (officer.extractApprovalLevel.extractFirstApproval && request.status != 'rejected') {
     //   await PoliceExtractEntity.createQueryBuilder().update(PoliceExtractEntity).set({ approvalLevel: 2 }).where('id = :id', { id }).execute();
@@ -181,7 +190,7 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
     //   await PoliceExtractEntity.createQueryBuilder().update(PoliceExtractEntity).set({ status: 'approved' }).where('id = :id', { id }).execute();
     //   return { message: 'extracted approved' };
     // }
-    return { message: 'request approved' };
+    return { message: 'request approved', update };
   }
 
   public mapOfficerAccess(obj) {
@@ -222,7 +231,7 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
     return updateAllAprovers;
   }
 
-  public async deleteAllPossap(AllPossapId: number): Promise<IPossapServiceFields> {
+  public async deleteAllPossap(AllPossapId: string): Promise<IPossapServiceFields> {
     if (isEmpty(AllPossapId)) throw new HttpException(400, "You're not AllPossapId");
 
     const findAllPossap: IPossapServiceFields = await PossapServiceFieldsEntity.findOne({ where: { id: AllPossapId } });

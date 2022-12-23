@@ -4,23 +4,16 @@ import { sharedProps } from './helper/sharedProps.helper';
 /* eslint-disable prettier/prettier */
 import { IsNotEmpty } from 'class-validator';
 import {
-  BaseEntity,
   Entity,
   PrimaryGeneratedColumn,
   Column,
-  CreateDateColumn,
-  UpdateDateColumn,
-  ManyToOne,
-  OneToMany,
-  JoinTable,
-  ManyToMany,
   OneToOne,
 } from 'typeorm';
 
 @Entity()
 export class OfficerAccessEntity extends sharedProps {
-  @PrimaryGeneratedColumn()
-  id: number;
+  @PrimaryGeneratedColumn('uuid')
+  id: string;
 
   @Column()
   @IsNotEmpty()
@@ -35,7 +28,7 @@ export class OfficerAccessEntity extends sharedProps {
   @Column({type: 'json'})
   services: string[];
 
-  @Column({type: 'simple-array', default: []})
+  @Column({type: 'simple-array', default: null})
   canApprove: string[];
 
 

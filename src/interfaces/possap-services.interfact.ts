@@ -1,12 +1,13 @@
 export interface IPossapService {
-  id?: number;
+  id?: string;
   name?: string;
   slug?: string;
   approvalWorkFlow?: any[];
+  workFlow?: any;
   services?: any[];
 }
 export interface IPossapServiceFields {
-  id?: number;
+  id?: string;
   service?: any;
   formFields?: any[];
   ref?: string;

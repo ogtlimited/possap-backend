@@ -4,9 +4,11 @@ import { HttpException } from '@/exceptions/HttpException';
 import { isEmpty } from 'class-validator';
 import { EntityRepository, Repository } from 'typeorm';
 import { PossapServiceEntity } from '@/entities/possap-service.entity';
+import WorkFlowService from './workflow.service';
 
 @EntityRepository()
 class PossapService extends Repository<PossapServiceEntity> {
+  public workFlowS = new WorkFlowService();
   public async findPossapServices(): Promise<IPossapService[]> {
     const AllPossaps: IPossapService[] = await PossapServiceEntity.find();
     return AllPossaps;
@@ -37,8 +39,16 @@ class PossapService extends Repository<PossapServiceEntity> {
     if (isEmpty(AllPossapData)) throw new HttpException(400, "You're not AllPossapData");
 
     const findAllPossap: IPossapService = await PossapServiceEntity.findOne({ where: { name: AllPossapData.name } });
+    // console.log(findAllPossap, 'exist');
     if (findAllPossap) throw new HttpException(409, `service with this name ${AllPossapData.name} already exists`);
+    // console.log(AllPossapData);
+    // console.log(AllPossapData.workFlow);
+    // const { workflow, ...others } = AllPossapData;
     const createAllPossapData: IPossapService = await PossapServiceEntity.save(AllPossapData);
+    // const addWorkFlow = await this.workFlowS.createworkFlow({ serviceId: createAllPossapData.id, ...workflow });
+    // createAllPossapData.workflow = addWorkFlow.id;
+    // const update = await this.updatePossapService(createAllPossapData.id, createAllPossapData);
+    // console.log(update, 'update');
 
     return createAllPossapData;
   }
@@ -55,7 +65,7 @@ class PossapService extends Repository<PossapServiceEntity> {
     return updateAllPossap;
   }
 
-  public async deletePossapService(AllPossapId: number): Promise<IPossapService> {
+  public async deletePossapService(AllPossapId: string): Promise<IPossapService> {
     if (isEmpty(AllPossapId)) throw new HttpException(400, "You're not AllPossapId");
 
     const findAllPossap: IPossapService = await PossapServiceEntity.findOne({ where: { id: AllPossapId } });
