@@ -55,7 +55,7 @@ class PossapServiceController {
   public deleteServiceById = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       console.log(req.params, req.query);
-      const result: IPossapService = await this.possapS.deletePossapService(parseInt(req.params['id']));
+      const result: IPossapService = await this.possapS.deletePossapService(req.params['id']);
       res.status(200).json({ data: result });
     } catch (error) {
       next(error);
