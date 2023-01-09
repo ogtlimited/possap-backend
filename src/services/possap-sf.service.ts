@@ -131,18 +131,19 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
       const commandAccess = officer.commandAccessIds.map(ac => this.mapOfficerAccess(ac)); // ['3-32-76']
       // console.log(commandAccess);
       const fullAccess = [access, ...commandAccess];
-      console.log(fullAccess, services);
+      console.log(canApprove);
       const reqList = await PossapServiceFieldsEntity.find({
         where: { service: { id: In([...services]) }, processor: In(fullAccess), approvalLevel: In(canApprove) },
       });
-      console.log(reqList, 'reqList');
+      console.log(reqList.length, 'reqList');
       // const reqList = await PossapServiceFieldsEntity.find({ where: { approvalLevel: In(officer.canApprove) } });
       return reqList;
     }
   }
 
-  async approveRequest(id: number, officerId: number, approvalInfo: IApprovalLog): Promise<{ message: 'request approved'; update: any }> {
+  async approveRequest(id: string, officerId: number, approvalInfo: IApprovalLog): Promise<{ message: 'request approved'; update: any }> {
     // check invoice
+    console.log(id);
     const serviceInvoice = await InvoiceEntity.findOne({ where: { applicationId: id } });
     if (!serviceInvoice) {
       throw new HttpException(403, 'cannot approve unpaid request');
@@ -161,17 +162,21 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
     }
     const requestParent: IPossapService = await this.possapS.findPossapServiceById(request.service.id);
     console.log(requestParent);
-    const approvalWorkFlow = requestParent.approvalWorkFlow;
+    // approvalworkflow to be modified when details for escort and guard is provided
+    const approvalWorkFlow = requestParent.workFlow[0].WorkFlowApprovalLevel;
     const currentApproval = request.approvalLevel;
-    const nextApprovalLevel = approvalWorkFlow.findIndex(e => e === currentApproval) + 1;
+    const nextApprovalLevel = approvalWorkFlow.findIndex(e => e.id === currentApproval) + 1;
     if (approvalInfo.status === 'rejected') {
       console.log('rejected');
       request.status = 'rejected';
-    } else if (request.approvalLevel !== 'Completed') {
+    } else if (request.status !== 'approved') {
+      console.log(approvalWorkFlow[nextApprovalLevel], 'undefined');
       if (approvalWorkFlow[nextApprovalLevel]) {
-        request.approvalLevel = approvalWorkFlow[nextApprovalLevel];
+        request.approvalLevel = approvalWorkFlow[nextApprovalLevel].id;
+        request.status = 'in progress';
       } else {
-        request.approvalLevel = 'Completed';
+        console.log('approved');
+        request.status = 'approved';
       }
       if (!request.approvalLog) {
         //  approvalWorkFlow[approvalWorkFlow.length - 1]

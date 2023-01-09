@@ -15,10 +15,12 @@ import { ICommandAccess } from '@/interfaces/commandAccess';
 import { DataStoredInToken, TokenData } from '@/interfaces/auth.interface';
 import config from 'config';
 import { sign } from 'jsonwebtoken';
+import HelperController from '@/controllers/helper-controller/helper.controller';
 
 @EntityRepository()
 class OfficerService extends Repository<OfficerEntity> {
   public commandAccess = new CommandAccessEntity();
+  public helperc = new HelperController();
   // public OfficerAccess = new OfficerAccessEntity();
   public async findAllOfficer(): Promise<IOfficers[]> {
     const Officers: IOfficers[] = await getRepository(OfficerEntity).find();
@@ -55,6 +57,21 @@ class OfficerService extends Repository<OfficerEntity> {
     if (isEmpty(userData)) throw new HttpException(400, "You're not userData");
 
     const officer: IOfficers = await OfficerEntity.findOne({ where: { apNumber: apNumber } });
+    const { officerFormation, officerDepartment, officerSection, officerSubSection } = officer.profile;
+    const CDetails = [officerFormation, officerDepartment, officerSection];
+    if (officerSubSection && officerSubSection.length > 0) {
+      CDetails.push(officerSubSection);
+    }
+
+    const reverseDeepLook = this.helperc.reversedeepLook(CDetails, CDetails.length);
+    officer.primaryCommandInfo = {
+      officerFormation: reverseDeepLook[0],
+      officerDepartment: reverseDeepLook[1],
+      officerSection: reverseDeepLook[2],
+      officerSubSection: reverseDeepLook.length === 4 ? reverseDeepLook[3] : '',
+    };
+    console.log(officer);
+    console.log(reverseDeepLook);
     if (!officer) throw new HttpException(409, 'AP number is not attched to a user');
     try {
       // const verify: any = await verifyOtp(userData);

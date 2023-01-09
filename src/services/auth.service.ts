@@ -1,4 +1,4 @@
-import { LoginUserDto } from './../dtos/users.dto';
+import { LoginUserDto, ChangePasswordDto } from './../dtos/users.dto';
 import { OfficerEntity } from './../entities/officers.entity';
 import { IOfficers } from './../interfaces/officer.interface';
 import { compare, hash } from 'bcrypt';
@@ -47,6 +47,25 @@ class AuthService extends Repository<UserEntity> {
 
       return { token, findUser: findOfficer };
     }
+  }
+  public async changePassword(userId, userData: ChangePasswordDto): Promise<User> {
+    if (isEmpty(userData)) throw new HttpException(400, "You're not userData");
+
+    const findUser = await UserEntity.findOne({ where: { id: userId } });
+    if (!findUser) throw new HttpException(404, `User  not found`);
+    const isPasswordMatching: boolean = await compare(userData.oldPassword, findUser.password);
+    if (!isPasswordMatching) throw new HttpException(409, 'password does not match');
+
+    const hashedPassword = await hash(userData.newPassword, 10);
+    // findUser.password = hashedPassword;
+    const obj = {
+      password: hashedPassword,
+    };
+    await UserEntity.update({ id: userId }, obj, null);
+
+    const updateUser: User = await UserEntity.findOne({ where: { id: userId } });
+
+    return updateUser;
   }
 
   public async logout(userData: User): Promise<User> {

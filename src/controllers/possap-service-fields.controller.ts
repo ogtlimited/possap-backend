@@ -53,7 +53,7 @@ class PossapServiceFieldController {
   public approveRequestSF = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       console.log(req.body);
-      const result = await this.possapS.approveRequest(parseInt(req.params.id), req.body.officerId, req.body);
+      const result = await this.possapS.approveRequest(req.params.id, req.body.officerId, req.body);
       res.status(201).json({ data: result });
     } catch (error) {
       next(error);

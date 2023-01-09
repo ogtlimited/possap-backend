@@ -17,7 +17,7 @@ class PossapSFRoute implements Routes {
     this.router.get(`${this.path}/officer-request/:id`, this.possapSF.getOfficerRequest);
     this.router.post(`${this.path}`, this.possapSF.createPossapSF);
     this.router.put(`${this.path}/:id(\\d+)`, this.possapSF.updatePosssapSF);
-    this.router.put(`${this.path}/approve-reject/:id(\\d+)`, this.possapSF.approveRequestSF);
+    this.router.put(`${this.path}/approve-reject/:id`, this.possapSF.approveRequestSF);
   }
 }
 

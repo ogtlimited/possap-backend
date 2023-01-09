@@ -198,6 +198,25 @@ class HelperController {
     looper(arr, len, mainArr);
     return result;
   };
+  public reversedeepLook = (arr, len) => {
+    const obj = JSON.parse(fs.readFileSync('./eag.json', 'utf8'));
+    const mainArr = obj.ResponseObject.ReportRecords;
+    const result = [];
+    console.log(arr);
+    const looper = (arr, len, mainArr) => {
+      if (len > 0 && mainArr.length > 0) {
+        // console.log('recursion', len, mainArr);
+        const filter = mainArr.filter(obj => obj['code']?.toString() === arr[0] || obj['Code'] === arr[0])[0];
+        console.log(filter, arr[0]);
+        const slice = arr.slice(1);
+        result.push(filter?.Name || filter?.name);
+        // result = filter.sub;
+        looper(slice, len - 1, filter?.sub);
+      }
+    };
+    looper(arr, len, mainArr);
+    return result;
+  };
 
   /*
    * AWS Configuration

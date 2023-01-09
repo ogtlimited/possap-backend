@@ -10,6 +10,7 @@ export interface IOfficers {
   commandAccessIds?: any[];
   canApprove?: any[];
   access?: any;
+  primaryCommandInfo?: any;
 }
 
 export interface IExtractApprovalLevel {

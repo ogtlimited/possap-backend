@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
-import { CreateUserDto, LoginUserDto } from '@dtos/users.dto';
+import { ChangePasswordDto, CreateUserDto, LoginUserDto } from '@dtos/users.dto';
 import { RequestWithUser } from '@interfaces/auth.interface';
 import { User } from '@interfaces/users.interface';
 import AuthService from '@services/auth.service';
@@ -24,6 +24,17 @@ class AuthController {
       const { token, findUser } = await this.authService.login(userData);
 
       res.status(200).json({ data: findUser, message: 'login', token });
+    } catch (error) {
+      next(error);
+    }
+  };
+  public changePassword = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      const userData: ChangePasswordDto = req.body;
+      const userId = Number(req.params.id);
+      const updatedUser = await this.authService.changePassword(userId, userData);
+
+      res.status(200).json({ data: updatedUser, message: 'password updated' });
     } catch (error) {
       next(error);
     }
