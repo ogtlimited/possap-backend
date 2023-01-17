@@ -88,7 +88,7 @@ class AuthService extends Repository<UserEntity> {
     //   throw new HttpException(409, error);
     // }
 
-    return findUser;
+    return { email: findUser.email, phone: findUser.phone };
   }
   public async validateResetPasswordOTP(email: string, userData: SmsHelperDto): Promise<any> {
     if (isEmpty(userData)) throw new HttpException(400, "You're not userData");
