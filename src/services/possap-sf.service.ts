@@ -36,6 +36,14 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
 
     return findAllPossap;
   }
+  public async findAPossapSFByRef(ref: any): Promise<IPossapServiceFields> {
+    if (isEmpty(ref)) throw new HttpException(400, 'Ref is needed');
+
+    const findAllPossap: IPossapServiceFields = await PossapServiceFieldsEntity.findOne({ where: { ref: ref } });
+    if (!findAllPossap) throw new HttpException(409, 'request not foudnd');
+
+    return findAllPossap;
+  }
 
   public async createPossapSF(data): Promise<any> {
     try {

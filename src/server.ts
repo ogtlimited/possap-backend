@@ -9,6 +9,7 @@ import OfficersRoute from './routes/officers.route';
 import HelperRoute from './routes/helper.routes';
 import PossapSFRoute from './routes/possap-sf.routes';
 import PossapServiceRoute from './routes/possap-service.route';
+import IncidentsRoute from './routes/incident.route';
 
 validateEnv();
 
@@ -20,5 +21,6 @@ const app = new App([
   new HelperRoute(),
   new PossapSFRoute(),
   new PossapServiceRoute(),
+  new IncidentsRoute(),
 ]);
 app.listen();

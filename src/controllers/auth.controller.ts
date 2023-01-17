@@ -1,3 +1,4 @@
+import { ResetPasswordDto } from './../dtos/users.dto';
 import { NextFunction, Request, Response } from 'express';
 import { ChangePasswordDto, CreateUserDto, LoginUserDto } from '@dtos/users.dto';
 import { RequestWithUser } from '@interfaces/auth.interface';
@@ -35,6 +36,26 @@ class AuthController {
       const updatedUser = await this.authService.changePassword(userId, userData);
 
       res.status(200).json({ data: updatedUser, message: 'password updated' });
+    } catch (error) {
+      next(error);
+    }
+  };
+  public sendResetPasswordOtp = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      const userData: ResetPasswordDto = req.body;
+      const user = await this.authService.sendResetPasswordOtp(userData);
+
+      res.status(200).json({ data: user, message: 'sent reset otp' });
+    } catch (error) {
+      next(error);
+    }
+  };
+  public validateResetPasswordOTP = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      const { email, userData } = req.body;
+      const user = await this.authService.validateResetPasswordOTP(email, userData);
+
+      res.status(200).json({ data: user, message: 'validated' });
     } catch (error) {
       next(error);
     }

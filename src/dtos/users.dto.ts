@@ -63,6 +63,10 @@ export class ChangePasswordDto {
   @IsString()
   public newPassword: string;
 }
+export class ResetPasswordDto {
+  @IsEmail()
+  public email: string;
+}
 export class UserOTPDto {
   @IsString()
   public otp: string;

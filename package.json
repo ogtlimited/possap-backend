@@ -16,12 +16,6 @@
     "deploy:dev": "pm2 start ecosystem.config.js --only dev",
     "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run start",
-      "pre-push": "npm run start"
-    }
-  },
   "dependencies": {
     "aws-sdk": "^2.1225.0",
     "axios": "^0.26.1",
