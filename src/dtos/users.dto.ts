@@ -59,7 +59,12 @@ export class LoginUserDto {
 }
 export class ChangePasswordDto {
   @IsString()
+  public type: string;
+
+  @IsString()
+  @IsOptional()
   public oldPassword: string;
+
   @IsString()
   public newPassword: string;
 }

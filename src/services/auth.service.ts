@@ -57,8 +57,10 @@ class AuthService extends Repository<UserEntity> {
 
     const findUser = await UserEntity.findOne({ where: { id: userId } });
     if (!findUser) throw new HttpException(404, `User  not found`);
-    const isPasswordMatching: boolean = await compare(userData.oldPassword, findUser.password);
-    if (!isPasswordMatching) throw new HttpException(409, 'password does not match');
+    if (userData.type === 'change') {
+      const isPasswordMatching: boolean = await compare(userData.oldPassword, findUser.password);
+      if (!isPasswordMatching) throw new HttpException(409, 'password does not match');
+    }
 
     const hashedPassword = await hash(userData.newPassword, 10);
     // findUser.password = hashedPassword;
