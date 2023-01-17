@@ -50,7 +50,8 @@ class PossapSFService extends Repository<PossapServiceFieldsEntity> {
       if (isEmpty(data)) throw new HttpException(400, 'Data is empty');
       console.log('service id', data.service);
       const parent: IPossapService = await this.possapS.findPossapServiceById(data.service);
-      const ref = parent?.slug.toUpperCase() + '-' + ObjectId();
+
+      const ref = parent?.slug.toUpperCase() + '-' + Math.floor(100 + Math.random() * 900) + '-' + Math.floor(100 + Math.random() * 900);
       const { processor, workflow } = await this.distributor(parent, data);
       console.log(processor, 'processor');
       if (parent && processor) {
