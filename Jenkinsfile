@@ -2,5 +2,6 @@
 
 Microservice(
         type: 'node',
-        repo: 'possap-backend'
+        repo: 'possap-backend',
+        deployment: 'possap-backend'
     )
