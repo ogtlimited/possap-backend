@@ -52,7 +52,8 @@ class AuthController {
   };
   public validateResetPasswordOTP = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const { email, userData } = req.body;
+      const { email, ...userData } = req.body;
+      console.log(userData, email);
       const user = await this.authService.validateResetPasswordOTP(email, userData);
 
       res.status(200).json({ data: user, message: 'validated' });
