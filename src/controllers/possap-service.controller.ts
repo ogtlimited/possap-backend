@@ -46,6 +46,8 @@ class PossapServiceController {
 
   public updatePosssapService = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
+      console.log(req.params.id);
+      // console.log(req.body);
       const result = await this.possapS.updatePossapService(req.params.id, req.body);
       res.status(201).json({ data: result });
     } catch (error) {

@@ -4,153 +4,153 @@
     "ResponseObject": {
         "ReportRecords": [
             {
-                "key": "Anambra",
-                "value": "1"
+              "value": 1,
+              "key": "Lagos"
             },
             {
-                "key": "Akwa Ibom",
-                "value": "2"
+              "value": 2,
+              "key": "Abia"
             },
             {
-                "key": "Cross River",
-                "value": "3"
+              "value": 3,
+              "key": "Adamawa"
             },
             {
-                "key": "Delta",
-                "value": "4"
+              "value": 4,
+              "key": "Akwa Ibom"
             },
             {
-                "key": "Edo",
-                "value": "5"
+              "value": 5,
+              "key": "Anambra"
             },
             {
-                "key": "Zamfara",
-                "value": "6"
+              "value": 6,
+              "key": "Bauchi"
             },
             {
-                "key": "Kano",
-                "value": "7"
+              "value": 7,
+              "key": "Bayelsa"
             },
             {
-                "key": "Enugu",
-                "value": "8"
+              "value": 8,
+              "key": "Benue"
             },
             {
-                "key": "Katsina",
-                "value": "9"
+              "value": 9,
+              "key": "Borno"
             },
             {
-                "key": "Sokoto",
-                "value": "10"
+              "value": 10,
+              "key": "Cross River"
             },
             {
-                "key": "Bauchi",
-                "value": "11"
+              "value": 11,
+              "key": "Delta"
             },
             {
-                "key": "Bayelsa",
-                "value": "12"
+              "value": 12,
+              "key": "Ebonyi"
             },
             {
-                "key": "Jigawa",
-                "value": "13"
+              "value": 13,
+              "key": "Edo"
             },
             {
-                "key": "Plateau",
-                "value": "14"
+              "value": 14,
+              "key": "Ekiti"
             },
             {
-                "key": "Kogi",
-                "value": "15"
+              "value": 15,
+              "key": "Enugu"
             },
             {
-                "key": "Niger",
-                "value": "16"
+              "value": 16,
+              "key": "Gombe"
             },
             {
-                "key": "Oyo",
-                "value": "17"
+              "value": 17,
+              "key": "Imo"
             },
             {
-                "key": "Imo",
-                "value": "18"
+              "value": 18,
+              "key": "Jigawa"
             },
             {
-                "key": "FCT",
-                "value": "19"
+              "value": 19,
+              "key": "Kaduna"
             },
             {
-                "key": "Ondo",
-                "value": "20"
+              "value": 20,
+              "key": "Kano"
             },
             {
-                "key": "Osun",
-                "value": "21"
+              "value": 21,
+              "key": "Katsina"
             },
             {
-                "key": "Kaduna",
-                "value": "22"
+              "value": 22,
+              "key": "Kebbi"
             },
             {
-                "key": "Taraba",
-                "value": "23"
+              "value": 23,
+              "key": "Kogi"
             },
             {
-                "key": "Gombe",
-                "value": "24"
+              "value": 24,
+              "key": "Kwara"
             },
             {
-                "key": "Kebbi",
-                "value": "25"
+              "value": 25,
+              "key": "Nasarawa"
             },
             {
-                "key": "Kwara",
-                "value": "26"
+              "value": 26,
+              "key": "Niger"
             },
             {
-                "key": "Lagos",
-                "value": "27"
+              "value": 27,
+              "key": "Ogun"
             },
             {
-                "key": "Nasarawa",
-                "value": "28"
+              "value": 28,
+              "key": "Ondo"
             },
             {
-                "key": "Rivers",
-                "value": "29"
+              "value": 29,
+              "key": "Osun"
             },
             {
-                "key": "Ekiti",
-                "value": "30"
+              "value": 30,
+              "key": "Oyo"
             },
             {
-                "key": "Yobe",
-                "value": "31"
+              "value": 31,
+              "key": "Plateau"
             },
             {
-                "key": "Abia",
-                "value": "32"
+              "value": 32,
+              "key": "Rivers"
             },
             {
-                "key": "Adamawa",
-                "value": "33"
+              "value": 33,
+              "key": "Sokoto"
             },
             {
-                "key": "Benue",
-                "value": "34"
+              "value": 34,
+              "key": "Taraba"
             },
             {
-                "key": "Borno",
-                "value": "35"
+              "value": 35,
+              "key": "Yobe"
             },
             {
-                "key": "Ogun",
-                "value": "36"
+              "value": 36,
+              "key": "Zamfara"
             },
             {
-                "key": "Ebonyi",
-                "value": "37"
+              "value": 37,
+              "key": "Abuja (FCT)"
             }
-        ]
+          ]
     }
 }

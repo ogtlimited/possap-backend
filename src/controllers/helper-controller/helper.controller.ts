@@ -1,3 +1,4 @@
+import { formatBVN, CreateMD5Hash, Sha256Hash } from './../../utils/util';
 import { NextFunction, Request, Response } from 'express';
 const { createHash } = require('crypto');
 import axios from 'axios';
@@ -18,6 +19,35 @@ class HelperController {
       const { query } = req;
       const url = `http://52.15.120.183/verify.php?pickNIN=${query.nin}&key=t/BLOvt6c95mV20ka1pqreVkrwprcbdb`;
       const result = await axios.get(url);
+      if (result.data) {
+        res.status(200).json({ data: result.data, message: 'verified' });
+      } else {
+        res.status(400).json({ data: null, message: 'Invalid NIN Number' });
+      }
+    } catch (error) {
+      next(error);
+    }
+  };
+  public verifyBVN = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    const BVNValidationUsername = process.env.BVNValidationUsername;
+    const BVNValidationSecret = process.env.FourCoreBVNValidationSecret;
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+    const formatString = formatBVN(BVNValidationUsername, year, month, day);
+    const mdHash = CreateMD5Hash(formatString);
+    const signatureHash = Sha256Hash(mdHash);
+    console.log(signatureHash);
+    try {
+      const { query } = req;
+      const url = `http://165.227.168.192/api/open/validate-bvn?bvn=${query.bvn}`;
+      const result = await axios.get(url, {
+        headers: {
+          Authorization: `${BVNValidationSecret}`,
+          Signature: `${signatureHash}`,
+        },
+      });
       if (result.data) {
         res.status(200).json({ data: result.data, message: 'verified' });
       } else {

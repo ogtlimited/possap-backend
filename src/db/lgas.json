@@ -4,3885 +4,4065 @@
     "ResponseObject": {
         "ReportRecords": [
             {
-                "key": "Gwagwalada",
-                "value": "1",
-                "StateCode": "19"
+              "value": 1,
+              "key": "Akwanga",
+              "StateCode": 25
             },
             {
-                "key": "Kuje",
-                "value": "2",
-                "StateCode": "19"
+              "value": 2,
+              "key": "Awe",
+              "StateCode": 25
             },
             {
-                "key": "Abaji",
-                "value": "3",
-                "StateCode": "19"
+              "value": 3,
+              "key": "Doma",
+              "StateCode": 25
             },
             {
-                "key": "ABUJA Municipal Area Council",
-                "value": "4",
-                "StateCode": "19"
+              "value": 4,
+              "key": "Karu",
+              "StateCode": 25
             },
             {
-                "key": "Bwari",
-                "value": "5",
-                "StateCode": "19"
+              "value": 5,
+              "key": "Keana",
+              "StateCode": 25
             },
             {
-                "key": "Kwali",
-                "value": "6",
-                "StateCode": "19"
+              "value": 6,
+              "key": "Keffi",
+              "StateCode": 25
             },
             {
-                "key": "Aba North",
-                "value": "7",
-                "StateCode": "32"
+              "value": 7,
+              "key": "Kokona",
+              "StateCode": 25
             },
             {
-                "key": "Aba South",
-                "value": "8",
-                "StateCode": "32"
+              "value": 8,
+              "key": "Lafia",
+              "StateCode": 25
             },
             {
-                "key": "Arochukwu",
-                "value": "9",
-                "StateCode": "32"
+              "value": 9,
+              "key": "Nasarawa",
+              "StateCode": 25
             },
             {
-                "key": "Bende",
-                "value": "10",
-                "StateCode": "32"
+              "value": 10,
+              "key": "Nasarawa-Eggon",
+              "StateCode": 25
             },
             {
-                "key": "Ikwuano",
-                "value": "11",
-                "StateCode": "32"
+              "value": 11,
+              "key": "Obi",
+              "StateCode": 25
             },
             {
-                "key": "Isiala-Ngwa North",
-                "value": "12",
-                "StateCode": "32"
+              "value": 12,
+              "key": "Toto",
+              "StateCode": 25
             },
             {
-                "key": "Isiala-Ngwa South",
-                "value": "13",
-                "StateCode": "32"
+              "value": 13,
+              "key": "Wamba",
+              "StateCode": 25
             },
             {
-                "key": "Isuikwato",
-                "value": "14",
-                "StateCode": "32"
+              "value": 14,
+              "key": "Agaie",
+              "StateCode": 26
             },
             {
-                "key": "Obi Ngwa",
-                "value": "15",
-                "StateCode": "32"
+              "value": 15,
+              "key": "Agwara",
+              "StateCode": 26
             },
             {
-                "key": "Ohafia",
-                "value": "16",
-                "StateCode": "32"
+              "value": 16,
+              "key": "Bida",
+              "StateCode": 26
             },
             {
-                "key": "Osisioma NGWA",
-                "value": "17",
-                "StateCode": "32"
+              "value": 17,
+              "key": "Borgu",
+              "StateCode": 26
             },
             {
-                "key": "Ugwunagbo",
-                "value": "19",
-                "StateCode": "32"
+              "value": 18,
+              "key": "Bosso",
+              "StateCode": 26
             },
             {
-                "key": "Ukwa East",
-                "value": "20",
-                "StateCode": "32"
+              "value": 19,
+              "key": "Chanchaga",
+              "StateCode": 26
             },
             {
-                "key": "Ukwa West",
-                "value": "21",
-                "StateCode": "32"
+              "value": 20,
+              "key": "Edati",
+              "StateCode": 26
             },
             {
-                "key": "Umuahia North",
-                "value": "22",
-                "StateCode": "32"
+              "value": 21,
+              "key": "Gbako",
+              "StateCode": 26
             },
             {
-                "key": "Umuahia South",
-                "value": "23",
-                "StateCode": "32"
+              "value": 22,
+              "key": "Gurara",
+              "StateCode": 26
             },
             {
-                "key": "Umu-NNeochi",
-                "value": "24",
-                "StateCode": "32"
+              "value": 23,
+              "key": "Katcha",
+              "StateCode": 26
             },
             {
-                "key": "Demsa",
-                "value": "25",
-                "StateCode": "33"
+              "value": 24,
+              "key": "Kontagora",
+              "StateCode": 26
             },
             {
-                "key": "Fufore",
-                "value": "26",
-                "StateCode": "33"
+              "value": 25,
+              "key": "Lapai",
+              "StateCode": 26
             },
             {
-                "key": "Ganye",
-                "value": "27",
-                "StateCode": "33"
+              "value": 26,
+              "key": "Lavun",
+              "StateCode": 26
             },
             {
-                "key": "GIreI",
-                "value": "28",
-                "StateCode": "33"
+              "value": 27,
+              "key": "Magama",
+              "StateCode": 26
             },
             {
-                "key": "Gombi",
-                "value": "29",
-                "StateCode": "33"
+              "value": 28,
+              "key": "Mariga",
+              "StateCode": 26
             },
             {
-                "key": "Guyuk",
-                "value": "30",
-                "StateCode": "33"
+              "value": 29,
+              "key": "Mashegu",
+              "StateCode": 26
             },
             {
-                "key": "Hong",
-                "value": "31",
-                "StateCode": "33"
+              "value": 30,
+              "key": "Mokwa",
+              "StateCode": 26
             },
             {
-                "key": "Jada",
-                "value": "32",
-                "StateCode": "33"
+              "value": 31,
+              "key": "Muya",
+              "StateCode": 26
             },
             {
-                "key": "Lamurde",
-                "value": "33",
-                "StateCode": "33"
+              "value": 32,
+              "key": "Pailoro",
+              "StateCode": 26
             },
             {
-                "key": "Madagali",
-                "value": "34",
-                "StateCode": "33"
+              "value": 33,
+              "key": "Rafi",
+              "StateCode": 26
             },
             {
-                "key": "Maiha",
-                "value": "35",
-                "StateCode": "33"
+              "value": 34,
+              "key": "Rijau",
+              "StateCode": 26
             },
             {
-                "key": "Mayo Belwa",
-                "value": "36",
-                "StateCode": "33"
+              "value": 35,
+              "key": "Shiroro",
+              "StateCode": 26
             },
             {
-                "key": "Michika",
-                "value": "37",
-                "StateCode": "33"
+              "value": 36,
+              "key": "Suleja",
+              "StateCode": 26
             },
             {
-                "key": "Mubi North",
-                "value": "38",
-                "StateCode": "33"
+              "value": 37,
+              "key": "Tafa",
+              "StateCode": 26
             },
             {
-                "key": "Mubi South",
-                "value": "39",
-                "StateCode": "33"
+              "value": 38,
+              "key": "Wushishi",
+              "StateCode": 26
             },
             {
-                "key": "Numan",
-                "value": "40",
-                "StateCode": "33"
+              "value": 39,
+              "key": "Aba North",
+              "StateCode": 2
             },
             {
-                "key": "Shelleng",
-                "value": "41",
-                "StateCode": "33"
+              "value": 40,
+              "key": "Aba South",
+              "StateCode": 2
             },
             {
-                "key": "Song",
-                "value": "42",
-                "StateCode": "33"
+              "value": 41,
+              "key": "Arochukwu",
+              "StateCode": 2
             },
             {
-                "key": "Toungo",
-                "value": "43",
-                "StateCode": "33"
+              "value": 42,
+              "key": "Bende",
+              "StateCode": 2
             },
             {
-                "key": "Yola North",
-                "value": "44",
-                "StateCode": "33"
+              "value": 43,
+              "key": "Ikwuano",
+              "StateCode": 2
             },
             {
-                "key": "Yola South",
-                "value": "45",
-                "StateCode": "33"
+              "value": 44,
+              "key": "Isiala Ngwa North",
+              "StateCode": 2
             },
             {
-                "key": "Abak",
-                "value": "46",
-                "StateCode": "2"
+              "value": 45,
+              "key": "Isiala Ngwa South",
+              "StateCode": 2
             },
             {
-                "key": "Eastern Obolo",
-                "value": "47",
-                "StateCode": "2"
+              "value": 46,
+              "key": "Isuikwuato",
+              "StateCode": 2
             },
             {
-                "key": "Eket",
-                "value": "48",
-                "StateCode": "2"
+              "value": 47,
+              "key": "Obi Ngwa",
+              "StateCode": 2
             },
             {
-                "key": "Esit Eket",
-                "value": "49",
-                "StateCode": "2"
+              "value": 48,
+              "key": "Ohafia",
+              "StateCode": 2
             },
             {
-                "key": "Essien Udim",
-                "value": "50",
-                "StateCode": "2"
+              "value": 49,
+              "key": "Osisioma",
+              "StateCode": 2
             },
             {
-                "key": "Etim Ekpo",
-                "value": "51",
-                "StateCode": "2"
+              "value": 50,
+              "key": "Ugwunagbo",
+              "StateCode": 2
             },
             {
-                "key": "Etinan",
-                "value": "52",
-                "StateCode": "2"
+              "value": 51,
+              "key": "Ukwa East",
+              "StateCode": 2
             },
             {
-                "key": "Ibeno",
-                "value": "53",
-                "StateCode": "2"
+              "value": 52,
+              "key": "Ukwa West",
+              "StateCode": 2
             },
             {
-                "key": "Ibesikpo Asutan",
-                "value": "54",
-                "StateCode": "2"
+              "value": 53,
+              "key": "Umuahia North",
+              "StateCode": 2
             },
             {
-                "key": "Ibiono-Ibom",
-                "value": "55",
-                "StateCode": "2"
+              "value": 54,
+              "key": "Umuahia South",
+              "StateCode": 2
             },
             {
-                "key": "Ika",
-                "value": "56",
-                "StateCode": "2"
+              "value": 55,
+              "key": "Umu Nneochi",
+              "StateCode": 2
             },
             {
-                "key": "Ikono",
-                "value": "57",
-                "StateCode": "2"
+              "value": 56,
+              "key": "Demsa",
+              "StateCode": 3
             },
             {
-                "key": "Ikot Abasi",
-                "value": "58",
-                "StateCode": "2"
+              "value": 57,
+              "key": "Fufure",
+              "StateCode": 3
             },
             {
-                "key": "Ikot Ekpene",
-                "value": "59",
-                "StateCode": "2"
+              "value": 58,
+              "key": "Ganye",
+              "StateCode": 3
             },
             {
-                "key": "Ini",
-                "value": "60",
-                "StateCode": "2"
+              "value": 59,
+              "key": "Gayuk",
+              "StateCode": 3
             },
             {
-                "key": "Itu",
-                "value": "61",
-                "StateCode": "2"
+              "value": 60,
+              "key": "Gombi",
+              "StateCode": 3
             },
             {
-                "key": "Mbo",
-                "value": "62",
-                "StateCode": "2"
+              "value": 61,
+              "key": "Grie",
+              "StateCode": 3
             },
             {
-                "key": "Mkpat-Enin",
-                "value": "63",
-                "StateCode": "2"
+              "value": 62,
+              "key": "Hong",
+              "StateCode": 3
             },
             {
-                "key": "Nsit-Atai",
-                "value": "64",
-                "StateCode": "2"
+              "value": 63,
+              "key": "Jada",
+              "StateCode": 3
             },
             {
-                "key": "Nsit-Ibom",
-                "value": "65",
-                "StateCode": "2"
+              "value": 64,
+              "key": "Lamurde",
+              "StateCode": 3
             },
             {
-                "key": "Nsit-Ubium",
-                "value": "66",
-                "StateCode": "2"
+              "value": 65,
+              "key": "Madagali",
+              "StateCode": 3
             },
             {
-                "key": "Obot Akara",
-                "value": "67",
-                "StateCode": "2"
+              "value": 66,
+              "key": "Maiha",
+              "StateCode": 3
             },
             {
-                "key": "Okobo",
-                "value": "68",
-                "StateCode": "2"
+              "value": 67,
+              "key": "Mayo Belwa",
+              "StateCode": 3
             },
             {
-                "key": "Onna",
-                "value": "69",
-                "StateCode": "2"
+              "value": 68,
+              "key": "Michika",
+              "StateCode": 3
             },
             {
-                "key": "Oron",
-                "value": "70",
-                "StateCode": "2"
+              "value": 69,
+              "key": "Mubi North",
+              "StateCode": 3
             },
             {
-                "key": "Oruk Anam",
-                "value": "71",
-                "StateCode": "2"
+              "value": 70,
+              "key": "Mubi South",
+              "StateCode": 3
             },
             {
-                "key": "Udung Uko",
-                "value": "72",
-                "StateCode": "2"
+              "value": 71,
+              "key": "Numan",
+              "StateCode": 3
             },
             {
-                "key": "Ukanafun",
-                "value": "73",
-                "StateCode": "2"
+              "value": 72,
+              "key": "Shelleng",
+              "StateCode": 3
             },
             {
-                "key": "Uruan",
-                "value": "74",
-                "StateCode": "2"
+              "value": 73,
+              "key": "Song",
+              "StateCode": 3
             },
             {
-                "key": "Urue-Offong/Oruko",
-                "value": "75",
-                "StateCode": "2"
+              "value": 74,
+              "key": "Toungo",
+              "StateCode": 3
             },
             {
-                "key": "Uyo",
-                "value": "76",
-                "StateCode": "2"
+              "value": 75,
+              "key": "Yola North",
+              "StateCode": 3
             },
             {
-                "key": "Aguata",
-                "value": "77",
-                "StateCode": "1"
+              "value": 76,
+              "key": "Yola South",
+              "StateCode": 3
             },
             {
-                "key": "Anambra East",
-                "value": "78",
-                "StateCode": "1"
+              "value": 77,
+              "key": "Abak",
+              "StateCode": 4
             },
             {
-                "key": "Anambra West",
-                "value": "79",
-                "StateCode": "1"
+              "value": 78,
+              "key": "Eastern Obolo",
+              "StateCode": 4
             },
             {
-                "key": "Anaocha",
-                "value": "80",
-                "StateCode": "1"
+              "value": 79,
+              "key": "Eket",
+              "StateCode": 4
             },
             {
-                "key": "Awka North",
-                "value": "81",
-                "StateCode": "1"
+              "value": 80,
+              "key": "Esit Eket",
+              "StateCode": 4
             },
             {
-                "key": "Awka South",
-                "value": "82",
-                "StateCode": "1"
+              "value": 81,
+              "key": "Essien Udim",
+              "StateCode": 4
             },
             {
-                "key": "Ayamelum",
-                "value": "83",
-                "StateCode": "1"
+              "value": 82,
+              "key": "Etim Ekpo",
+              "StateCode": 4
             },
             {
-                "key": "Dunukofia",
-                "value": "84",
-                "StateCode": "1"
+              "value": 83,
+              "key": "Etinan",
+              "StateCode": 4
             },
             {
-                "key": "Ekwusigo",
-                "value": "85",
-                "StateCode": "1"
+              "value": 84,
+              "key": "Ibeno",
+              "StateCode": 4
             },
             {
-                "key": "Idemili North",
-                "value": "86",
-                "StateCode": "1"
+              "value": 85,
+              "key": "Ibesikpo Asutan",
+              "StateCode": 4
             },
             {
-                "key": "Idemili south",
-                "value": "87",
-                "StateCode": "1"
+              "value": 86,
+              "key": "Ibiono-Ibom",
+              "StateCode": 4
             },
             {
-                "key": "Ihiala",
-                "value": "88",
-                "StateCode": "1"
+              "value": 87,
+              "key": "Ika",
+              "StateCode": 4
             },
             {
-                "key": "Njikoka",
-                "value": "89",
-                "StateCode": "1"
+              "value": 88,
+              "key": "Ikono",
+              "StateCode": 4
             },
             {
-                "key": "Nnewi North",
-                "value": "90",
-                "StateCode": "1"
+              "value": 89,
+              "key": "Ikot Abasi",
+              "StateCode": 4
             },
             {
-                "key": "Nnewi South",
-                "value": "91",
-                "StateCode": "1"
+              "value": 90,
+              "key": "Ikot Ekpene",
+              "StateCode": 4
             },
             {
-                "key": "Ogbaru",
-                "value": "92",
-                "StateCode": "1"
+              "value": 91,
+              "key": "Ini",
+              "StateCode": 4
             },
             {
-                "key": "Onitsha North",
-                "value": "93",
-                "StateCode": "1"
+              "value": 92,
+              "key": "Itu",
+              "StateCode": 4
             },
             {
-                "key": "Onitsha South",
-                "value": "94",
-                "StateCode": "1"
+              "value": 93,
+              "key": "Mbo",
+              "StateCode": 4
             },
             {
-                "key": "Orumba North",
-                "value": "95",
-                "StateCode": "1"
+              "value": 94,
+              "key": "Mkpat-Enin",
+              "StateCode": 4
             },
             {
-                "key": "Orumba South",
-                "value": "96",
-                "StateCode": "1"
+              "value": 95,
+              "key": "Nsit-Atai",
+              "StateCode": 4
             },
             {
-                "key": "Oyi",
-                "value": "97",
-                "StateCode": "1"
+              "value": 96,
+              "key": "Nsit-Ibom",
+              "StateCode": 4
             },
             {
-                "key": "Alkaleri",
-                "value": "98",
-                "StateCode": "11"
+              "value": 97,
+              "key": "Nsit-Ubium",
+              "StateCode": 4
             },
             {
-                "key": "Bauchi",
-                "value": "99",
-                "StateCode": "11"
+              "value": 98,
+              "key": "Obot Akara",
+              "StateCode": 4
             },
             {
-                "key": "Bogoro",
-                "value": "100",
-                "StateCode": "11"
+              "value": 99,
+              "key": "Okobo",
+              "StateCode": 4
             },
             {
-                "key": "DambaM",
-                "value": "101",
-                "StateCode": "11"
+              "value": 100,
+              "key": "Onna",
+              "StateCode": 4
             },
             {
-                "key": "Darazo",
-                "value": "102",
-                "StateCode": "11"
+              "value": 101,
+              "key": "Oron",
+              "StateCode": 4
             },
             {
-                "key": "Dass",
-                "value": "103",
-                "StateCode": "11"
+              "value": 102,
+              "key": "Oruk Anam",
+              "StateCode": 4
             },
             {
-                "key": "Ganjuwa",
-                "value": "104",
-                "StateCode": "11"
+              "value": 103,
+              "key": "Udung-Uko",
+              "StateCode": 4
             },
             {
-                "key": "Giade",
-                "value": "105",
-                "StateCode": "11"
+              "value": 104,
+              "key": "Ukanafun",
+              "StateCode": 4
             },
             {
-                "key": "Itas/Gadau",
-                "value": "106",
-                "StateCode": "11"
+              "value": 105,
+              "key": "Uruan",
+              "StateCode": 4
             },
             {
-                "key": "Jama'are",
-                "value": "107",
-                "StateCode": "11"
+              "value": 106,
+              "key": "Urue-OffongOruko",
+              "StateCode": 4
             },
             {
-                "key": "Katagum",
-                "value": "108",
-                "StateCode": "11"
+              "value": 107,
+              "key": "Uyo",
+              "StateCode": 4
             },
             {
-                "key": "Kirfi",
-                "value": "109",
-                "StateCode": "11"
+              "value": 108,
+              "key": "Aguata",
+              "StateCode": 5
             },
             {
-                "key": "Misau",
-                "value": "110",
-                "StateCode": "11"
+              "value": 109,
+              "key": "Anambra East",
+              "StateCode": 5
             },
             {
-                "key": "Ningi",
-                "value": "111",
-                "StateCode": "11"
+              "value": 110,
+              "key": "Anambra West",
+              "StateCode": 5
             },
             {
-                "key": "Shira",
-                "value": "112",
-                "StateCode": "11"
+              "value": 111,
+              "key": "Anaocha",
+              "StateCode": 5
             },
             {
-                "key": "Tafawa Balewa",
-                "value": "113",
-                "StateCode": "11"
+              "value": 112,
+              "key": "Awka North",
+              "StateCode": 5
             },
             {
-                "key": "Toro",
-                "value": "114",
-                "StateCode": "11"
+              "value": 113,
+              "key": "Awka South",
+              "StateCode": 5
             },
             {
-                "key": "Warji",
-                "value": "115",
-                "StateCode": "11"
+              "value": 114,
+              "key": "Ayamelum",
+              "StateCode": 5
             },
             {
-                "key": "Zaki",
-                "value": "116",
-                "StateCode": "11"
+              "value": 115,
+              "key": "Dunukofia",
+              "StateCode": 5
             },
             {
-                "key": "Brass",
-                "value": "117",
-                "StateCode": "12"
+              "value": 116,
+              "key": "Ekwusigo",
+              "StateCode": 5
             },
             {
-                "key": "Ekeremor",
-                "value": "118",
-                "StateCode": "12"
+              "value": 117,
+              "key": "Idemili North",
+              "StateCode": 5
             },
             {
-                "key": "Kolokuma/Opokuma",
-                "value": "119",
-                "StateCode": "12"
+              "value": 118,
+              "key": "Idemili South",
+              "StateCode": 5
             },
             {
-                "key": "Nembe",
-                "value": "120",
-                "StateCode": "12"
+              "value": 119,
+              "key": "Ihiala",
+              "StateCode": 5
             },
             {
-                "key": "Ogbia",
-                "value": "121",
-                "StateCode": "12"
+              "value": 120,
+              "key": "Njikoka",
+              "StateCode": 5
             },
             {
-                "key": "Sagbama",
-                "value": "122",
-                "StateCode": "12"
+              "value": 121,
+              "key": "Nnewi North",
+              "StateCode": 5
             },
             {
-                "key": "Southern Ijaw",
-                "value": "123",
-                "StateCode": "12"
+              "value": 122,
+              "key": "Nnewi South",
+              "StateCode": 5
             },
             {
-                "key": "YenAgoa",
-                "value": "124",
-                "StateCode": "12"
+              "value": 123,
+              "key": "Ogbaru",
+              "StateCode": 5
             },
             {
-                "key": "Ado",
-                "value": "125",
-                "StateCode": "34"
+              "value": 124,
+              "key": "Onitsha North",
+              "StateCode": 5
             },
             {
-                "key": "Agatu",
-                "value": "126",
-                "StateCode": "34"
+              "value": 125,
+              "key": "Onitsha South",
+              "StateCode": 5
             },
             {
-                "key": "Apa",
-                "value": "127",
-                "StateCode": "34"
+              "value": 126,
+              "key": "Orumba North",
+              "StateCode": 5
             },
             {
-                "key": "Buruku",
-                "value": "128",
-                "StateCode": "34"
+              "value": 127,
+              "key": "Orumba South",
+              "StateCode": 5
             },
             {
-                "key": "Gboko",
-                "value": "129",
-                "StateCode": "34"
+              "value": 128,
+              "key": "Oyi",
+              "StateCode": 5
             },
             {
-                "key": "Guma",
-                "value": "130",
-                "StateCode": "34"
+              "value": 129,
+              "key": "Alkaleri",
+              "StateCode": 6
             },
             {
-                "key": "Gwer East",
-                "value": "131",
-                "StateCode": "34"
+              "value": 130,
+              "key": "Bauchi",
+              "StateCode": 6
             },
             {
-                "key": "Gwer West",
-                "value": "132",
-                "StateCode": "34"
+              "value": 131,
+              "key": "Bogoro",
+              "StateCode": 6
             },
             {
-                "key": "Katsina-Ala",
-                "value": "133",
-                "StateCode": "34"
+              "value": 132,
+              "key": "Damban",
+              "StateCode": 6
             },
             {
-                "key": "Konshisha",
-                "value": "134",
-                "StateCode": "34"
+              "value": 133,
+              "key": "Darazo",
+              "StateCode": 6
             },
             {
-                "key": "Kwande",
-                "value": "135",
-                "StateCode": "34"
+              "value": 134,
+              "key": "Dass",
+              "StateCode": 6
             },
             {
-                "key": "Logo",
-                "value": "136",
-                "StateCode": "34"
+              "value": 135,
+              "key": "Gamawa",
+              "StateCode": 6
             },
             {
-                "key": "Makurdi",
-                "value": "137",
-                "StateCode": "34"
+              "value": 136,
+              "key": "Ganjuwa",
+              "StateCode": 6
             },
             {
-                "key": "Obi",
-                "value": "138",
-                "StateCode": "34"
+              "value": 137,
+              "key": "Giade",
+              "StateCode": 6
             },
             {
-                "key": "Ogbadibo",
-                "value": "139",
-                "StateCode": "34"
+              "value": 138,
+              "key": "ItasGadau",
+              "StateCode": 6
             },
             {
-                "key": "Oju",
-                "value": "140",
-                "StateCode": "34"
+              "value": 139,
+              "key": "Jama'are",
+              "StateCode": 6
             },
             {
-                "key": "Okpokwu",
-                "value": "141",
-                "StateCode": "34"
+              "value": 140,
+              "key": "Katagum",
+              "StateCode": 6
             },
             {
-                "key": "Ohimini",
-                "value": "142",
-                "StateCode": "34"
+              "value": 141,
+              "key": "Kirfi",
+              "StateCode": 6
             },
             {
-                "key": "Otukpo",
-                "value": "143",
-                "StateCode": "34"
+              "value": 142,
+              "key": "Misau",
+              "StateCode": 6
             },
             {
-                "key": "Tarka",
-                "value": "144",
-                "StateCode": "34"
+              "value": 143,
+              "key": "Ningi",
+              "StateCode": 6
             },
             {
-                "key": "Ukum",
-                "value": "145",
-                "StateCode": "34"
+              "value": 144,
+              "key": "Shira",
+              "StateCode": 6
             },
             {
-                "key": "Ushongo",
-                "value": "146",
-                "StateCode": "34"
+              "value": 145,
+              "key": "Tafawa Balewa",
+              "StateCode": 6
             },
             {
-                "key": "Vandeikya",
-                "value": "147",
-                "StateCode": "34"
+              "value": 146,
+              "key": "Toro",
+              "StateCode": 6
             },
             {
-                "key": "Abadam",
-                "value": "148",
-                "StateCode": "35"
+              "value": 147,
+              "key": "Warji",
+              "StateCode": 6
             },
             {
-                "key": "Askira/Uba",
-                "value": "149",
-                "StateCode": "35"
+              "value": 148,
+              "key": "Zaki",
+              "StateCode": 6
             },
             {
-                "key": "Bama",
-                "value": "150",
-                "StateCode": "35"
+              "value": 149,
+              "key": "Brass",
+              "StateCode": 7
             },
             {
-                "key": "Bayo",
-                "value": "151",
-                "StateCode": "35"
+              "value": 150,
+              "key": "Ekeremor",
+              "StateCode": 7
             },
             {
-                "key": "Biu",
-                "value": "152",
-                "StateCode": "35"
+              "value": 151,
+              "key": "KolokumaOpokuma",
+              "StateCode": 7
             },
             {
-                "key": "Chibok",
-                "value": "153",
-                "StateCode": "35"
+              "value": 152,
+              "key": "Nembe",
+              "StateCode": 7
             },
             {
-                "key": "Damboa",
-                "value": "154",
-                "StateCode": "35"
+              "value": 153,
+              "key": "Ogbia",
+              "StateCode": 7
             },
             {
-                "key": "Dikwa",
-                "value": "155",
-                "StateCode": "35"
+              "value": 154,
+              "key": "Sagbama",
+              "StateCode": 7
             },
             {
-                "key": "Gubio",
-                "value": "156",
-                "StateCode": "35"
+              "value": 155,
+              "key": "Southern Ijaw",
+              "StateCode": 7
             },
             {
-                "key": "Guzamala",
-                "value": "157",
-                "StateCode": "35"
+              "value": 156,
+              "key": "Yenagoa",
+              "StateCode": 7
             },
             {
-                "key": "Gwoza",
-                "value": "158",
-                "StateCode": "35"
+              "value": 157,
+              "key": "Agatu",
+              "StateCode": 8
             },
             {
-                "key": "Hawul",
-                "value": "159",
-                "StateCode": "35"
+              "value": 158,
+              "key": "Apa",
+              "StateCode": 8
             },
             {
-                "key": "Jere",
-                "value": "160",
-                "StateCode": "35"
+              "value": 159,
+              "key": "Ado",
+              "StateCode": 8
             },
             {
-                "key": "Kaga",
-                "value": "161",
-                "StateCode": "35"
+              "value": 160,
+              "key": "Buruku",
+              "StateCode": 8
             },
             {
-                "key": "Kala/Balge",
-                "value": "162",
-                "StateCode": "35"
+              "value": 161,
+              "key": "Gboko",
+              "StateCode": 8
             },
             {
-                "key": "Konduga",
-                "value": "163",
-                "StateCode": "35"
+              "value": 162,
+              "key": "Guma",
+              "StateCode": 8
             },
             {
-                "key": "Kukawa",
-                "value": "164",
-                "StateCode": "35"
+              "value": 163,
+              "key": "Gwer East",
+              "StateCode": 8
             },
             {
-                "key": "Kwaya Kusar",
-                "value": "165",
-                "StateCode": "35"
+              "value": 164,
+              "key": "Gwer West",
+              "StateCode": 8
             },
             {
-                "key": "Mafa",
-                "value": "166",
-                "StateCode": "35"
+              "value": 165,
+              "key": "Katsina-Ala",
+              "StateCode": 8
             },
             {
-                "key": "Magumeri",
-                "value": "167",
-                "StateCode": "35"
+              "value": 166,
+              "key": "Konshisha",
+              "StateCode": 8
             },
             {
-                "key": "Maiduguri",
-                "value": "168",
-                "StateCode": "35"
+              "value": 167,
+              "key": "Kwande",
+              "StateCode": 8
             },
             {
-                "key": "Marte",
-                "value": "169",
-                "StateCode": "35"
+              "value": 168,
+              "key": "Logo",
+              "StateCode": 8
             },
             {
-                "key": "Mobbar",
-                "value": "170",
-                "StateCode": "35"
+              "value": 169,
+              "key": "Makurdi",
+              "StateCode": 8
             },
             {
-                "key": "Monguno",
-                "value": "171",
-                "StateCode": "35"
+              "value": 170,
+              "key": "Obi",
+              "StateCode": 8
             },
             {
-                "key": "Ngala",
-                "value": "172",
-                "StateCode": "35"
+              "value": 171,
+              "key": "Ogbadibo",
+              "StateCode": 8
             },
             {
-                "key": "Nganzai",
-                "value": "173",
-                "StateCode": "35"
+              "value": 172,
+              "key": "Ohimini",
+              "StateCode": 8
             },
             {
-                "key": "Shani",
-                "value": "174",
-                "StateCode": "35"
+              "value": 173,
+              "key": "Oju",
+              "StateCode": 8
             },
             {
-                "key": "Akpabuyo",
-                "value": "175",
-                "StateCode": "3"
+              "value": 174,
+              "key": "Okpokwu",
+              "StateCode": 8
             },
             {
-                "key": "Odukpani",
-                "value": "176",
-                "StateCode": "3"
+              "value": 175,
+              "key": "Oturkpo",
+              "StateCode": 8
             },
             {
-                "key": "Akamkpa",
-                "value": "177",
-                "StateCode": "3"
+              "value": 176,
+              "key": "Tarka",
+              "StateCode": 8
             },
             {
-                "key": "Biase",
-                "value": "178",
-                "StateCode": "3"
+              "value": 177,
+              "key": "Ukum",
+              "StateCode": 8
             },
             {
-                "key": "Abi",
-                "value": "179",
-                "StateCode": "3"
+              "value": 178,
+              "key": "Ushongo",
+              "StateCode": 8
             },
             {
-                "key": "Ikom",
-                "value": "180",
-                "StateCode": "3"
+              "value": 179,
+              "key": "Vandeikya",
+              "StateCode": 8
             },
             {
-                "key": "YakuRR",
-                "value": "181",
-                "StateCode": "3"
+              "value": 180,
+              "key": "Abadam",
+              "StateCode": 9
             },
             {
-                "key": "Obubra",
-                "value": "182",
-                "StateCode": "3"
+              "value": 181,
+              "key": "AskiraUba",
+              "StateCode": 9
             },
             {
-                "key": "Boki",
-                "value": "183",
-                "StateCode": "3"
+              "value": 182,
+              "key": "Bama",
+              "StateCode": 9
             },
             {
-                "key": "Ogoja",
-                "value": "184",
-                "StateCode": "3"
+              "value": 183,
+              "key": "Bayo",
+              "StateCode": 9
             },
             {
-                "key": "Yala",
-                "value": "185",
-                "StateCode": "3"
+              "value": 184,
+              "key": "Biu",
+              "StateCode": 9
             },
             {
-                "key": "Obanliku",
-                "value": "186",
-                "StateCode": "3"
+              "value": 185,
+              "key": "Chibok",
+              "StateCode": 9
             },
             {
-                "key": "Obudu",
-                "value": "187",
-                "StateCode": "3"
+              "value": 186,
+              "key": "Damboa",
+              "StateCode": 9
             },
             {
-                "key": "Calabar South",
-                "value": "188",
-                "StateCode": "3"
+              "value": 187,
+              "key": "Dikwa",
+              "StateCode": 9
             },
             {
-                "key": "Etung",
-                "value": "189",
-                "StateCode": "3"
+              "value": 188,
+              "key": "Gubio",
+              "StateCode": 9
             },
             {
-                "key": "BekwaRra",
-                "value": "190",
-                "StateCode": "3"
+              "value": 189,
+              "key": "Guzamala",
+              "StateCode": 9
             },
             {
-                "key": "Bakassi",
-                "value": "191",
-                "StateCode": "3"
+              "value": 190,
+              "key": "Gwoza",
+              "StateCode": 9
             },
             {
-                "key": "Calabar Municipal",
-                "value": "192",
-                "StateCode": "3"
+              "value": 191,
+              "key": "Hawul",
+              "StateCode": 9
             },
             {
-                "key": "Oshimili South",
-                "value": "193",
-                "StateCode": "4"
+              "value": 192,
+              "key": "Jere",
+              "StateCode": 9
             },
             {
-                "key": "Aniocha North",
-                "value": "194",
-                "StateCode": "4"
+              "value": 193,
+              "key": "Kaga",
+              "StateCode": 9
             },
             {
-                "key": "Aniocha South",
-                "value": "195",
-                "StateCode": "4"
+              "value": 194,
+              "key": "KalaBalge",
+              "StateCode": 9
             },
             {
-                "key": "Ika South",
-                "value": "196",
-                "StateCode": "4"
+              "value": 195,
+              "key": "Konduga",
+              "StateCode": 9
             },
             {
-                "key": "Ika North East",
-                "value": "197",
-                "StateCode": "4"
+              "value": 196,
+              "key": "Kukawa",
+              "StateCode": 9
             },
             {
-                "key": "Ndokwa West",
-                "value": "198",
-                "StateCode": "4"
+              "value": 197,
+              "key": "Kwaya Kusar",
+              "StateCode": 9
             },
             {
-                "key": "Ndokwa East",
-                "value": "199",
-                "StateCode": "4"
+              "value": 198,
+              "key": "Mafa",
+              "StateCode": 9
             },
             {
-                "key": "Isoko south",
-                "value": "200",
-                "StateCode": "4"
+              "value": 199,
+              "key": "Magumeri",
+              "StateCode": 9
             },
             {
-                "key": "Isoko North",
-                "value": "201",
-                "StateCode": "4"
+              "value": 200,
+              "key": "Maiduguri",
+              "StateCode": 9
             },
             {
-                "key": "Bomadi",
-                "value": "202",
-                "StateCode": "4"
+              "value": 201,
+              "key": "Marte",
+              "StateCode": 9
             },
             {
-                "key": "Burutu",
-                "value": "203",
-                "StateCode": "4"
+              "value": 202,
+              "key": "Mobbar",
+              "StateCode": 9
             },
             {
-                "key": "Ughelli South",
-                "value": "204",
-                "StateCode": "4"
+              "value": 203,
+              "key": "Monguno",
+              "StateCode": 9
             },
             {
-                "key": "Ughelli North",
-                "value": "205",
-                "StateCode": "4"
+              "value": 204,
+              "key": "Ngala",
+              "StateCode": 9
             },
             {
-                "key": "Ethiope West",
-                "value": "206",
-                "StateCode": "4"
+              "value": 205,
+              "key": "Nganzai",
+              "StateCode": 9
             },
             {
-                "key": "Ethiope East",
-                "value": "207",
-                "StateCode": "4"
+              "value": 206,
+              "key": "Shani",
+              "StateCode": 9
             },
             {
-                "key": "Sapele",
-                "value": "208",
-                "StateCode": "4"
+              "value": 207,
+              "key": "Abi",
+              "StateCode": 10
             },
             {
-                "key": "Okpe",
-                "value": "209",
-                "StateCode": "4"
+              "value": 208,
+              "key": "Akamkpa",
+              "StateCode": 10
             },
             {
-                "key": "Warri North",
-                "value": "210",
-                "StateCode": "4"
+              "value": 209,
+              "key": "Akpabuyo",
+              "StateCode": 10
             },
             {
-                "key": "Warri South",
-                "value": "211",
-                "StateCode": "4"
+              "value": 210,
+              "key": "Bakassi",
+              "StateCode": 10
             },
             {
-                "key": "Uvwie",
-                "value": "212",
-                "StateCode": "4"
+              "value": 211,
+              "key": "Bekwarra",
+              "StateCode": 10
             },
             {
-                "key": "Udu",
-                "value": "213",
-                "StateCode": "4"
+              "value": 212,
+              "key": "Biase",
+              "StateCode": 10
             },
             {
-                "key": "Warri South West",
-                "value": "214",
-                "StateCode": "4"
+              "value": 213,
+              "key": "Boki",
+              "StateCode": 10
             },
             {
-                "key": "Ukwuani",
-                "value": "215",
-                "StateCode": "4"
+              "value": 214,
+              "key": "Calabar Municipal",
+              "StateCode": 10
             },
             {
-                "key": "Oshimili North",
-                "value": "216",
-                "StateCode": "4"
+              "value": 215,
+              "key": "Calabar South",
+              "StateCode": 10
             },
             {
-                "key": "Patani",
-                "value": "217",
-                "StateCode": "4"
+              "value": 216,
+              "key": "Etung",
+              "StateCode": 10
             },
             {
-                "key": "Afikpo South",
-                "value": "218",
-                "StateCode": "37"
+              "value": 217,
+              "key": "Ikom",
+              "StateCode": 10
             },
             {
-                "key": "Afikpo North",
-                "value": "219",
-                "StateCode": "37"
+              "value": 218,
+              "key": "Obanliku",
+              "StateCode": 10
             },
             {
-                "key": "Onicha",
-                "value": "220",
-                "StateCode": "37"
+              "value": 219,
+              "key": "Obubra",
+              "StateCode": 10
             },
             {
-                "key": "Ohaozara",
-                "value": "221",
-                "StateCode": "37"
+              "value": 220,
+              "key": "Obudu",
+              "StateCode": 10
             },
             {
-                "key": "Abakaliki",
-                "value": "222",
-                "StateCode": "37"
+              "value": 221,
+              "key": "Odukpani",
+              "StateCode": 10
             },
             {
-                "key": "Ishielu",
-                "value": "223",
-                "StateCode": "37"
+              "value": 222,
+              "key": "Ogoja",
+              "StateCode": 10
             },
             {
-                "key": "Ikwo",
-                "value": "224",
-                "StateCode": "37"
+              "value": 223,
+              "key": "Yakuur",
+              "StateCode": 10
             },
             {
-                "key": "Ezza North",
-                "value": "225",
-                "StateCode": "37"
+              "value": 224,
+              "key": "Yala",
+              "StateCode": 10
             },
             {
-                "key": "Ezza South",
-                "value": "226",
-                "StateCode": "37"
+              "value": 225,
+              "key": "Aniocha North",
+              "StateCode": 11
             },
             {
-                "key": "Ohaukwu",
-                "value": "227",
-                "StateCode": "37"
+              "value": 226,
+              "key": "Aniocha South",
+              "StateCode": 11
             },
             {
-                "key": "Ebonyi",
-                "value": "228",
-                "StateCode": "37"
+              "value": 227,
+              "key": "Bomadi",
+              "StateCode": 11
             },
             {
-                "key": "Ivo",
-                "value": "229",
-                "StateCode": "37"
+              "value": 228,
+              "key": "Burutu",
+              "StateCode": 11
             },
             {
-                "key": "Esan North East",
-                "value": "230",
-                "StateCode": "5"
+              "value": 229,
+              "key": "Ethiope East",
+              "StateCode": 11
             },
             {
-                "key": "Esan Central",
-                "value": "231",
-                "StateCode": "5"
+              "value": 230,
+              "key": "Ethiope West",
+              "StateCode": 11
             },
             {
-                "key": "Esan West",
-                "value": "232",
-                "StateCode": "5"
+              "value": 231,
+              "key": "Ika North East",
+              "StateCode": 11
             },
             {
-                "key": "Egor",
-                "value": "233",
-                "StateCode": "5"
+              "value": 232,
+              "key": "Ika South",
+              "StateCode": 11
             },
             {
-                "key": "Ikpoba Okha",
-                "value": "234",
-                "StateCode": "5"
+              "value": 233,
+              "key": "Isoko North",
+              "StateCode": 11
             },
             {
-                "key": "Etsako Central",
-                "value": "236",
-                "StateCode": "5"
+              "value": 234,
+              "key": "Isoko South",
+              "StateCode": 11
             },
             {
-                "key": "Igueben",
-                "value": "237",
-                "StateCode": "5"
+              "value": 235,
+              "key": "Ndokwa East",
+              "StateCode": 11
             },
             {
-                "key": "Oredo",
-                "value": "238",
-                "StateCode": "5"
+              "value": 236,
+              "key": "Ndokwa West",
+              "StateCode": 11
             },
             {
-                "key": "Ovia South-West",
-                "value": "239",
-                "StateCode": "5"
+              "value": 237,
+              "key": "Okpe",
+              "StateCode": 11
             },
             {
-                "key": "Ovia North-East",
-                "value": "240",
-                "StateCode": "5"
+              "value": 238,
+              "key": "Oshimili North",
+              "StateCode": 11
             },
             {
-                "key": "Orhionmwon",
-                "value": "241",
-                "StateCode": "5"
+              "value": 239,
+              "key": "Oshimili South",
+              "StateCode": 11
             },
             {
-                "key": "Uhunmwonde",
-                "value": "242",
-                "StateCode": "5"
+              "value": 240,
+              "key": "Patani",
+              "StateCode": 11
             },
             {
-                "key": "Etsako East",
-                "value": "243",
-                "StateCode": "5"
+              "value": 241,
+              "key": "Sapele",
+              "StateCode": 11
             },
             {
-                "key": "Esan South East",
-                "value": "244",
-                "StateCode": "5"
+              "value": 242,
+              "key": "Udu",
+              "StateCode": 11
             },
             {
-                "key": "Ado Ekiti",
-                "value": "245",
-                "StateCode": "30"
+              "value": 243,
+              "key": "Ughelli North",
+              "StateCode": 11
             },
             {
-                "key": "Ekiti East",
-                "value": "246",
-                "StateCode": "30"
+              "value": 244,
+              "key": "Ughelli South",
+              "StateCode": 11
             },
             {
-                "key": "Ekiti West",
-                "value": "247",
-                "StateCode": "30"
+              "value": 245,
+              "key": "Ukwuani",
+              "StateCode": 11
             },
             {
-                "key": "Emure",
-                "value": "248",
-                "StateCode": "30"
+              "value": 246,
+              "key": "Uvwie",
+              "StateCode": 11
             },
             {
-                "key": "Ekiti South-West",
-                "value": "249",
-                "StateCode": "30"
+              "value": 247,
+              "key": "Warri North",
+              "StateCode": 11
             },
             {
-                "key": "Ikere",
-                "value": "250",
-                "StateCode": "30"
+              "value": 248,
+              "key": "Warri South",
+              "StateCode": 11
             },
             {
-                "key": "Irepodun/Ifelodun",
-                "value": "251",
-                "StateCode": "30"
+              "value": 249,
+              "key": "Warri South West",
+              "StateCode": 11
             },
             {
-                "key": "Ijero",
-                "value": "252",
-                "StateCode": "30"
+              "value": 250,
+              "key": "Abakaliki",
+              "StateCode": 12
             },
             {
-                "key": "Ido Osi",
-                "value": "253",
-                "StateCode": "30"
+              "value": 251,
+              "key": "Afikpo North",
+              "StateCode": 12
             },
             {
-                "key": "Oye",
-                "value": "254",
-                "StateCode": "30"
+              "value": 252,
+              "key": "Afikpo South",
+              "StateCode": 12
             },
             {
-                "key": "Ikole",
-                "value": "255",
-                "StateCode": "30"
+              "value": 253,
+              "key": "Ebonyi",
+              "StateCode": 12
             },
             {
-                "key": "Moba",
-                "value": "256",
-                "StateCode": "30"
+              "value": 254,
+              "key": "Ezza North",
+              "StateCode": 12
             },
             {
-                "key": "Gbonyin",
-                "value": "257",
-                "StateCode": "30"
+              "value": 255,
+              "key": "Ezza South",
+              "StateCode": 12
             },
             {
-                "key": "Efon",
-                "value": "258",
-                "StateCode": "30"
+              "value": 256,
+              "key": "Ikwo",
+              "StateCode": 12
             },
             {
-                "key": "Ise/Orun",
-                "value": "259",
-                "StateCode": "30"
+              "value": 257,
+              "key": "Ishielu",
+              "StateCode": 12
             },
             {
-                "key": "Ilejemeje",
-                "value": "260",
-                "StateCode": "30"
+              "value": 258,
+              "key": "Ivo",
+              "StateCode": 12
             },
             {
-                "key": "Enugu South",
-                "value": "261",
-                "StateCode": "8"
+              "value": 259,
+              "key": "Izzi",
+              "StateCode": 12
             },
             {
-                "key": "Igbo Eze South",
-                "value": "262",
-                "StateCode": "8"
+              "value": 260,
+              "key": "Ohaozara",
+              "StateCode": 12
             },
             {
-                "key": "Enugu North",
-                "value": "263",
-                "StateCode": "8"
+              "value": 261,
+              "key": "Ohaukwu",
+              "StateCode": 12
             },
             {
-                "key": "Nkanu West",
-                "value": "264",
-                "StateCode": "8"
+              "value": 262,
+              "key": "Onicha",
+              "StateCode": 12
             },
             {
-                "key": "AWgu",
-                "value": "265",
-                "StateCode": "8"
+              "value": 263,
+              "key": "Akoko-Edo",
+              "StateCode": 13
             },
             {
-                "key": "Oji River",
-                "value": "266",
-                "StateCode": "8"
+              "value": 264,
+              "key": "Egor",
+              "StateCode": 13
             },
             {
-                "key": "Ezeagu",
-                "value": "267",
-                "StateCode": "8"
+              "value": 265,
+              "key": "Esan Central",
+              "StateCode": 13
             },
             {
-                "key": "Igbo Eze North",
-                "value": "268",
-                "StateCode": "8"
+              "value": 266,
+              "key": "Esan North-East",
+              "StateCode": 13
             },
             {
-                "key": "Isi Uzo",
-                "value": "269",
-                "StateCode": "8"
+              "value": 267,
+              "key": "Esan South-East",
+              "StateCode": 13
             },
             {
-                "key": "Nsukka",
-                "value": "270",
-                "StateCode": "8"
+              "value": 268,
+              "key": "Esan West",
+              "StateCode": 13
             },
             {
-                "key": "Igbo-ETiti",
-                "value": "271",
-                "StateCode": "8"
+              "value": 269,
+              "key": "Etsako Central",
+              "StateCode": 13
             },
             {
-                "key": "Uzo-Uwani",
-                "value": "272",
-                "StateCode": "8"
+              "value": 270,
+              "key": "Etsako East",
+              "StateCode": 13
             },
             {
-                "key": "Enugu East",
-                "value": "273",
-                "StateCode": "8"
+              "value": 271,
+              "key": "Etsako West",
+              "StateCode": 13
             },
             {
-                "key": "Aninri",
-                "value": "274",
-                "StateCode": "8"
+              "value": 272,
+              "key": "Igueben",
+              "StateCode": 13
             },
             {
-                "key": "Nkanu East",
-                "value": "275",
-                "StateCode": "8"
+              "value": 273,
+              "key": "Ikpoba Okha",
+              "StateCode": 13
             },
             {
-                "key": "Udenu",
-                "value": "276",
-                "StateCode": "8"
+              "value": 274,
+              "key": "Orhionmwon",
+              "StateCode": 13
             },
             {
-                "key": "Akko",
-                "value": "277",
-                "StateCode": "24"
+              "value": 275,
+              "key": "Oredo",
+              "StateCode": 13
             },
             {
-                "key": "Balanga",
-                "value": "278",
-                "StateCode": "24"
+              "value": 276,
+              "key": "Ovia North-East",
+              "StateCode": 13
             },
             {
-                "key": "Billiri",
-                "value": "279",
-                "StateCode": "24"
+              "value": 277,
+              "key": "Ovia South-West",
+              "StateCode": 13
             },
             {
-                "key": "Dukku",
-                "value": "280",
-                "StateCode": "24"
+              "value": 278,
+              "key": "Owan East",
+              "StateCode": 13
             },
             {
-                "key": "Kaltungo",
-                "value": "281",
-                "StateCode": "24"
+              "value": 279,
+              "key": "Owan West",
+              "StateCode": 13
             },
             {
-                "key": "Kwami",
-                "value": "282",
-                "StateCode": "24"
+              "value": 280,
+              "key": "Uhunmwonde",
+              "StateCode": 13
             },
             {
-                "key": "Shongom",
-                "value": "283",
-                "StateCode": "24"
+              "value": 281,
+              "key": "Ado Ekiti",
+              "StateCode": 14
             },
             {
-                "key": "Funakaye",
-                "value": "284",
-                "StateCode": "24"
+              "value": 282,
+              "key": "Efon",
+              "StateCode": 14
             },
             {
-                "key": "Gombe",
-                "value": "285",
-                "StateCode": "24"
+              "value": 283,
+              "key": "Ekiti East",
+              "StateCode": 14
             },
             {
-                "key": "Nafada",
-                "value": "286",
-                "StateCode": "24"
+              "value": 284,
+              "key": "Ekiti South-West",
+              "StateCode": 14
             },
             {
-                "key": "Yamaltu/Deba",
-                "value": "287",
-                "StateCode": "24"
+              "value": 285,
+              "key": "Ekiti West",
+              "StateCode": 14
             },
             {
-                "key": "Aboh Mbaise",
-                "value": "288",
-                "StateCode": "18"
+              "value": 286,
+              "key": "Emure",
+              "StateCode": 14
             },
             {
-                "key": "Ahiazu Mbaise",
-                "value": "289",
-                "StateCode": "18"
+              "value": 287,
+              "key": "Gbonyin",
+              "StateCode": 14
             },
             {
-                "key": "Ehime Mbano",
-                "value": "290",
-                "StateCode": "18"
+              "value": 288,
+              "key": "Ido Osi",
+              "StateCode": 14
             },
             {
-                "key": "Ezinihitte",
-                "value": "291",
-                "StateCode": "18"
+              "value": 289,
+              "key": "Ijero",
+              "StateCode": 14
             },
             {
-                "key": "Ideato North",
-                "value": "292",
-                "StateCode": "18"
+              "value": 290,
+              "key": "Ikere",
+              "StateCode": 14
             },
             {
-                "key": "Ideato South",
-                "value": "293",
-                "StateCode": "18"
+              "value": 291,
+              "key": "Ikole",
+              "StateCode": 14
             },
             {
-                "key": "Ihitte/Uboma",
-                "value": "294",
-                "StateCode": "18"
+              "value": 292,
+              "key": "Ilejemeje",
+              "StateCode": 14
             },
             {
-                "key": "Ikeduru",
-                "value": "295",
-                "StateCode": "18"
+              "value": 293,
+              "key": "IrepodunIfelodun",
+              "StateCode": 14
             },
             {
-                "key": "Isiala Mbano",
-                "value": "296",
-                "StateCode": "18"
+              "value": 294,
+              "key": "IseOrun",
+              "StateCode": 14
             },
             {
-                "key": "Isu",
-                "value": "297",
-                "StateCode": "18"
+              "value": 295,
+              "key": "Moba",
+              "StateCode": 14
             },
             {
-                "key": "Mbaitoli",
-                "value": "298",
-                "StateCode": "18"
+              "value": 296,
+              "key": "Oye",
+              "StateCode": 14
             },
             {
-                "key": "Onuimo",
-                "value": "299",
-                "StateCode": "18"
+              "value": 297,
+              "key": "Aninri",
+              "StateCode": 15
             },
             {
-                "key": "Ngor Okpala",
-                "value": "300",
-                "StateCode": "18"
+              "value": 298,
+              "key": "Awgu",
+              "StateCode": 15
             },
             {
-                "key": "Njaba",
-                "value": "301",
-                "StateCode": "18"
+              "value": 299,
+              "key": "Enugu East",
+              "StateCode": 15
             },
             {
-                "key": "Nwangele",
-                "value": "302",
-                "StateCode": "18"
+              "value": 300,
+              "key": "Enugu North",
+              "StateCode": 15
             },
             {
-                "key": "Nkwerre",
-                "value": "303",
-                "StateCode": "18"
+              "value": 301,
+              "key": "Enugu South",
+              "StateCode": 15
             },
             {
-                "key": "Obowo",
-                "value": "304",
-                "StateCode": "18"
+              "value": 302,
+              "key": "Ezeagu",
+              "StateCode": 15
             },
             {
-                "key": "Oguta",
-                "value": "305",
-                "StateCode": "18"
+              "value": 303,
+              "key": "Igbo Etiti",
+              "StateCode": 15
             },
             {
-                "key": "Ohaji/Egbema",
-                "value": "306",
-                "StateCode": "18"
+              "value": 304,
+              "key": "Igbo Eze North",
+              "StateCode": 15
             },
             {
-                "key": "Okigwe",
-                "value": "307",
-                "StateCode": "18"
+              "value": 305,
+              "key": "Igbo Eze South",
+              "StateCode": 15
             },
             {
-                "key": "Orlu",
-                "value": "308",
-                "StateCode": "18"
+              "value": 306,
+              "key": "Isi Uzo",
+              "StateCode": 15
             },
             {
-                "key": "Orsu",
-                "value": "309",
-                "StateCode": "18"
+              "value": 307,
+              "key": "Nkanu East",
+              "StateCode": 15
             },
             {
-                "key": "Oru East",
-                "value": "310",
-                "StateCode": "18"
+              "value": 308,
+              "key": "Nkanu West",
+              "StateCode": 15
             },
             {
-                "key": "Oru West",
-                "value": "311",
-                "StateCode": "18"
+              "value": 309,
+              "key": "Nsukka",
+              "StateCode": 15
             },
             {
-                "key": "Owerri Municipal",
-                "value": "312",
-                "StateCode": "18"
+              "value": 310,
+              "key": "Oji River",
+              "StateCode": 15
             },
             {
-                "key": "Owerri North",
-                "value": "313",
-                "StateCode": "18"
+              "value": 311,
+              "key": "Udenu",
+              "StateCode": 15
             },
             {
-                "key": "Owerri West",
-                "value": "314",
-                "StateCode": "18"
+              "value": 312,
+              "key": "Udi",
+              "StateCode": 15
             },
             {
-                "key": "Auyo",
-                "value": "315",
-                "StateCode": "13"
+              "value": 313,
+              "key": "Uzo Uwani",
+              "StateCode": 15
             },
             {
-                "key": "Babura",
-                "value": "316",
-                "StateCode": "13"
+              "value": 314,
+              "key": "Abaji",
+              "StateCode": 37
             },
             {
-                "key": "Birni Kudu",
-                "value": "317",
-                "StateCode": "13"
+              "value": 315,
+              "key": "Bwari",
+              "StateCode": 37
             },
             {
-                "key": "Biriniwa",
-                "value": "318",
-                "StateCode": "13"
+              "value": 316,
+              "key": "Gwagwalada",
+              "StateCode": 37
             },
             {
-                "key": "Buji",
-                "value": "319",
-                "StateCode": "13"
+              "value": 317,
+              "key": "Kuje",
+              "StateCode": 37
             },
             {
-                "key": "Dutse",
-                "value": "320",
-                "StateCode": "13"
+              "value": 318,
+              "key": "Kwali",
+              "StateCode": 37
             },
             {
-                "key": "Gagarawa",
-                "value": "321",
-                "StateCode": "13"
+              "value": 319,
+              "key": "Municipal Area Council",
+              "StateCode": 37
             },
             {
-                "key": "Garki",
-                "value": "322",
-                "StateCode": "13"
+              "value": 320,
+              "key": "Akko",
+              "StateCode": 16
             },
             {
-                "key": "Gumel",
-                "value": "323",
-                "StateCode": "13"
+              "value": 321,
+              "key": "Balanga",
+              "StateCode": 16
             },
             {
-                "key": "Guri",
-                "value": "324",
-                "StateCode": "13"
+              "value": 322,
+              "key": "Billiri",
+              "StateCode": 16
             },
             {
-                "key": "Gwaram",
-                "value": "325",
-                "StateCode": "13"
+              "value": 323,
+              "key": "Dukku",
+              "StateCode": 16
             },
             {
-                "key": "Gwiwa",
-                "value": "326",
-                "StateCode": "13"
+              "value": 324,
+              "key": "Funakaye",
+              "StateCode": 16
             },
             {
-                "key": "Hadejia",
-                "value": "327",
-                "StateCode": "13"
+              "value": 325,
+              "key": "Gombe",
+              "StateCode": 16
             },
             {
-                "key": "Jahun",
-                "value": "328",
-                "StateCode": "13"
+              "value": 326,
+              "key": "Kaltungo",
+              "StateCode": 16
             },
             {
-                "key": "Kafin Hausa",
-                "value": "329",
-                "StateCode": "13"
+              "value": 327,
+              "key": "Kwami",
+              "StateCode": 16
             },
             {
-                "key": "Kaugama",
-                "value": "330",
-                "StateCode": "13"
+              "value": 328,
+              "key": "Nafada",
+              "StateCode": 16
             },
             {
-                "key": "Kiri Kasamma",
-                "value": "331",
-                "StateCode": "13"
+              "value": 329,
+              "key": "Shongom",
+              "StateCode": 16
             },
             {
-                "key": "Kiyawa",
-                "value": "332",
-                "StateCode": "13"
+              "value": 330,
+              "key": "YamaltuDeba",
+              "StateCode": 16
             },
             {
-                "key": "Maigatari",
-                "value": "333",
-                "StateCode": "13"
+              "value": 331,
+              "key": "Aboh Mbaise",
+              "StateCode": 17
             },
             {
-                "key": "Malam Madori",
-                "value": "334",
-                "StateCode": "13"
+              "value": 332,
+              "key": "Ahiazu Mbaise",
+              "StateCode": 17
             },
             {
-                "key": "Miga",
-                "value": "335",
-                "StateCode": "13"
+              "value": 333,
+              "key": "Ehime Mbano",
+              "StateCode": 17
             },
             {
-                "key": "Ringim",
-                "value": "336",
-                "StateCode": "13"
+              "value": 334,
+              "key": "Ezinihitte",
+              "StateCode": 17
             },
             {
-                "key": "Roni",
-                "value": "337",
-                "StateCode": "13"
+              "value": 335,
+              "key": "Ideato North",
+              "StateCode": 17
             },
             {
-                "key": "Sule Tankarkar",
-                "value": "338",
-                "StateCode": "13"
+              "value": 336,
+              "key": "Ideato South",
+              "StateCode": 17
             },
             {
-                "key": "Taura",
-                "value": "339",
-                "StateCode": "13"
+              "value": 337,
+              "key": "IhitteUboma",
+              "StateCode": 17
             },
             {
-                "key": "Yankwashi",
-                "value": "340",
-                "StateCode": "13"
+              "value": 338,
+              "key": "Ikeduru",
+              "StateCode": 17
             },
             {
-                "key": "BirniN Gwari",
-                "value": "341",
-                "StateCode": "22"
+              "value": 339,
+              "key": "Isiala Mbano",
+              "StateCode": 17
             },
             {
-                "key": "Chikun",
-                "value": "342",
-                "StateCode": "22"
+              "value": 340,
+              "key": "Isu",
+              "StateCode": 17
             },
             {
-                "key": "Giwa",
-                "value": "343",
-                "StateCode": "22"
+              "value": 341,
+              "key": "Mbaitoli",
+              "StateCode": 17
             },
             {
-                "key": "Igabi",
-                "value": "344",
-                "StateCode": "22"
+              "value": 342,
+              "key": "Ngor Okpala",
+              "StateCode": 17
             },
             {
-                "key": "Ikara",
-                "value": "345",
-                "StateCode": "22"
+              "value": 343,
+              "key": "Njaba",
+              "StateCode": 17
             },
             {
-                "key": "jaba",
-                "value": "346",
-                "StateCode": "22"
+              "value": 344,
+              "key": "Nkwerre",
+              "StateCode": 17
             },
             {
-                "key": "Jema'a",
-                "value": "347",
-                "StateCode": "22"
+              "value": 345,
+              "key": "Nwangele",
+              "StateCode": 17
             },
             {
-                "key": "Kachia",
-                "value": "348",
-                "StateCode": "22"
+              "value": 346,
+              "key": "Obowo",
+              "StateCode": 17
             },
             {
-                "key": "Kaduna North",
-                "value": "349",
-                "StateCode": "22"
+              "value": 347,
+              "key": "Oguta",
+              "StateCode": 17
             },
             {
-                "key": "Kaduna South",
-                "value": "350",
-                "StateCode": "22"
+              "value": 348,
+              "key": "OhajiEgbema",
+              "StateCode": 17
             },
             {
-                "key": "Kagarko",
-                "value": "351",
-                "StateCode": "22"
+              "value": 349,
+              "key": "Okigwe",
+              "StateCode": 17
             },
             {
-                "key": "Kajuru",
-                "value": "352",
-                "StateCode": "22"
+              "value": 350,
+              "key": "Orlu",
+              "StateCode": 17
             },
             {
-                "key": "Kaura",
-                "value": "353",
-                "StateCode": "22"
+              "value": 351,
+              "key": "Orsu",
+              "StateCode": 17
             },
             {
-                "key": "Kauru",
-                "value": "354",
-                "StateCode": "22"
+              "value": 352,
+              "key": "Oru East",
+              "StateCode": 17
             },
             {
-                "key": "Kubau",
-                "value": "355",
-                "StateCode": "22"
+              "value": 353,
+              "key": "Oru West",
+              "StateCode": 17
             },
             {
-                "key": "Kudan",
-                "value": "356",
-                "StateCode": "22"
+              "value": 354,
+              "key": "Owerri Municipal",
+              "StateCode": 17
             },
             {
-                "key": "Lere",
-                "value": "357",
-                "StateCode": "22"
+              "value": 355,
+              "key": "Owerri North",
+              "StateCode": 17
             },
             {
-                "key": "Makarfi",
-                "value": "358",
-                "StateCode": "22"
+              "value": 356,
+              "key": "Owerri West",
+              "StateCode": 17
             },
             {
-                "key": "Sabon Gari",
-                "value": "359",
-                "StateCode": "22"
+              "value": 357,
+              "key": "Unuimo",
+              "StateCode": 17
             },
             {
-                "key": "Sanga",
-                "value": "360",
-                "StateCode": "22"
+              "value": 358,
+              "key": "Auyo",
+              "StateCode": 18
             },
             {
-                "key": "Soba",
-                "value": "361",
-                "StateCode": "22"
+              "value": 359,
+              "key": "Babura",
+              "StateCode": 18
             },
             {
-                "key": "Zango Kataf",
-                "value": "362",
-                "StateCode": "22"
+              "value": 360,
+              "key": "Biriniwa",
+              "StateCode": 18
             },
             {
-                "key": "Zaria",
-                "value": "363",
-                "StateCode": "22"
+              "value": 361,
+              "key": "Birnin Kudu",
+              "StateCode": 18
             },
             {
-                "key": "Ajingi",
-                "value": "364",
-                "StateCode": "7"
+              "value": 362,
+              "key": "Buji",
+              "StateCode": 18
             },
             {
-                "key": "Albasu",
-                "value": "365",
-                "StateCode": "7"
+              "value": 363,
+              "key": "Dutse",
+              "StateCode": 18
             },
             {
-                "key": "Bagwai",
-                "value": "366",
-                "StateCode": "7"
+              "value": 364,
+              "key": "Gagarawa",
+              "StateCode": 18
             },
             {
-                "key": "Bebeji",
-                "value": "367",
-                "StateCode": "7"
+              "value": 365,
+              "key": "Garki",
+              "StateCode": 18
             },
             {
-                "key": "Bichi",
-                "value": "368",
-                "StateCode": "7"
+              "value": 366,
+              "key": "Gumel",
+              "StateCode": 18
             },
             {
-                "key": "Bunkure",
-                "value": "369",
-                "StateCode": "7"
+              "value": 367,
+              "key": "Guri",
+              "StateCode": 18
             },
             {
-                "key": "Dala",
-                "value": "370",
-                "StateCode": "7"
+              "value": 368,
+              "key": "Gwaram",
+              "StateCode": 18
             },
             {
-                "key": "DaNbatta",
-                "value": "371",
-                "StateCode": "7"
+              "value": 369,
+              "key": "Gwiwa",
+              "StateCode": 18
             },
             {
-                "key": "Dawakin Kudu",
-                "value": "372",
-                "StateCode": "7"
+              "value": 370,
+              "key": "Hadejia",
+              "StateCode": 18
             },
             {
-                "key": "Dawakin Tofa",
-                "value": "373",
-                "StateCode": "7"
+              "value": 371,
+              "key": "Jahun",
+              "StateCode": 18
             },
             {
-                "key": "Doguwa",
-                "value": "374",
-                "StateCode": "7"
+              "value": 372,
+              "key": "Kafin Hausa",
+              "StateCode": 18
             },
             {
-                "key": "Fagge",
-                "value": "375",
-                "StateCode": "7"
+              "value": 373,
+              "key": "Kazaure",
+              "StateCode": 18
             },
             {
-                "key": "Gabasawa",
-                "value": "376",
-                "StateCode": "7"
+              "value": 374,
+              "key": "Kiri Kasama",
+              "StateCode": 18
             },
             {
-                "key": "Garko",
-                "value": "377",
-                "StateCode": "7"
+              "value": 375,
+              "key": "Kiyawa",
+              "StateCode": 18
             },
             {
-                "key": "GaruN Mallam",
-                "value": "378",
-                "StateCode": "7"
+              "value": 376,
+              "key": "Kaugama",
+              "StateCode": 18
             },
             {
-                "key": "Gaya",
-                "value": "380",
-                "StateCode": "7"
+              "value": 377,
+              "key": "Maigatari",
+              "StateCode": 18
             },
             {
-                "key": "Gezawa",
-                "value": "381",
-                "StateCode": "7"
+              "value": 378,
+              "key": "Malam Madori",
+              "StateCode": 18
             },
             {
-                "key": "Gwale",
-                "value": "382",
-                "StateCode": "7"
+              "value": 379,
+              "key": "Miga",
+              "StateCode": 18
             },
             {
-                "key": "Gwarzo",
-                "value": "383",
-                "StateCode": "7"
+              "value": 380,
+              "key": "Ringim",
+              "StateCode": 18
             },
             {
-                "key": "Kabo",
-                "value": "384",
-                "StateCode": "7"
+              "value": 381,
+              "key": "Roni",
+              "StateCode": 18
             },
             {
-                "key": "Kano Municipal",
-                "value": "385",
-                "StateCode": "7"
+              "value": 382,
+              "key": "Sule Tankarkar",
+              "StateCode": 18
             },
             {
-                "key": "Karaye",
-                "value": "386",
-                "StateCode": "7"
+              "value": 383,
+              "key": "Taura",
+              "StateCode": 18
             },
             {
-                "key": "Kibiya",
-                "value": "387",
-                "StateCode": "7"
+              "value": 384,
+              "key": "Yankwashi",
+              "StateCode": 18
             },
             {
-                "key": "Kiru",
-                "value": "388",
-                "StateCode": "7"
+              "value": 385,
+              "key": "Birnin Gwari",
+              "StateCode": 19
             },
             {
-                "key": "kumbotso",
-                "value": "389",
-                "StateCode": "7"
+              "value": 386,
+              "key": "Chikun",
+              "StateCode": 19
             },
             {
-                "key": "Kunchi",
-                "value": "390",
-                "StateCode": "7"
+              "value": 387,
+              "key": "Giwa",
+              "StateCode": 19
             },
             {
-                "key": "Kura",
-                "value": "391",
-                "StateCode": "7"
+              "value": 388,
+              "key": "Igabi",
+              "StateCode": 19
             },
             {
-                "key": "Madobi",
-                "value": "392",
-                "StateCode": "7"
+              "value": 389,
+              "key": "Ikara",
+              "StateCode": 19
             },
             {
-                "key": "Makoda",
-                "value": "393",
-                "StateCode": "7"
+              "value": 390,
+              "key": "Jaba",
+              "StateCode": 19
             },
             {
-                "key": "Minjibir",
-                "value": "394",
-                "StateCode": "7"
+              "value": 391,
+              "key": "Jema'a",
+              "StateCode": 19
             },
             {
-                "key": "NasSarawa",
-                "value": "395",
-                "StateCode": "7"
+              "value": 392,
+              "key": "Kachia",
+              "StateCode": 19
             },
             {
-                "key": "Rano",
-                "value": "396",
-                "StateCode": "7"
+              "value": 393,
+              "key": "Kaduna North",
+              "StateCode": 19
             },
             {
-                "key": "Rimin Gado",
-                "value": "397",
-                "StateCode": "7"
+              "value": 394,
+              "key": "Kaduna South",
+              "StateCode": 19
             },
             {
-                "key": "Rogo",
-                "value": "398",
-                "StateCode": "7"
+              "value": 395,
+              "key": "Kagarko",
+              "StateCode": 19
             },
             {
-                "key": "Shanono",
-                "value": "399",
-                "StateCode": "7"
+              "value": 396,
+              "key": "Kajuru",
+              "StateCode": 19
             },
             {
-                "key": "Sumaila",
-                "value": "400",
-                "StateCode": "7"
+              "value": 397,
+              "key": "Kaura",
+              "StateCode": 19
             },
             {
-                "key": "Takai",
-                "value": "401",
-                "StateCode": "7"
+              "value": 398,
+              "key": "Kauru",
+              "StateCode": 19
             },
             {
-                "key": "Tarauni",
-                "value": "402",
-                "StateCode": "7"
+              "value": 399,
+              "key": "Kubau",
+              "StateCode": 19
             },
             {
-                "key": "Tofa",
-                "value": "403",
-                "StateCode": "7"
+              "value": 400,
+              "key": "Kudan",
+              "StateCode": 19
             },
             {
-                "key": "Tsanyawa",
-                "value": "404",
-                "StateCode": "7"
+              "value": 401,
+              "key": "Lere",
+              "StateCode": 19
             },
             {
-                "key": "Tudun Wada",
-                "value": "405",
-                "StateCode": "7"
+              "value": 402,
+              "key": "Makarfi",
+              "StateCode": 19
             },
             {
-                "key": "Ungogo",
-                "value": "406",
-                "StateCode": "7"
+              "value": 403,
+              "key": "Sabon Gari",
+              "StateCode": 19
             },
             {
-                "key": "Warawa",
-                "value": "407",
-                "StateCode": "7"
+              "value": 404,
+              "key": "Sanga",
+              "StateCode": 19
             },
             {
-                "key": "Wudil",
-                "value": "408",
-                "StateCode": "7"
+              "value": 405,
+              "key": "Soba",
+              "StateCode": 19
             },
             {
-                "key": "Bakori",
-                "value": "409",
-                "StateCode": "9"
+              "value": 406,
+              "key": "Zangon Kataf",
+              "StateCode": 19
             },
             {
-                "key": "Batagarawa",
-                "value": "410",
-                "StateCode": "9"
+              "value": 407,
+              "key": "Zaria",
+              "StateCode": 19
             },
             {
-                "key": "Batsari",
-                "value": "411",
-                "StateCode": "9"
+              "value": 408,
+              "key": "Ajingi",
+              "StateCode": 20
             },
             {
-                "key": "Baure",
-                "value": "412",
-                "StateCode": "9"
+              "value": 409,
+              "key": "Albasu",
+              "StateCode": 20
             },
             {
-                "key": "Bindawa",
-                "value": "413",
-                "StateCode": "9"
+              "value": 410,
+              "key": "Bagwai",
+              "StateCode": 20
             },
             {
-                "key": "Charanchi",
-                "value": "414",
-                "StateCode": "9"
+              "value": 411,
+              "key": "Bebeji",
+              "StateCode": 20
             },
             {
-                "key": "Dandume",
-                "value": "415",
-                "StateCode": "9"
+              "value": 412,
+              "key": "Bichi",
+              "StateCode": 20
             },
             {
-                "key": "Danja",
-                "value": "416",
-                "StateCode": "9"
+              "value": 413,
+              "key": "Bunkure",
+              "StateCode": 20
             },
             {
-                "key": "Dan Musa",
-                "value": "417",
-                "StateCode": "9"
+              "value": 414,
+              "key": "Dala",
+              "StateCode": 20
             },
             {
-                "key": "Daura",
-                "value": "418",
-                "StateCode": "9"
+              "value": 415,
+              "key": "Dambatta",
+              "StateCode": 20
             },
             {
-                "key": "Dutsi",
-                "value": "419",
-                "StateCode": "9"
+              "value": 416,
+              "key": "Dawakin Kudu",
+              "StateCode": 20
             },
             {
-                "key": "Dutsin-Ma",
-                "value": "420",
-                "StateCode": "9"
+              "value": 417,
+              "key": "Dawakin Tofa",
+              "StateCode": 20
             },
             {
-                "key": "Faskari",
-                "value": "421",
-                "StateCode": "9"
+              "value": 418,
+              "key": "Doguwa",
+              "StateCode": 20
             },
             {
-                "key": "Funtua",
-                "value": "422",
-                "StateCode": "9"
+              "value": 419,
+              "key": "Fagge",
+              "StateCode": 20
             },
             {
-                "key": "Ingawa",
-                "value": "423",
-                "StateCode": "9"
+              "value": 420,
+              "key": "Gabasawa",
+              "StateCode": 20
             },
             {
-                "key": "Jibia",
-                "value": "424",
-                "StateCode": "9"
+              "value": 421,
+              "key": "Garko",
+              "StateCode": 20
             },
             {
-                "key": "Kafur",
-                "value": "425",
-                "StateCode": "9"
+              "value": 422,
+              "key": "Garun Mallam",
+              "StateCode": 20
             },
             {
-                "key": "Kaita",
-                "value": "426",
-                "StateCode": "9"
+              "value": 423,
+              "key": "Gaya",
+              "StateCode": 20
             },
             {
-                "key": "Kankara",
-                "value": "427",
-                "StateCode": "9"
+              "value": 424,
+              "key": "Gezawa",
+              "StateCode": 20
             },
             {
-                "key": "Kankia",
-                "value": "428",
-                "StateCode": "9"
+              "value": 425,
+              "key": "Gwale",
+              "StateCode": 20
             },
             {
-                "key": "Katsina",
-                "value": "429",
-                "StateCode": "9"
+              "value": 426,
+              "key": "Gwarzo",
+              "StateCode": 20
             },
             {
-                "key": "Kurfi",
-                "value": "430",
-                "StateCode": "9"
+              "value": 427,
+              "key": "Kabo",
+              "StateCode": 20
             },
             {
-                "key": "Kusada",
-                "value": "431",
-                "StateCode": "9"
+              "value": 428,
+              "key": "Kano Municipal",
+              "StateCode": 20
             },
             {
-                "key": "Mai'Adua",
-                "value": "432",
-                "StateCode": "9"
+              "value": 429,
+              "key": "Karaye",
+              "StateCode": 20
             },
             {
-                "key": "Malumfashi",
-                "value": "433",
-                "StateCode": "9"
+              "value": 430,
+              "key": "Kibiya",
+              "StateCode": 20
             },
             {
-                "key": "Mani",
-                "value": "434",
-                "StateCode": "9"
+              "value": 431,
+              "key": "Kiru",
+              "StateCode": 20
             },
             {
-                "key": "Mashi",
-                "value": "435",
-                "StateCode": "9"
+              "value": 432,
+              "key": "Kumbotso",
+              "StateCode": 20
             },
             {
-                "key": "Matazu",
-                "value": "436",
-                "StateCode": "9"
+              "value": 433,
+              "key": "Kunchi",
+              "StateCode": 20
             },
             {
-                "key": "Musawa",
-                "value": "437",
-                "StateCode": "9"
+              "value": 434,
+              "key": "Kura",
+              "StateCode": 20
             },
             {
-                "key": "Rimi",
-                "value": "438",
-                "StateCode": "9"
+              "value": 435,
+              "key": "Madobi",
+              "StateCode": 20
             },
             {
-                "key": "Sabuwa",
-                "value": "439",
-                "StateCode": "9"
+              "value": 436,
+              "key": "Makoda",
+              "StateCode": 20
             },
             {
-                "key": "Safana",
-                "value": "440",
-                "StateCode": "9"
+              "value": 437,
+              "key": "Minjibir",
+              "StateCode": 20
             },
             {
-                "key": "Sandamu",
-                "value": "441",
-                "StateCode": "9"
+              "value": 438,
+              "key": "Nasarawa",
+              "StateCode": 20
             },
             {
-                "key": "Zango",
-                "value": "442",
-                "StateCode": "9"
+              "value": 439,
+              "key": "Rano",
+              "StateCode": 20
             },
             {
-                "key": "AlIero",
-                "value": "443",
-                "StateCode": "25"
+              "value": 440,
+              "key": "Rimin Gado",
+              "StateCode": 20
             },
             {
-                "key": "Arewa Dandi",
-                "value": "444",
-                "StateCode": "25"
+              "value": 441,
+              "key": "Rogo",
+              "StateCode": 20
             },
             {
-                "key": "Argungu",
-                "value": "445",
-                "StateCode": "25"
+              "value": 442,
+              "key": "Shanono",
+              "StateCode": 20
             },
             {
-                "key": "Augie",
-                "value": "446",
-                "StateCode": "25"
+              "value": 443,
+              "key": "Sumaila",
+              "StateCode": 20
             },
             {
-                "key": "Bagudo",
-                "value": "447",
-                "StateCode": "25"
+              "value": 444,
+              "key": "Takai",
+              "StateCode": 20
             },
             {
-                "key": "Birnin Kebbi",
-                "value": "448",
-                "StateCode": "25"
+              "value": 445,
+              "key": "Tarauni",
+              "StateCode": 20
             },
             {
-                "key": "Bunza",
-                "value": "449",
-                "StateCode": "25"
+              "value": 446,
+              "key": "Tofa",
+              "StateCode": 20
             },
             {
-                "key": "Dandi",
-                "value": "450",
-                "StateCode": "25"
+              "value": 447,
+              "key": "Tsanyawa",
+              "StateCode": 20
             },
             {
-                "key": "Fakai",
-                "value": "451",
-                "StateCode": "25"
+              "value": 448,
+              "key": "Tudun Wada",
+              "StateCode": 20
             },
             {
-                "key": "Gwandu",
-                "value": "452",
-                "StateCode": "25"
+              "value": 449,
+              "key": "Ungogo",
+              "StateCode": 20
             },
             {
-                "key": "Jega",
-                "value": "453",
-                "StateCode": "25"
+              "value": 450,
+              "key": "Warawa",
+              "StateCode": 20
             },
             {
-                "key": "Kalgo",
-                "value": "454",
-                "StateCode": "25"
+              "value": 451,
+              "key": "Wudil",
+              "StateCode": 20
             },
             {
-                "key": "Koko/Besse",
-                "value": "455",
-                "StateCode": "25"
+              "value": 452,
+              "key": "Bakori",
+              "StateCode": 21
             },
             {
-                "key": "Maiyama",
-                "value": "456",
-                "StateCode": "25"
+              "value": 453,
+              "key": "Batagarawa",
+              "StateCode": 21
             },
             {
-                "key": "Ngaski",
-                "value": "457",
-                "StateCode": "25"
+              "value": 454,
+              "key": "Batsari",
+              "StateCode": 21
             },
             {
-                "key": "Sakaba",
-                "value": "458",
-                "StateCode": "25"
+              "value": 455,
+              "key": "Baure",
+              "StateCode": 21
             },
             {
-                "key": "Shanga",
-                "value": "459",
-                "StateCode": "25"
+              "value": 456,
+              "key": "Bindawa",
+              "StateCode": 21
             },
             {
-                "key": "Suru",
-                "value": "460",
-                "StateCode": "25"
+              "value": 457,
+              "key": "Charanchi",
+              "StateCode": 21
             },
             {
-                "key": "Wasagu/Danko",
-                "value": "461",
-                "StateCode": "25"
+              "value": 458,
+              "key": "Dandume",
+              "StateCode": 21
             },
             {
-                "key": "Yauri",
-                "value": "462",
-                "StateCode": "25"
+              "value": 459,
+              "key": "Danja",
+              "StateCode": 21
             },
             {
-                "key": "Zuru",
-                "value": "463",
-                "StateCode": "25"
+              "value": 460,
+              "key": "Dan Musa",
+              "StateCode": 21
             },
             {
-                "key": "Adavi",
-                "value": "464",
-                "StateCode": "15"
+              "value": 461,
+              "key": "Daura",
+              "StateCode": 21
             },
             {
-                "key": "Ajaokuta",
-                "value": "465",
-                "StateCode": "15"
+              "value": 462,
+              "key": "Dutsi",
+              "StateCode": 21
             },
             {
-                "key": "Ankpa",
-                "value": "466",
-                "StateCode": "15"
+              "value": 463,
+              "key": "Dutsin Ma",
+              "StateCode": 21
             },
             {
-                "key": "Bassa",
-                "value": "467",
-                "StateCode": "15"
+              "value": 464,
+              "key": "Faskari",
+              "StateCode": 21
             },
             {
-                "key": "Dekina",
-                "value": "468",
-                "StateCode": "15"
+              "value": 465,
+              "key": "Funtua",
+              "StateCode": 21
             },
             {
-                "key": "Ibaji",
-                "value": "469",
-                "StateCode": "15"
+              "value": 466,
+              "key": "Ingawa",
+              "StateCode": 21
             },
             {
-                "key": "Idah",
-                "value": "470",
-                "StateCode": "15"
+              "value": 467,
+              "key": "Jibia",
+              "StateCode": 21
             },
             {
-                "key": "Igalamela Odolu",
-                "value": "471",
-                "StateCode": "15"
+              "value": 468,
+              "key": "Kafur",
+              "StateCode": 21
             },
             {
-                "key": "Ijumu",
-                "value": "472",
-                "StateCode": "15"
+              "value": 469,
+              "key": "Kaita",
+              "StateCode": 21
             },
             {
-                "key": "Kabba/Bunu",
-                "value": "473",
-                "StateCode": "15"
+              "value": 470,
+              "key": "Kankara",
+              "StateCode": 21
             },
             {
-                "key": "Koton Karfe",
-                "value": "474",
-                "StateCode": "15"
+              "value": 471,
+              "key": "Kankia",
+              "StateCode": 21
             },
             {
-                "key": "Lokoja",
-                "value": "475",
-                "StateCode": "15"
+              "value": 472,
+              "key": "Katsina",
+              "StateCode": 21
             },
             {
-                "key": "Mopa Muro",
-                "value": "476",
-                "StateCode": "15"
+              "value": 473,
+              "key": "Kurfi",
+              "StateCode": 21
             },
             {
-                "key": "Ofu",
-                "value": "477",
-                "StateCode": "15"
+              "value": 474,
+              "key": "Kusada",
+              "StateCode": 21
             },
             {
-                "key": "Ogori-Magongo",
-                "value": "478",
-                "StateCode": "15"
+              "value": 475,
+              "key": "Mai'Adua",
+              "StateCode": 21
             },
             {
-                "key": "Okehi",
-                "value": "479",
-                "StateCode": "15"
+              "value": 476,
+              "key": "Malumfashi",
+              "StateCode": 21
             },
             {
-                "key": "Okene",
-                "value": "480",
-                "StateCode": "15"
+              "value": 477,
+              "key": "Mani",
+              "StateCode": 21
             },
             {
-                "key": "Olamaboro",
-                "value": "481",
-                "StateCode": "15"
+              "value": 478,
+              "key": "Mashi",
+              "StateCode": 21
             },
             {
-                "key": "Omala",
-                "value": "482",
-                "StateCode": "15"
+              "value": 479,
+              "key": "Matazu",
+              "StateCode": 21
             },
             {
-                "key": "Yagba East",
-                "value": "483",
-                "StateCode": "15"
+              "value": 480,
+              "key": "Musawa",
+              "StateCode": 21
             },
             {
-                "key": "Yagba West",
-                "value": "484",
-                "StateCode": "15"
+              "value": 481,
+              "key": "Rimi",
+              "StateCode": 21
             },
             {
-                "key": "Asa",
-                "value": "485",
-                "StateCode": "26"
+              "value": 482,
+              "key": "Sabuwa",
+              "StateCode": 21
             },
             {
-                "key": "Baruten",
-                "value": "486",
-                "StateCode": "26"
+              "value": 483,
+              "key": "Safana",
+              "StateCode": 21
             },
             {
-                "key": "Edu",
-                "value": "487",
-                "StateCode": "26"
+              "value": 484,
+              "key": "Sandamu",
+              "StateCode": 21
             },
             {
-                "key": "Ekiti",
-                "value": "488",
-                "StateCode": "26"
+              "value": 485,
+              "key": "Zango",
+              "StateCode": 21
             },
             {
-                "key": "Ifelodun",
-                "value": "489",
-                "StateCode": "26"
+              "value": 486,
+              "key": "Aleiro",
+              "StateCode": 22
             },
             {
-                "key": "Ilorin East",
-                "value": "490",
-                "StateCode": "26"
+              "value": 487,
+              "key": "Arewa Dandi",
+              "StateCode": 22
             },
             {
-                "key": "Ilorin West",
-                "value": "491",
-                "StateCode": "26"
+              "value": 488,
+              "key": "Argungu",
+              "StateCode": 22
             },
             {
-                "key": "Irepodun",
-                "value": "492",
-                "StateCode": "26"
+              "value": 489,
+              "key": "Augie",
+              "StateCode": 22
             },
             {
-                "key": "Isin",
-                "value": "493",
-                "StateCode": "26"
+              "value": 490,
+              "key": "Bagudo",
+              "StateCode": 22
             },
             {
-                "key": "Kaiama",
-                "value": "494",
-                "StateCode": "26"
+              "value": 491,
+              "key": "Birnin Kebbi",
+              "StateCode": 22
             },
             {
-                "key": "Moro",
-                "value": "495",
-                "StateCode": "26"
+              "value": 492,
+              "key": "Bunza",
+              "StateCode": 22
             },
             {
-                "key": "Offa",
-                "value": "496",
-                "StateCode": "26"
+              "value": 493,
+              "key": "Dandi",
+              "StateCode": 22
             },
             {
-                "key": "Oke Ero",
-                "value": "497",
-                "StateCode": "26"
+              "value": 494,
+              "key": "Fakai",
+              "StateCode": 22
             },
             {
-                "key": "Oyun",
-                "value": "498",
-                "StateCode": "26"
+              "value": 495,
+              "key": "Gwandu",
+              "StateCode": 22
             },
             {
-                "key": "Pategi",
-                "value": "499",
-                "StateCode": "26"
+              "value": 496,
+              "key": "Jega",
+              "StateCode": 22
             },
             {
-                "key": "Agege",
-                "value": "500",
-                "StateCode": "27"
+              "value": 497,
+              "key": "Kalgo",
+              "StateCode": 22
             },
             {
-                "key": "Ajeromi-Ifelodun",
-                "value": "501",
-                "StateCode": "27"
+              "value": 498,
+              "key": "KokoBesse",
+              "StateCode": 22
             },
             {
-                "key": "Alimosho",
-                "value": "502",
-                "StateCode": "27"
+              "value": 499,
+              "key": "Maiyama",
+              "StateCode": 22
             },
             {
-                "key": "Amuwo-Odofin",
-                "value": "503",
-                "StateCode": "27"
+              "value": 500,
+              "key": "Ngaski",
+              "StateCode": 22
             },
             {
-                "key": "Apapa",
-                "value": "504",
-                "StateCode": "27"
+              "value": 501,
+              "key": "Sakaba",
+              "StateCode": 22
             },
             {
-                "key": "Badagry",
-                "value": "505",
-                "StateCode": "27"
+              "value": 502,
+              "key": "Shanga",
+              "StateCode": 22
             },
             {
-                "key": "Epe",
-                "value": "506",
-                "StateCode": "27"
+              "value": 503,
+              "key": "Suru",
+              "StateCode": 22
             },
             {
-                "key": "Eti Osa",
-                "value": "507",
-                "StateCode": "27"
+              "value": 504,
+              "key": "WasaguDanko",
+              "StateCode": 22
             },
             {
-                "key": "Ibeju-Lekki",
-                "value": "508",
-                "StateCode": "27"
+              "value": 505,
+              "key": "Yauri",
+              "StateCode": 22
             },
             {
-                "key": "Ifako-Ijaiye",
-                "value": "509",
-                "StateCode": "27"
+              "value": 506,
+              "key": "Zuru",
+              "StateCode": 22
             },
             {
-                "key": "Ikeja",
-                "value": "510",
-                "StateCode": "27"
+              "value": 507,
+              "key": "Adavi",
+              "StateCode": 23
             },
             {
-                "key": "Ikorodu",
-                "value": "511",
-                "StateCode": "27"
+              "value": 508,
+              "key": "Ajaokuta",
+              "StateCode": 23
             },
             {
-                "key": "Kosofe",
-                "value": "512",
-                "StateCode": "27"
+              "value": 509,
+              "key": "Ankpa",
+              "StateCode": 23
             },
             {
-                "key": "Lagos Island",
-                "value": "513",
-                "StateCode": "27"
+              "value": 510,
+              "key": "Bassa",
+              "StateCode": 23
             },
             {
-                "key": "Lagos Mainland",
-                "value": "514",
-                "StateCode": "27"
+              "value": 511,
+              "key": "Dekina",
+              "StateCode": 23
             },
             {
-                "key": "Mushin",
-                "value": "515",
-                "StateCode": "27"
+              "value": 512,
+              "key": "Ibaji",
+              "StateCode": 23
             },
             {
-                "key": "Ojo",
-                "value": "516",
-                "StateCode": "27"
+              "value": 513,
+              "key": "Idah",
+              "StateCode": 23
             },
             {
-                "key": "Oshodi-Isolo",
-                "value": "517",
-                "StateCode": "27"
+              "value": 514,
+              "key": "Igalamela Odolu",
+              "StateCode": 23
             },
             {
-                "key": "Shomolu",
-                "value": "518",
-                "StateCode": "27"
+              "value": 515,
+              "key": "Ijumu",
+              "StateCode": 23
             },
             {
-                "key": "Surulere",
-                "value": "519",
-                "StateCode": "27"
+              "value": 516,
+              "key": "KabbaBunu",
+              "StateCode": 23
             },
             {
-                "key": "Akwanga",
-                "value": "520",
-                "StateCode": "28"
+              "value": 517,
+              "key": "Kogi",
+              "StateCode": 23
             },
             {
-                "key": "Awe",
-                "value": "521",
-                "StateCode": "28"
+              "value": 518,
+              "key": "Lokoja",
+              "StateCode": 23
             },
             {
-                "key": "Doma",
-                "value": "522",
-                "StateCode": "28"
+              "value": 519,
+              "key": "Mopa Muro",
+              "StateCode": 23
             },
             {
-                "key": "Karu",
-                "value": "523",
-                "StateCode": "28"
+              "value": 520,
+              "key": "Ofu",
+              "StateCode": 23
             },
             {
-                "key": "Keana",
-                "value": "524",
-                "StateCode": "28"
+              "value": 521,
+              "key": "OgoriMagongo",
+              "StateCode": 23
             },
             {
-                "key": "Keffi",
-                "value": "525",
-                "StateCode": "28"
+              "value": 522,
+              "key": "Okehi",
+              "StateCode": 23
             },
             {
-                "key": "Kokona",
-                "value": "526",
-                "StateCode": "28"
+              "value": 523,
+              "key": "Okene",
+              "StateCode": 23
             },
             {
-                "key": "Lafia",
-                "value": "527",
-                "StateCode": "28"
+              "value": 524,
+              "key": "Olamaboro",
+              "StateCode": 23
             },
             {
-                "key": "Nasarawa",
-                "value": "528",
-                "StateCode": "28"
+              "value": 525,
+              "key": "Omala",
+              "StateCode": 23
             },
             {
-                "key": "Nasarawa EgGon",
-                "value": "529",
-                "StateCode": "28"
+              "value": 526,
+              "key": "Yagba East",
+              "StateCode": 23
             },
             {
-                "key": "Obi",
-                "value": "530",
-                "StateCode": "28"
+              "value": 527,
+              "key": "Yagba West",
+              "StateCode": 23
             },
             {
-                "key": "Toto",
-                "value": "531",
-                "StateCode": "28"
+              "value": 528,
+              "key": "Asa",
+              "StateCode": 24
             },
             {
-                "key": "Wamba",
-                "value": "532",
-                "StateCode": "28"
+              "value": 529,
+              "key": "Baruten",
+              "StateCode": 24
             },
             {
-                "key": "Agaie",
-                "value": "533",
-                "StateCode": "16"
+              "value": 530,
+              "key": "Edu",
+              "StateCode": 24
             },
             {
-                "key": "Agwara",
-                "value": "534",
-                "StateCode": "16"
+              "value": 531,
+              "key": "Ekiti",
+              "StateCode": 24
             },
             {
-                "key": "Bida",
-                "value": "535",
-                "StateCode": "16"
+              "value": 532,
+              "key": "Ifelodun",
+              "StateCode": 24
             },
             {
-                "key": "Borgu",
-                "value": "536",
-                "StateCode": "16"
+              "value": 533,
+              "key": "Ilorin East",
+              "StateCode": 24
             },
             {
-                "key": "Bosso",
-                "value": "537",
-                "StateCode": "16"
+              "value": 534,
+              "key": "Ilorin South",
+              "StateCode": 24
             },
             {
-                "key": "Chanchaga",
-                "value": "538",
-                "StateCode": "16"
+              "value": 535,
+              "key": "Ilorin West",
+              "StateCode": 24
             },
             {
-                "key": "Edati",
-                "value": "539",
-                "StateCode": "16"
+              "value": 536,
+              "key": "Irepodun",
+              "StateCode": 24
             },
             {
-                "key": "Gbako",
-                "value": "540",
-                "StateCode": "16"
+              "value": 537,
+              "key": "Isin",
+              "StateCode": 24
             },
             {
-                "key": "Gurara",
-                "value": "541",
-                "StateCode": "16"
+              "value": 538,
+              "key": "Kaiama",
+              "StateCode": 24
             },
             {
-                "key": "Katcha",
-                "value": "542",
-                "StateCode": "16"
+              "value": 539,
+              "key": "Moro",
+              "StateCode": 24
             },
             {
-                "key": "Kontagora",
-                "value": "543",
-                "StateCode": "16"
+              "value": 540,
+              "key": "Offa",
+              "StateCode": 24
             },
             {
-                "key": "Lapai",
-                "value": "544",
-                "StateCode": "16"
+              "value": 541,
+              "key": "Oke Ero",
+              "StateCode": 24
             },
             {
-                "key": "Lavun",
-                "value": "545",
-                "StateCode": "16"
+              "value": 542,
+              "key": "Oyun",
+              "StateCode": 24
             },
             {
-                "key": "Magama",
-                "value": "546",
-                "StateCode": "16"
+              "value": 543,
+              "key": "Pategi",
+              "StateCode": 24
             },
             {
-                "key": "Mariga",
-                "value": "547",
-                "StateCode": "16"
+              "value": 544,
+              "key": "Agege",
+              "StateCode": 1
             },
             {
-                "key": "Mashegu",
-                "value": "548",
-                "StateCode": "16"
+              "value": 545,
+              "key": "Ajeromi-Ifelodun",
+              "StateCode": 1
             },
             {
-                "key": "Mokwa",
-                "value": "549",
-                "StateCode": "16"
+              "value": 546,
+              "key": "Alimosho",
+              "StateCode": 1
             },
             {
-                "key": "MUNya",
-                "value": "550",
-                "StateCode": "16"
+              "value": 547,
+              "key": "Amuwo-Odofin",
+              "StateCode": 1
             },
             {
-                "key": "Paikoro",
-                "value": "551",
-                "StateCode": "16"
+              "value": 548,
+              "key": "Apapa",
+              "StateCode": 1
             },
             {
-                "key": "Rafi",
-                "value": "552",
-                "StateCode": "16"
+              "value": 549,
+              "key": "Badagry",
+              "StateCode": 1
             },
             {
-                "key": "Rijau",
-                "value": "553",
-                "StateCode": "16"
+              "value": 550,
+              "key": "Epe",
+              "StateCode": 1
             },
             {
-                "key": "Shiroro",
-                "value": "554",
-                "StateCode": "16"
+              "value": 551,
+              "key": "Eti Osa",
+              "StateCode": 1
             },
             {
-                "key": "Suleja",
-                "value": "555",
-                "StateCode": "16"
+              "value": 552,
+              "key": "Ibeju-Lekki",
+              "StateCode": 1
             },
             {
-                "key": "Tafa",
-                "value": "556",
-                "StateCode": "16"
+              "value": 553,
+              "key": "Ifako-Ijaiye",
+              "StateCode": 1
             },
             {
-                "key": "Wushishi",
-                "value": "557",
-                "StateCode": "16"
+              "value": 554,
+              "key": "Ikeja",
+              "StateCode": 1
             },
             {
-                "key": "Abeokuta North",
-                "value": "558",
-                "StateCode": "36"
+              "value": 555,
+              "key": "Ikorodu",
+              "StateCode": 1
             },
             {
-                "key": "Abeokuta South",
-                "value": "559",
-                "StateCode": "36"
+              "value": 556,
+              "key": "Kosofe",
+              "StateCode": 1
             },
             {
-                "key": "Ado-Odo/Ota",
-                "value": "560",
-                "StateCode": "36"
+              "value": 557,
+              "key": "Lagos Island",
+              "StateCode": 1
             },
             {
-                "key": "Egbado North",
-                "value": "561",
-                "StateCode": "36"
+              "value": 558,
+              "key": "Lagos Mainland",
+              "StateCode": 1
             },
             {
-                "key": "Egbado South",
-                "value": "562",
-                "StateCode": "36"
+              "value": 559,
+              "key": "Mushin",
+              "StateCode": 1
             },
             {
-                "key": "Ewekoro",
-                "value": "563",
-                "StateCode": "36"
+              "value": 560,
+              "key": "Ojo",
+              "StateCode": 1
             },
             {
-                "key": "Ifo",
-                "value": "564",
-                "StateCode": "36"
+              "value": 561,
+              "key": "Oshodi-Isolo",
+              "StateCode": 1
             },
             {
-                "key": "Ijebu East",
-                "value": "565",
-                "StateCode": "36"
+              "value": 562,
+              "key": "Shomolu",
+              "StateCode": 1
             },
             {
-                "key": "Ijebu North",
-                "value": "566",
-                "StateCode": "36"
+              "value": 563,
+              "key": "Surulere",
+              "StateCode": 1
             },
             {
-                "key": "Ijebu North East",
-                "value": "567",
-                "StateCode": "36"
+              "value": 564,
+              "key": "Abeokuta North",
+              "StateCode": 27
             },
             {
-                "key": "Ijebu Ode",
-                "value": "568",
-                "StateCode": "36"
+              "value": 565,
+              "key": "Abeokuta South",
+              "StateCode": 27
             },
             {
-                "key": "Ikenne",
-                "value": "569",
-                "StateCode": "36"
+              "value": 566,
+              "key": "Ado-OdoOta",
+              "StateCode": 27
             },
             {
-                "key": "Imeko Afon",
-                "value": "570",
-                "StateCode": "36"
+              "value": 567,
+              "key": "Egbado North",
+              "StateCode": 27
             },
             {
-                "key": "Ipokia",
-                "value": "571",
-                "StateCode": "36"
+              "value": 568,
+              "key": "Egbado South",
+              "StateCode": 27
             },
             {
-                "key": "Obafemi Owode",
-                "value": "572",
-                "StateCode": "36"
+              "value": 569,
+              "key": "Ewekoro",
+              "StateCode": 27
             },
             {
-                "key": "Ogun Waterside",
-                "value": "573",
-                "StateCode": "36"
+              "value": 570,
+              "key": "Ifo",
+              "StateCode": 27
             },
             {
-                "key": "Odeda",
-                "value": "574",
-                "StateCode": "36"
+              "value": 571,
+              "key": "Ijebu East",
+              "StateCode": 27
             },
             {
-                "key": "Odogbolu",
-                "value": "575",
-                "StateCode": "36"
+              "value": 572,
+              "key": "Ijebu North",
+              "StateCode": 27
             },
             {
-                "key": "Remo North",
-                "value": "576",
-                "StateCode": "36"
+              "value": 573,
+              "key": "Ijebu North East",
+              "StateCode": 27
             },
             {
-                "key": "SagamU",
-                "value": "577",
-                "StateCode": "36"
+              "value": 574,
+              "key": "Ijebu Ode",
+              "StateCode": 27
             },
             {
-                "key": "Akoko North-East",
-                "value": "578",
-                "StateCode": "20"
+              "value": 575,
+              "key": "Ikenne",
+              "StateCode": 27
             },
             {
-                "key": "Akoko North-West",
-                "value": "579",
-                "StateCode": "20"
+              "value": 576,
+              "key": "Imeko Afon",
+              "StateCode": 27
             },
             {
-                "key": "Akoko South-East",
-                "value": "580",
-                "StateCode": "20"
+              "value": 577,
+              "key": "Ipokia",
+              "StateCode": 27
             },
             {
-                "key": "Akoko South-West",
-                "value": "581",
-                "StateCode": "20"
+              "value": 578,
+              "key": "Obafemi Owode",
+              "StateCode": 27
             },
             {
-                "key": "Akure North",
-                "value": "582",
-                "StateCode": "20"
+              "value": 579,
+              "key": "Odeda",
+              "StateCode": 27
             },
             {
-                "key": "Akure South",
-                "value": "583",
-                "StateCode": "20"
+              "value": 580,
+              "key": "Odogbolu",
+              "StateCode": 27
             },
             {
-                "key": "Ese Odo",
-                "value": "584",
-                "StateCode": "20"
+              "value": 581,
+              "key": "Ogun Waterside",
+              "StateCode": 27
             },
             {
-                "key": "Idanre",
-                "value": "585",
-                "StateCode": "20"
+              "value": 582,
+              "key": "Remo North",
+              "StateCode": 27
             },
             {
-                "key": "Ifedore",
-                "value": "586",
-                "StateCode": "20"
+              "value": 583,
+              "key": "Shagamu",
+              "StateCode": 27
             },
             {
-                "key": "Ilaje",
-                "value": "587",
-                "StateCode": "20"
+              "value": 584,
+              "key": "Akoko North-East",
+              "StateCode": 28
             },
             {
-                "key": "Ile Oluji/Okeigbo",
-                "value": "588",
-                "StateCode": "20"
+              "value": 585,
+              "key": "Akoko North-West",
+              "StateCode": 28
             },
             {
-                "key": "Irele",
-                "value": "590",
-                "StateCode": "20"
+              "value": 586,
+              "key": "Akoko South-West",
+              "StateCode": 28
             },
             {
-                "key": "Odigbo",
-                "value": "591",
-                "StateCode": "20"
+              "value": 587,
+              "key": "Akoko South-East",
+              "StateCode": 28
             },
             {
-                "key": "Okitipupa",
-                "value": "592",
-                "StateCode": "20"
+              "value": 588,
+              "key": "Akure North",
+              "StateCode": 28
             },
             {
-                "key": "Ondo East",
-                "value": "593",
-                "StateCode": "20"
+              "value": 589,
+              "key": "Akure South",
+              "StateCode": 28
             },
             {
-                "key": "Ondo West",
-                "value": "594",
-                "StateCode": "20"
+              "value": 590,
+              "key": "Ese Odo",
+              "StateCode": 28
             },
             {
-                "key": "Ose",
-                "value": "595",
-                "StateCode": "20"
+              "value": 591,
+              "key": "Idanre",
+              "StateCode": 28
             },
             {
-                "key": "Owo",
-                "value": "596",
-                "StateCode": "20"
+              "value": 592,
+              "key": "Ifedore",
+              "StateCode": 28
             },
             {
-                "key": "ayedaade",
-                "value": "597",
-                "StateCode": "21"
+              "value": 593,
+              "key": "Ilaje",
+              "StateCode": 28
             },
             {
-                "key": "Ayedire",
-                "value": "598",
-                "StateCode": "21"
+              "value": 594,
+              "key": "Ile OlujiOkeigbo",
+              "StateCode": 28
             },
             {
-                "key": "Atakunmosa East",
-                "value": "599",
-                "StateCode": "21"
+              "value": 595,
+              "key": "Irele",
+              "StateCode": 28
             },
             {
-                "key": "Atakunmosa West",
-                "value": "600",
-                "StateCode": "21"
+              "value": 596,
+              "key": "Odigbo",
+              "StateCode": 28
             },
             {
-                "key": "Boluwaduro",
-                "value": "601",
-                "StateCode": "21"
+              "value": 597,
+              "key": "Okitipupa",
+              "StateCode": 28
             },
             {
-                "key": "Boripe",
-                "value": "602",
-                "StateCode": "21"
+              "value": 598,
+              "key": "Ondo East",
+              "StateCode": 28
             },
             {
-                "key": "Ede North",
-                "value": "603",
-                "StateCode": "21"
+              "value": 599,
+              "key": "Ondo West",
+              "StateCode": 28
             },
             {
-                "key": "Ede South",
-                "value": "604",
-                "StateCode": "21"
+              "value": 600,
+              "key": "Ose",
+              "StateCode": 28
             },
             {
-                "key": "Egbedore",
-                "value": "605",
-                "StateCode": "21"
+              "value": 601,
+              "key": "Owo",
+              "StateCode": 28
             },
             {
-                "key": "Ejigbo",
-                "value": "606",
-                "StateCode": "21"
+              "value": 602,
+              "key": "Atakunmosa East",
+              "StateCode": 29
             },
             {
-                "key": "Ife Central",
-                "value": "607",
-                "StateCode": "21"
+              "value": 603,
+              "key": "Atakunmosa West",
+              "StateCode": 29
             },
             {
-                "key": "Ife East",
-                "value": "608",
-                "StateCode": "21"
+              "value": 604,
+              "key": "Aiyedaade",
+              "StateCode": 29
             },
             {
-                "key": "Ife North",
-                "value": "609",
-                "StateCode": "21"
+              "value": 605,
+              "key": "Aiyedire",
+              "StateCode": 29
             },
             {
-                "key": "Ife South",
-                "value": "610",
-                "StateCode": "21"
+              "value": 606,
+              "key": "Boluwaduro",
+              "StateCode": 29
             },
             {
-                "key": "Ifedayo",
-                "value": "611",
-                "StateCode": "21"
+              "value": 607,
+              "key": "Boripe",
+              "StateCode": 29
             },
             {
-                "key": "Ifelodun",
-                "value": "612",
-                "StateCode": "21"
+              "value": 608,
+              "key": "Ede North",
+              "StateCode": 29
             },
             {
-                "key": "Ila",
-                "value": "613",
-                "StateCode": "21"
+              "value": 609,
+              "key": "Ede South",
+              "StateCode": 29
             },
             {
-                "key": "Ilesa East",
-                "value": "614",
-                "StateCode": "21"
+              "value": 610,
+              "key": "Ife Central",
+              "StateCode": 29
             },
             {
-                "key": "Ilesa West",
-                "value": "615",
-                "StateCode": "21"
+              "value": 611,
+              "key": "Ife East",
+              "StateCode": 29
             },
             {
-                "key": "Irepodun",
-                "value": "616",
-                "StateCode": "21"
+              "value": 612,
+              "key": "Ife North",
+              "StateCode": 29
             },
             {
-                "key": "Irewole",
-                "value": "617",
-                "StateCode": "21"
+              "value": 613,
+              "key": "Ife South",
+              "StateCode": 29
             },
             {
-                "key": "Isokan",
-                "value": "618",
-                "StateCode": "21"
+              "value": 614,
+              "key": "Egbedore",
+              "StateCode": 29
             },
             {
-                "key": "Iwo",
-                "value": "619",
-                "StateCode": "21"
+              "value": 615,
+              "key": "Ejigbo",
+              "StateCode": 29
             },
             {
-                "key": "Obokun",
-                "value": "620",
-                "StateCode": "21"
+              "value": 616,
+              "key": "Ifedayo",
+              "StateCode": 29
             },
             {
-                "key": "Odo Otin",
-                "value": "621",
-                "StateCode": "21"
+              "value": 617,
+              "key": "Ifelodun",
+              "StateCode": 29
             },
             {
-                "key": "OlaOluwa",
-                "value": "622",
-                "StateCode": "21"
+              "value": 618,
+              "key": "Ila",
+              "StateCode": 29
             },
             {
-                "key": "Olorunda",
-                "value": "623",
-                "StateCode": "21"
+              "value": 619,
+              "key": "Ilesa East",
+              "StateCode": 29
             },
             {
-                "key": "Oriade",
-                "value": "624",
-                "StateCode": "21"
+              "value": 620,
+              "key": "Ilesa West",
+              "StateCode": 29
             },
             {
-                "key": "Orolu",
-                "value": "625",
-                "StateCode": "21"
+              "value": 621,
+              "key": "Irepodun",
+              "StateCode": 29
             },
             {
-                "key": "Osogbo",
-                "value": "626",
-                "StateCode": "21"
+              "value": 622,
+              "key": "Irewole",
+              "StateCode": 29
             },
             {
-                "key": "Afijio",
-                "value": "627",
-                "StateCode": "17"
+              "value": 623,
+              "key": "Isokan",
+              "StateCode": 29
             },
             {
-                "key": "Akinyele",
-                "value": "628",
-                "StateCode": "17"
+              "value": 624,
+              "key": "Iwo",
+              "StateCode": 29
             },
             {
-                "key": "Atiba",
-                "value": "629",
-                "StateCode": "17"
+              "value": 625,
+              "key": "Obokun",
+              "StateCode": 29
             },
             {
-                "key": "Atisbo",
-                "value": "630",
-                "StateCode": "17"
+              "value": 626,
+              "key": "Odo Otin",
+              "StateCode": 29
             },
             {
-                "key": "Egbeda",
-                "value": "631",
-                "StateCode": "17"
+              "value": 627,
+              "key": "Ola Oluwa",
+              "StateCode": 29
             },
             {
-                "key": "Ibadan North-East",
-                "value": "632",
-                "StateCode": "17"
+              "value": 628,
+              "key": "Olorunda",
+              "StateCode": 29
             },
             {
-                "key": "Ibadan North",
-                "value": "633",
-                "StateCode": "17"
+              "value": 629,
+              "key": "Oriade",
+              "StateCode": 29
             },
             {
-                "key": "Ibadan North-West",
-                "value": "634",
-                "StateCode": "17"
+              "value": 630,
+              "key": "Orolu",
+              "StateCode": 29
             },
             {
-                "key": "Ibadan South-East",
-                "value": "635",
-                "StateCode": "17"
+              "value": 631,
+              "key": "Osogbo",
+              "StateCode": 29
             },
             {
-                "key": "Ibadan South-West",
-                "value": "636",
-                "StateCode": "17"
+              "value": 632,
+              "key": "Afijio",
+              "StateCode": 30
             },
             {
-                "key": "Ibarapa Central",
-                "value": "637",
-                "StateCode": "17"
+              "value": 633,
+              "key": "Akinyele",
+              "StateCode": 30
             },
             {
-                "key": "Ibarapa East",
-                "value": "638",
-                "StateCode": "17"
+              "value": 634,
+              "key": "Atiba",
+              "StateCode": 30
             },
             {
-                "key": "Ibarapa North",
-                "value": "639",
-                "StateCode": "17"
+              "value": 635,
+              "key": "Atisbo",
+              "StateCode": 30
             },
             {
-                "key": "Ido",
-                "value": "640",
-                "StateCode": "17"
+              "value": 636,
+              "key": "Egbeda",
+              "StateCode": 30
             },
             {
-                "key": "Irepo",
-                "value": "641",
-                "StateCode": "17"
+              "value": 637,
+              "key": "Ibadan North",
+              "StateCode": 30
             },
             {
-                "key": "Iseyin",
-                "value": "642",
-                "StateCode": "17"
+              "value": 638,
+              "key": "Ibadan North-East",
+              "StateCode": 30
             },
             {
-                "key": "Itesiwaju",
-                "value": "643",
-                "StateCode": "17"
+              "value": 639,
+              "key": "Ibadan North-West",
+              "StateCode": 30
             },
             {
-                "key": "Iwajowa",
-                "value": "644",
-                "StateCode": "17"
+              "value": 640,
+              "key": "Ibadan South-East",
+              "StateCode": 30
             },
             {
-                "key": "Kajola",
-                "value": "645",
-                "StateCode": "17"
+              "value": 641,
+              "key": "Ibadan South-West",
+              "StateCode": 30
             },
             {
-                "key": "Lagelu",
-                "value": "646",
-                "StateCode": "17"
+              "value": 642,
+              "key": "Ibarapa Central",
+              "StateCode": 30
             },
             {
-                "key": "Ogbmosho South",
-                "value": "647",
-                "StateCode": "17"
+              "value": 643,
+              "key": "Ibarapa East",
+              "StateCode": 30
             },
             {
-                "key": "Ogo Oluwa",
-                "value": "648",
-                "StateCode": "17"
+              "value": 644,
+              "key": "Ibarapa North",
+              "StateCode": 30
             },
             {
-                "key": "Olorunsogo",
-                "value": "649",
-                "StateCode": "17"
+              "value": 645,
+              "key": "Ido",
+              "StateCode": 30
             },
             {
-                "key": "Oluyole",
-                "value": "650",
-                "StateCode": "17"
+              "value": 646,
+              "key": "Irepo",
+              "StateCode": 30
             },
             {
-                "key": "Ona Ara",
-                "value": "651",
-                "StateCode": "17"
+              "value": 647,
+              "key": "Iseyin",
+              "StateCode": 30
             },
             {
-                "key": "Orelope",
-                "value": "652",
-                "StateCode": "17"
+              "value": 648,
+              "key": "Itesiwaju",
+              "StateCode": 30
             },
             {
-                "key": "Ori Ire",
-                "value": "653",
-                "StateCode": "17"
+              "value": 649,
+              "key": "Iwajowa",
+              "StateCode": 30
             },
             {
-                "key": "Oyo East",
-                "value": "654",
-                "StateCode": "17"
+              "value": 650,
+              "key": "Kajola",
+              "StateCode": 30
             },
             {
-                "key": "Oyo",
-                "value": "655",
-                "StateCode": "17"
+              "value": 651,
+              "key": "Lagelu",
+              "StateCode": 30
             },
             {
-                "key": "Saki East",
-                "value": "656",
-                "StateCode": "17"
+              "value": 652,
+              "key": "Ogbomosho North",
+              "StateCode": 30
             },
             {
-                "key": "Saki West",
-                "value": "657",
-                "StateCode": "17"
+              "value": 653,
+              "key": "Ogbomosho South",
+              "StateCode": 30
             },
             {
-                "key": "Surulere",
-                "value": "658",
-                "StateCode": "17"
+              "value": 654,
+              "key": "Ogo Oluwa",
+              "StateCode": 30
             },
             {
-                "key": "Barkin Ladi",
-                "value": "659",
-                "StateCode": "14"
+              "value": 655,
+              "key": "Olorunsogo",
+              "StateCode": 30
             },
             {
-                "key": "Bassa",
-                "value": "660",
-                "StateCode": "14"
+              "value": 656,
+              "key": "Oluyole",
+              "StateCode": 30
             },
             {
-                "key": "Bokkos",
-                "value": "661",
-                "StateCode": "14"
+              "value": 657,
+              "key": "Ona Ara",
+              "StateCode": 30
             },
             {
-                "key": "Jos East",
-                "value": "662",
-                "StateCode": "14"
+              "value": 658,
+              "key": "Orelope",
+              "StateCode": 30
             },
             {
-                "key": "Jos North",
-                "value": "663",
-                "StateCode": "14"
+              "value": 659,
+              "key": "Ori Ire",
+              "StateCode": 30
             },
             {
-                "key": "Jos South",
-                "value": "664",
-                "StateCode": "14"
+              "value": 660,
+              "key": "Oyo",
+              "StateCode": 30
             },
             {
-                "key": "Kanam",
-                "value": "665",
-                "StateCode": "14"
+              "value": 661,
+              "key": "Oyo East",
+              "StateCode": 30
             },
             {
-                "key": "Kanke",
-                "value": "666",
-                "StateCode": "14"
+              "value": 662,
+              "key": "Saki East",
+              "StateCode": 30
             },
             {
-                "key": "Langtang North",
-                "value": "667",
-                "StateCode": "14"
+              "value": 663,
+              "key": "Saki West",
+              "StateCode": 30
             },
             {
-                "key": "Langtang South",
-                "value": "668",
-                "StateCode": "14"
+              "value": 664,
+              "key": "Surulere",
+              "StateCode": 30
             },
             {
-                "key": "Mangu",
-                "value": "669",
-                "StateCode": "14"
+              "value": 665,
+              "key": "Bokkos",
+              "StateCode": 31
             },
             {
-                "key": "Mikang",
-                "value": "670",
-                "StateCode": "14"
+              "value": 666,
+              "key": "Barkin Ladi",
+              "StateCode": 31
             },
             {
-                "key": "Pankshin",
-                "value": "671",
-                "StateCode": "14"
+              "value": 667,
+              "key": "Bassa",
+              "StateCode": 31
             },
             {
-                "key": "Qua'an Pan",
-                "value": "672",
-                "StateCode": "14"
+              "value": 668,
+              "key": "Jos East",
+              "StateCode": 31
             },
             {
-                "key": "Riyom",
-                "value": "673",
-                "StateCode": "14"
+              "value": 669,
+              "key": "Jos North",
+              "StateCode": 31
             },
             {
-                "key": "Shendam",
-                "value": "674",
-                "StateCode": "14"
+              "value": 670,
+              "key": "Jos South",
+              "StateCode": 31
             },
             {
-                "key": "Wase",
-                "value": "675",
-                "StateCode": "14"
+              "value": 671,
+              "key": "Kanam",
+              "StateCode": 31
             },
             {
-                "key": "Abua/Odual",
-                "value": "676",
-                "StateCode": "29"
+              "value": 672,
+              "key": "Kanke",
+              "StateCode": 31
             },
             {
-                "key": "Ahoada East",
-                "value": "677",
-                "StateCode": "29"
+              "value": 673,
+              "key": "Langtang South",
+              "StateCode": 31
             },
             {
-                "key": "Ahoada West",
-                "value": "678",
-                "StateCode": "29"
+              "value": 674,
+              "key": "Langtang North",
+              "StateCode": 31
             },
             {
-                "key": "Akuku-Toru",
-                "value": "679",
-                "StateCode": "29"
+              "value": 675,
+              "key": "Mangu",
+              "StateCode": 31
             },
             {
-                "key": "Andoni",
-                "value": "680",
-                "StateCode": "29"
+              "value": 676,
+              "key": "Mikang",
+              "StateCode": 31
             },
             {
-                "key": "Asari-Toru",
-                "value": "681",
-                "StateCode": "29"
+              "value": 677,
+              "key": "Pankshin",
+              "StateCode": 31
             },
             {
-                "key": "Bonny",
-                "value": "682",
-                "StateCode": "29"
+              "value": 678,
+              "key": "Qua'an Pan",
+              "StateCode": 31
             },
             {
-                "key": "Degema",
-                "value": "683",
-                "StateCode": "29"
+              "value": 679,
+              "key": "Riyom",
+              "StateCode": 31
             },
             {
-                "key": "Emohua",
-                "value": "684",
-                "StateCode": "29"
+              "value": 680,
+              "key": "Shendam",
+              "StateCode": 31
             },
             {
-                "key": "Eleme",
-                "value": "685",
-                "StateCode": "29"
+              "value": 681,
+              "key": "Wase",
+              "StateCode": 31
             },
             {
-                "key": "Etche",
-                "value": "686",
-                "StateCode": "29"
+              "value": 682,
+              "key": "AbuaOdual",
+              "StateCode": 32
             },
             {
-                "key": "Gokana",
-                "value": "687",
-                "StateCode": "29"
+              "value": 683,
+              "key": "Ahoada East",
+              "StateCode": 32
             },
             {
-                "key": "Ikwerre",
-                "value": "688",
-                "StateCode": "29"
+              "value": 684,
+              "key": "Ahoada West",
+              "StateCode": 32
             },
             {
-                "key": "Khana",
-                "value": "689",
-                "StateCode": "29"
+              "value": 685,
+              "key": "Akuku-Toru",
+              "StateCode": 32
             },
             {
-                "key": "Obio/Akpor",
-                "value": "690",
-                "StateCode": "29"
+              "value": 686,
+              "key": "Andoni",
+              "StateCode": 32
             },
             {
-                "key": "Ogba/Egbema/Ndoni",
-                "value": "691",
-                "StateCode": "29"
+              "value": 687,
+              "key": "Asari-Toru",
+              "StateCode": 32
             },
             {
-                "key": "Ogu/Bolo",
-                "value": "692",
-                "StateCode": "29"
+              "value": 688,
+              "key": "Bonny",
+              "StateCode": 32
             },
             {
-                "key": "Okrika",
-                "value": "693",
-                "StateCode": "29"
+              "value": 689,
+              "key": "Degema",
+              "StateCode": 32
             },
             {
-                "key": "Omuma",
-                "value": "694",
-                "StateCode": "29"
+              "value": 690,
+              "key": "Eleme",
+              "StateCode": 32
             },
             {
-                "key": "Opobo/Nkoro",
-                "value": "695",
-                "StateCode": "29"
+              "value": 691,
+              "key": "Emuoha",
+              "StateCode": 32
             },
             {
-                "key": "Oyigbo",
-                "value": "696",
-                "StateCode": "29"
+              "value": 692,
+              "key": "Etche",
+              "StateCode": 32
             },
             {
-                "key": "Port Harcourt",
-                "value": "697",
-                "StateCode": "29"
+              "value": 693,
+              "key": "Gokana",
+              "StateCode": 32
             },
             {
-                "key": "Tai",
-                "value": "698",
-                "StateCode": "29"
+              "value": 694,
+              "key": "Ikwerre",
+              "StateCode": 32
             },
             {
-                "key": "Binji",
-                "value": "699",
-                "StateCode": "10"
+              "value": 695,
+              "key": "Khana",
+              "StateCode": 32
             },
             {
-                "key": "Bodinga",
-                "value": "700",
-                "StateCode": "10"
+              "value": 696,
+              "key": "ObioAkpor",
+              "StateCode": 32
             },
             {
-                "key": "Dange Shuni",
-                "value": "701",
-                "StateCode": "10"
+              "value": 697,
+              "key": "OgbaEgbemaNdoni",
+              "StateCode": 32
             },
             {
-                "key": "Gada",
-                "value": "702",
-                "StateCode": "10"
+              "value": 698,
+              "key": "OguBolo",
+              "StateCode": 32
             },
             {
-                "key": "Goronyo",
-                "value": "703",
-                "StateCode": "10"
+              "value": 699,
+              "key": "Okrika",
+              "StateCode": 32
             },
             {
-                "key": "Gudu",
-                "value": "704",
-                "StateCode": "10"
+              "value": 700,
+              "key": "Omuma",
+              "StateCode": 32
             },
             {
-                "key": "Gwadabawa",
-                "value": "705",
-                "StateCode": "10"
+              "value": 701,
+              "key": "OpoboNkoro",
+              "StateCode": 32
             },
             {
-                "key": "Illela",
-                "value": "706",
-                "StateCode": "10"
+              "value": 702,
+              "key": "Oyigbo",
+              "StateCode": 32
             },
             {
-                "key": "Isa",
-                "value": "707",
-                "StateCode": "10"
+              "value": 703,
+              "key": "Port Harcourt",
+              "StateCode": 32
             },
             {
-                "key": "Kware",
-                "value": "708",
-                "StateCode": "10"
+              "value": 704,
+              "key": "Tai",
+              "StateCode": 32
             },
             {
-                "key": "kebbe",
-                "value": "709",
-                "StateCode": "10"
+              "value": 705,
+              "key": "Binji",
+              "StateCode": 33
             },
             {
-                "key": "Rabah",
-                "value": "710",
-                "StateCode": "10"
+              "value": 706,
+              "key": "Bodinga",
+              "StateCode": 33
             },
             {
-                "key": "Sabon birni",
-                "value": "711",
-                "StateCode": "10"
+              "value": 707,
+              "key": "Dange Shuni",
+              "StateCode": 33
             },
             {
-                "key": "Shagari",
-                "value": "712",
-                "StateCode": "10"
+              "value": 708,
+              "key": "Gada",
+              "StateCode": 33
             },
             {
-                "key": "Silame",
-                "value": "713",
-                "StateCode": "10"
+              "value": 709,
+              "key": "Goronyo",
+              "StateCode": 33
             },
             {
-                "key": "Sokoto North",
-                "value": "714",
-                "StateCode": "10"
+              "value": 710,
+              "key": "Gudu",
+              "StateCode": 33
             },
             {
-                "key": "Sokoto South",
-                "value": "715",
-                "StateCode": "10"
+              "value": 711,
+              "key": "Gwadabawa",
+              "StateCode": 33
             },
             {
-                "key": "Tambuwal",
-                "value": "716",
-                "StateCode": "10"
+              "value": 712,
+              "key": "Illela",
+              "StateCode": 33
             },
             {
-                "key": "Tangaza",
-                "value": "717",
-                "StateCode": "10"
+              "value": 713,
+              "key": "Isa",
+              "StateCode": 33
             },
             {
-                "key": "Tureta",
-                "value": "718",
-                "StateCode": "10"
+              "value": 714,
+              "key": "Kebbe",
+              "StateCode": 33
             },
             {
-                "key": "Wamako",
-                "value": "719",
-                "StateCode": "10"
+              "value": 715,
+              "key": "Kware",
+              "StateCode": 33
             },
             {
-                "key": "Wurno",
-                "value": "720",
-                "StateCode": "10"
+              "value": 716,
+              "key": "Rabah",
+              "StateCode": 33
             },
             {
-                "key": "Yabo",
-                "value": "721",
-                "StateCode": "10"
+              "value": 717,
+              "key": "Sabon Birni",
+              "StateCode": 33
             },
             {
-                "key": "Ardo Kola",
-                "value": "722",
-                "StateCode": "23"
+              "value": 718,
+              "key": "Shagari",
+              "StateCode": 33
             },
             {
-                "key": "Bali",
-                "value": "723",
-                "StateCode": "23"
+              "value": 719,
+              "key": "Silame",
+              "StateCode": 33
             },
             {
-                "key": "Donga",
-                "value": "724",
-                "StateCode": "23"
+              "value": 720,
+              "key": "Sokoto North",
+              "StateCode": 33
             },
             {
-                "key": "Gashaka",
-                "value": "725",
-                "StateCode": "23"
+              "value": 721,
+              "key": "Sokoto South",
+              "StateCode": 33
             },
             {
-                "key": "Gassol",
-                "value": "726",
-                "StateCode": "23"
+              "value": 722,
+              "key": "Tambuwal",
+              "StateCode": 33
             },
             {
-                "key": "Ibi",
-                "value": "727",
-                "StateCode": "23"
+              "value": 723,
+              "key": "Tangaza",
+              "StateCode": 33
             },
             {
-                "key": "Jalingo",
-                "value": "728",
-                "StateCode": "23"
+              "value": 724,
+              "key": "Tureta",
+              "StateCode": 33
             },
             {
-                "key": "Karim Lamido",
-                "value": "729",
-                "StateCode": "23"
+              "value": 725,
+              "key": "Wamako",
+              "StateCode": 33
             },
             {
-                "key": "KuRmi",
-                "value": "730",
-                "StateCode": "23"
+              "value": 726,
+              "key": "Wurno",
+              "StateCode": 33
             },
             {
-                "key": "Lau",
-                "value": "731",
-                "StateCode": "23"
+              "value": 727,
+              "key": "Yabo",
+              "StateCode": 33
             },
             {
-                "key": "Sardauna",
-                "value": "732",
-                "StateCode": "23"
+              "value": 728,
+              "key": "Ardo Kola",
+              "StateCode": 34
             },
             {
-                "key": "Takum",
-                "value": "733",
-                "StateCode": "23"
+              "value": 729,
+              "key": "Bali",
+              "StateCode": 34
             },
             {
-                "key": "Ussa",
-                "value": "734",
-                "StateCode": "23"
+              "value": 730,
+              "key": "Donga",
+              "StateCode": 34
             },
             {
-                "key": "Wukari",
-                "value": "735",
-                "StateCode": "23"
+              "value": 731,
+              "key": "Gashaka",
+              "StateCode": 34
             },
             {
-                "key": "Yorro",
-                "value": "736",
-                "StateCode": "23"
+              "value": 732,
+              "key": "Gassol",
+              "StateCode": 34
             },
             {
-                "key": "Zing",
-                "value": "737",
-                "StateCode": "23"
+              "value": 733,
+              "key": "Ibi",
+              "StateCode": 34
             },
             {
-                "key": "Bade",
-                "value": "738",
-                "StateCode": "31"
+              "value": 734,
+              "key": "Jalingo",
+              "StateCode": 34
             },
             {
-                "key": "Bursari",
-                "value": "739",
-                "StateCode": "31"
+              "value": 735,
+              "key": "Karim Lamido",
+              "StateCode": 34
             },
             {
-                "key": "Damaturu",
-                "value": "740",
-                "StateCode": "31"
+              "value": 736,
+              "key": "Kumi",
+              "StateCode": 34
             },
             {
-                "key": "Fika",
-                "value": "741",
-                "StateCode": "31"
+              "value": 737,
+              "key": "Lau",
+              "StateCode": 34
             },
             {
-                "key": "Fune",
-                "value": "742",
-                "StateCode": "31"
+              "value": 738,
+              "key": "Sardauna",
+              "StateCode": 34
             },
             {
-                "key": "Geidam",
-                "value": "743",
-                "StateCode": "31"
+              "value": 739,
+              "key": "Takum",
+              "StateCode": 34
             },
             {
-                "key": "Gujba",
-                "value": "744",
-                "StateCode": "31"
+              "value": 740,
+              "key": "Ussa",
+              "StateCode": 34
             },
             {
-                "key": "Gulani",
-                "value": "745",
-                "StateCode": "31"
+              "value": 741,
+              "key": "Wukari",
+              "StateCode": 34
             },
             {
-                "key": "Jakusko",
-                "value": "746",
-                "StateCode": "31"
+              "value": 742,
+              "key": "Yorro",
+              "StateCode": 34
             },
             {
-                "key": "Karasuwa",
-                "value": "747",
-                "StateCode": "31"
+              "value": 743,
+              "key": "Zing",
+              "StateCode": 34
             },
             {
-                "key": "Machina",
-                "value": "749",
-                "StateCode": "31"
+              "value": 744,
+              "key": "Bade",
+              "StateCode": 35
             },
             {
-                "key": "Nangere",
-                "value": "750",
-                "StateCode": "31"
+              "value": 745,
+              "key": "Bursari",
+              "StateCode": 35
             },
             {
-                "key": "Nguru",
-                "value": "751",
-                "StateCode": "31"
+              "value": 746,
+              "key": "Damaturu",
+              "StateCode": 35
             },
             {
-                "key": "Tarmuwa",
-                "value": "752",
-                "StateCode": "31"
+              "value": 747,
+              "key": "Fika",
+              "StateCode": 35
             },
             {
-                "key": "Yunusari",
-                "value": "753",
-                "StateCode": "31"
+              "value": 748,
+              "key": "Fune",
+              "StateCode": 35
             },
             {
-                "key": "Yusufari",
-                "value": "754",
-                "StateCode": "31"
+              "value": 749,
+              "key": "Geidam",
+              "StateCode": 35
             },
             {
-                "key": "Anka",
-                "value": "755",
-                "StateCode": "6"
+              "value": 750,
+              "key": "Gujba",
+              "StateCode": 35
             },
             {
-                "key": "Bakura",
-                "value": "756",
-                "StateCode": "6"
+              "value": 751,
+              "key": "Gulani",
+              "StateCode": 35
             },
             {
-                "key": "Birnin Magaji/Kiyaw",
-                "value": "757",
-                "StateCode": "6"
+              "value": 752,
+              "key": "Jakusko",
+              "StateCode": 35
             },
             {
-                "key": "Bukkuyum",
-                "value": "758",
-                "StateCode": "6"
+              "value": 753,
+              "key": "Karasuwa",
+              "StateCode": 35
             },
             {
-                "key": "Bungudu",
-                "value": "759",
-                "StateCode": "6"
+              "value": 754,
+              "key": "Machina",
+              "StateCode": 35
             },
             {
-                "key": "Gummi",
-                "value": "760",
-                "StateCode": "6"
+              "value": 755,
+              "key": "Nangere",
+              "StateCode": 35
             },
             {
-                "key": "Gusau",
-                "value": "761",
-                "StateCode": "6"
+              "value": 756,
+              "key": "Nguru",
+              "StateCode": 35
             },
             {
-                "key": "Kaura Namoda",
-                "value": "762",
-                "StateCode": "6"
+              "value": 757,
+              "key": "Potiskum",
+              "StateCode": 35
             },
             {
-                "key": "Maradun",
-                "value": "764",
-                "StateCode": "6"
+              "value": 758,
+              "key": "Tarmuwa",
+              "StateCode": 35
             },
             {
-                "key": "Maru",
-                "value": "765",
-                "StateCode": "6"
+              "value": 759,
+              "key": "Yunusari",
+              "StateCode": 35
             },
             {
-                "key": "Shinkafi",
-                "value": "766",
-                "StateCode": "6"
+              "value": 760,
+              "key": "Yusufari",
+              "StateCode": 35
             },
             {
-                "key": "Talata Mafara",
-                "value": "767",
-                "StateCode": "6"
+              "value": 761,
+              "key": "Anka",
+              "StateCode": 36
             },
             {
-                "key": "Chafe",
-                "value": "768",
-                "StateCode": "6"
+              "value": 762,
+              "key": "Bakura",
+              "StateCode": 36
             },
             {
-                "key": "Zurmi",
-                "value": "769",
-                "StateCode": "6"
+              "value": 763,
+              "key": "Birnin MagajiKiyaw",
+              "StateCode": 36
             },
             {
-                "key": "Gamawa",
-                "value": "770",
-                "StateCode": "11"
+              "value": 764,
+              "key": "Bukkuyum",
+              "StateCode": 36
             },
             {
-                "key": "Izzi",
-                "value": "771",
-                "StateCode": "37"
+              "value": 765,
+              "key": "Bungudu",
+              "StateCode": 36
             },
             {
-                "key": "Akoko-Edo",
-                "value": "772",
-                "StateCode": "5"
+              "value": 766,
+              "key": "Gummi",
+              "StateCode": 36
             },
             {
-                "key": "Etsako West",
-                "value": "773",
-                "StateCode": "5"
+              "value": 767,
+              "key": "Gusau",
+              "StateCode": 36
             },
             {
-                "key": "Owan East",
-                "value": "774",
-                "StateCode": "5"
+              "value": 768,
+              "key": "Kaura Namoda",
+              "StateCode": 36
             },
             {
-                "key": "Owan West",
-                "value": "775",
-                "StateCode": "5"
+              "value": 769,
+              "key": "Maradun",
+              "StateCode": 36
             },
             {
-                "key": "Udi",
-                "value": "776",
-                "StateCode": "8"
+              "value": 770,
+              "key": "Maru",
+              "StateCode": 36
             },
             {
-                "key": "Kazaure",
-                "value": "777",
-                "StateCode": "13"
+              "value": 771,
+              "key": "Shinkafi",
+              "StateCode": 36
             },
             {
-                "key": "Yewa North",
-                "value": "778",
-                "StateCode": "36"
+              "value": 772,
+              "key": "Talata Mafara",
+              "StateCode": 36
             },
             {
-                "key": "Yewa South",
-                "value": "779",
-                "StateCode": "36"
+              "value": 773,
+              "key": "Chafe",
+              "StateCode": 36
             },
             {
-                "key": "Ogbomosho North",
-                "value": "780",
-                "StateCode": "17"
+              "value": 774,
+              "key": "Zurmi",
+              "StateCode": 36
             },
             {
-                "key": "Potiskum",
-                "value": "781",
-                "StateCode": "31"
+              "value": 775,
+              "key": "Akwanga",
+              "StateCode": 25
             },
             {
-                "key": "ILORIN SOUTH",
-                "value": "782",
-                "StateCode": "26"
+              "value": 776,
+              "key": "Awe",
+              "StateCode": 25
+            },
+            {
+              "value": 777,
+              "key": "Doma",
+              "StateCode": 25
+            },
+            {
+              "value": 778,
+              "key": "Karu",
+              "StateCode": 25
+            },
+            {
+              "value": 779,
+              "key": "Keana",
+              "StateCode": 25
+            },
+            {
+              "value": 780,
+              "key": "Keffi",
+              "StateCode": 25
+            },
+            {
+              "value": 781,
+              "key": "Kokona",
+              "StateCode": 25
+            },
+            {
+              "value": 782,
+              "key": "Lafia",
+              "StateCode": 25
+            },
+            {
+              "value": 783,
+              "key": "Nasarawa",
+              "StateCode": 25
+            },
+            {
+              "value": 784,
+              "key": "Nasarawa-Eggon",
+              "StateCode": 25
+            },
+            {
+              "value": 785,
+              "key": "Obi",
+              "StateCode": 25
+            },
+            {
+              "value": 786,
+              "key": "Toto",
+              "StateCode": 25
+            },
+            {
+              "value": 787,
+              "key": "Wamba",
+              "StateCode": 25
+            },
+            {
+              "value": 788,
+              "key": "Agaie",
+              "StateCode": 26
+            },
+            {
+              "value": 789,
+              "key": "Agwara",
+              "StateCode": 26
+            },
+            {
+              "value": 790,
+              "key": "Bida",
+              "StateCode": 26
+            },
+            {
+              "value": 791,
+              "key": "Borgu",
+              "StateCode": 26
+            },
+            {
+              "value": 792,
+              "key": "Bosso",
+              "StateCode": 26
+            },
+            {
+              "value": 793,
+              "key": "Chanchaga",
+              "StateCode": 26
+            },
+            {
+              "value": 794,
+              "key": "Edati",
+              "StateCode": 26
+            },
+            {
+              "value": 795,
+              "key": "Gbako",
+              "StateCode": 26
+            },
+            {
+              "value": 796,
+              "key": "Gurara",
+              "StateCode": 26
+            },
+            {
+              "value": 797,
+              "key": "Katcha",
+              "StateCode": 26
+            },
+            {
+              "value": 798,
+              "key": "Kontagora",
+              "StateCode": 26
+            },
+            {
+              "value": 799,
+              "key": "Lapai",
+              "StateCode": 26
+            },
+            {
+              "value": 800,
+              "key": "Lavun",
+              "StateCode": 26
+            },
+            {
+              "value": 801,
+              "key": "Magama",
+              "StateCode": 26
+            },
+            {
+              "value": 802,
+              "key": "Mariga",
+              "StateCode": 26
+            },
+            {
+              "value": 803,
+              "key": "Mashegu",
+              "StateCode": 26
+            },
+            {
+              "value": 804,
+              "key": "Mokwa",
+              "StateCode": 26
+            },
+            {
+              "value": 805,
+              "key": "Muya",
+              "StateCode": 26
+            },
+            {
+              "value": 806,
+              "key": "Pailoro",
+              "StateCode": 26
+            },
+            {
+              "value": 807,
+              "key": "Rafi",
+              "StateCode": 26
+            },
+            {
+              "value": 808,
+              "key": "Rijau",
+              "StateCode": 26
+            },
+            {
+              "value": 809,
+              "key": "Shiroro",
+              "StateCode": 26
+            },
+            {
+              "value": 810,
+              "key": "Suleja",
+              "StateCode": 26
+            },
+            {
+              "value": 811,
+              "key": "Tafa",
+              "StateCode": 26
+            },
+            {
+              "value": 812,
+              "key": "Wushishi",
+              "StateCode": 26
             }
-        ]
+          ]
     }
 }

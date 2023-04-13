@@ -1,3 +1,4 @@
+import { createHash, createHmac } from 'crypto';
 import { OTP_CONFIG, OTP_LENGTH } from './constants';
 
 const otpGenerator = require('otp-generator');
@@ -35,4 +36,20 @@ export const ObjectId = function () {
       })
       .toLowerCase()
   );
+};
+
+export const formatBVN = (arg0, arg1, arg2, arg3) => {
+  return `${arg0}::${arg1}${arg2}${arg3}`;
+};
+
+export const CreateMD5Hash = (data: string) => {
+  return createHash('md5').update(data).digest('hex');
+};
+
+export const Sha256Hash = (data: string) => {
+  return createHash('sha256').update(data).digest('hex');
+};
+export const HMAC256Hash = (secret, data: string) => {
+  const hmac = createHmac('sha256', secret).update(data).digest('base64');
+  return hmac;
 };

@@ -10,6 +10,7 @@ import HelperRoute from './routes/helper.routes';
 import PossapSFRoute from './routes/possap-sf.routes';
 import PossapServiceRoute from './routes/possap-service.route';
 import IncidentsRoute from './routes/incident.route';
+import CBSRoute from './routes/cbs.route';
 
 validateEnv();
 
@@ -22,5 +23,6 @@ const app = new App([
   new PossapSFRoute(),
   new PossapServiceRoute(),
   new IncidentsRoute(),
+  new CBSRoute(),
 ]);
 app.listen();

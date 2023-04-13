@@ -16,7 +16,7 @@ class PossapServiceRoute implements Routes {
     this.router.get(`${this.path}/:id`, this.possapS.findServiceById);
     this.router.get(`${this.path}`, this.possapS.findAllPossapServices);
     this.router.post(`${this.path}`, this.possapS.createPossapService);
-    this.router.put(`${this.path}/:id(\\d+)`, this.possapS.updatePosssapService);
+    this.router.put(`${this.path}/:id`, this.possapS.updatePosssapService);
     this.router.delete(`${this.path}/:id(\\d+)`, this.possapS.deleteServiceById);
   }
 }

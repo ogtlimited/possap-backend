@@ -55,7 +55,7 @@ class PossapService extends Repository<PossapServiceEntity> {
 
   public async updatePossapService(AllPossapId: any, AllPossapData: any): Promise<IPossapService> {
     if (isEmpty(AllPossapData)) throw new HttpException(400, "You're not AllPossapData");
-
+    console.log('continue');
     const findAllPossap: IPossapService = await PossapServiceEntity.findOne({ where: { id: AllPossapId } });
     if (!findAllPossap) throw new HttpException(409, "You're not AllPossap");
 
