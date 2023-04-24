@@ -130,6 +130,24 @@
                                 "StateCode": "19",
                                 "LgaCode": "4",
                                 "sub": []
+                            },
+                            {
+                                "Name": "CMR COMMAND CENTRE FHQ ABUJA",
+                                "Code": "2522",
+                                "Address": "NIGERIA POLICE FORCE HEADQUARTERS LOUIS EDET HOUSE SHEHU SHAGARI WAY ABUJA",
+                                "ZoneCode": "30",
+                                "StateCode": "19",
+                                "LgaCode": "4",
+                                "sub": []
+                            },
+                            {
+                                "Name": "CMR COMMAND CENTRE FHQ ANNEX LAGOS",
+                                "Code": "2523",
+                                "Address": "NIGERIA POLICE FORCE HQ ANNEX LAGOS",
+                                "ZoneCode": "25",
+                                "StateCode": "27",
+                                "LgaCode": "513",
+                                "sub": []
                             }
                         ]
                     },
@@ -2195,6 +2213,14 @@
                                         "ZoneCode": "29",
                                         "StateCode": "3",
                                         "LgaCode": "192"
+                                    },
+                                    {
+                                        "Name": "OFFICE OF CP PAP EASTERN PORT",
+                                        "Code": "387",
+                                        "Address": "ONNE",
+                                        "ZoneCode": "77",
+                                        "StateCode": "29",
+                                        "LgaCode": "697"
                                     }
                                 ]
                             },
@@ -2205,7 +2231,16 @@
                                 "ZoneCode": "25",
                                 "StateCode": "27",
                                 "LgaCode": "513",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "OFFICE OF CP PAP WESTERN PORT",
+                                        "Code": "388",
+                                        "Address": "MARINA",
+                                        "ZoneCode": "25",
+                                        "StateCode": "27",
+                                        "LgaCode": "513"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "AIRPORT POLICE COMMAND",
@@ -2337,13 +2372,22 @@
                         "LgaCode": "4",
                         "sub": [
                             {
-                                "Name": "CENTRAL MOTOR REGISTRY",
+                                "Name": "CMR FHQ ANNEX LAGOS",
                                 "Code": "92",
-                                "Address": "NIGERIA POLICE FORCE HEADQUARTERS ANNEX",
+                                "Address": "NIGERIA POLICE FORCE HQ ANNEX LAGOS",
                                 "ZoneCode": "25",
                                 "StateCode": "27",
                                 "LgaCode": "507",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "IDP",
+                                        "Code": "389",
+                                        "Address": "NIGERIA POLICE FORCE HEADQUARTERS ANNEX",
+                                        "ZoneCode": "25",
+                                        "StateCode": "27",
+                                        "LgaCode": "513"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DOPs FHQ ADMIN",
@@ -4454,6 +4498,15 @@
                                 "StateCode": "27",
                                 "LgaCode": "513",
                                 "sub": []
+                            },
+                            {
+                                "Name": "OFFICE OF AIG FIB",
+                                "Code": "2521",
+                                "Address": "NIGERIA POLICE FORCE HEADQUARTERS LOUIS EDET HOUSE SHEHU SHAGARI WAY ABUJA",
+                                "ZoneCode": "30",
+                                "StateCode": "19",
+                                "LgaCode": "4",
+                                "sub": []
                             }
                         ]
                     },
@@ -6185,7 +6238,16 @@
                                 "ZoneCode": "32",
                                 "StateCode": "32",
                                 "LgaCode": "22",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE ABIA COMMAND",
+                                        "Code": "390",
+                                        "Address": "UMUAHIA",
+                                        "ZoneCode": "32",
+                                        "StateCode": "32",
+                                        "LgaCode": "22"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS ABIA COMMAND",
@@ -6969,7 +7031,16 @@
                                 "ZoneCode": "26",
                                 "StateCode": "33",
                                 "LgaCode": "44",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE ADAMAWA COMMAND",
+                                        "Code": "391",
+                                        "Address": "YOLA",
+                                        "ZoneCode": "26",
+                                        "StateCode": "33",
+                                        "LgaCode": "44"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS ADAMAWA COMMAND",
@@ -7429,7 +7500,16 @@
                                 "ZoneCode": "29",
                                 "StateCode": "2",
                                 "LgaCode": "76",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE AKWA-IBOM COMMAND",
+                                        "Code": "392",
+                                        "Address": "UYO",
+                                        "ZoneCode": "29",
+                                        "StateCode": "2",
+                                        "LgaCode": "76"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS AKWA-IBOM COMMAND",
@@ -7943,7 +8023,16 @@
                                 "ZoneCode": "74",
                                 "StateCode": "1",
                                 "LgaCode": "81",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE ANAMBRA COMMAND",
+                                        "Code": "393",
+                                        "Address": "AWKA",
+                                        "ZoneCode": "74",
+                                        "StateCode": "1",
+                                        "LgaCode": "82"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS ANAMBRA COMMAND",
@@ -8054,7 +8143,7 @@
                                 "sub": []
                             },
                             {
-                                "Name": "HARBOR DIVISION",
+                                "Name": "HARBOUR DIVISION",
                                 "Code": "2339",
                                 "Address": "4 POPOBROS AVENUE",
                                 "ZoneCode": "74",
@@ -8475,7 +8564,16 @@
                                 "ZoneCode": "35",
                                 "StateCode": "11",
                                 "LgaCode": "99",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE BAUCHI COMMAND",
+                                        "Code": "394",
+                                        "Address": "BAUCHI",
+                                        "ZoneCode": "35",
+                                        "StateCode": "11",
+                                        "LgaCode": "99"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS BAUCHI COMMAND",
@@ -8854,7 +8952,16 @@
                                 "ZoneCode": "77",
                                 "StateCode": "12",
                                 "LgaCode": "124",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE BAYELSA COMMAND",
+                                        "Code": "395",
+                                        "Address": "YENAGOA",
+                                        "ZoneCode": "77",
+                                        "StateCode": "12",
+                                        "LgaCode": "124"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS BAYELSA COMMAND",
@@ -9259,7 +9366,16 @@
                                 "ZoneCode": "27",
                                 "StateCode": "34",
                                 "LgaCode": "137",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE BENUE COMMAND",
+                                        "Code": "396",
+                                        "Address": "MAKURDI",
+                                        "ZoneCode": "27",
+                                        "StateCode": "34",
+                                        "LgaCode": "137"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS BENUE COMMAND",
@@ -9526,10 +9642,10 @@
                             {
                                 "Name": "GWANGE DIVISION",
                                 "Code": "1659",
-                                "Address": "",
-                                "ZoneCode": "0",
-                                "StateCode": "0",
-                                "LgaCode": "0",
+                                "Address": "Gwange maiduguri",
+                                "ZoneCode": "76",
+                                "StateCode": "35",
+                                "LgaCode": "168",
                                 "sub": []
                             },
                             {
@@ -9836,7 +9952,16 @@
                                 "ZoneCode": "76",
                                 "StateCode": "35",
                                 "LgaCode": "168",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE BORNO COMMAND",
+                                        "Code": "397",
+                                        "Address": "MAIDUGURI",
+                                        "ZoneCode": "76",
+                                        "StateCode": "35",
+                                        "LgaCode": "168"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS BORNO COMMAND",
@@ -10067,10 +10192,10 @@
                             {
                                 "Name": "TINAPA DIVISION",
                                 "Code": "805",
-                                "Address": "",
-                                "ZoneCode": "0",
-                                "StateCode": "0",
-                                "LgaCode": "0",
+                                "Address": "Tinapa Calabar",
+                                "ZoneCode": "29",
+                                "StateCode": "3",
+                                "LgaCode": "192",
                                 "sub": []
                             },
                             {
@@ -10215,7 +10340,16 @@
                                 "ZoneCode": "29",
                                 "StateCode": "3",
                                 "LgaCode": "192",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE CROSS-RIVER COMMAND",
+                                        "Code": "398",
+                                        "Address": "CALABAR",
+                                        "ZoneCode": "29",
+                                        "StateCode": "3",
+                                        "LgaCode": "192"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS CROSS-RIVER COMMAND",
@@ -10837,7 +10971,16 @@
                                 "ZoneCode": "28",
                                 "StateCode": "4",
                                 "LgaCode": "193",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE DELTA COMMAND",
+                                        "Code": "399",
+                                        "Address": "ASABA",
+                                        "ZoneCode": "28",
+                                        "StateCode": "4",
+                                        "LgaCode": "193"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS DELTA COMMAND",
@@ -11288,7 +11431,16 @@
                                 "ZoneCode": "74",
                                 "StateCode": "37",
                                 "LgaCode": "222",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE EBONYI COMMAND",
+                                        "Code": "400",
+                                        "Address": "ABAKALIKI",
+                                        "ZoneCode": "74",
+                                        "StateCode": "37",
+                                        "LgaCode": "222"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS EBONYI COMMAND",
@@ -11829,7 +11981,16 @@
                                 "ZoneCode": "28",
                                 "StateCode": "5",
                                 "LgaCode": "238",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE EDO COMMAND",
+                                        "Code": "401",
+                                        "Address": "BENIN CITY",
+                                        "ZoneCode": "28",
+                                        "StateCode": "5",
+                                        "LgaCode": "238"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS EDO COMMAND",
@@ -12325,7 +12486,16 @@
                                 "ZoneCode": "78",
                                 "StateCode": "30",
                                 "LgaCode": "245",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE EKITI COMMAND",
+                                        "Code": "402",
+                                        "Address": "ADO-EKITI",
+                                        "ZoneCode": "78",
+                                        "StateCode": "30",
+                                        "LgaCode": "245"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS EKITI COMMAND",
@@ -12794,7 +12964,16 @@
                                 "ZoneCode": "74",
                                 "StateCode": "8",
                                 "LgaCode": "263",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE ENUGU COMMAND",
+                                        "Code": "403",
+                                        "Address": "ENUGU",
+                                        "ZoneCode": "74",
+                                        "StateCode": "8",
+                                        "LgaCode": "261"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS ENUGU COMMAND",
@@ -13317,7 +13496,16 @@
                                 "ZoneCode": "30",
                                 "StateCode": "19",
                                 "LgaCode": "4",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE FCT COMMAND",
+                                        "Code": "404",
+                                        "Address": "LADOKE AKINTOLA BOULEVARD GARKI ABUJA",
+                                        "ZoneCode": "30",
+                                        "StateCode": "19",
+                                        "LgaCode": "4"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS FCT COMMAND",
@@ -13804,7 +13992,16 @@
                                 "ZoneCode": "35",
                                 "StateCode": "24",
                                 "LgaCode": "285",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE GOMBE COMMAND",
+                                        "Code": "405",
+                                        "Address": "GOMBE",
+                                        "ZoneCode": "35",
+                                        "StateCode": "24",
+                                        "LgaCode": "285"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS GOMBE COMMAND",
@@ -14345,7 +14542,16 @@
                                 "ZoneCode": "32",
                                 "StateCode": "18",
                                 "LgaCode": "313",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE IMO COMMAND",
+                                        "Code": "406",
+                                        "Address": "OWERRI",
+                                        "ZoneCode": "32",
+                                        "StateCode": "18",
+                                        "LgaCode": "312"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS IMO COMMAND",
@@ -14796,7 +15002,16 @@
                                 "ZoneCode": "24",
                                 "StateCode": "13",
                                 "LgaCode": "320",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE JIGAWA COMMAND",
+                                        "Code": "407",
+                                        "Address": "DUTSE",
+                                        "ZoneCode": "24",
+                                        "StateCode": "13",
+                                        "LgaCode": "320"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS JIGAWA COMMAND",
@@ -15328,7 +15543,16 @@
                                 "ZoneCode": "75",
                                 "StateCode": "22",
                                 "LgaCode": "349",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE KADUNA COMMAND",
+                                        "Code": "408",
+                                        "Address": "KADUNA",
+                                        "ZoneCode": "75",
+                                        "StateCode": "22",
+                                        "LgaCode": "349"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS KADUNA COMMAND",
@@ -16274,7 +16498,16 @@
                                 "ZoneCode": "24",
                                 "StateCode": "7",
                                 "LgaCode": "395",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE KANO COMMAND",
+                                        "Code": "409",
+                                        "Address": "KANO",
+                                        "ZoneCode": "24",
+                                        "StateCode": "7",
+                                        "LgaCode": "385"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS KANO COMMAND",
@@ -16779,7 +17012,16 @@
                                 "ZoneCode": "75",
                                 "StateCode": "9",
                                 "LgaCode": "429",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE KATSINA COMMAND",
+                                        "Code": "410",
+                                        "Address": "KATSINA",
+                                        "ZoneCode": "75",
+                                        "StateCode": "9",
+                                        "LgaCode": "429"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS KATSINA COMMAND",
@@ -17140,7 +17382,16 @@
                                 "ZoneCode": "33",
                                 "StateCode": "25",
                                 "LgaCode": "448",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE KEBBI COMMAND",
+                                        "Code": "411",
+                                        "Address": "BIRNIN KEBBI",
+                                        "ZoneCode": "33",
+                                        "StateCode": "25",
+                                        "LgaCode": "448"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS KEBBI COMMAND",
@@ -17726,7 +17977,16 @@
                                 "ZoneCode": "31",
                                 "StateCode": "15",
                                 "LgaCode": "475",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE KOGI COMMAND",
+                                        "Code": "412",
+                                        "Address": "LOKOJA",
+                                        "ZoneCode": "31",
+                                        "StateCode": "15",
+                                        "LgaCode": "475"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS KOGI COMMAND",
@@ -18267,7 +18527,16 @@
                                 "ZoneCode": "31",
                                 "StateCode": "26",
                                 "LgaCode": "782",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE KWARA COMMAND",
+                                        "Code": "413",
+                                        "Address": "ILORIN",
+                                        "ZoneCode": "31",
+                                        "StateCode": "26",
+                                        "LgaCode": "490"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS KWARA COMMAND",
@@ -19536,6 +19805,14 @@
                                         "ZoneCode": "25",
                                         "StateCode": "27",
                                         "LgaCode": "510"
+                                    },
+                                    {
+                                        "Name": "CMR INFO CENTRE LAGOS COMMAND",
+                                        "Code": "414",
+                                        "Address": "IKEJA",
+                                        "ZoneCode": "25",
+                                        "StateCode": "27",
+                                        "LgaCode": "510"
                                     }
                                 ]
                             },
@@ -20024,7 +20301,16 @@
                                 "ZoneCode": "27",
                                 "StateCode": "28",
                                 "LgaCode": "527",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE NASARAWA COMMAND",
+                                        "Code": "415",
+                                        "Address": "LAFIA",
+                                        "ZoneCode": "27",
+                                        "StateCode": "28",
+                                        "LgaCode": "527"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS NASARAWA COMMAND",
@@ -20645,7 +20931,16 @@
                                 "ZoneCode": "30",
                                 "StateCode": "16",
                                 "LgaCode": "537",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE NIGER COMMAND",
+                                        "Code": "416",
+                                        "Address": "MINNA",
+                                        "ZoneCode": "30",
+                                        "StateCode": "16",
+                                        "LgaCode": "537"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS NIGER COMMAND",
@@ -21546,7 +21841,16 @@
                                 "ZoneCode": "25",
                                 "StateCode": "36",
                                 "LgaCode": "559",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE OGUN COMMAND",
+                                        "Code": "417",
+                                        "Address": "ABEOKUTA",
+                                        "ZoneCode": "25",
+                                        "StateCode": "36",
+                                        "LgaCode": "560"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS OGUN COMMAND",
@@ -22159,7 +22463,16 @@
                                 "ZoneCode": "78",
                                 "StateCode": "20",
                                 "LgaCode": "583",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE ONDO COMMAND",
+                                        "Code": "418",
+                                        "Address": "AKURE",
+                                        "ZoneCode": "78",
+                                        "StateCode": "20",
+                                        "LgaCode": "582"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS ONDO COMMAND",
@@ -22682,7 +22995,16 @@
                                 "ZoneCode": "34",
                                 "StateCode": "21",
                                 "LgaCode": "626",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE OSUN COMMAND",
+                                        "Code": "419",
+                                        "Address": "OSOGBO",
+                                        "ZoneCode": "34",
+                                        "StateCode": "21",
+                                        "LgaCode": "626"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS OSUN COMMAND",
@@ -23426,10 +23748,10 @@
                             {
                                 "Name": "OWODE DIVISION",
                                 "Code": "1555",
-                                "Address": "",
-                                "ZoneCode": "0",
-                                "StateCode": "0",
-                                "LgaCode": "0",
+                                "Address": "OGBOMOSO NORTH",
+                                "ZoneCode": "34",
+                                "StateCode": "17",
+                                "LgaCode": "780",
                                 "sub": []
                             },
                             {
@@ -23475,7 +23797,16 @@
                                 "ZoneCode": "34",
                                 "StateCode": "17",
                                 "LgaCode": "634",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE OYO COMMAND",
+                                        "Code": "420",
+                                        "Address": "IBADAN",
+                                        "ZoneCode": "34",
+                                        "StateCode": "17",
+                                        "LgaCode": "634"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS OYO COMMAND",
@@ -23628,6 +23959,15 @@
                                 "ZoneCode": "34",
                                 "StateCode": "17",
                                 "LgaCode": "632",
+                                "sub": []
+                            },
+                            {
+                                "Name": "AGO-ARE DIVISION",
+                                "Code": "2520",
+                                "Address": "AGO-ARE",
+                                "ZoneCode": "34",
+                                "StateCode": "17",
+                                "LgaCode": "630",
                                 "sub": []
                             }
                         ]
@@ -23935,7 +24275,16 @@
                                 "ZoneCode": "27",
                                 "StateCode": "14",
                                 "LgaCode": "663",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE PLATEAU COMMAND",
+                                        "Code": "421",
+                                        "Address": "JOS",
+                                        "ZoneCode": "27",
+                                        "StateCode": "14",
+                                        "LgaCode": "663"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS PLATEAU COMMAND",
@@ -24611,7 +24960,16 @@
                                 "ZoneCode": "77",
                                 "StateCode": "29",
                                 "LgaCode": "697",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE RIVERS COMMAND",
+                                        "Code": "422",
+                                        "Address": "PORT HARCOURT",
+                                        "ZoneCode": "77",
+                                        "StateCode": "29",
+                                        "LgaCode": "697"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS RIVERS COMMAND",
@@ -25152,7 +25510,16 @@
                                 "ZoneCode": "33",
                                 "StateCode": "10",
                                 "LgaCode": "714",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE SOKOTO COMMAND",
+                                        "Code": "423",
+                                        "Address": "SOKOTO",
+                                        "ZoneCode": "33",
+                                        "StateCode": "10",
+                                        "LgaCode": "715"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS SOKOTO COMMAND",
@@ -25504,7 +25871,16 @@
                                 "ZoneCode": "26",
                                 "StateCode": "23",
                                 "LgaCode": "728",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE TARABA COMMAND",
+                                        "Code": "424",
+                                        "Address": "JALINGO",
+                                        "ZoneCode": "26",
+                                        "StateCode": "23",
+                                        "LgaCode": "728"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS TARABA COMMAND",
@@ -25847,7 +26223,16 @@
                                 "ZoneCode": "76",
                                 "StateCode": "31",
                                 "LgaCode": "740",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE YOBE COMMAND",
+                                        "Code": "425",
+                                        "Address": "DAMATURU",
+                                        "ZoneCode": "76",
+                                        "StateCode": "31",
+                                        "LgaCode": "740"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS YOBE COMMAND",
@@ -26136,7 +26521,16 @@
                                 "ZoneCode": "33",
                                 "StateCode": "6",
                                 "LgaCode": "761",
-                                "sub": []
+                                "sub": [
+                                    {
+                                        "Name": "CMR INFO CENTRE ZAMFARA COMMAND",
+                                        "Code": "426",
+                                        "Address": "GUSAU",
+                                        "ZoneCode": "33",
+                                        "StateCode": "6",
+                                        "LgaCode": "761"
+                                    }
+                                ]
                             },
                             {
                                 "Name": "DLS ZAMFARA COMMAND",

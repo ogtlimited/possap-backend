@@ -1,3 +1,4 @@
+import { getFile, removeFile } from './utils/getFile';
 import 'reflect-metadata';
 import '@/index';
 import cookieParser from 'cookie-parser';
@@ -15,27 +16,24 @@ import { dbConnection } from '@databases';
 import { Routes } from '@interfaces/routes.interface';
 import errorMiddleware from '@middlewares/error.middleware';
 import { logger, stream } from '@utils/logger';
-// import CommandService from './services/helper-services/command.service';
-const { createHash } = require('crypto');
-import axios from 'axios';
-import DynamicService from './services/Dynamic.service';
-import { CreateMD5Hash, formatBVN, Sha256Hash, HMAC256Hash } from './utils/util';
-
+import multer from 'multer';
 class App {
   public app: express.Application;
   public port: string | number;
   public env: string;
-
+  public upload;
   constructor(routes: Routes[]) {
     this.app = express();
     this.port = process.env.PORT || 3000;
     this.env = process.env.NODE_ENV || 'development';
-
+    this.upload = multer();
     // this.env !== 'test' && this.connectToDatabase();
     this.initializeMiddlewares();
     this.initializeRoutes(routes);
     this.initializeSwagger();
     this.initializeErrorHandling();
+
+    removeFile('1682376303539.png');
   }
 
   public listen() {
@@ -66,6 +64,7 @@ class App {
     this.app.use(express.json());
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(cookieParser());
+    //this.app.use(this.upload.array());
   }
 
   private initializeRoutes(routes: Routes[]) {

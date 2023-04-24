@@ -1,45 +1,90 @@
+import { getFile, removeFile } from './../../utils/getFile';
 import { RequestBody } from './../../interfaces/RequestBody';
 import { NextFunction, Request, Response } from 'express';
 import axios, { AxiosRequestConfig } from 'axios';
-
 import * as dotenv from 'dotenv';
 import { HMAC256Hash } from '@/utils/util';
+import fs from 'fs';
+import path from 'path';
 
+const FormData = require('form-data');
 dotenv.config();
-
+const filestorage = path.join(__dirname, '..', 'uploads');
 class CBSController {
   public postRequest = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    let fileName = '';
     try {
-      const body: RequestBody = req.body;
-      console.log(body);
+      const { body, headers, helpers } = req.body.requestObject;
+      const data = new FormData();
+      console.log('CBS ROUTES');
+      console.log(body, helpers);
+      //res.status(200).json({ message: 'seen' });
+      //headers[helpers.hashField] = HMAC256Hash(helpers.clientSecret, helpers.hashmessage);
+      // console.log(headers);
+      //   const data = JSON.parse(body.body);
+      //   console.log(headers);
+      //   console.log(typeof data);
       const config: AxiosRequestConfig = {
-        method: body.method,
+        method: helpers.method,
         maxBodyLength: Infinity,
-        url: body.url,
-        headers: {
-          ...body.headers,
-        },
+        url: helpers.url,
+        // headers: {
+        //   ...headers,
+        // },
       };
-      if (body.method.toUpperCase() === 'POST' || body.method.toUpperCase() === 'PUT') {
-        config.data = req.body;
+      if (helpers.method.toUpperCase() === 'POST' || helpers.method.toUpperCase() === 'PUT') {
+        Object.keys(body).forEach(v => {
+          if (v === 'AffidavitFile') {
+            fileName = body[v];
+            const file = fs.createReadStream(filestorage + body[v]);
+            data.append(v, file);
+          } else {
+            if (typeof body[v] !== 'string') {
+              data.append(v, JSON.stringify(body[v]));
+            } else {
+              data.append(v, body[v]);
+            }
+          }
+        });
       }
-      if (body.hashmessage) {
-        console.log('run');
-        config.headers = {
-          ...body.headers,
-          [body.hashField]: HMAC256Hash(body.clientSecret, body.hashmessage),
-        };
-        config.headers.hashField = HMAC256Hash(body.clientSecret, body.hashmessage);
+
+      config.data = data;
+      config.headers = {
+        ...headers,
+        ...data.getHeaders(),
+      };
+      if (helpers.hashmessage) {
+        config.headers[helpers.hashField] = HMAC256Hash(helpers.clientSecret, helpers.hashmessage);
       }
-      console.log(config);
+      console.log('------', config.headers);
       const result = await axios.request(config);
+      removeFile(fileName);
       if (result.data) {
         res.status(200).json({ data: result.data });
       } else {
         res.status(400).json({ data: null, message: 'Operation failed' });
       }
     } catch (error) {
-      next(error);
+      console.log(error);
+      res.status(400).json({ error: error, message: 'Operation failed' });
+      //   //next(error);
+    }
+  };
+  public tempUpload = async (req: any, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      console.log(req.file);
+      if (req.file) {
+        const { filename } = req.file;
+        //getFile(req.file.filename);
+        console.log(req.file);
+        res.status(200).json({ status: 'Success', statusCode: 200, message: 'Files uploaded successfully', data: filename });
+      } else {
+        res.status(400).json({ message: 'error uploading file' });
+      }
+    } catch (error) {
+      console.log(error);
+      res.status(400).json({ error: error, message: 'Operation failed' });
+      //next(error);
     }
   };
 }

@@ -25,7 +25,7 @@ export interface RequestBody {
   method: Method;
   body?: any;
   params?: any;
-  headers?: { [x: string]: string | number | boolean };
+  headers?: string;
   hashmessage?: string;
   hashField?: string;
   clientSecret?: string;

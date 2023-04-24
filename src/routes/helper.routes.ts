@@ -5,6 +5,7 @@ import multer from 'multer';
 import validationMiddleware from '@middlewares/validation.middleware';
 import { SmsHelperDto } from '@dtos/helpers/sms-helper.dto';
 const fs = require('fs');
+const path = require('path');
 const upload = multer();
 
 class HelperRoute implements Routes {
@@ -15,9 +16,11 @@ class HelperRoute implements Routes {
   constructor() {
     this.initializeRoutes();
     try {
-      if (fs.existsSync('./eag.json')) {
+      const p = path.join(__dirname, '..', 'db', 'state-lga.json');
+      if (fs.existsSync(p)) {
         console.log('file exists');
       } else {
+        console.log('FETCHING DATA...');
         this.helperController.getFetchPoliceData();
       }
     } catch (err) {
