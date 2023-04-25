@@ -9,15 +9,16 @@ import path from 'path';
 
 const FormData = require('form-data');
 dotenv.config();
-const filestorage = path.join(__dirname, '..', 'uploads');
+const filestorage = path.join(__dirname, '../..', 'uploads/');
+console.log(filestorage);
 class CBSController {
   public postRequest = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     let fileName = '';
     try {
       const { body, headers, helpers } = req.body.requestObject;
       const data = new FormData();
-      console.log('CBS ROUTES');
-      console.log(body, helpers);
+      // console.log('CBS ROUTES');
+      // console.log(body, helpers);
       //res.status(200).json({ message: 'seen' });
       //headers[helpers.hashField] = HMAC256Hash(helpers.clientSecret, helpers.hashmessage);
       // console.log(headers);
@@ -56,17 +57,19 @@ class CBSController {
       if (helpers.hashmessage) {
         config.headers[helpers.hashField] = HMAC256Hash(helpers.clientSecret, helpers.hashmessage);
       }
-      console.log('------', config.headers);
+      // console.log('------', config.headers);
+      console.log(fileName, 'FILENAME');
       const result = await axios.request(config);
-      removeFile(fileName);
       if (result.data) {
+        removeFile(fileName);
         res.status(200).json({ data: result.data });
       } else {
         res.status(400).json({ data: null, message: 'Operation failed' });
       }
     } catch (error) {
-      console.log(error);
-      res.status(400).json({ error: error, message: 'Operation failed' });
+      console.log(error.message);
+      removeFile(fileName);
+      res.status(400).json({ error: 'error', message: 'Operation failed' });
       //   //next(error);
     }
   };
