@@ -33,7 +33,7 @@ class App {
     this.initializeSwagger();
     this.initializeErrorHandling();
 
-    removeFile('1682376303539.png');
+    // removeFile('1682376303539.png');
   }
 
   public listen() {
