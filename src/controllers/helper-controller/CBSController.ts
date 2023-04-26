@@ -57,7 +57,7 @@ class CBSController {
       if (helpers.hashmessage) {
         config.headers[helpers.hashField] = HMAC256Hash(helpers.clientSecret, helpers.hashmessage);
       }
-      // console.log('------', config.headers);
+      console.log('------', config.headers);
       console.log(fileName, 'FILENAME');
       const result = await axios.request(config);
       if (result.data) {
