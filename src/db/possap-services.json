@@ -1,0 +1,751 @@
+{
+    "data": [
+        {
+            "id": "4471d36e-7381-4d93-8000-9c440bc4f047",
+            "name": "Central Motor Registry",
+            "slug": null,
+            "formSchema": [
+                {
+                    "api": {
+                        "body": null,
+                        "path": "state-lga"
+                    },
+                    "name": "vin",
+                    "type": "text",
+                    "label": "VIN",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Enter your VIN"
+                },
+                {
+                    "name": "plateNumber",
+                    "type": "text",
+                    "label": "Plate Number",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Enter your plate number"
+                },
+                {
+                    "name": "vehColor",
+                    "type": "file",
+                    "label": "Vehicle color",
+                    "value": "",
+                    "validators": {
+                        "required": false
+                    },
+                    "placeholder": "Upload Colored photo of vehicle. Maximum size: 1MB"
+                },
+                {
+                    "name": "ownershipProof",
+                    "type": "file",
+                    "label": "Proof of ownership",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Upload proof of ownership. Maximum size: 1MB"
+                },
+                {
+                    "name": "roadWorthiness",
+                    "type": "file",
+                    "label": "Road worthiness",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Upload road worthiness document. Maximum size: 1MB"
+                },
+                {
+                    "api": {
+                        "body": null,
+                        "path": "state-lga"
+                    },
+                    "name": "pickupLocation",
+                    "type": "select",
+                    "label": "Pick up location",
+                    "value": "",
+                    "config": {
+                        "multiple": false
+                    },
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Select Pick up location"
+                }
+            ],
+            "workFlow": []
+        },
+        {
+            "id": "075beb77-4e05-46fc-bab6-ab503b730974",
+            "name": "Police Character Certificate",
+            "slug": "PCC",
+            "formSchema": [
+                {
+                    "name": "requestType",
+                    "type": "select",
+                    "label": "Request Types",
+                    "value": "",
+                    "config": {
+                        "multiple": false
+                    },
+                    "options": [
+                        {
+                            "key": "Domestic",
+                            "value": "Domestic"
+                        },
+                        {
+                            "key": "International",
+                            "value": "International"
+                        }
+                    ],
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Select a request type"
+                },
+                {
+                    "name": "reasonForInquiry",
+                    "type": "select",
+                    "label": "Reason for Inquiry",
+                    "value": "",
+                    "config": {
+                        "multiple": false
+                    },
+                    "options": [
+                        {
+                            "key": "Travelling",
+                            "value": "Travelling"
+                        },
+                        {
+                            "key": "Employment",
+                            "value": "Employment"
+                        },
+                        {
+                            "key": "Education",
+                            "value": "Education"
+                        },
+                        {
+                            "key": "others",
+                            "value": "Others"
+                        }
+                    ],
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Select Reason for Inquiry"
+                },
+                {
+                    "name": "reasonForInquiry",
+                    "type": "select-api",
+                    "label": "Reason for Inquiry",
+                    "value": "",
+                    "config": {
+                        "multiple": false
+                    },
+                    "options": [],
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Select Reason for Inquiry"
+                },
+                {
+                    "api": {
+                        "body": null,
+                        "path": "countries"
+                    },
+                    "name": "countryOfOrigin",
+                    "type": "select",
+                    "label": "Country of Origin",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Enter the country you are frin"
+                },
+                {
+                    "name": "placeOfBirth",
+                    "type": "text",
+                    "label": "Place of Birth",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Enter place of birth here"
+                },
+                {
+                    "name": "dateOfBirth",
+                    "type": "date",
+                    "label": "Date of Birth",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Select your date of birth."
+                },
+                {
+                    "api": {
+                        "body": null,
+                        "path": "countries"
+                    },
+                    "name": "destinationCountry",
+                    "type": "select",
+                    "label": "Destination Country",
+                    "value": "",
+                    "config": {
+                        "multiple": false
+                    },
+                    "showIf": {
+                        "value": "requestType",
+                        "equals": "International"
+                    },
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Select your destination country."
+                },
+                {
+                    "api": {
+                        "body": null,
+                        "path": "countries"
+                    },
+                    "name": "countryOfPassport",
+                    "type": "select",
+                    "label": "Country of Passport",
+                    "value": "",
+                    "config": {
+                        "multiple": false
+                    },
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Select your destination country."
+                },
+                {
+                    "name": "passportNumber",
+                    "type": "text",
+                    "label": "Passport Number",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Specify your international passport number"
+                },
+                {
+                    "name": "placeOfIssuance",
+                    "type": "text",
+                    "label": "Place of Issuance",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Specify where your passport was issued"
+                },
+                {
+                    "name": "dateOfIssuance",
+                    "type": "date",
+                    "label": "Date of Issuance",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Specify the date your passport was issued"
+                },
+                {
+                    "name": "hasBeenConvicted",
+                    "type": "radio",
+                    "label": "Have you previously been convicted?",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": ""
+                },
+                {
+                    "name": "convictionHistory",
+                    "type": "text",
+                    "label": "Previous Conviction History",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Enter info about your previous conviction history"
+                },
+                {
+                    "name": "passportPhotograph",
+                    "type": "file",
+                    "label": "Upload Current Passport Photograph",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Add your current passport photograph file here. Maximum size: 2MB"
+                },
+                {
+                    "name": "passportBioDataPage",
+                    "type": "file",
+                    "label": "Upload International Passport Bio Datapage",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Add an image of your international passport bio datapage here. Maximum size:2MB"
+                },
+                {
+                    "api": {
+                        "body": null,
+                        "path": "state-lga"
+                    },
+                    "name": "requestState",
+                    "type": "select",
+                    "label": "Select Police Command to Request Character Certificate",
+                    "value": "",
+                    "config": {
+                        "multiple": false
+                    },
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Select state for the police command"
+                },
+                {
+                    "api": {
+                        "body": {
+                            "key": "state",
+                            "value": "requestState"
+                        },
+                        "path": "state-scid"
+                    },
+                    "name": "requestStateCommand",
+                    "type": "select",
+                    "label": "Select the Police Formation/Division",
+                    "value": "",
+                    "config": {
+                        "multiple": false
+                    },
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Select state for the police command"
+                }
+            ],
+            "workFlow": []
+        },
+        {
+            "id": "7c3bceb3-febe-426f-92d7-67c1ebd18af0",
+            "name": "CMR ETS",
+            "slug": null,
+            "formSchema": [
+                {
+                    "api": {
+                        "body": null,
+                        "path": "state-lga"
+                    },
+                    "name": "vin",
+                    "type": "text",
+                    "label": "VIN",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Enter your VIN"
+                },
+                {
+                    "name": "plateNumber",
+                    "type": "text",
+                    "label": "Plate Number",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Enter your plate number"
+                },
+                {
+                    "name": "vehColor",
+                    "type": "file",
+                    "label": "Vehicle color",
+                    "value": "",
+                    "validators": {
+                        "required": false
+                    },
+                    "placeholder": "Upload Colored photo of vehicle. Maximum size: 1MB"
+                },
+                {
+                    "name": "ownershipProof",
+                    "type": "file",
+                    "label": "Proof of ownership",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Upload proof of ownership. Maximum size: 1MB"
+                },
+                {
+                    "name": "roadWorthiness",
+                    "type": "file",
+                    "label": "Road worthiness",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Upload road worthiness document. Maximum size: 1MB"
+                },
+                {
+                    "api": {
+                        "body": null,
+                        "path": "state-lga"
+                    },
+                    "name": "pickupLocation",
+                    "type": "select",
+                    "label": "Pick up location",
+                    "value": "",
+                    "config": {
+                        "multiple": false
+                    },
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Select Pick up location"
+                }
+            ],
+            "workFlow": []
+        },
+        {
+            "id": "f1e45619-7a0b-4f1a-8b5e-2d368639c3d2",
+            "name": "CMR",
+            "slug": "CMR",
+            "formSchema": [
+                {
+                    "api": {
+                        "body": null,
+                        "path": "state-lga"
+                    },
+                    "name": "vin",
+                    "type": "text",
+                    "label": "VIN",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Enter your VIN"
+                },
+                {
+                    "name": "plateNumber",
+                    "type": "text",
+                    "label": "Plate Number",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Enter your plate number"
+                },
+                {
+                    "name": "vehColor",
+                    "type": "file",
+                    "label": "Vehicle color",
+                    "value": "",
+                    "validators": {
+                        "required": false
+                    },
+                    "placeholder": "Upload Colored photo of vehicle. Maximum size: 1MB"
+                },
+                {
+                    "name": "ownershipProof",
+                    "type": "file",
+                    "label": "Proof of ownership",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Upload proof of ownership. Maximum size: 1MB"
+                },
+                {
+                    "name": "roadWorthiness",
+                    "type": "file",
+                    "label": "Road worthiness",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Upload road worthiness document. Maximum size: 1MB"
+                },
+                {
+                    "api": {
+                        "body": null,
+                        "path": "state-lga"
+                    },
+                    "name": "pickupLocation",
+                    "type": "select",
+                    "label": "Pick up location",
+                    "value": "",
+                    "config": {
+                        "multiple": false
+                    },
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Select Pick up location"
+                }
+            ],
+            "workFlow": []
+        },
+        {
+            "id": "7bf84229-beec-49c4-a5aa-244746d7064f",
+            "name": "Police Extract",
+            "slug": "PE",
+            "formSchema": [
+                {
+                    "name": "extractCategory",
+                    "type": "select",
+                    "label": "Select Category of Extract",
+                    "value": "",
+                    "config": {
+                        "multiple": true
+                    },
+                    "options": [
+                        {
+                            "key": "documentLost",
+                            "value": "Loss of Document"
+                        },
+                        {
+                            "key": "propertyLost",
+                            "value": "Loss of Property"
+                        },
+                        {
+                            "key": "others",
+                            "value": "Others"
+                        }
+                    ],
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Select an extract category."
+                },
+                {
+                    "name": "documentLost",
+                    "type": "select",
+                    "label": "Loss of Document",
+                    "config": {
+                        "multiple": true
+                    },
+                    "showIf": {
+                        "value": "extractCategory",
+                        "equals": "documentLost"
+                    },
+                    "options": [
+                        {
+                            "key": "Identification",
+                            "value": "Identification"
+                        },
+                        {
+                            "key": "Certificate",
+                            "value": "Certificate"
+                        },
+                        {
+                            "key": "Book/Journal",
+                            "value": "Book/Journal"
+                        },
+                        {
+                            "key": "Vehicle Particulars",
+                            "value": "Vehicle Particulars"
+                        },
+                        {
+                            "key": "Government issued document",
+                            "value": "Government issued document"
+                        },
+                        {
+                            "key": "Others",
+                            "value": "Others"
+                        }
+                    ],
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Loss of Document"
+                },
+                {
+                    "name": "propertyLost",
+                    "type": "select",
+                    "label": "Loss of Property",
+                    "value": "",
+                    "config": {
+                        "multiple": true
+                    },
+                    "showIf": {
+                        "value": "extractCategory",
+                        "equals": "propertyLost"
+                    },
+                    "options": [
+                        {
+                            "key": "Identification",
+                            "value": "Identification"
+                        },
+                        {
+                            "key": "Certificate",
+                            "value": "Certificate"
+                        },
+                        {
+                            "key": "Book/Journal",
+                            "value": "Book/Journal"
+                        },
+                        {
+                            "key": "Vehicle Particulars",
+                            "value": "Vehicle Particulars"
+                        },
+                        {
+                            "key": "Government issued document",
+                            "value": "Government issued document"
+                        },
+                        {
+                            "key": "Others",
+                            "value": "Others"
+                        }
+                    ],
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Loss of Property"
+                },
+                {
+                    "name": "extractReason",
+                    "type": "text",
+                    "label": "Reason for Request",
+                    "value": false,
+                    "showIf": {
+                        "value": "extractCategory",
+                        "equals": "others"
+                    },
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Enter your reason for extract"
+                },
+                {
+                    "name": "wasReported",
+                    "type": "radio",
+                    "label": "Was incident reported at a police station?",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "",
+                    "radioOptions": [
+                        {
+                            "label": "Yes",
+                            "value": true
+                        },
+                        {
+                            "label": "No",
+                            "value": false
+                        }
+                    ]
+                },
+                {
+                    "name": "dateReported",
+                    "type": "date",
+                    "label": "Select the date the incident was reported",
+                    "value": "",
+                    "showIf": {
+                        "value": "wasReported",
+                        "equals": true
+                    },
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Enter Incident Reported Date"
+                },
+                {
+                    "name": "courtAffidavit",
+                    "type": "file",
+                    "label": "Upload Court Affidavit",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Add a court affidavit file here. Maximum size: 1MB"
+                },
+                {
+                    "name": "affidavitNumber",
+                    "type": "text",
+                    "label": "Affidavit Number",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Enter Affidavit Number"
+                },
+                {
+                    "name": "affidavitDateOfIssuance",
+                    "type": "date",
+                    "label": "Affidavit Date of Issuance",
+                    "value": "",
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Enter affidavit date of issuance"
+                },
+                {
+                    "api": {
+                        "body": null,
+                        "path": "state-lga"
+                    },
+                    "name": "extractState",
+                    "type": "select",
+                    "label": "State",
+                    "value": "",
+                    "config": {
+                        "multiple": false
+                    },
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Select State of the Police Formation/Division"
+                },
+                {
+                    "api": {
+                        "body": {
+                            "key": "state",
+                            "value": "extractState"
+                        },
+                        "path": "state-lga"
+                    },
+                    "name": "extractLga",
+                    "type": "select",
+                    "label": "Local Government Area",
+                    "value": "",
+                    "config": {
+                        "multiple": false
+                    },
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Select LGA of the Police Formation/Division"
+                },
+                {
+                    "api": {
+                        "body": {
+                            "key": "state",
+                            "value": "extractState"
+                        },
+                        "path": "state-scid"
+                    },
+                    "name": "extractPoliceDivision",
+                    "type": "select",
+                    "label": "Select the Police Formation/Division",
+                    "value": "",
+                    "config": {
+                        "multiple": false
+                    },
+                    "validators": {
+                        "required": true
+                    },
+                    "placeholder": "Select the Formation/Division"
+                }
+            ],
+            "workFlow": []
+        }
+    ]
+}

@@ -1,0 +1,156 @@
+{
+    "Error": false,
+    "Errorvalue": null,
+    "ResponseObject": {
+        "ReportRecords": [
+            {
+              "value": 1,
+              "key": "Lagos"
+            },
+            {
+              "value": 2,
+              "key": "Abia"
+            },
+            {
+              "value": 3,
+              "key": "Adamawa"
+            },
+            {
+              "value": 4,
+              "key": "Akwa Ibom"
+            },
+            {
+              "value": 5,
+              "key": "Anambra"
+            },
+            {
+              "value": 6,
+              "key": "Bauchi"
+            },
+            {
+              "value": 7,
+              "key": "Bayelsa"
+            },
+            {
+              "value": 8,
+              "key": "Benue"
+            },
+            {
+              "value": 9,
+              "key": "Borno"
+            },
+            {
+              "value": 10,
+              "key": "Cross River"
+            },
+            {
+              "value": 11,
+              "key": "Delta"
+            },
+            {
+              "value": 12,
+              "key": "Ebonyi"
+            },
+            {
+              "value": 13,
+              "key": "Edo"
+            },
+            {
+              "value": 14,
+              "key": "Ekiti"
+            },
+            {
+              "value": 15,
+              "key": "Enugu"
+            },
+            {
+              "value": 16,
+              "key": "Gombe"
+            },
+            {
+              "value": 17,
+              "key": "Imo"
+            },
+            {
+              "value": 18,
+              "key": "Jigawa"
+            },
+            {
+              "value": 19,
+              "key": "Kaduna"
+            },
+            {
+              "value": 20,
+              "key": "Kano"
+            },
+            {
+              "value": 21,
+              "key": "Katsina"
+            },
+            {
+              "value": 22,
+              "key": "Kebbi"
+            },
+            {
+              "value": 23,
+              "key": "Kogi"
+            },
+            {
+              "value": 24,
+              "key": "Kwara"
+            },
+            {
+              "value": 25,
+              "key": "Nasarawa"
+            },
+            {
+              "value": 26,
+              "key": "Niger"
+            },
+            {
+              "value": 27,
+              "key": "Ogun"
+            },
+            {
+              "value": 28,
+              "key": "Ondo"
+            },
+            {
+              "value": 29,
+              "key": "Osun"
+            },
+            {
+              "value": 30,
+              "key": "Oyo"
+            },
+            {
+              "value": 31,
+              "key": "Plateau"
+            },
+            {
+              "value": 32,
+              "key": "Rivers"
+            },
+            {
+              "value": 33,
+              "key": "Sokoto"
+            },
+            {
+              "value": 34,
+              "key": "Taraba"
+            },
+            {
+              "value": 35,
+              "key": "Yobe"
+            },
+            {
+              "value": 36,
+              "key": "Zamfara"
+            },
+            {
+              "value": 37,
+              "key": "Abuja (FCT)"
+            }
+          ]
+    }
+}
