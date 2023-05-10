@@ -30,7 +30,9 @@ class CBSRoute implements Routes {
   }
 
   private initializeRoutes() {
-    this.router.post(`${this.path}`, this.cbs.postRequest);
+    this.router.post(`${this.path}/fetch-data`, this.cbs.FetchRequest);
+    this.router.post(`${this.path}/extract`, this.cbs.ExtractRequest);
+    this.router.post(`${this.path}/pcc`, this.cbs.PCCRequest);
     this.router.post(`${this.path}/upload`, upload.single('documents'), this.cbs.tempUpload);
   }
 }
