@@ -101,29 +101,9 @@ class HelperController {
         },
       ];
       fetchData(endpoints[0].url, endpoints[0].path);
-      // endpoints.forEach(d => {
-      // });
-      // const { data } = await axios.get(
-      //   'https://api.npprm.net/commandcategory/POSSAP/MDc5YzIyZTM1ZDAxNzlkYzVkOTViYmUwYTJkMjgxN2RkNmNjMzJhZjQzZmYxNzk2ZWY3OTA3ZWFmYjg5ZmIxMQ==/1',
-      //   { responseType: 'stream' },
-      // );
-
-      // data.pipe(fs.createWriteStream('./eag.json'));
     } catch (error) {
       console.log(error);
     }
-    // axios
-    //   .get(
-    //     'https://api.npprm.net/commandcategory/POSSAP/MDc5YzIyZTM1ZDAxNzlkYzVkOTViYmUwYTJkMjgxN2RkNmNjMzJhZjQzZmYxNzk2ZWY3OTA3ZWFmYjg5ZmIxMQ==/1',
-    //     { responseType: 'stream' },
-    //   )
-    //   .then(response => {
-    //     const writeStream = fs.createWriteStream('./eag.json');
-    //     response.pipe(writeStream);
-    //   })
-    //   .catch(function (error) {
-    //     console.log(error);
-    //   });
   };
 
   public getPoliceData = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
@@ -141,21 +121,13 @@ class HelperController {
   };
   public getPoliceSCID = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      console.log(req.query);
-      const obj = JSON.parse(fs.readFileSync('./eag.json', 'utf8'));
       const data = req.body;
-      console.log(req.body, 'state');
-      const records = obj.ResponseObject.ReportRecords[2];
-      // console.log(JSON.stringify(obj.ResponseObject.ReportRecords), 'records');
-      const stateC = records.sub.filter(e => {
-        const slice = e['Name'].split(' ')[0];
-        if (data.state.toLowerCase().includes(slice.toLowerCase())) {
-          return e;
-        }
-      })[0];
-      console.log(stateC);
-      const finale = stateC.sub.filter(sc => sc['Name'].includes('SCID'))[0];
-      res.status(200).json({ data: [{ key: finale['Name'], value: finale['Name'] }], message: 'data' });
+      console.log(data);
+      const fetch = await axios.get(cbsBasePath + 'utility/get-active-state-commands/' + data.state + '/' + data.serviceId);
+      console.log(fetch);
+      const commands = fetch.data.ResponseObject.stateLga.map(v => ({ value: v.Id, label: v.Name }));
+      // const finale = stateC.sub.filter(sc => sc['Name'].includes('SCID'))[0];
+      res.status(200).json({ data: commands, message: 'data' });
     } catch (error) {
       next(error);
     }
@@ -177,10 +149,10 @@ class HelperController {
     try {
       const allstate = await fileImporter('state-lga.json');
 
-      console.log(req.body);
+      // console.log(req.body);
       // console.log(States);
       const data = req.body;
-      console.log(allstate.ResponseObject.stateLga);
+      // console.log(allstate.ResponseObject.stateLga);
 
       // console.log(fetch.data.ResponseObject);
       const raw = allstate.ResponseObject.stateLga;
@@ -190,11 +162,26 @@ class HelperController {
       // const state = NaijaStates.states().filter(s => s === data.state);
       if (data?.state) {
         const filteredstate = raw.filter(s => s.Id === parseInt(data.state))[0];
-        console.log(filteredstate);
+        // console.log(filteredstate);
         result = filteredstate.LGAs.map(lgas => ({ value: lgas.Id, label: lgas.Name }));
         //console.log(result);
       }
       res.status(200).json({ data: result, message: 'data' });
+    } catch (error) {
+      console.log(error);
+      next(error);
+    }
+  };
+  public AllStateLga = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      const allstate = await fileImporter('state-lga.json');
+
+      console.log(allstate.ResponseObject.stateLga);
+
+      // console.log(fetch.data.ResponseObject);
+      const states = allstate.ResponseObject.stateLga;
+
+      res.status(200).json({ data: states, message: 'data' });
     } catch (error) {
       console.log(error);
       next(error);

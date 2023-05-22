@@ -30,6 +30,7 @@ class HelperRoute implements Routes {
   private initializeRoutes() {
     console.log('first');
     this.router.get(`${this.path}/verifyNIN`, this.helperController.verifyNIN);
+    this.router.get(`${this.path}/all-states`, this.helperController.AllStateLga);
     this.router.post(`${this.path}/verifyAPNumber`, this.helperController.verifyAPNumber);
     this.router.post(`${this.path}/police-hr`, this.helperController.getPoliceData);
     this.router.post(`${this.path}/uploadMedia`, upload.array('documents', 3), this.helperController.uploadMedia);
