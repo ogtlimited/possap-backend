@@ -88,11 +88,11 @@ class CBSController {
             const file = fs.createReadStream(filestorage + body[v]);
             data.append(v, file);
           } else {
-            // if (typeof body[v] !== 'string') {
-            //   data.append(v, JSON.stringify(body[v]));
-            // } else {
-            // }
-            data.append(v, body[v]);
+            if (typeof body[v] !== 'string') {
+              data.append(v, JSON.stringify(body[v]));
+            } else {
+              data.append(v, body[v]);
+            }
           }
         });
       }
@@ -108,6 +108,7 @@ class CBSController {
       }
       console.log(intpassportdatapagefile, passportphotographfile, 'FILENAME');
       const result = await axios.request(config);
+      console.log(result);
       if (result.data) {
         removeFile(passportphotographfile);
         removeFile(intpassportdatapagefile);
@@ -117,8 +118,8 @@ class CBSController {
       }
     } catch (error) {
       console.log(error);
-      removeFile(passportphotographfile);
-      removeFile(intpassportdatapagefile);
+      // removeFile(passportphotographfile);
+      // removeFile(intpassportdatapagefile);
       res.status(400).json({ error: 'error', message: 'Operation failed' });
       //   //next(error);
     }
@@ -143,7 +144,7 @@ class CBSController {
   };
 
   public FetchRequest = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
-    console.log(req.body.requestObject);
+    // console.log(req.body.requestObject);
     try {
       const { headers, helpers, body } = req.body.requestObject;
       const config: AxiosRequestConfig = {
