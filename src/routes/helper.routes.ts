@@ -38,6 +38,7 @@ class HelperRoute implements Routes {
     this.router.post(`${this.path}/state-scid`, this.helperController.getPoliceSCID);
     this.router.post(`${this.path}/state-area-division`, this.helperController.getPoliceAreaDivision);
     this.router.post(`${this.path}/countries`, this.helperController.getCountries);
+    this.router.post(`${this.path}/download`, this.helperController.downloadFile);
   }
 }
 

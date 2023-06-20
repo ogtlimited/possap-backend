@@ -19,6 +19,21 @@ const cbsBasePath = 'https://test.possap.ng/api/v1/pss/';
 // const cbsBasePath = 'http://pss.cbs/api/v1/pss/';
 
 class HelperController {
+  async downloadFile(req: Request, res: Response, next: NextFunction): Promise<void> {
+    try {
+      const result: any = await axios({
+        method: 'get',
+        url: req.body.url,
+        responseType: 'blob',
+      });
+      const base64 = Buffer.from(result.data, 'binary').toString('base64');
+      console.log(base64);
+      res.status(200).json({ data: base64, message: 'Download successful' });
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   public verifyNIN = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       const { query } = req;
