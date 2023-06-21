@@ -24,12 +24,12 @@ class HelperController {
       const result: any = await axios({
         method: 'get',
         url: req.body.url,
-        responseType: 'blob',
+        responseType: 'arraybuffer',
       });
       console.log(req.body.url);
       const base64 = Buffer.from(result.data, 'binary').toString('base64');
       // console.log(base64);
-      res.status(200).json({ data: result.data, message: 'Download successful' });
+      res.status(200).json({ data: base64, message: 'Download successful' });
     } catch (error) {
       console.log(error);
     }
