@@ -124,6 +124,47 @@ class CBSController {
       //   //next(error);
     }
   };
+  public EGSRequest = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    console.log(req.body.requestObject);
+    try {
+      const { body, headers, helpers } = req.body.requestObject;
+      const data = new FormData();
+      const config: AxiosRequestConfig = {
+        method: helpers.method,
+        maxBodyLength: Infinity,
+        url: helpers.url,
+      };
+      if (helpers.method.toUpperCase() === 'POST' || helpers.method.toUpperCase() === 'PUT') {
+        Object.keys(body).forEach(v => {
+          if (typeof body[v] !== 'string') {
+            data.append(v, JSON.stringify(body[v]));
+          } else {
+            data.append(v, body[v]);
+          }
+        });
+      }
+      // console.log(data);
+      config.data = data;
+      config.headers = {
+        ...headers,
+        ...data.getHeaders(),
+      };
+      // console.log(config);
+      if (helpers.hashmessage) {
+        config.headers[helpers.hashField] = HMAC256Hash(helpers.clientSecret, helpers.hashmessage);
+      }
+      const result = await axios.request(config);
+      console.log('result');
+      if (result.data) {
+        res.status(200).json({ data: result.data });
+      } else {
+        res.status(400).json({ data: null, message: 'Operation failed' });
+      }
+    } catch (error) {
+      console.log('error');
+      res.status(400).json({ error: 'error', message: 'Operation failed' });
+    }
+  };
 
   public tempUpload = async (req: any, res: Response, next: NextFunction): Promise<void> => {
     try {
@@ -162,7 +203,7 @@ class CBSController {
       if (helpers.hashmessage) {
         config.headers[helpers.hashField] = HMAC256Hash(helpers.clientSecret, helpers.hashmessage);
       }
-      console.log(config);
+      // console.log(config, headers, helpers);
       const result = await axios.request(config);
       if (result.data) {
         res.status(200).json({ data: result.data });
@@ -170,7 +211,7 @@ class CBSController {
         res.status(400).json({ data: result, message: 'Operation failed' });
       }
     } catch (error) {
-      // console.log(error);
+      console.log(error);
       res.status(400).json({ error: error, message: 'Operation failed' });
       //   //next(error);
     }
