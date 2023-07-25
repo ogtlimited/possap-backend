@@ -15,7 +15,7 @@ Microservice(
         --set resources.requests.memory=500Mi \
         --set resources.requests.cpu=250m \
         --set resources.limits.cpu=500 \
-        --set resources.limits.memory=1024Mi \
+        --set resources.limits.memory=2048Mi \
         --set ingress.enabled=true \
         --set hostNamePrefix=possapbackend-development \
         --set secretObjects.secretName=possapbackend-dev \
