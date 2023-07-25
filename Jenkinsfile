@@ -19,8 +19,9 @@ Microservice(
         --set ingress.enabled=true \
         --set hostNamePrefix=possapbackend-development \
         --set secretObjects.secretName=possapbackend-dev \
-        --set probes.readinessProbe.enabled=false \
-        --set probes.livenessProbe.enabled=false \
+        --set probes.readinessProbe.enabled=true \
+        --set probes.path=/api/v1 \
+        --set probes.livenessProbe.enabled=true \
         --set PersistentVolumeClaim.enabled=false \
         --set service.type=NodePort"
 
