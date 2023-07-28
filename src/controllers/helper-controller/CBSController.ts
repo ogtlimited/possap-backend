@@ -161,7 +161,7 @@ class CBSController {
         res.status(400).json({ data: null, message: 'Operation failed' });
       }
     } catch (error) {
-      console.log('error');
+      console.log('error', error.response);
       res.status(400).json({ error: 'error', message: 'Operation failed' });
     }
   };
@@ -211,8 +211,8 @@ class CBSController {
         res.status(400).json({ data: result, message: 'Operation failed' });
       }
     } catch (error) {
-      console.log(error);
-      res.status(400).json({ error: error, message: 'Operation failed' });
+      console.log(error?.response.data);
+      res.status(error.response.status).json({ error: error?.response.data, message: 'Operation failed' });
       //   //next(error);
     }
   };
