@@ -18,7 +18,7 @@ Microservice(
         --set resources.limits.memory=2048Mi \
         --set ingress.enabled=true \
         --set hostNamePrefix=possapbackend-development \
-        --set secretObjects.secretName=nasimadmin-dev \
+        --set secretObjects.secretName=possapbackend-dev \
         --set probes.readinessProbe.enabled=false \
         --set probes.livenessProbe.enabled=false \
         --set PersistentVolumeClaim.enabled=false \
