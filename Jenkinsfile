@@ -8,10 +8,7 @@ Microservice(
         publiclyAccessible: true,
         devFlags: "--set autoscaling.enabled=false \
         --set volume.secondVolume.enabled=false \
-        --set cron.enabled=false \
         --set volume.mountPath=/usr/src/app/.env \
-        --set serviceAccount.name=secret-store",
-        commonFlags: "--set image.port=3000 \
         --set resources.requests.memory=500Mi \
         --set resources.requests.cpu=250m \
         --set resources.limits.cpu=500 \
@@ -22,5 +19,8 @@ Microservice(
         --set probes.readinessProbe.enabled=false \
         --set probes.livenessProbe.enabled=false \
         --set PersistentVolumeClaim.enabled=false \
+        --set serviceAccount.name=secret-store",
+        commonFlags: "--set image.port=3000 \
+        --set cron.enabled=false \
         --set service.type=NodePort"
     )
