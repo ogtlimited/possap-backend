@@ -125,7 +125,7 @@ class CBSController {
         res.status(400).json({ data: null, message: 'Operation failed' });
       }
     } catch (error) {
-      console.log();
+      console.log(error);
       let errMsg = '';
       if (Array.isArray(error?.response?.data.ResponseObject)) {
         errMsg = error?.response?.data.ResponseObject[0];
