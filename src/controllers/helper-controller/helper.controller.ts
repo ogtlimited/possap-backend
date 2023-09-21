@@ -38,7 +38,7 @@ class HelperController {
   public verifyNIN = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
       const { query } = req;
-      const url = `http://52.15.120.183/verify.php?pickNIN=${query.nin}&key=t/BLOvt6c95mV20ka1pqreVkrwprcbdb`;
+      const url = `http://52.15.120.183/verify.php?pickNIN=${query.nin}&key=t-BL1Ovt6c95mV20ka1pqre2VkrwprcbdbKLM`;
       const result = await axios.get(url);
       if (result.data) {
         res.status(200).json({ data: result.data, message: 'verified' });

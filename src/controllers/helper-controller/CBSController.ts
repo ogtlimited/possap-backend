@@ -68,6 +68,7 @@ class CBSController {
   public PCCRequest = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     let passportphotographfile = '';
     let intpassportdatapagefile = '';
+    let proofOfResidenceFile = '';
     console.log(req.body.requestObject);
     try {
       const { body, headers, helpers } = req.body.requestObject;
@@ -87,6 +88,12 @@ class CBSController {
             intpassportdatapagefile = body[v];
             const file = fs.createReadStream(filestorage + body[v]);
             data.append(v, file);
+          } else if (v === 'proofOfResidenceFile') {
+            if (body[v] !== '') {
+              proofOfResidenceFile = body[v];
+              const file = fs.createReadStream(filestorage + body[v]);
+              data.append(v, file);
+            }
           } else {
             if (typeof body[v] !== 'string') {
               data.append(v, JSON.stringify(body[v]));
@@ -102,26 +109,74 @@ class CBSController {
         ...headers,
         ...data.getHeaders(),
       };
-      // console.log(config);
+      console.log(HMAC256Hash(helpers.clientSecret, helpers.hashmessage));
       if (helpers.hashmessage) {
         config.headers[helpers.hashField] = HMAC256Hash(helpers.clientSecret, helpers.hashmessage);
       }
-      console.log(intpassportdatapagefile, passportphotographfile, 'FILENAME');
+      // console.log(intpassportdatapagefile, passportphotographfile, 'FILENAME');
       const result = await axios.request(config);
-      console.log(result);
+      // console.log(result);
       if (result.data) {
         removeFile(passportphotographfile);
-        removeFile(intpassportdatapagefile);
+        removeFile(passportphotographfile);
+        removeFile(proofOfResidenceFile);
         res.status(200).json({ data: result.data });
       } else {
         res.status(400).json({ data: null, message: 'Operation failed' });
       }
     } catch (error) {
       console.log(error);
+      let errMsg = '';
+      if (Array.isArray(error?.response?.data.ResponseObject)) {
+        errMsg = error?.response?.data.ResponseObject[0];
+      } else {
+        errMsg = error?.response?.data.ResponseObject;
+      }
       // removeFile(passportphotographfile);
       // removeFile(intpassportdatapagefile);
-      res.status(400).json({ error: 'error', message: 'Operation failed' });
+      res.status(400).json({ error: 'error', message: errMsg });
       //   //next(error);
+    }
+  };
+  public EGSRequest = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    console.log(req.body.requestObject);
+    try {
+      const { body, headers, helpers } = req.body.requestObject;
+      const data = new FormData();
+      const config: AxiosRequestConfig = {
+        method: helpers.method,
+        maxBodyLength: Infinity,
+        url: helpers.url,
+      };
+      if (helpers.method.toUpperCase() === 'POST' || helpers.method.toUpperCase() === 'PUT') {
+        Object.keys(body).forEach(v => {
+          if (typeof body[v] !== 'string') {
+            data.append(v, JSON.stringify(body[v]));
+          } else {
+            data.append(v, body[v]);
+          }
+        });
+      }
+      // console.log(data);
+      config.data = data;
+      config.headers = {
+        ...headers,
+        ...data.getHeaders(),
+      };
+      // console.log(config);
+      if (helpers.hashmessage) {
+        config.headers[helpers.hashField] = HMAC256Hash(helpers.clientSecret, helpers.hashmessage);
+      }
+      const result = await axios.request(config);
+      console.log('result');
+      if (result.data) {
+        res.status(200).json({ data: result.data });
+      } else {
+        res.status(400).json({ data: null, message: 'Operation failed' });
+      }
+    } catch (error) {
+      console.log('error', error.response);
+      res.status(400).json({ error: 'error', message: 'Operation failed' });
     }
   };
 
@@ -162,6 +217,7 @@ class CBSController {
       if (helpers.hashmessage) {
         config.headers[helpers.hashField] = HMAC256Hash(helpers.clientSecret, helpers.hashmessage);
       }
+      // console.log(config, headers, helpers);
       console.log(config);
       const result = await axios.request(config);
       if (result.data) {
@@ -170,8 +226,8 @@ class CBSController {
         res.status(400).json({ data: result, message: 'Operation failed' });
       }
     } catch (error) {
-      // console.log(error);
-      res.status(400).json({ error: error, message: 'Operation failed' });
+      console.log(error?.response.data);
+      res.status(error.response.status).json({ error: error?.response.data, message: 'Operation failed' });
       //   //next(error);
     }
   };
