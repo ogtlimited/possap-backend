@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
 
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 ENV NODE_OPTIONS=--max-old-space-size=4096
 
