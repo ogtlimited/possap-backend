@@ -204,7 +204,7 @@ class CBSController {
         config.headers[helpers.hashField] = HMAC256Hash(helpers.clientSecret, helpers.hashmessage);
       }
       const result = await axios.request(config);
-
+      console.log(result);
       if (result.data) {
         res.status(200).json({ data: result.data });
       } else {
