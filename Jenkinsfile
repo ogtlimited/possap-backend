@@ -9,9 +9,9 @@ Microservice(
         devFlags: "--set autoscaling.enabled=false \
         --set volume.secondVolume.enabled=false \
         --set volume.mountPath=/usr/src/app/.env \
-        --set resources.requests.memory=500Mi \
+        --set resources.requests.memory=800Mi \
         --set resources.requests.cpu=250m \
-        --set resources.limits.cpu=500 \
+        --set resources.limits.cpu=1000m \
         --set resources.limits.memory=2048Mi \
         --set ingress.enabled=true \
         --set hostNamePrefix=possapbackend-development \
