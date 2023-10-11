@@ -4,7 +4,7 @@ const { createHash } = require('crypto');
 import axios from 'axios';
 const fs = require('fs');
 import { countries } from 'countries-list';
-import { S3 } from 'aws-sdk';
+//import { S3 } from 'aws-sdk';
 import twilio from 'twilio';
 import { v4 as uuidv4 } from 'uuid';
 import * as dotenv from 'dotenv';
@@ -273,49 +273,49 @@ class HelperController {
     return result;
   };
 
-  /*
-   * AWS Configuration
-   * */
-  private static async awsS3() {
-    return new S3({
-      accessKeyId: process.env['AWS_ACCESS_KEY_ID'],
-      secretAccessKey: process.env['AWS_SECRET_ACCESS_KEY'],
-      region: process.env['AWS_REGION'],
-    });
-  }
+  // /*
+  //  * AWS Configuration
+  //  * */
+  // private static async awsS3() {
+  //   return new S3({
+  //     accessKeyId: process.env['AWS_ACCESS_KEY_ID'],
+  //     secretAccessKey: process.env['AWS_SECRET_ACCESS_KEY'],
+  //     region: process.env['AWS_REGION'],
+  //   });
+  // }
 
   // Upload files
-  public uploadMedia = async (req: Request | any, res: Response, next: NextFunction): Promise<unknown> => {
-    const files = req.files;
-    console.log(files, 'FILES');
-    if (!req.files) {
-      res.send('No files to upload.');
-      return;
-    }
+  // public uploadMedia = async (req: Request | any, res: Response, next: NextFunction): Promise<unknown> => {
+  //   const files = req.files;
+  //   console.log(files, 'FILES');
+  //   if (!req.files) {
+  //     res.send('No files to upload.');
+  //     return;
+  //   }
 
-    try {
-      const awsS3Upload = await HelperController.awsS3();
+  //   try {
+  //     const awsS3Upload = await HelperController.awsS3();
 
-      const allFilesUpload = files.map(item =>
-        awsS3Upload
-          .upload({
-            Bucket: process.env['AWS_S3_BUCKET'],
-            Body: item.buffer,
-            Key: String(`${process.env['BUCKET_FOLDER_NAME']}/${Date.now()}-${uuidv4()}.${item.mimetype.split('/').pop()}`),
-            ContentType: 'image/jpg',
-            ACL: 'public-read',
-          })
-          .promise(),
-      );
-      const responses = await Promise.all(allFilesUpload);
-      const location = responses[0].Location;
-      console.log(location);
-      return res.status(200).json({ status: 'Success', statusCode: 200, message: 'Files uploaded successfully', data: location });
-    } catch (err) {
-      res.status(500).json({ message: 'An error occurred', statusCode: 500, status: 'Failed' });
-      next(err);
-    }
-  };
+  //     const allFilesUpload = files.map(item =>
+  //       awsS3Upload
+  //         .upload({
+  //           Bucket: process.env['AWS_S3_BUCKET'],
+  //           Body: item.buffer,
+  //           Key: String(`${process.env['BUCKET_FOLDER_NAME']}/${Date.now()}-${uuidv4()}.${item.mimetype.split('/').pop()}`),
+  //           ContentType: 'image/jpg',
+  //           ACL: 'public-read',
+  //         })
+  //         .promise(),
+  //     );
+  //     const responses = await Promise.all(allFilesUpload);
+  //     const location = responses[0].Location;
+  //     console.log(location);
+  //     return res.status(200).json({ status: 'Success', statusCode: 200, message: 'Files uploaded successfully', data: location });
+  //   } catch (err) {
+  //     res.status(500).json({ message: 'An error occurred', statusCode: 500, status: 'Failed' });
+  //     next(err);
+  //   }
+  // };
 
   //  Sent otp
   public sendOtp = async (req: Request | any, res: Response, next: NextFunction): Promise<unknown> => {

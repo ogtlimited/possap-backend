@@ -1,0 +1,49 @@
+{
+    "data": {
+        "Error": false,
+        "ErrorCode": null,
+        "ResponseObject": [
+            {
+                "Id": 1,
+                "Name": "Federal Government Principal Officer",
+                "IsActive": true
+            },
+            {
+                "Id": 2,
+                "Name": "State Government Principal Officer",
+                "IsActive": true
+            },
+            {
+                "Id": 3,
+                "Name": "Federal Judiciary",
+                "IsActive": true
+            },
+            {
+                "Id": 4,
+                "Name": "State Judiciary",
+                "IsActive": true
+            },
+            {
+                "Id": 5,
+                "Name": "Federal Legislature",
+                "IsActive": true
+            },
+            {
+                "Id": 6,
+                "Name": "State Legislature",
+                "IsActive": true
+            },
+            {
+                "Id": 7,
+                "Name": "Diplomat",
+                "IsActive": true
+            },
+            {
+                "Id": 8,
+                "Name": "Traditional Ruler",
+                "IsActive": true
+            }
+        ],
+        "StatusCode": 0
+    }
+}

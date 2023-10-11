@@ -30,6 +30,7 @@ class CBSRoute implements Routes {
   }
 
   private initializeRoutes() {
+    this.router.post(`${this.path}/cached-data`, this.cbs.FetchCachedRequest);
     this.router.post(`${this.path}/fetch-data`, this.cbs.FetchRequest);
     this.router.post(`${this.path}/extract`, this.cbs.ExtractRequest);
     this.router.post(`${this.path}/pcc`, this.cbs.PCCRequest);

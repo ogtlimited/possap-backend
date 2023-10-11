@@ -33,7 +33,7 @@ class HelperRoute implements Routes {
     this.router.get(`${this.path}/all-states`, this.helperController.AllStateLga);
     this.router.post(`${this.path}/verifyAPNumber`, this.helperController.verifyAPNumber);
     this.router.post(`${this.path}/police-hr`, this.helperController.getPoliceData);
-    this.router.post(`${this.path}/uploadMedia`, upload.array('documents', 3), this.helperController.uploadMedia);
+    //this.router.post(`${this.path}/uploadMedia`, upload.array('documents', 3), this.helperController.uploadMedia);
     this.router.post(`${this.path}/state-lga`, this.helperController.getStateLga);
     this.router.post(`${this.path}/state-scid`, this.helperController.getPoliceSCID);
     this.router.post(`${this.path}/state-area-division`, this.helperController.getPoliceAreaDivision);

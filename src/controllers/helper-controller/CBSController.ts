@@ -6,6 +6,11 @@ import * as dotenv from 'dotenv';
 import { HMAC256Hash } from '@/utils/util';
 import fs from 'fs';
 import path from 'path';
+import services from '../../db/services.json';
+import egsCategoryId from '../../db/egscategoryId.json';
+import egssubCategoryId from '../../db/egssubCategoryId.json';
+import pccFormData from '../../db/pcc-formdata.json';
+import peFormData from '../../db/pe-formdata.json';
 
 const FormData = require('form-data');
 dotenv.config();
@@ -193,6 +198,8 @@ class CBSController {
         method: helpers.method,
         maxBodyLength: Infinity,
         url: helpers.url,
+        timeout: 30000,
+        timeoutErrorMessage: 'Request timed out',
       };
       config.headers = {
         ...headers,
@@ -211,8 +218,46 @@ class CBSController {
         res.status(400).json({ data: result, message: 'Operation failed' });
       }
     } catch (error) {
-      console.log(error?.response.data);
-      res.status(error.response.status).json({ error: error?.response.data, message: 'Operation failed' });
+      console.log(error);
+      res.status(error.response.status).json({ error: error?.response?.data, message: 'Operation failed' });
+      //   //next(error);
+    }
+  };
+
+  public FetchCachedRequest = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      const { obj } = req.body;
+      console.log(obj);
+      let result = null;
+      switch (obj) {
+        case 'service.json':
+          result = services;
+          break;
+        case 'subCategoryId':
+          result = egssubCategoryId;
+          break;
+        case 'categoryId':
+          result = egsCategoryId;
+          break;
+        case 'pcc-formdata':
+          result = pccFormData;
+          break;
+        case 'pe-formdata':
+          result = peFormData;
+          break;
+        default:
+          result = null;
+          break;
+      }
+      console.log(result);
+      if (result) {
+        res.status(200).json({ data: result.data });
+      } else {
+        res.status(400).json({ data: result, message: 'Operation failed' });
+      }
+    } catch (error) {
+      console.log(error);
+      res.status(error.response.status).json({ error: error?.response?.data, message: 'Operation failed' });
       //   //next(error);
     }
   };

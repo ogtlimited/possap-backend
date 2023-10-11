@@ -1,0 +1,23 @@
+{
+    "data": {
+        "Error": false,
+        "ErrorCode": null,
+        "ResponseObject": [
+            {
+                "Id": 1,
+                "Name": "Private",
+                "IsActive": true,
+                "CategoryId": 0,
+                "SubSubTaxEntityCategoryId": 0
+            },
+            {
+                "Id": 2,
+                "Name": "Politically Exposed Persons (PEP)",
+                "IsActive": true,
+                "CategoryId": 0,
+                "SubSubTaxEntityCategoryId": 0
+            }
+        ],
+        "StatusCode": 0
+    }
+}

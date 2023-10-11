@@ -1,0 +1,55 @@
+{
+    "data": {
+        "Error": false,
+        "ErrorCode": null,
+        "ResponseObject": {
+            "services": [
+                {
+                    "Id": 8,
+                    "Name": "ESCORT AND GUARD REGULARIZATION SERVICES",
+                    "ServiceType": 0
+                },
+                {
+                    "Id": 2,
+                    "Name": "ESCORT AND GUARD SERVICES",
+                    "ServiceType": 0
+                },
+                {
+                    "Id": 5,
+                    "Name": "INTERNATIONAL DRIVING PERMIT",
+                    "ServiceType": 0
+                },
+                {
+                    "Id": 4,
+                    "Name": "POLICE CHARACTER CERTIFICATE",
+                    "ServiceType": 0
+                },
+                {
+                    "Id": 7,
+                    "Name": "POLICE CHARACTER CERTIFICATE DIASPORA",
+                    "ServiceType": 0
+                },
+                {
+                    "Id": 9,
+                    "Name": "POLICE CHARACTER CERTIFICATE IMMIGRANT",
+                    "ServiceType": 0
+                },
+                {
+                    "Id": 1,
+                    "Name": "POLICE EXTRACT",
+                    "ServiceType": 0
+                },
+                {
+                    "Id": 6,
+                    "Name": "POLICE INVESTIGATION REPORT",
+                    "ServiceType": 0
+                },
+                {
+                    "Id": 3,
+                    "Name": "TINT PERMIT",
+                    "ServiceType": 0
+                }
+            ]
+        }
+    }
+}
